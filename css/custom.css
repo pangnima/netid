@@ -15,8 +15,14 @@ body {font-family:"Noto Sans KR";}
 
 /* 페이지 타이틀 */
 .page-title {display:table; margin-bottom:20px;}
-.page-title h2 {display:table-cell; min-width:250px;}
+.page-title h2 {display:table-cell; min-width:250px; padding-right:50px;}
 .page-title p {display:table-cell; padding-left:50px; border-left:solid 1px #ddd; vertical-align:middle;}
+
+.page-title.sub {margin-bottom:0;}
+.page-title.sub h3 {font-size:16px;}
+.page-title.sub h3::before {content:""; display:inline-block; background:#13b6bc; width:4px; height:15px; margin-right:4px; vertical-align:-2px;}
+
+
 /* 페이지 네비게이션 */
 .title-bar-title ul {margin:0; padding:0;}
 .title-bar-title ul li {display:inline-block; line-height:1; font-size:12px; vertical-align:bottom; list-style:none;}
@@ -54,6 +60,10 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 
 
 /* 셀렉트 박스 크기 변경 */
+.form-control.size-a {width:auto;}
+.form-control.size-s {width:30%;}
+.form-control.size-m {width:50%;}
+.form-control.size-l {width:70%;}
 .form-control.size-80 {max-width:80px; margin:0 auto;}
 
 
