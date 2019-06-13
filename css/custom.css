@@ -1,6 +1,6 @@
 @import url(./font.css);
 body {font-family:"Noto Sans KR";}
-.layout-content-body {padding: 15px 30px 35px}
+.layout-content-body {padding:15px 30px 35px;}
 /* 메뉴 */
 .navbar-default .navbar-header {background:#13b6bc;}
 .sidenav-heading {font-size:14px;}
@@ -33,13 +33,13 @@ body {font-family:"Noto Sans KR";}
 .navbar-toggleable {border-bottom:solid 1px #eee;}
 
 /* 테이블 타입 */
-.table > tbody > tr > td,.table > tbody > tr > th,.table > tfoot > tr > td,.table > tfoot > tr > th,.table > thead > tr > td,.table > thead > tr > th {vertical-align:middle;}
-.table > thead > tr > th,.table > tbody > tr > th { font-size:15px;}
-.table > tbody > tr > td { font-size:14px;}
+.table > tbody > tr > td , .table > tbody > tr > th , .table > tfoot > tr > td , .table > tfoot > tr > th , .table > thead > tr > td , .table > thead > tr > th {vertical-align:middle;}
+.table > thead > tr > th , .table > tbody > tr > th {font-size:15px;}
+.table > tbody > tr > td {font-size:14px;}
 .table-left-td td {border-left:solid 1px #e7e7ec;}
 .table-left-td td:first-child {border-left:0;}
 
-.table tr:last-child th,.table tr:last-child td {border-bottom:solid 1px #e7e7ec;}
+.table tr:last-child th , .table tr:last-child td {border-bottom:solid 1px #e7e7ec;}
 
 table.type-1 tr th {background:#f5f5f5; min-width:120px; padding-left:10px; font-size:14px; font-weight:normal; vertical-align:middle;}
 table.type-1 tr td {width:90%;}
@@ -49,8 +49,8 @@ table.type-1 tr td input.domain {display:inline-block; max-width:250px;}
 table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 
 .checkbox-board tr td {border-left:solid 1px #e7e7ec;}
-.checkbox-board tr th:first-child,.checkbox-board tr td:first-child {width:5%; text-align:center; border-left:0;}
-.checkbox-board tr th:nth-child(2),.checkbox-board tr td:nth-child(2) {border-left:0;}
+.checkbox-board tr th:first-child , .checkbox-board tr td:first-child {width:5%; border-left:0; text-align:center;}
+.checkbox-board tr th:nth-child(2) , .checkbox-board tr td:nth-child(2) {border-left:0;}
 
 
 
@@ -80,14 +80,14 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 .custom-control-primary .custom-control-input:checked ~ .custom-control-indicator {background-color:#13b6bc;}
 .custom-control-primary .custom-control-input:active ~ .custom-control-indicator {background-color:#13b6bc;}
 
-.pagination > li > a:focus,.pagination > li > a:hover,.pagination > li > span:focus,.pagination > li > span:hover {background-color:#13b6bc; border-color:#13b6bc;}
-.pagination > .active > a,.pagination > .active > a:focus,.pagination > .active > a:hover,.pagination > .active > span,.pagination > .active > span:focus,.pagination > .active > span:hover {background-color:#13b6bc; border-color:#13b6bc;}
+.pagination > li > a:focus , .pagination > li > a:hover , .pagination > li > span:focus , .pagination > li > span:hover {background-color:#13b6bc; border-color:#13b6bc;}
+.pagination > .active > a , .pagination > .active > a:focus , .pagination > .active > a:hover , .pagination > .active > span , .pagination > .active > span:focus , .pagination > .active > span:hover {background-color:#13b6bc; border-color:#13b6bc;}
 
 /* 버튼 커스텀 추가 */
 .bnt-side-10 {padding-right:10px; padding-left:10px;}
 .bnt-side-20 {padding-right:20px; padding-left:20px;}
 .bnt-side-30 {padding-right:30px; padding-left:30px;}
-.btn-basic,.btn-basic:hover,.btn-basic:active,.btn-basic:focus {background:#25c6cb; color:#fff;}
+.btn-basic , .btn-basic:hover , .btn-basic:active , .btn-basic:focus {background:#25c6cb; color:#fff;}
 
 /* 초기화 */
 .margin-0 {margin:0;}
@@ -218,5 +218,5 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 
 
 /* input 관련 */
-.input-icon {position:absolute; top:2px; left:2px; z-index:2; }
+.input-icon {position:absolute; top:2px; left:2px; z-index:2;}
 .text-red {color:#fd442b;}
