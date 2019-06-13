@@ -213,4 +213,5 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 
 
 /* input 관련 */
-.input-icon {position:absolute; top:2px; left:2px; z-index:2; color:#7d7d8e}
+.input-icon {position:absolute; top:2px; left:2px; z-index:2; }
+.text-red {color:#fd442b;}
