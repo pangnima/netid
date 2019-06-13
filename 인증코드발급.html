@@ -549,22 +549,31 @@
 				</div>
 
 				<div class="row gutter-xs m-b-lg">
-					<div class="col-md-4 col-sm-offset-3">
+					<div class="col-md-5 col-sm-offset-3">
 						<div class="card">
 							<div class="card-header">
 								<h4>기본 항목</h4>
 							</div>
 							<div class="card-body p-x-lg">
 								<div class="form-group">
-									<label for="username" class="control-label">이름</label>
-									<input id="username" class="form-control" type="text" name="username" spellcheck="false" autocomplete="off" data-rule-required="true" data-rule-alphanumeric="true" data-msg-required="Please enter your username." data-msg-alphanumeric="Username must be alpha-numeric characters, and underscores." aria-required="true">
+									<label for="username" class="control-label d-b">label1</label>
+									<label class="custom-control custom-control-success custom-radio d-b m-y">
+										<input class="custom-control-input" name="success" type="radio" value="none">
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-label">radio1</span>
+									</label>
+									<label class="custom-control custom-control-success custom-radio d-b m-y m-x-0">
+										<input class="custom-control-input" name="success" type="radio" value="none">
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-label">radio2</span>
+									</label>
 								</div>
 								<div class="form-group">
-										<label for="userid" class="control-label">아이디</label>
+										<label for="userid" class="control-label">label2</label>
 										<input id="userid" class="form-control" type="text" name="userid" spellcheck="false" autocomplete="off" data-rule-required="true" data-rule-email="true" data-msg-required="Please enter your email address." aria-required="true">
 									</div>
 								<div class="form-group">
-									<label for="password" class="control-label">비밀번호</label>
+									<label for="password" class="control-label">label3</label>
 									<div class="input-group">
 										<input id="password" class="form-control" type="password" name="password" data-rule-required="true" data-rule-minlength="6" data-msg-required="Please enter your password." data-msg-minlength="Password must be 6 characters or more." aria-required="true">
 										<span class="input-group-addon">
@@ -575,6 +584,7 @@
 											</label>
 										</span>
 									</div>
+									<small class="help-block">6-character minimum; case sensitive.</small>
 								</div>
 								<div class="form-group">
 									<label for="password" class="control-label">비밀번호 확인</label>
@@ -588,14 +598,15 @@
 											</label>
 										</span>
 									</div>
+									<small class="help-block">6-character minimum; case sensitive.</small>
 								</div>
 								<div class="form-group">
-										<label for="password" class="control-label d-b">표시 메뉴 선택</label>
+										<label for="password" class="control-label disB">표시 메뉴 선택</label>
 										<button class="btn btn-outline-success" type="button">메뉴 선택</button>
 								</div>						
 							</div>
 						</div>
-						<div class="text-center m-t-lg">
+						<div class="text-center">
 							<button class="btn btn-success" type="button">확인</button>
 							<button class="btn btn-default" type="button">취소</button>
 						</div>
