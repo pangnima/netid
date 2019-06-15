@@ -26,7 +26,7 @@
 		<div class="navbar navbar-default">
 			<div class="navbar-header">
 				<a class="navbar-brand navbar-brand-center" href="index.html">
-					<img class="navbar-brand-logo" src="img/logo-inverse.svg" alt="NETID">
+					<img class="navbar-brand-logo" src="img/logo.png" alt="NETID">
 				</a>
 				<button class="navbar-toggler visible-xs-block collapsed" type="button" data-toggle="collapse" data-target="#sidenav">
 					<span class="sr-only">토글 네비게이션</span>
@@ -360,7 +360,225 @@
 						<p>사용자 PC가 외부업무로 인한 문서 중앙화 서버 접근이 불가능 할 경우 ClouDoc 제품을 삭제할 수 있는 인증 정보를 클립보드로 복사하여 전달할 수 있습니다.</p>
 					</div>
 				</div>
-				
+
+				<div class="row gutter-xs m-b-lg">
+					<div class="col-xs-12">
+						<table class="table table-bordered type-1">
+							<tr>
+								<th>도메인 선택</th>
+								<td>
+									<select name="" id="" class="form-control domain">
+										<option value="">기본</option>
+									</select>
+									<input id="form-control-5" class="form-control domain" type="input" value="기본도메인" readonly="readonly">
+								</td>
+							</tr>
+							<tr>
+								<th>기간 선택</th>
+								<td>
+									<div class="input-group input-daterange" data-provide="datepicker" data-date-autoclose="true" data-date-format="dd-M-yyyy">
+										<div class="input-with-icon">
+											<input class="form-control" type="text" data-provide="datepicker">
+											<span class="icon icon-calendar input-icon"></span>
+										</div>
+										<span class="input-group-addon">~</span>
+										<div class="input-with-icon">
+											<input class="form-control" type="text" data-provide="datepicker">
+											<span class="icon icon-calendar input-icon"></span>
+										</div>
+									</div>
+									<div>
+										<button class="btn btn-default btn-sm" type="button">당일</button>
+										<button class="btn btn-default btn-sm" type="button">7일</button>
+										<button class="btn btn-default btn-sm" type="button">1개월</button>
+										<button class="btn btn-default btn-sm" type="button">3개월</button>
+										<button class="btn btn-default btn-sm" type="button">6개월</button>
+										<button class="btn btn-default btn-sm" type="button">1년</button>
+										<button class="btn btn-default btn-sm" type="button">3년</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>상태 선택</th>
+								<td>
+									<label class="custom-control custom-control-success custom-checkbox">
+										<input class="custom-control-input" type="checkbox">
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-label">전체선택</span>
+									</label>
+									<label class="custom-control custom-control-success custom-checkbox">
+										<input class="custom-control-input" type="checkbox">
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-label">승인대기</span>
+									</label>
+									<label class="custom-control custom-control-success custom-checkbox">
+										<input class="custom-control-input" type="checkbox">
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-label">승인완료</span>
+									</label>
+									<label class="custom-control custom-control-success custom-checkbox">
+										<input class="custom-control-input" type="checkbox">
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-label">승인반려</span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>상태 선택</th>
+								<td>
+									<label class="custom-control custom-control-success custom-checkbox">
+										<input class="custom-control-input" type="checkbox">
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-label">전체선택</span>
+									</label>
+									<label class="custom-control custom-control-success custom-checkbox">
+										<input class="custom-control-input" type="checkbox">
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-label">승인대기</span>
+									</label>
+									<label class="custom-control custom-control-success custom-checkbox">
+										<input class="custom-control-input" type="checkbox">
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-label">승인완료</span>
+									</label>
+									<label class="custom-control custom-control-success custom-checkbox">
+										<input class="custom-control-input" type="checkbox">
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-label">승인반려</span>
+									</label>
+								</td>
+							</tr>
+						</table>
+						<div class="text-center">
+							<button type="button" class="btn btn-default btn-sm bnt-side-30">검 색</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="row gutter-xs">
+					<div class="col-xs-12">
+						<div class="card">
+							<div class="card-header">
+								<div class="text-right">
+									<button class="btn btn-basic btn-sm" type="button">button1</button>
+									<button class="btn btn-default btn-sm" type="button">button2</button>
+								</div>
+								<p class="search-page">showing 1 to 10 of 57 entries</p>
+							</div>
+							<div class="card-body">
+								<table class="table table-striped checkbox-board">
+									<thead>
+										<tr>
+											<th>
+												<label class="custom-control custom-control-success custom-checkbox">
+													<input class="custom-control-input" type="checkbox">
+													<span class="custom-control-indicator"></span>
+												</label>
+											</th>
+											<th>COL1</th>
+											<th>COL2</th>
+											<th>COL3</th>
+											<th>COL</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<label class="custom-control custom-control-success custom-checkbox">
+													<input class="custom-control-input" type="checkbox">
+													<span class="custom-control-indicator"></span>
+												</label>
+											</td>
+											<td>data1</td>
+											<td>data2</td>
+											<td>data3</td>
+											<td>data</td>
+										</tr>
+										<tr>
+											<td>
+												<label class="custom-control custom-control-success custom-checkbox">
+													<input class="custom-control-input" type="checkbox">
+													<span class="custom-control-indicator"></span>
+												</label>
+											</td>
+											<td>data1</td>
+											<td>data2</td>
+											<td>data3</td>
+											<td>data</td>
+										</tr>
+										<tr>
+											<td>
+												<label class="custom-control custom-control-success custom-checkbox">
+													<input class="custom-control-input" type="checkbox">
+													<span class="custom-control-indicator"></span>
+												</label>
+											</td>
+											<td>data1</td>
+											<td>data2</td>
+											<td>data3</td>
+											<td>data</td>
+										</tr>
+										<tr>
+											<td>
+												<label class="custom-control custom-control-success custom-checkbox">
+													<input class="custom-control-input" type="checkbox">
+													<span class="custom-control-indicator"></span>
+												</label>
+											</td>
+											<td>data1</td>
+											<td>data2</td>
+											<td>data3</td>
+											<td>data</td>
+										</tr>
+										<tr>
+											<td>
+												<label class="custom-control custom-control-success custom-checkbox">
+													<input class="custom-control-input" type="checkbox">
+													<span class="custom-control-indicator"></span>
+												</label>
+											</td>
+											<td>data1</td>
+											<td>data2</td>
+											<td>data3</td>
+											<td>data</td>
+										</tr>
+										<tr>
+											<td>
+												<label class="custom-control custom-control-success custom-checkbox">
+													<input class="custom-control-input" type="checkbox">
+													<span class="custom-control-indicator"></span>
+												</label>
+											</td>
+											<td>data1</td>
+											<td>data2</td>
+											<td>data3</td>
+											<td>data</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="m-t-sm">
+									<div class="view-list">Show 
+										<select name="" id="" class="form-control d-ib size-80">
+											<option value="">10</option>
+											<option value="">15</option>
+											<option value="">20</option>
+										</select> entires</div>
+									<div class="text-center">
+										<ul class="pagination">
+											<li class="previous"><a href="#" class="icon icon-angle-left"></a></li>
+											<li class="active"><span>1</span></li>
+											<li><a href="">2</a></li>
+											<li><a href="">3</a></li>
+											<li><a href="">4</a></li>
+											<li><a href="">5</a></li>
+											<li class="next"><a href="#" class="icon icon-angle-right"></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="layout-footer">

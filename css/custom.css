@@ -1,14 +1,13 @@
 @import url(./font.css);
 body {font-family:"Noto Sans KR";}
 .layout-content-body {padding:15px 30px 35px;}
+/* 로고 */
+.navbar-brand-logo {height:60px;}
+.navbar-brand {padding:0;}
 /* 메뉴 */
 .navbar-default .navbar-header {background:#13b6bc;}
 .sidenav-heading {font-size:14px;}
 .sidenav-item {font-size:13px;}
-
-/* display 관련 */
-.disB {display:block;}
-.disIB {display:inline-block;}
 
 /* border관련 */
 .border-none {border:0;}
@@ -43,6 +42,7 @@ body {font-family:"Noto Sans KR";}
 
 table.type-1 tr th {background:#f5f5f5; min-width:120px; padding-left:10px; font-size:14px; font-weight:normal; vertical-align:middle;}
 table.type-1 tr td {width:90%;}
+table.type-1 tr th label , table.type-1 tr td label {font-weight:normal;}
 table.type-1 tr td select.domain {display:inline-block; max-width:150px;}
 table.type-1 tr td input.domain {display:inline-block; max-width:250px;}
 @media screen and (max-width:540px) {table.type-1 tr td input.domain {margin-top:5px;}}

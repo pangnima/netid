@@ -1,0 +1,152 @@
+{
+	// Place your netid workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"btn-default": {
+		"scope": "html",
+		"prefix": "btn-d",
+		"body": [
+			"<button class=\"btn btn-default\" type=\"button\">${1:버튼내용}</button>"
+		],
+		"description": "디폴트 버튼"
+	},
+	"btn-default-success": {
+		"scope": "html",
+		"prefix": "btn-green",
+		"body": [
+			"<button class=\"btn btn-success\" type=\"button\">${1:버튼내용}</button>"
+		],
+		"description": "버튼 녹색"
+	},
+	"btn-default-success-out": {
+		"scope": "html",
+		"prefix": "btn-green-out",
+		"body": [
+			"<button class=\"btn btn-outline-success\" type=\"button\">${1:버튼내용}</button>"
+		],
+		"description": "버튼 아웃라인 녹색"
+	},
+	"check-default": {
+		"scope": "html",
+		"prefix": "check-d",
+		"body": [
+			"<label class=\"custom-control custom-control-success custom-checkbox\">",
+				"\t<input class=\"custom-control-input\" type=\"checkbox\">",
+				"\t<span class=\"custom-control-indicator\"></span>",
+				"\t<span class=\"custom-control-label\">전체선택</span>",
+			"</label>"
+		],
+		"description": "디폴트 체크박스"
+	},
+
+	"inpute-default": {
+		"scope": "html",
+		"prefix": "input-d",
+		"body": [
+			"<div class=\"input-with-icon d-ib\">",
+				"\t<input class=\"form-control\" type=\"text\" placeholder=\"${1:입력하세요}\">",
+				"\t<span class=\"icon icon-search input-icon\"></span>",
+			"</div>"
+		],
+		"description": "디폴트 인풋"
+	},
+
+	"radio-default": {
+		"scope": "html",
+		"prefix": "radio-d",
+		"body": [
+			"<label class=\"custom-control custom-control-success custom-radio\">",
+				"<input class=\"custom-control-input\" name=\"success\" type=\"radio\" value=\"none\">",
+				"<span class=\"custom-control-indicator\"></span>",
+				"<span class=\"custom-control-label\">사용자용 (지정된 PC만 삭제 가능) </span>",
+			"</label>"
+		],
+		"description": "디폴트 라디오버튼"
+	},
+
+	"seelct-default": {
+		"scope": "html",
+		"prefix": "select-d",
+		"body": [
+			"<select name=\"\" id=\"\" class=\"form-control d-ib size-a\">",
+				"\t<option value=\"\">${1:메뉴1}</option>",
+				"\t<option value=\"\">${2:메뉴2}</option>",
+				"\t<option value=\"\">${3:메뉴3}</option>",
+			"</select>"
+		],
+		"description": "디폴트 셀렉트"
+	},
+
+	"DIV-r": {
+		"scope": "html",
+		"prefix": "div-r",
+		"body": [
+			"<div class=\"row gutter-xs\">${1:0}</div>"
+		],
+		"description": "블록"
+	},
+
+	"sub-title": {
+		"scope": "html",
+		"prefix": "sub-title",
+		"body": [
+			"<div class=\"page-title sub\">",
+				"\t<h3>${1: 서브타이틀 내용}</h3>",
+			"</div>"
+		],
+		"description": "서브 타이틀"
+	},
+
+	"TABLE-scroll" :{
+		"scope": "html",
+		"prefix": "table-scroll",
+		"body": [
+			"<div class=\"table-responsive\">",
+				"\t<table class=\"table table-striped table-left-td\">",
+					"\t\t<thead>",
+						"\t\t\t<tr>",
+							"\t\t\t\t<th>발급일</th>",
+							"\t\t\t\t<th>발급 종류</th>",
+							"\t\t\t\t<th>인증 암호</th>",
+							"\t\t\t\t<th>요청자 이름</th>",
+							"\t\t\t\t<th>최근 로그인한 아이디</th>",
+						"\t\t\t</tr>",
+					"\t\t</thead>",
+					"\t\t<tbody>",
+						"\t\t\t<tr>",
+							"\t\t\t\t<td>test</td>",
+							"\t\t\t\t<td>test</td>",
+							"\t\t\t\t<td>test</td>",
+							"\t\t\t\t<td>test</td>",
+							"\t\t\t\t<td>test</td>",
+						"\t\t\t</tr>",
+						"\t\t\t<tr>",
+							"\t\t\t\t<td>test</td>",
+							"\t\t\t\t<td>test</td>",
+							"\t\t\t\t<td>test</td>",
+							"\t\t\t\t<td>test</td>",
+							"\t\t\t\t<td>test</td>",
+						"\t\t\t</tr>",
+					"\t\t</tbody>",
+				"\t</table>",
+			"</div>"
+		],
+		"description": "스크롤 있는 테이블"
+	}
+
+	
+}
