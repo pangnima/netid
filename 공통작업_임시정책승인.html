@@ -401,24 +401,50 @@
 							<tr>
 								<th>검색어</th>
 								<td>
-									<select name="" id="" class="form-control d-ib size-a" >
-										<option value="">More</option>
-										<option value="">Modify</option>
-										<option value="">delete</option>
-									</select>
+									<div class="d-ib m-r-md media-middle">
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">신청일</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">신청자</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">적용 정책</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">기존 정책</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">임시 정책</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">만료일</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">상태</span>
+										</label>
+									</div>
 
-									<select name="" id="" class="form-control d-ib size-a" >
-										<option value="">More</option>
-										<option value="">Modify</option>
-										<option value="">delete</option>
-									</select>
-
-									<div class="input-with-icon d-ib">
+									<div class="input-with-icon d-ib media-middle">
 										<input class="form-control" type="text" placeholder="Search…">
 										<span class="icon icon-search input-icon"></span>
 									</div>
 
-									<button class="btn btn-default" type="button">검색</button>
+									<button class="btn btn-default media-middle" type="button">검색</button>
 								</td>
 							</tr>
 						</table>
@@ -435,66 +461,69 @@
 								<p class="m-b-0">showing 1 to 10 of 57 entries</p>
 							</div>
 							<div class="card-body">
-								<colgroup>
-									<col style="width:5%">
-									<col style="width:10%">
-									<col style="width:10%">
-									<col>
-									<col style="width:10%">
-									<col style="width:8%">
-									<col style="width:8%">
-								</colgroup>
-								<table class="table table-striped checkbox-board">
-									<thead>
-										<tr>
-											<th>
-												<label class="custom-control custom-control-success custom-checkbox">
-													<input class="custom-control-input" type="checkbox">
-													<span class="custom-control-indicator"></span>
-												</label>
-											</th>
-											<th>신청일</th>
-											<th>신청자</th>
-											<th>적용 정책</th>
-											<th>기존 정책</th>
-											<th>임시 정책</th>
-											<th>만료일</th>
-											<th>상태</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>
-												<label class="custom-control custom-control-success custom-checkbox">
-													<input class="custom-control-input" type="checkbox">
-													<span class="custom-control-indicator"></span>
-												</label>
-											</td>
-											<td>data1</td>
-											<td>data2</td>
-											<td>data3</td>
-											<td>data</td>
-											<td>data</td>
-											<td>data</td>
-											<td>data</td>
-										</tr>
-										<tr>
-											<td>
-												<label class="custom-control custom-control-success custom-checkbox">
-													<input class="custom-control-input" type="checkbox">
-													<span class="custom-control-indicator"></span>
-												</label>
-											</td>
-											<td>data1</td>
-											<td>data2</td>
-											<td>data3</td>
-											<td>data</td>
-											<td>data</td>
-											<td>data</td>
-											<td>data</td>
-										</tr>
-									</tbody>
-								</table>
+								<div class="table-responsive">
+									<table class="table table-striped checkbox-board">
+										<colgroup>
+											<col style="width:5%">
+											<col style="width:10%">
+											<col style="width:10%">
+											<col style="width:20%">
+											<col>
+											<col style="width:15%">
+											<col style="width:10%">
+											<col style="width:8%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>
+													<label class="custom-control custom-control-success custom-checkbox">
+														<input class="custom-control-input" type="checkbox">
+														<span class="custom-control-indicator"></span>
+													</label>
+												</th>
+												<th>신청일</th>
+												<th>신청자</th>
+												<th>적용 정책</th>
+												<th>기존 정책</th>
+												<th>임시 정책</th>
+												<th>만료일</th>
+												<th>상태</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<label class="custom-control custom-control-success custom-checkbox">
+														<input class="custom-control-input" type="checkbox">
+														<span class="custom-control-indicator"></span>
+													</label>
+												</td>
+												<td>data1</td>
+												<td>data2</td>
+												<td>data3</td>
+												<td>data</td>
+												<td>data</td>
+												<td>data</td>
+												<td>data</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="custom-control custom-control-success custom-checkbox">
+														<input class="custom-control-input" type="checkbox">
+														<span class="custom-control-indicator"></span>
+													</label>
+												</td>
+												<td>data1</td>
+												<td>data2</td>
+												<td>data3</td>
+												<td>data</td>
+												<td>data</td>
+												<td>data</td>
+												<td>data</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 
 								<!-- 승인 반려 사유 -->
 								<div class="m-t-md">

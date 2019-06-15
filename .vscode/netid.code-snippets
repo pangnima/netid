@@ -47,13 +47,13 @@
 			"<label class=\"custom-control custom-control-success custom-checkbox\">",
 				"\t<input class=\"custom-control-input\" type=\"checkbox\">",
 				"\t<span class=\"custom-control-indicator\"></span>",
-				"\t<span class=\"custom-control-label\">전체선택</span>",
+				"\t<span class=\"custom-control-label\">${1: 텍스트}</span>",
 			"</label>"
 		],
 		"description": "디폴트 체크박스"
 	},
 
-	"inpute-default": {
+	"input-default": {
 		"scope": "html",
 		"prefix": "input-d",
 		"body": [
@@ -72,7 +72,7 @@
 			"<label class=\"custom-control custom-control-success custom-radio\">",
 				"<input class=\"custom-control-input\" name=\"success\" type=\"radio\" value=\"none\">",
 				"<span class=\"custom-control-indicator\"></span>",
-				"<span class=\"custom-control-label\">사용자용 (지정된 PC만 삭제 가능) </span>",
+				"<span class=\"custom-control-label\">${1: 텍스트}</span>",
 			"</label>"
 		],
 		"description": "디폴트 라디오버튼"
@@ -143,6 +143,25 @@
 						"\t\t\t</tr>",
 					"\t\t</tbody>",
 				"\t</table>",
+			"</div>",
+			"<div class=\"m-t-sm\">",
+				"\t<div class=\"view-list\">Show",
+					"\t\t<select name=\"\" id=\"\" class=\"form-control d-ib size-80\">",
+						"\t\t\t<option value=\"\">10</option>",
+						"\t\t\t<option value=\"\">15</option>",
+						"\t\t\t<option value=\"\">20</option>",
+					"\t\t</select> entires</div>",
+				"\t<div class=\"text-center\">",
+					"\t\t<ul class=\"pagination\">",
+						"\t\t\t<li class=\"previous\"><a href=\"#\" class=\"icon icon-angle-left\"></a></li>",
+						"\t\t\t<li class=\"active\"><span>1</span></li>",
+						"\t\t\t<li><a href=\"\">2</a></li>",
+						"\t\t\t<li><a href=\"\">3</a></li>",
+						"\t\t\t<li><a href=\"\">4</a></li>",
+						"\t\t\t<li><a href=\"\">5</a></li>",
+						"\t\t\t<li class=\"next\"><a href=\"#\" class=\"icon icon-angle-right\"></a></li>",
+					"\t\t</ul>",
+				"\t</div>",
 			"</div>"
 		],
 		"description": "스크롤 있는 테이블"

@@ -392,22 +392,43 @@
 							<tr>
 								<th>정책</th>
 								<td>
-									<select name="" id="" class="form-control d-ib size-a media-middle">
-										<option value="">전체</option>
-										<option value="">정책</option>
-										<option value="">정책항목</option>
-										<option value="">탐색기 복사/이동</option>
-									</select>
-									<select name="" id="" class="form-control d-ib size-a media-middle">
-										<option value="">생성</option>
-										<option value="">변경</option>
-										<option value="">삭제</option>
-										<option value="">이름변경</option>
-									</select>
-									<select name="" id="" class="form-control d-ib size-a media-middle">
-										<option value="">정책이름</option>
-										<option value="">수행아이디</option>
-									</select>
+									<div class="d-ib media-middle m-r-md">
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">날짜</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">정책</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">정책이름</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">대상구분</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">대상</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">적용/미적용</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">수행아디</span>
+										</label>
+									</div>
 									<input id="form-control-5" class="form-control d-ib size-xs media-middle" type="input" value="">
 									<button type="button" class="btn btn-default">검 색</button>
 								</td>
@@ -420,40 +441,50 @@
 					<div class="col-xs-12">
 						<div class="card">
 							<div class="card-body">
-								<table class="table table-striped">
-									<colgroup>
-										<col style="width:10%">
-										<col style="width:15%">
-										<col>
-										<col style="width:10%">
-										<col style="width:15%">
-									</colgroup>
-									<thead>
-										<tr>
-											<th>날짜</th>
-											<th>구분</th>
-											<th>정책이름</th>
-											<th>작업</th>
-											<th>수행아이디</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>test</td>
-											<td>data2</td>
-											<td>data3</td>
-											<td>data</td>
-											<td>data</td>
-										</tr>
-										<tr>
-											<td>data1</td>
-											<td>data2</td>
-											<td>data3</td>
-											<td>data3</td>
-											<td>data</td>
-										</tr>
-									</tbody>
-								</table>
+								<div class="table-responsive">
+									<table class="table table-striped table-left-td">
+										<colgroup>
+											<col style="width:10%">
+											<col style="width:10%">
+											<col>
+											<col style="width:10%">
+											<col style="width:10%">
+											<col style="width:10%">
+											<col style="width:10%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>날짜</th>
+												<th>적책</th>
+												<th>정책이름</th>
+												<th>대상구분</th>
+												<th>대상</th>
+												<th>적용/미적용</th>
+												<th>수행아이디</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>test</td>
+												<td>data2</td>
+												<td>data3</td>
+												<td>data</td>
+												<td>data</td>
+												<td>data</td>
+												<td>data</td>
+											</tr>
+											<tr>
+												<td>test</td>
+												<td>data2</td>
+												<td>data3</td>
+												<td>data</td>
+												<td>data</td>
+												<td>data</td>
+												<td>data</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 								<div class="m-t-sm">
 									<div class="view-list">Show 
 										<select name="" id="" class="form-control d-ib size-80">

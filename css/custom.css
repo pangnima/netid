@@ -1,6 +1,6 @@
 @import url(./font.css);
 body {font-family:"Noto Sans KR";}
-.layout-content-body {padding:15px 30px 35px;}
+.layout-content-body {padding:25px 30px 35px 40px;}
 /* 로고 */
 .navbar-brand-logo {height:60px;}
 .navbar-brand {padding:0;}
@@ -13,10 +13,13 @@ body {font-family:"Noto Sans KR";}
 .border-none {border:0;}
 
 /* 페이지 타이틀 */
-.page-title {display:table; margin-bottom:20px;}
+.page-title {display:table; margin-bottom:20px; padding-left:5px;}
 .page-title h2 {display:table-cell; min-width:250px; padding-right:50px; font-size:25px;}
 .page-title p {display:table-cell; padding-left:10px; border-left:solid 1px #ddd; vertical-align:middle;}
-
+@media screen and (max-width:640px) {
+	.page-title h2{display: block;}
+	.page-title p{display: block; border:0; padding:0;}
+}
 .page-title.sub {margin-bottom:0;}
 .page-title.sub h3 {font-size:16px;}
 .page-title.sub h3::before {content:""; display:inline-block; background:#13b6bc; width:4px; height:15px; margin-right:4px; vertical-align:-2px;}
@@ -63,17 +66,13 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 
 /* 셀렉트 박스 크기 변경 */
 .form-control.size-a {width:auto;}
-.form-control.size-xs {width:15%;}
-.form-control.size-s {width:30%;}
-.form-control.size-m {width:50%;}
+.form-control.size-xs {width:15%; min-width:200px;}
+.form-control.size-s {width:30%; min-width:250px;}
+.form-control.size-m {width:50%; min-width:300px;}
 .form-control.size-l {width:70%;}
 .form-control.size-80 {max-width:80px; margin:0 auto;}
 .form-control.size-100 {max-width:100px;}
 .form-control.size-200 {max-width:200px;}
-
-
-
-
 
 
 /* 컬러 색상 변경 */
