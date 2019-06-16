@@ -124,8 +124,10 @@
 						<h1 class="title-bar-title">
 							<ul>
 								<li>HOME</li>
-								<li>공통작업</li>
-								<li><strong>임시 정책 승인</strong></li>
+								<li>Basic</li>
+								<li>문서함 관리</li>
+								<li>폴더 관리</li>
+								<li><strong>폴더 용량 추가 요청 처리</strong></li>
 							</ul>
 						</h1>
 					</div>
@@ -356,13 +358,15 @@
 			<div class="layout-content-body">
 				<div class="row gutter-xs">
 					<div class="page-title">
-						<h2>임시 정책 승인</h2>
-						<p>관리자 승인 후 신청 기간 동안 로컬 디스크 쓰기 권한이 부여됩니다.</p>
+						<h2>검색 항목 선택</h2>
 					</div>
 				</div>
 
 				<div class="row gutter-xs m-b-lg">
 					<div class="col-xs-12">
+						<div class="text-right m-b-sm">
+							<button class="btn btn-default" type="button">엑셀(CSV) 파일로 저장</button>
+						</div>
 						<table class="table table-bordered type-1">
 							<tr>
 								<th>도메인 선택</th>
@@ -410,27 +414,27 @@
 										<label class="custom-control custom-control-success custom-checkbox">
 											<input class="custom-control-input" type="checkbox">
 											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">문서함</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">폴더 경로</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
 											<span class="custom-control-label">신청자</span>
 										</label>
 										<label class="custom-control custom-control-success custom-checkbox">
 											<input class="custom-control-input" type="checkbox">
 											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">적용 정책</span>
+											<span class="custom-control-label">현재용량</span>
 										</label>
 										<label class="custom-control custom-control-success custom-checkbox">
 											<input class="custom-control-input" type="checkbox">
 											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">기존 정책</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">임시 정책</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">만료일</span>
+											<span class="custom-control-label">신청용량</span>
 										</label>
 										<label class="custom-control custom-control-success custom-checkbox">
 											<input class="custom-control-input" type="checkbox">
@@ -465,13 +469,12 @@
 									<table class="table table-striped checkbox-board">
 										<colgroup>
 											<col style="width:5%">
-											<col style="width:10%">
-											<col style="width:10%">
-											<col style="width:20%">
 											<col>
-											<col style="width:15%">
-											<col style="width:10%">
-											<col style="width:8%">
+											<col>
+											<col>
+											<col>
+											<col>
+											<col>
 										</colgroup>
 										<thead>
 											<tr>
@@ -482,11 +485,11 @@
 													</label>
 												</th>
 												<th>신청일</th>
+												<th>문서함</th>
+												<th>폴더 경로</th>
 												<th>신청자</th>
-												<th>적용 정책</th>
-												<th>기존 정책</th>
-												<th>임시 정책</th>
-												<th>만료일</th>
+												<th>현재용량</th>
+												<th>신청용량</th>
 												<th>상태</th>
 											</tr>
 										</thead>
