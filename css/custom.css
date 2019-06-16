@@ -222,10 +222,7 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 /* input 관련 */
 .input-icon {position:absolute; top:2px; left:2px; z-index:2;}
 .text-red {color:#fd442b;}
-.text-blue {color: #007aa9;}
 .input-group-addon.ip-span {min-width:34px; height:34px; line-height:1.5;}
-select.ipopen {display:inline-block; max-width:120px;}
-
 
 /* width */
 .w10p {width:10%!important;}
@@ -241,3 +238,5 @@ select.ipopen {display:inline-block; max-width:120px;}
 .b-top {border-top:solid 1px #e7e7ec!important;}
 .popup_date_btn {margin-left: 57px;}
 
+/* font-color */
+.color-blue {color: #007aa9;}
