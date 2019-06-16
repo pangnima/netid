@@ -124,8 +124,10 @@
 						<h1 class="title-bar-title">
 							<ul>
 								<li>HOME</li>
-								<li>공통작업</li>
-								<li><strong>임시 정책 승인</strong></li>
+								<li>Basic</li>
+								<li>로그인 제어</li>
+								<li>IP 인증</li>
+								<li><strong>IP 인증 생성</strong></li>
 							</ul>
 						</h1>
 					</div>
@@ -354,13 +356,7 @@
 		</div>
 		<div class="layout-content">
 			<div class="layout-content-body">
-				<div class="row gutter-xs">
-					<div class="page-title">
-						<h2>임시 정책 승인</h2>
-						<p>관리자 승인 후 신청 기간 동안 로컬 디스크 쓰기 권한이 부여됩니다.</p>
-					</div>
-				</div>
-
+				<!-- 컨텐츠 시작 -->
 				<div class="row gutter-xs m-b-lg">
 					<div class="col-xs-12">
 						<table class="table table-bordered type-1">
@@ -368,197 +364,65 @@
 								<th>도메인 선택</th>
 								<td>
 									<select name="" id="" class="form-control domain">
-										<option value="">기본</option>
+										<option value="">기본인증IP</option>
+										<option value="">추가인증IP</option>
+										<option value="">안전인증IP</option>
 									</select>
-									<input id="form-control-5" class="form-control domain" type="input" value="기본도메인" readonly="readonly">
+									<input id="form-control-5" class="form-control domain" type="input" value="">
+									<button class="btn btn-default" type="button">찾아보기</button>
 								</td>
 							</tr>
 							<tr>
-								<th>기간 선택</th>
+								<th>시작IP</th>
 								<td>
-									<div class="input-group input-daterange" data-provide="datepicker" data-date-autoclose="true" data-date-format="dd-M-yyyy">
-										<div class="input-with-icon">
-											<input class="form-control" type="text" data-provide="datepicker">
-											<span class="icon icon-calendar input-icon"></span>
-										</div>
-										<span class="input-group-addon">~</span>
-										<div class="input-with-icon">
-											<input class="form-control" type="text" data-provide="datepicker">
-											<span class="icon icon-calendar input-icon"></span>
-										</div>
-									</div>
 									<div>
-										<button class="btn btn-default btn-sm" type="button">당일</button>
-										<button class="btn btn-default btn-sm" type="button">7일</button>
-										<button class="btn btn-default btn-sm" type="button">1개월</button>
-										<button class="btn btn-default btn-sm" type="button">3개월</button>
-										<button class="btn btn-default btn-sm" type="button">6개월</button>
-										<button class="btn btn-default btn-sm" type="button">1년</button>
-										<button class="btn btn-default btn-sm" type="button">3년</button>
+										<input class="form-control d-ib size-80" type="text">.
+										<input class="form-control d-ib size-80" type="text">.
+										<input class="form-control d-ib size-80" type="text">.
+										<input class="form-control d-ib size-80" type="text">
 									</div>
 								</td>
 							</tr>
 							<tr>
-								<th>검색어</th>
+								<th>끝IP</th>
 								<td>
-									<div class="d-ib m-r-md media-middle">
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">신청일</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">신청자</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">적용 정책</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">기존 정책</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">임시 정책</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">만료일</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">상태</span>
-										</label>
+									<div>
+										<input class="form-control d-ib size-80" type="text">.
+										<input class="form-control d-ib size-80" type="text">.
+										<input class="form-control d-ib size-80" type="text">.
+										<input class="form-control d-ib size-80" type="text">
 									</div>
-
-									<div class="input-with-icon d-ib media-middle">
-										<input class="form-control" type="text" placeholder="Search…">
-										<span class="icon icon-search input-icon"></span>
+								</td>
+							</tr>
+							<tr>
+								<th>시작일</th>
+								<td>
+									<div class="input-with-icon size-a d-ib">
+										<input class="form-control" type="text" data-provide="datepicker">
+										<span class="icon icon-calendar input-icon"></span>
 									</div>
-
-									<button class="btn btn-default media-middle" type="button">검색</button>
+								</td>
+							</tr>
+							<tr>
+								<th>종료일</th>
+								<td>
+									<select name="" id="" class="form-control d-ib size-a">
+										<option value="">제한없음</option>
+										<option value="">직적입력</option>
+									</select>
+									<div class="input-with-icon size-a d-ib">
+										<input class="form-control" type="text" data-provide="datepicker">
+										<span class="icon icon-calendar input-icon"></span>
+									</div>
 								</td>
 							</tr>
 						</table>
 						<div class="text-center">
-							<button type="button" class="btn btn-default bnt-side-30">검 색</button>
+							<button class="btn btn-success" type="button">확인</button>
 						</div>
 					</div>
 				</div>
-
-				<div class="row gutter-xs">
-					<div class="col-xs-12">
-						<div class="card">
-							<div class="card-header">
-								<p class="m-t-md m-b-0">showing 1 to 10 of 57 entries</p>
-							</div>
-							<div class="card-body">
-								<div class="table-responsive">
-									<table class="table table-striped checkbox-board">
-										<colgroup>
-											<col style="width:5%">
-											<col style="width:10%">
-											<col style="width:10%">
-											<col style="width:20%">
-											<col>
-											<col style="width:15%">
-											<col style="width:10%">
-											<col style="width:8%">
-										</colgroup>
-										<thead>
-											<tr>
-												<th>
-													<label class="custom-control custom-control-success custom-checkbox">
-														<input class="custom-control-input" type="checkbox">
-														<span class="custom-control-indicator"></span>
-													</label>
-												</th>
-												<th>신청일</th>
-												<th>신청자</th>
-												<th>적용 정책</th>
-												<th>기존 정책</th>
-												<th>임시 정책</th>
-												<th>만료일</th>
-												<th>상태</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>
-													<label class="custom-control custom-control-success custom-checkbox">
-														<input class="custom-control-input" type="checkbox">
-														<span class="custom-control-indicator"></span>
-													</label>
-												</td>
-												<td>data1</td>
-												<td>data2</td>
-												<td>data3</td>
-												<td>data</td>
-												<td>data</td>
-												<td>data</td>
-												<td>data</td>
-											</tr>
-											<tr>
-												<td>
-													<label class="custom-control custom-control-success custom-checkbox">
-														<input class="custom-control-input" type="checkbox">
-														<span class="custom-control-indicator"></span>
-													</label>
-												</td>
-												<td>data1</td>
-												<td>data2</td>
-												<td>data3</td>
-												<td>data</td>
-												<td>data</td>
-												<td>data</td>
-												<td>data</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-
-								<!-- 승인 반려 사유 -->
-								<div class="m-t-md">
-									<div class="form-group text-center">
-										<label for="reason" class="control-label">승인 / 반려 사유 :</label>
-										<input id="reason" class="form-control d-ib size-m media-middle m-l-sm" type="text" name="text">
-										<button class="btn btn-success m-l-sm" type="button">승인</button>
-										<button class="btn btn-default" type="button">반려</button>
-									</div>
-								</div>
-								<!-- //승인 반려 사유 -->
-
-								<div class="m-t-sm">
-									<div class="view-list">Show 
-										<select name="" id="" class="form-control d-ib size-80">
-											<option value="">10</option>
-											<option value="">15</option>
-											<option value="">20</option>
-										</select> entires</div>
-									<div class="text-center">
-										<ul class="pagination">
-											<li class="previous"><a href="#" class="icon icon-angle-left"></a></li>
-											<li class="active"><span>1</span></li>
-											<li><a href="">2</a></li>
-											<li><a href="">3</a></li>
-											<li><a href="">4</a></li>
-											<li><a href="">5</a></li>
-											<li class="next"><a href="#" class="icon icon-angle-right"></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				<!-- // 컨텐츠 종료 -->
 			</div>
 		</div>
 		<div class="layout-footer">
