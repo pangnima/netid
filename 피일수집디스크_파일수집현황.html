@@ -124,8 +124,8 @@
 						<h1 class="title-bar-title">
 							<ul>
 								<li>HOME</li>
-								<li>BackupDoc</li>
-								<li><strong>백업 현황</strong></li>
+								<li>파일수집디스크</li>
+								<li><strong>파일수집현황</strong></li>
 							</ul>
 						</h1>
 					</div>
@@ -356,93 +356,84 @@
 			<div class="layout-content-body">
 				<div class="row gutter-xs">
 					<div class="page-title">
-						<h2>백업 현황</h2>
+						<h2>파일 수집 현황</h2>
+						<p>각 사용자들의 파일 수집 상태를 모니터링 할 수 있습니다.</p>
 					</div>
 				</div>
-
-				<div class="row gutter-xs m-b-lg">
-					<div class="col-xs-12">
-						<table class="table table-bordered type-1">
-							<tr>
-								<th colspan="2" class="table-title">검색 값 설정</th>
-							</tr>
-							<tr>
-								<th>백업 날짜</th>
-								<td>
-									<div class="input-group input-daterange" data-provide="datepicker" data-date-autoclose="true" data-date-format="dd-M-yyyy">
-										<div class="input-with-icon">
-											<input class="form-control" type="text" data-provide="datepicker">
-											<span class="icon icon-calendar input-icon"></span>
-										</div>
-										<span class="input-group-addon">~</span>
-										<div class="input-with-icon">
-											<input class="form-control" type="text" data-provide="datepicker">
-											<span class="icon icon-calendar input-icon"></span>
-										</div>
-									</div>
-									<div>
-										<button class="btn btn-default btn-sm" type="button">당일</button>
-										<button class="btn btn-default btn-sm" type="button">7일</button>
-										<button class="btn btn-default btn-sm" type="button">1개월</button>
-										<button class="btn btn-default btn-sm" type="button">3개월</button>
-										<button class="btn btn-default btn-sm" type="button">6개월</button>
-										<button class="btn btn-default btn-sm" type="button">1년</button>
-										<button class="btn btn-default btn-sm" type="button">3년</button>
-									</div>
-								</td>
-							</tr>
-						</table>
-						<div class="text-center">
-							<button type="button" class="btn btn-default bnt-side-30">검 색</button>
-						</div>
-					</div>
-				</div>
-
 				<div class="row gutter-xs">
 					<div class="col-xs-12">
 						<div class="card">
 							<div class="card-header">
-								<div class="page-title sub">
-									<h3>백업현황 목록</h3>
+								<div class="text-right">
+									<button class="btn btn-default m-b-sm" type="button">엑셀(CSV 파일로 저장)</button>
 								</div>
+								<div class="text-right">
+									<select name="" id="" class="form-control media-middle d-ib size-a">
+										<option value="">상태전체</option>
+										<option value="">프로그램 시작</option>
+										<option value="">수집 시작</option>
+										<option value="">용량 계산 중</option>
+										<option value="">용량 계산 완료</option>
+										<option value="">디스크 생성 중</option>
+										<option value="">디스크 생성 완료</option>
+										<option value="">용량 부족</option>
+										<option value="">복사/암호화 진행중</option>
+										<option value="">복사/암호화 완료</option>
+										<option value="">부분 수집 완료</option>
+										<option value="">수집 완료</option>
+										<option value="">완전 삭제 시작</option>
+										<option value="">완전 삭제 완료</option>
+										<option value="">(개인/공동 컴퓨터)수집 안함</option>
+										<option value="">수집 취소</option>
+									</select>
+									<select name="" id="" class="form-control media-middle d-ib size-a">
+										<option value="">이름</option>
+										<option value="">아이디</option>
+									</select>
+									<input id="pw" class="form-control media-middle size-200 d-ib" type="password">
+									<button class="btn btn-default" type="button">검색</button>
+								</div>
+								<p class="search-page">showing 1 to 10 of 57 entries</p>
 							</div>
 							<div class="card-body">
 								<div class="table-responsive">
 									<table class="table table-striped table-left-td">
 										<thead>
 											<tr>
-												<th>작업일</th>
-												<th>작업</th>
-												<th>백업 결과</th>
-												<th>백업 이름</th>
-												<th>백업 경로</th>
-												<th>전송<br>파일 수</th>
-												<th>전송 용량</th>
+												<th>이름(아이디)</th>
+												<th>부서</th>
+												<th>IP</th>
+												<th>디바이스</th>
+												<th>파일 수<br>(성공한 파일 수/전체 파일 수)</th>
+												<th>파일 크기<br>(성공한 파일 크기/전체 파일 크기)</th>
+												<th>상태</th>
+												<th>로그</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
-												<td>data1</td>
-												<td>data2</td>
-												<td>data3</td>
-												<td>data</td>
-												<td>data</td>
-												<td>data</td>
-												<td>data</td>
+												<td>test</td>
+												<td>test</td>
+												<td>test</td>
+												<td>test</td>
+												<td>test</td>
+												<td>test</td>
+												<td>test</td>
+												<td>test</td>
 											</tr>
 											<tr>
-												<td>data1</td>
-												<td>data2</td>
-												<td>data3</td>
-												<td>data</td>
-												<td>data</td>
-												<td>data</td>
-												<td>data</td>
+												<td>test</td>
+												<td>test</td>
+												<td>test</td>
+												<td>test</td>
+												<td>test</td>
+												<td>test</td>
+												<td>test</td>
+												<td>test</td>
 											</tr>
 										</tbody>
 									</table>
 								</div>
-
 								<div class="m-t-sm">
 									<div class="view-list">Show 
 										<select name="" id="" class="form-control d-ib size-80">

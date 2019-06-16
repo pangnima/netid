@@ -124,8 +124,8 @@
 						<h1 class="title-bar-title">
 							<ul>
 								<li>HOME</li>
-								<li>BackupDoc</li>
-								<li><strong>백업 현황</strong></li>
+								<li>인쇄 로그</li>
+								<li><strong>인쇄 현황</strong></li>
 							</ul>
 						</h1>
 					</div>
@@ -356,18 +356,19 @@
 			<div class="layout-content-body">
 				<div class="row gutter-xs">
 					<div class="page-title">
-						<h2>백업 현황</h2>
+						<h2>인쇄 현황</h2>
+						<p>프린터에서 인쇄한 모든 인쇄 일시, 문서명, 인쇄 페이지 수 등의 이력을 볼 수 있습니다.</p>
 					</div>
 				</div>
 
 				<div class="row gutter-xs m-b-lg">
 					<div class="col-xs-12">
+						<div class="text-right">
+							<button class="btn btn-default m-b-sm" type="button">엑셀(CSV) 파일로 저장</button>
+						</div>
 						<table class="table table-bordered type-1">
 							<tr>
-								<th colspan="2" class="table-title">검색 값 설정</th>
-							</tr>
-							<tr>
-								<th>백업 날짜</th>
+								<th>기간 선택</th>
 								<td>
 									<div class="input-group input-daterange" data-provide="datepicker" data-date-autoclose="true" data-date-format="dd-M-yyyy">
 										<div class="input-with-icon">
@@ -391,10 +392,55 @@
 									</div>
 								</td>
 							</tr>
+							<tr>
+								<th>검색어</th>
+								<td>
+									<div class="d-ib m-r-md media-middle">
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">인쇄일시</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">사용자</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">문서명</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">인쇄 페이지 수</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">프린터 이름</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">IP</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">출력 프로세스</span>
+										</label>
+									</div>
+
+									<div class="input-with-icon d-ib media-middle">
+										<input class="form-control" type="text" placeholder="Search…">
+										<span class="icon icon-search input-icon"></span>
+									</div>
+									<button class="btn btn-default media-middle" type="button">검색</button>
+								</td>
+							</tr>
 						</table>
-						<div class="text-center">
-							<button type="button" class="btn btn-default bnt-side-30">검 색</button>
-						</div>
 					</div>
 				</div>
 
@@ -402,22 +448,20 @@
 					<div class="col-xs-12">
 						<div class="card">
 							<div class="card-header">
-								<div class="page-title sub">
-									<h3>백업현황 목록</h3>
-								</div>
+								<p class="m-t-dm m-b-0">showing 1 to 10 of 57 entries</p>
 							</div>
 							<div class="card-body">
 								<div class="table-responsive">
 									<table class="table table-striped table-left-td">
 										<thead>
 											<tr>
-												<th>작업일</th>
-												<th>작업</th>
-												<th>백업 결과</th>
-												<th>백업 이름</th>
-												<th>백업 경로</th>
-												<th>전송<br>파일 수</th>
-												<th>전송 용량</th>
+												<th>인쇄일시</th>
+												<th>사용자</th>
+												<th>문서명</th>
+												<th>인쇄 페이지 수</th>
+												<th>프린터 이름</th>
+												<th>IP</th>
+												<th>출력 프로세스</th>
 											</tr>
 										</thead>
 										<tbody>

@@ -176,4 +176,14 @@
 		"description": "서브 타이틀"
 	},
 
+	"page-entries2": {
+		"scope": "html",
+		"prefix": "page2",
+		"body": [
+			"<p class=\"m-t-dm m-b-0\">showing 1 to 10 of 57 entries</p>"
+		],
+		"description": "서브 타이틀"
+	},
+
+
 }
