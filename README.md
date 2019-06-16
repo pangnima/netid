@@ -136,6 +136,3 @@
 		border-left-style: solid;
 		border-left-width: 1px
 	}
-
-### 테스트
-3
