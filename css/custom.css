@@ -222,7 +222,7 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 /* input 관련 */
 .input-icon {position:absolute; top:2px; left:2px; z-index:2;}
 .text-red {color:#fd442b;}
-.input-group-addon.ip-span {min-width:34px; height:34px; line-height:1.5;}
+.input-group-addon.tilde-height {min-width:34px; height:34px; line-height:1.5;}
 
 /* width */
 .w10p {width:10%!important;}
