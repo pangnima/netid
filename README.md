@@ -298,8 +298,8 @@
 
 
 ### float 관련
-.pull-left {float: left!important}
-.pull-right {float: right!important}
+	.pull-left {float: left!important}
+	.pull-right {float: right!important}
 
 
 
