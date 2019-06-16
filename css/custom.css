@@ -72,6 +72,7 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 .form-control.size-s {width:30%; min-width:250px;}
 .form-control.size-m {width:50%; min-width:300px;}
 .form-control.size-l {width:70%;}
+.form-control.size-50 {max-width:50px; margin:0 auto;}
 .form-control.size-80 {max-width:80px; margin:0 auto;}
 .form-control.size-100 {max-width:100px;}
 .form-control.size-200 {max-width:200px;}
@@ -221,6 +222,7 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 /* input 관련 */
 .input-icon {position:absolute; top:2px; left:2px; z-index:2;}
 .text-red {color:#fd442b;}
+.input-group-addon.ip-span {min-width:34px; height:34px; line-height:1.5;}
 
 /* width */
 .w10p {width:10%!important;}
@@ -235,3 +237,4 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 /* popup 관련 */
 .b-top {border-top:solid 1px #e7e7ec!important;}
 .popup_date_btn {margin-left: 57px;}
+
