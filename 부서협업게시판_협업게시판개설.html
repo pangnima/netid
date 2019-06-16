@@ -127,8 +127,8 @@
 								<li>Basic</li>
 								<li>공유·협업</li>
 								<li>협업게시판</li>
-								<li>일반협업게시판</li>
-								<li><strong>개설요청처리</strong></li>
+								<li>부서협업게시판</li>
+								<li><strong>협업게시판개설</strong></li>
 							</ul>
 						</h1>
 					</div>
@@ -359,102 +359,36 @@
 			<div class="layout-content-body">
 				<div class="row gutter-xs">
 					<div class="page-title">
-						<h2>개설요청처리</h2>
+						<h2>기본정보</h2>
 					</div>
 				</div>
 
-				<div class="row gutter-xs">
+				<div class="row gutter-xs m-b-lg">
 					<div class="col-xs-12">
-						<div class="card">
-							<div class="card-header">
-								<p class="m-t-md m-b-0">showing 1 to 10 of 57 entries</p>
-							</div>
-							<div class="card-body">
-								<div class="table-responsive">
-									<table class="table table-striped checkbox-board">
-										<colgroup>
-											<col style="width:5%">
-											<col>
-											<col>
-											<col>
-											<col>
-											<col>
-										</colgroup>
-										<thead>
-											<tr>
-												<th>
-													<label class="custom-control custom-control-success custom-checkbox">
-														<input class="custom-control-input" type="checkbox">
-														<span class="custom-control-indicator"></span>
-													</label>
-												</th>
-												<th>협업게시판이름</th>
-												<th>카테고리 이름</th>
-												<th>요청자</th>
-												<th>요청일</th>
-												<th>개설사유</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>
-													<label class="custom-control custom-control-success custom-checkbox">
-														<input class="custom-control-input" type="checkbox">
-														<span class="custom-control-indicator"></span>
-													</label>
-												</td>
-												<td>data1</td>
-												<td>data2</td>
-												<td>data3</td>
-												<td>data</td>
-												<td>data</td>
-											</tr>
-											<tr>
-												<td>
-													<label class="custom-control custom-control-success custom-checkbox">
-														<input class="custom-control-input" type="checkbox">
-														<span class="custom-control-indicator"></span>
-													</label>
-												</td>
-												<td>data1</td>
-												<td>data2</td>
-												<td>data3</td>
-												<td>data</td>
-												<td>data</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-
-								<!-- 승인 반려 사유 -->
-								<div class="m-t-md">
-									<div class="form-group text-center">
-										<button class="btn btn-success m-l-sm" type="button">승인</button>
-										<button class="btn btn-default" type="button">반려</button>
-									</div>
-								</div>
-								<!-- //승인 반려 사유 -->
-
-								<div class="m-t-sm">
-									<div class="view-list">Show 
-										<select name="" id="" class="form-control d-ib size-80">
-											<option value="">10</option>
-											<option value="">15</option>
-											<option value="">20</option>
-										</select> entires</div>
-									<div class="text-center">
-										<ul class="pagination">
-											<li class="previous"><a href="#" class="icon icon-angle-left"></a></li>
-											<li class="active"><span>1</span></li>
-											<li><a href="">2</a></li>
-											<li><a href="">3</a></li>
-											<li><a href="">4</a></li>
-											<li><a href="">5</a></li>
-											<li class="next"><a href="#" class="icon icon-angle-right"></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
+						<table class="table table-bordered type-1">
+							<tr>
+								<th>부서(협업게시판이름)</th>
+								<td>
+									<input class="form-control d-ib size-a media-middle" type="text" readonly>
+									<button class="btn btn-default media-middle" type="button">선택</button>
+								</td>
+							</tr>
+							<tr>
+								<th>관리자</th>
+								<td>
+									<input class="form-control d-ib size-a media-middle" type="text" readonly>
+									<button class="btn btn-default media-middle" type="button">선택</button>
+								</td>
+							</tr>
+							<tr>
+								<th>소개</th>
+								<td>
+									<textarea class="form-control" name="" id="" cols="30" rows="5"></textarea>
+								</td>
+							</tr>
+						</table>
+						<div class="text-center">
+							<button class="btn btn-success" type="button">확인</button>
 						</div>
 					</div>
 				</div>

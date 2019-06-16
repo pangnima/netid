@@ -70,9 +70,9 @@
 		"prefix": "radio-d",
 		"body": [
 			"<label class=\"custom-control custom-control-success custom-radio\">",
-				"<input class=\"custom-control-input\" name=\"success\" type=\"radio\" value=\"none\">",
-				"<span class=\"custom-control-indicator\"></span>",
-				"<span class=\"custom-control-label\">${1: 텍스트}</span>",
+				"\t<input class=\"custom-control-input\" name=\"success\" type=\"radio\" value=\"none\">",
+				"\t<span class=\"custom-control-indicator\"></span>",
+				"\t<span class=\"custom-control-label\">${1: 텍스트}</span>",
 			"</label>"
 		],
 		"description": "디폴트 라디오버튼"

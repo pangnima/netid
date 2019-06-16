@@ -1,5 +1,6 @@
 @import url(./font.css);
-body {font-family:"Noto Sans KR";}
+body {font-family:"Noto Sans KR"; color: #737373;}
+a {color:#7d7d8e; text-decoration: none;}
 .layout-content-body {padding:25px 30px 35px 40px;}
 /* 로고 */
 .navbar-brand-logo {height:60px;}
