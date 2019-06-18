@@ -102,9 +102,6 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 .pagination > .active > a , .pagination > .active > a:focus , .pagination > .active > a:hover , .pagination > .active > span , .pagination > .active > span:focus , .pagination > .active > span:hover {background-color:#13b6bc; border-color:#13b6bc;}
 
 /* 버튼 커스텀 추가 */
-.bnt-side-10 {padding-right:10px; padding-left:10px;}
-.bnt-side-20 {padding-right:20px; padding-left:20px;}
-.bnt-side-30 {padding-right:30px; padding-left:30px;}
 .btn-basic , .btn-basic:hover , .btn-basic:active , .btn-basic:focus {background:#25c6cb; color:#fff;}
 
 /* 초기화 */
