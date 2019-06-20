@@ -40,7 +40,8 @@ a {color:#7d7d8e; text-decoration: none;}
 .table > tbody > tr > td , .table > tbody > tr > th , .table > tfoot > tr > td , .table > tfoot > tr > th , .table > thead > tr > td , .table > thead > tr > th {vertical-align:middle;}
 .table > thead > tr > th , .table > tbody > tr > th {font-size:15px;}
 .table > tbody > tr > td {font-size:14px;}
-.table-left-td td {border-left:solid 1px #e7e7ec;}
+.table-color {background:#f9f9f9;}
+.table-left-td td {border-left:solid 1px #e7e7ec; border-bottom: solid 1px #e7e7ec;}
 .table-left-td td:first-child {border-left:0;}
 
 .table tr:last-child th , .table tr:last-child td {border-bottom:solid 1px #e7e7ec;}
@@ -61,9 +62,19 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 
 
 /* card-header */
-.card-header {margin:0 5px;}
+.card-header {margin:0 5px; position: relative;}
+.card-header h3 {font-size:15px; margin:0;}
+.card-header h3 .icon-info-circle { font-size:12px; color:#13b6bc; margin-left:4px;}
+.card-header .card-action.icon-plus {position:absolute; top:50%; right:10px; color:#13b6bc; font-size:20px; transform:translateY(-50%);}
+
+.card-header.green {background: #13b6bc; color:#fff; font-size:17px; margin:0;}
 .card-header .search-page {position:absolute; left:10px; bottom:5px; margin:0;}
 
+
+/* 리스트그룹 */
+.list-group li {position:relative; font-size:15px; cursor:pointer;}
+.list-group li:hover {background:#fffced;}
+.list-group li button.icon-ellipsis-v {position: absolute; top:50%; right:10px; transform: translateY(-50%);}
 
 
 
@@ -79,18 +90,18 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 .form-control.size-100 {max-width:100px;}
 .form-control.size-200 {max-width:200px;}
 
-.size-xs-1 {width:8.333333%;}
-.size-xs-2 {width:16.666667%;}
-.size-xs-3 {width:25%;}
-.size-xs-4 {width:33.333333%;}
-.size-xs-5 {width:41.666667%;}
-.size-xs-6 {width:50%;}
-.size-xs-7 {width:58.333333%;}
-.size-xs-8 {width:66.666667%;}
-.size-xs-9 {width:75%;}
-.size-xs-10 {width:83.333333%;}
-.size-xs-11 {width:91.666667%;}
-.size-xs-12 {width:100%;}
+.size-xs-1 {width:8.333333% !important;}
+.size-xs-2 {width:16.666667% !important;}
+.size-xs-3 {width:25% !important;}
+.size-xs-4 {width:33.333333% !important;}
+.size-xs-5 {width:41.666667% !important;}
+.size-xs-6 {width:50% !important;}
+.size-xs-7 {width:58.333333% !important;}
+.size-xs-8 {width:66.666667% !important;}
+.size-xs-9 {width:75% !important;}
+.size-xs-10 {width:83.333333% !important;}
+.size-xs-11 {width:91.666667% !important;}
+.size-xs-12 {width:100% !important;}
 
 
 
@@ -105,8 +116,8 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 /* 버튼 커스텀 추가 */
 .btn-basic , .btn-basic:hover , .btn-basic:active , .btn-basic:focus {background:#25c6cb; color:#fff;}
 
-/* 초기화 */
-.margin-0 {margin:0;}
+/* bordercolor */
+.border-color-f1 {border-color:#f1f1f1;}
 
 /* 폰트두께 */
 .font-n {font-weight:normal;}
