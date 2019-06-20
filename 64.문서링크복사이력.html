@@ -123,10 +123,11 @@
 					<div class="title-bar">
 						<h1 class="title-bar-title">
 							<ul>
-								<li>HOME</li>
+								<li><span class="icon icon-home"></span>HOME</li>
 								<li>Basic</li>
-								<li>사용프로그램 배포</li>
-								<li><strong>승인 이력</strong></li>
+								<li>공유·협업</li>
+								<li>문서링크</li>
+								<li><strong>문서링크복사 이력</strong></li>
 							</ul>
 						</h1>
 					</div>
@@ -357,14 +358,14 @@
 			<div class="layout-content-body">
 				<div class="row gutter-xs">
 					<div class="page-title">
-						<h2>승인 이력</h2>
+						<h2>문서링크복사 이력</h2>
 					</div>
 				</div>
 
 				<div class="row gutter-xs m-b-lg">
 					<div class="col-xs-12">
-						<div class="text-right m-b-sm">
-							<button class="btn btn-default" type="button">엑실(CSV) 파일로 저장</button>
+						<div class="text-right">
+							<button class="btn btn-default m-b-sm" type="button">엑셀(CSV) 파일로 저장</button>
 						</div>
 						<table class="table table-bordered type-1">
 							<tr>
@@ -395,21 +396,53 @@
 							<tr>
 								<th>검색어</th>
 								<td>
-									<div class="d-ib m-r-md media-middle">
+									<div class="m-b-sm">
 										<label class="custom-control custom-control-success custom-checkbox">
 											<input class="custom-control-input" type="checkbox">
 											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">작성일</span>
+											<span class="custom-control-label">상태전체</span>
 										</label>
 										<label class="custom-control custom-control-success custom-checkbox">
 											<input class="custom-control-input" type="checkbox">
 											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">프로그램 이름</span>
+											<span class="custom-control-label">승인대기</span>
 										</label>
 										<label class="custom-control custom-control-success custom-checkbox">
 											<input class="custom-control-input" type="checkbox">
 											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">작성자</span>
+											<span class="custom-control-label">승인완료</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">승인취소</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">승인거절</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">완료</span>
+										</label>
+									</div>
+									<div class="m-b-sm">
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">발송자 아이디</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">발송자</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">승인권자 아이디</span>
 										</label>
 										<label class="custom-control custom-control-success custom-checkbox">
 											<input class="custom-control-input" type="checkbox">
@@ -419,7 +452,22 @@
 										<label class="custom-control custom-control-success custom-checkbox">
 											<input class="custom-control-input" type="checkbox">
 											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">상태</span>
+											<span class="custom-control-label">제목</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">부서</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">파일명</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">파일 확장자</span>
 										</label>
 									</div>
 
@@ -428,7 +476,7 @@
 										<span class="icon icon-search input-icon"></span>
 									</div>
 
-									<button class="btn btn-default media-middle" type="button">검색</button>
+									<button class="btn btn-default" type="button">검색</button>
 								</td>
 							</tr>
 						</table>
@@ -447,31 +495,30 @@
 										<thead>
 											<tr>
 												<th>작성일</th>
-												<th>프로그램 이름</th>
-												<th>작성자</th>
+												<th>파일명</th>
+												<th>발송자</th>
 												<th>승인권자</th>
 												<th>상태</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
-												<td>data1</td>
-												<td>data2</td>
-												<td>data3</td>
-												<td>data</td>
-												<td>data</td>
+												<td>test</td>
+												<td>test</td>
+												<td>test</td>
+												<td>test</td>
+												<td>test</td>
 											</tr>
 											<tr>
-												<td>data1</td>
-												<td>data2</td>
-												<td>data3</td>
-												<td>data</td>
-												<td>data</td>
+												<td>test</td>
+												<td>test</td>
+												<td>test</td>
+												<td>test</td>
+												<td>test</td>
 											</tr>
 										</tbody>
 									</table>
 								</div>
-
 								<div class="m-t-sm">
 									<div class="view-list">Show 
 										<select name="" id="" class="form-control d-ib size-80">

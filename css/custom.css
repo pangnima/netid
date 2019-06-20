@@ -30,7 +30,8 @@ a {color:#7d7d8e; text-decoration: none;}
 .title-bar-title ul {margin:0; padding:0;}
 .title-bar-title ul li {display:inline-block; line-height:1; font-size:12px; vertical-align:bottom; list-style:none;}
 .title-bar-title ul li::before {content:">"; display:inline-block; margin-right:4px;}
-.title-bar-title ul li:first-child::before {content:"\f015"; font-size:17px; vertical-align:bottom;}
+.title-bar-title ul li:first-child span {font-size:17px; margin-right:4px;}
+.title-bar-title ul li:first-child::before {content:"";}
 .navbar-default .sidenav-toggler .bar-line.in {background-color:#13b6bc ;}
 .navbar .langs {height:60px;}
 .navbar-toggleable {border-bottom:solid 1px #eee;}
@@ -44,7 +45,7 @@ a {color:#7d7d8e; text-decoration: none;}
 
 .table tr:last-child th , .table tr:last-child td {border-bottom:solid 1px #e7e7ec;}
 
-table.type-1 tr th {background:#f5f5f5; min-width:120px; padding-left:10px; font-size:14px; font-weight:normal; vertical-align:middle;}
+table.type-1 tr th {background:#f5f5f5; min-width:120px; padding-left:20px; font-size:14px; font-weight:normal; vertical-align:middle;}
 table.type-1 tr th.table-title {background:#4c4847; color:#fff; text-align:center; font-size:18px;}
 table.type-1 tr td {width:90%;}
 table.type-1 tr th label , table.type-1 tr td label {font-weight:normal;}

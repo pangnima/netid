@@ -123,9 +123,9 @@
 					<div class="title-bar">
 						<h1 class="title-bar-title">
 							<ul>
-								<li>HOME</li>
-								<li>공통작업</li>
-								<li><strong>클라이언트 삭제로그</strong></li>
+								<li><span class="icon icon-home"></span>HOME</li>
+								<li>개인정보보호</li>
+								<li><strong>조치 이력</strong></li>
 							</ul>
 						</h1>
 					</div>
@@ -356,63 +356,107 @@
 			<div class="layout-content-body">
 				<div class="row gutter-xs">
 					<div class="page-title">
-						<h2>IP 대역 정책 설정</h2>
-						<p>지정 IP대역에서 로그인 한 사용자에 대한 [PC 보안 정책]을 설정합니다. 이 정책은 사용자 개인에 설정된 정책과 관계 없이 우선 적용됩니다.</p>
+						<h2>조치 이력</h2>
 					</div>
 				</div>
 
 				<div class="row gutter-xs m-b-lg">
-					<div class="col-md-3">
-						<div class="card">
-							<div class="card-header">
-								<div class="text-right">
-									<button class="btn btn-default btn-sm" type="button">Add</button>
-								</div>
-								<p class="search-page">showing 1 to 10 of 57 entries</p>
-							</div>
-							<div class="card-body">
-								<h4 class="card-title fw-l">
-									<a class="link-muted" href="#">10 things not to miss in <span class="nowrap">San Francisco</span></a>
-								</h4>
-								<small>Esse quibusdam voluptatibus quos, unde minima incidunt voluptatum hic pariatur vero sequi distinctio non eum qui soluta saepe…</small>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-9">
-						<div class="card">
-							<div class="card-header">
-								<div class="media">
-									<div class="media-middle media-left">
-										<a href="#">
-											<img class="media-object img-circle" width="32" height="32" src="img/1099386850.jpg" alt="Jessica Brown">
-										</a>
+					<div class="col-xs-12">
+						<table class="table table-bordered type-1">
+							<tr>
+								<th>도메인 선택</th>
+								<td>
+									<select name="" id="" class="form-control domain">
+										<option value="">기본</option>
+									</select>
+									<input id="form-control-5" class="form-control domain" type="input" value="기본도메인" readonly="readonly">
+								</td>
+							</tr>
+							<tr>
+								<th>기간 선택</th>
+								<td>
+									<div class="input-group input-daterange" data-provide="datepicker" data-date-autoclose="true" data-date-format="dd-M-yyyy">
+										<div class="input-with-icon">
+											<input class="form-control" type="text" data-provide="datepicker">
+											<span class="icon icon-calendar input-icon"></span>
+										</div>
+										<span class="input-group-addon">~</span>
+										<div class="input-with-icon">
+											<input class="form-control" type="text" data-provide="datepicker">
+											<span class="icon icon-calendar input-icon"></span>
+										</div>
 									</div>
-									<div class="media-middle media-body">
-										<em>by</em>
-										<a class="link-muted" href="#">
-											<strong>Jessica Brown</strong>
-										</a>
+									<div>
+										<button class="btn btn-default btn-sm" type="button">당일</button>
+										<button class="btn btn-default btn-sm" type="button">7일</button>
+										<button class="btn btn-default btn-sm" type="button">1개월</button>
+										<button class="btn btn-default btn-sm" type="button">3개월</button>
+										<button class="btn btn-default btn-sm" type="button">6개월</button>
+										<button class="btn btn-default btn-sm" type="button">1년</button>
+										<button class="btn btn-default btn-sm" type="button">3년</button>
 									</div>
-								</div>
-							</div>
-							<div class="card-image">
-								<img class="card-img-bottom img-responsive" src="img/7943544458.jpg" alt="Golden Gate Bridge, San Francisco">
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-header">
-								<small>
-									<span class="icon icon-map-marker"></span>
-									Golden Gate Bridge, San Francisco
-								</small>
-							</div>
-							<div class="card-body">
-								<h4 class="card-title fw-l">
-									<a class="link-muted" href="#">10 things not to miss in <span class="nowrap">San Francisco</span></a>
-								</h4>
-								<small>Esse quibusdam voluptatibus quos, unde minima incidunt voluptatum hic pariatur vero sequi distinctio non eum qui soluta saepe…</small>
-							</div>
-						</div>
+								</td>
+							</tr>
+							<tr>
+								<th>검색 조건</th>
+								<td>
+									<select name="" class="form-control d-ib size-a">
+										<option value="" selected="">전체문서함</option>
+										<option value="00000">TTA_홈폴더</option>
+										<option value="00001">부서문서함</option>
+										<option value="00002">상용소프트웨어</option>
+									</select>
+									<select name="" class="form-control d-ib size-a">
+										<option value="" selected="">검출 항목</option>
+										<option value="1">주민번호</option>
+										<option value="10">휴대폰번호</option>
+										<option value="2">외국인주민번호</option>
+										<option value="3">법인등록번호</option>
+										<option value="4">사업자등록번호</option>
+										<option value="5">카드번호16자리</option>
+										<option value="6">여권번호</option>
+										<option value="7">구 여권번호</option>
+										<option value="8">이메일</option>
+										<option value="9">전화번호</option>
+									</select>
+									<select name="" class="form-control d-ib size-a">
+										<option value="" selected="">전체조치</option>
+										<option value="holding">보유</option>
+										<option value="isolation">격리</option>
+										<option value="falsehood">오탐</option>
+										<option value="delete">삭제</option>
+										<option value="canclefalsehood">오탐해제</option>
+										<option value="cancleholding">보유해제</option>
+										<option value="cancleisolation">격리복원</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th>검색어</th>
+								<td>
+									<div class="m-b-sm">
+										<strong class="font-n">파일 이름 : </strong>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">파일 경로</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">파일 생성자</span>
+										</label>
+									</div>
+
+									<div class="input-with-icon d-ib media-middle">
+										<input class="form-control" type="text" placeholder="Search…">
+										<span class="icon icon-search input-icon"></span>
+									</div>
+
+									<button class="btn btn-default media-middle" type="button">검색</button>
+								</td>
+							</tr>
+						</table>
 					</div>
 				</div>
 
@@ -420,42 +464,45 @@
 					<div class="col-xs-12">
 						<div class="card">
 							<div class="card-header">
-								<p class="m-t-md m-b-0">showing 1 to 10 of 57 entries</p>
+								<p class="m-t-dm m-b-0">showing 1 to 10 of 57 entries</p>
 							</div>
 							<div class="card-body">
-								<table class="table table-striped table-left-td">
-									<thead>
-										<tr>
-											<th>사용자 아이디(이름)</th>
-											<th>컴퓨터 이름</th>
-											<th>사용자IP</th>
-											<th>작업</th>
-											<th>요청시간</th>
-											<th>작업시간</th>
-											<th>삭제사유</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>test</td>
-											<td>test</td>
-											<td>test</td>
-											<td>test</td>
-											<td>test</td>
-											<td>test</td>
-											<td>test</td>
-										</tr>
-										<tr>
-											<td>test</td>
-											<td>test</td>
-											<td>test</td>
-											<td>test</td>
-											<td>test</td>
-											<td>test</td>
-											<td>test</td>
-										</tr>
-									</tbody>
-								</table>
+								<div class="table-responsive">
+									<table class="table table-striped table-left-td">
+										<thead>
+											<tr>
+												<th>조치 날짜</th>
+												<th>검출 날짜</th>
+												<th>파일 생성자</th>
+												<th>파일 이름</th>
+												<th>검출 항목<br>(검출 개수)</th>
+												<th>파일 날짜</th>
+												<th>조치 내용</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>data1</td>
+												<td>data2</td>
+												<td>data3</td>
+												<td>data</td>
+												<td>data</td>
+												<td>data</td>
+												<td>data</td>
+											</tr>
+											<tr>
+												<td>data1</td>
+												<td>data2</td>
+												<td>data3</td>
+												<td>data</td>
+												<td>data</td>
+												<td>data</td>
+												<td>data</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
 								<div class="m-t-sm">
 									<div class="view-list">Show 
 										<select name="" id="" class="form-control d-ib size-80">

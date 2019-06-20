@@ -123,9 +123,9 @@
 					<div class="title-bar">
 						<h1 class="title-bar-title">
 							<ul>
-								<li>HOME</li>
-								<li>서비스관리자 관리</li>
-								<li><strong>생성</strong></li>
+								<li><span class="icon icon-home"></span>HOME</li>
+								<li>공통작업</li>
+								<li><strong>클라이언트 삭제로그</strong></li>
 							</ul>
 						</h1>
 					</div>
@@ -155,21 +155,14 @@
 
 							<!-- 서비스관리자 관리 -->
 							<li class="sidenav-heading">서비스관리자 관리</li>
-							<li class="sidenav-item has-subnav">
-								<a href="#" aria-haspopup="true">
+							<li class="sidenav-item">
+								<a href="#none" aria-haspopup="true">
 									<span class="sidenav-icon icon icon-works">&#103;</span>
 									<span class="sidenav-label">생성/수정/메뉴표시여부</span>
 								</a>
-								<ul class="sidenav level-2 collapse">
-									<li class="sidenav-heading">Dashboards</li>
-									<li><a href="dashboard-1.html">Dashboard 1</a></li>
-									<li><a href="dashboard-2.html">Dashboard 2</a></li>
-									<li><a href="dashboard-3.html">Dashboard 3</a></li>
-								</ul>
 							</li>
 							<li class="sidenav-item">
-								<a href="widgets.html">
-									<!-- <span class="sidenav-badge badge badge-primary">26</span> -->
+								<a href="#none">
 									<span class="sidenav-icon icon icon-works">&#40;</span>
 									<span class="sidenav-label">보안등급 설정</span>
 								</a>
@@ -184,9 +177,20 @@
 									<span class="sidenav-label">클라이언트 설치&삭제</span>
 								</a>
 								<ul class="sidenav level-2 collapse">
-									<li class="sidenav-heading">UI Elements</li>
-									<li><a href="arrows.html">Arrows</a></li>
-									<li><a href="badges.html">Badges</a></li>
+									<li>
+										<a href="#none">오프라인 제품 삭제</a>
+										<ul class="sidenav level-3 collapse">
+											<li><a href="#">인증코드 발급</a></li>
+											<li><a href="#">인증코드 발급 이력</a></li>
+										</ul>
+									</li>
+									<li><a href="#none">온라인 제품 삭제</a>
+										<ul class="sidenav level-3 collapse">
+											<li><a href="#none">요청 처리</a></li>
+											<li><a href="#none">작업 일력</a></li>
+											<li><a href="#none">설치현황</a></li>
+										</ul>
+									</li>
 								</ul>
 							</li>
 							<li class="sidenav-item has-subnav">
@@ -195,8 +199,8 @@
 									<span class="sidenav-label">IP 대역 정책 설정</span>
 								</a>
 								<ul class="sidenav level-2 collapse">
-									<li class="sidenav-heading">Forms</li>
-									<li><a href="cropper.html">Cropper</a></li>
+									<li><a href="#none">정책 설정</a></li>
+									<li><a href="#none">정책 적용</a></li>
 								</ul>
 							</li>
 							<li class="sidenav-item has-subnav">
@@ -283,107 +287,11 @@
 									<span class="sidenav-label">로그</span>
 								</a>
 								<ul class="sidenav level-2 collapse">
-									<li class="sidenav-heading">With Icons</li>
-									<li class="sidenav-item has-subnav">
-										<a href="#real-time">
-											<span class="icon icon-works">&#105;</span>Real-Time
-										</a>
-										<ul class="sidenav level-3 collapse">
-											<li class="sidenav-item has-subnav">
-												<a href="#overview">
-													<span class="icon icon-works">&#102;</span>Overview
-												</a>
-												<ul class="sidenav level-4 collapse">
-													<li class="sidenav-item has-subnav">
-														<a href="#top-keywords">
-															<span class="icon icon-works">&#83;</span>Top Keywords
-														</a>
-														<ul class="sidenav level-5 collapse">
-															<li class="sidenav-item">
-																<a href="#past-24h">
-																	<span class="icon icon-works">&#90;</span>Past 24h
-																</a>
-															</li>
-															<li class="sidenav-item">
-																<a href="#past-1wk">
-																	<span class="icon icon-works">&#90;</span>Past 1wk
-																</a>
-															</li>
-															<li class="sidenav-item">
-																<a href="#past-1mo">
-																	<span class="icon icon-works">&#90;</span>Past 1mo
-																</a>
-															</li>
-														</ul>
-													</li>
-													<li class="sidenav-item has-subnav">
-														<a href="#top-locations">
-															<span class="icon icon-works">&#38;</span>Top Locations
-														</a>
-														<ul class="sidenav level-5 collapse">
-															<li class="sidenav-item">
-																<a href="#past-24h">
-																	<span class="icon icon-works">&#90;</span>Past 24h
-																</a>
-															</li>
-															<li class="sidenav-item">
-																<a href="#past-1wk">
-																	<span class="icon icon-works">&#90;</span>Past 1wk
-																</a>
-															</li>
-															<li class="sidenav-item">
-																<a href="#past-1mo">
-																	<span class="icon icon-works">&#90;</span>Past 1mo
-																</a>
-															</li>
-														</ul>
-													</li>
-													<li class="sidenav-item has-subnav">
-														<a href="#top-referrals">
-															<span class="icon icon-works">&#57;</span>Top Referrals
-														</a>
-														<ul class="sidenav level-5 collapse">
-															<li class="sidenav-item">
-																<a href="#past-24h">
-																	<span class="icon icon-works">&#90;</span>Past 24h
-																</a>
-															</li>
-															<li class="sidenav-item">
-																<a href="#past-1wk">
-																	<span class="icon icon-works">&#90;</span>Past 1wk
-																</a>
-															</li>
-															<li class="sidenav-item">
-																<a href="#past-1mo">
-																	<span class="icon icon-works">&#90;</span>Past 1mo
-																</a>
-															</li>
-														</ul>
-													</li>
-												</ul>
-											</li>
-											<li class="sidenav-item">
-												<a href="#traffic-sources">
-													<span class="icon icon-works">&#213;</span>Traffic Sources
-												</a>
-											</li>
-											<li class="sidenav-item">
-												<a href="#events">
-													<span class="icon icon-works">&#102;</span>Events
-												</a>
-											</li>
-										</ul>
-									</li>
-									<li class="sidenav-item">
-										<a href="#audience">
-											<span class="icon icon-works">&#80;</span>Audience
-										</a>
-									</li>
-									<li class="sidenav-item">
-										<a href="#behavior">
-											<span class="icon icon-works">&#70;</span>Behavior
-										</a>
-									</a>
+									<li class="sidenav-item"><a href="#none">파일 작업 로그</a></li>
+									<li class="sidenav-item"><a href="#none">파일 작업 로그 설정</a></li>
+									<li class="sidenav-item"><a href="#none">폴더 권한/공유 설정 로그</a></li>
+									<li class="sidenav-item"><a href="#none">서버 성능 모니터링 로그</a></li>
+									<li class="sidenav-item"><a href="#none">서버 성능 모니터링 로그 설정</a></li>
 								</ul>
 							</li>
 							<li class="sidenav-item has-subnav">
@@ -391,144 +299,50 @@
 									<span class="sidenav-icon icon icon-works">&#103;</span>
 									<span class="sidenav-label">로그인 제어</span>
 								</a>
-								<ul class="sidenav level-2 collapse">
-									<li class="sidenav-heading">Just Text</li>
+								<ul class="sidenav level-2">
 									<li class="sidenav-item has-subnav">
-										<a href="#real-time">Real-Time</a>
+										<a href="#none">IP 인증</a>
 										<ul class="sidenav level-3 collapse">
-											<li class="sidenav-item has-subnav">
-												<a href="#overview">Overview</a>
-												<ul class="sidenav level-4 collapse">
-													<li class="sidenav-item has-subnav">
-														<a href="#top-keywords">Top Keywords</a>
-														<ul class="sidenav level-5 collapse">
-															<li class="sidenav-item">
-																<a href="#past-24h">Past 24h</a>
-															</li>
-															<li class="sidenav-item">
-																<a href="#past-1wk">Past 1wk</a>
-															</li>
-															<li class="sidenav-item">
-																<a href="#past-1mo">Past 1mo</a>
-															</li>
-														</ul>
-													</li>
-													<li class="sidenav-item has-subnav">
-														<a href="#top-locations">Top Locations</a>
-														<ul class="sidenav level-5 collapse">
-															<li class="sidenav-item">
-																<a href="#past-24h">Past 24h</a>
-															</li>
-															<li class="sidenav-item">
-																<a href="#past-1wk">Past 1wk</a>
-															</li>
-															<li class="sidenav-item">
-																<a href="#past-1mo">Past 1mo</a>
-															</li>
-														</ul>
-													</li>
-													<li class="sidenav-item has-subnav">
-														<a href="#top-referrals">Top Referrals</a>
-														<ul class="sidenav level-5 collapse">
-															<li class="sidenav-item">
-																<a href="#past-24h">Past 24h</a>
-															</li>
-															<li class="sidenav-item">
-																<a href="#past-1wk">Past 1wk</a>
-															</li>
-															<li class="sidenav-item">
-																<a href="#past-1mo">Past 1mo</a>
-															</li>
-														</ul>
-													</li>
-												</ul>
-											</li>
-											<li class="sidenav-item">
-												<a href="#traffic-sources">Traffic Sources</a>
-											</li>
-											<li class="sidenav-item">
-												<a href="#events">Events</a>
-											</li>
+											<li class="sidenav-item"><a href="#none">IP 인증 검색+생성</a></li>
+											<li class="sidenav-item"><a href="#none">IP 인증 요청처리</a></li>
+											<li class="sidenav-item"><a href="#none">IP 인증 설정</a></li>
+											<li class="sidenav-item"><a href="#none">IP대역 로그인 제한</a></li>
 										</ul>
-									</li>
-									<li class="sidenav-item">
-										<a href="#audience">Audience</a>
-									</li>
-									<li class="sidenav-item">
-										<a href="#behavior">Behavior</a>
 									</li>
 								</ul>
 							</li>
 							<li class="sidenav-item has-subnav">
 								<a href="#multi-level-menu" aria-haspopup="true">
 									<span class="sidenav-icon icon icon-works">&#103;</span>
-									<span class="sidenav-label">문섷마 관리</span>
+									<span class="sidenav-label">문서함 관리</span>
 								</a>
 								<ul class="sidenav level-2 collapse">
-									<li class="sidenav-heading">Just Text</li>
+									<li class="sidenav-item">
+										<a href="#none">문서함 드라이브 마운트 설정</a>
+									</li>
 									<li class="sidenav-item has-subnav">
-										<a href="#real-time">Real-Time</a>
-										<ul class="sidenav level-3 collapse">
-											<li class="sidenav-item has-subnav">
-												<a href="#overview">Overview</a>
-												<ul class="sidenav level-4 collapse">
-													<li class="sidenav-item has-subnav">
-														<a href="#top-keywords">Top Keywords</a>
-														<ul class="sidenav level-5 collapse">
-															<li class="sidenav-item">
-																<a href="#past-24h">Past 24h</a>
-															</li>
-															<li class="sidenav-item">
-																<a href="#past-1wk">Past 1wk</a>
-															</li>
-															<li class="sidenav-item">
-																<a href="#past-1mo">Past 1mo</a>
-															</li>
-														</ul>
-													</li>
-													<li class="sidenav-item has-subnav">
-														<a href="#top-locations">Top Locations</a>
-														<ul class="sidenav level-5 collapse">
-															<li class="sidenav-item">
-																<a href="#past-24h">Past 24h</a>
-															</li>
-															<li class="sidenav-item">
-																<a href="#past-1wk">Past 1wk</a>
-															</li>
-															<li class="sidenav-item">
-																<a href="#past-1mo">Past 1mo</a>
-															</li>
-														</ul>
-													</li>
-													<li class="sidenav-item has-subnav">
-														<a href="#top-referrals">Top Referrals</a>
-														<ul class="sidenav level-5 collapse">
-															<li class="sidenav-item">
-																<a href="#past-24h">Past 24h</a>
-															</li>
-															<li class="sidenav-item">
-																<a href="#past-1wk">Past 1wk</a>
-															</li>
-															<li class="sidenav-item">
-																<a href="#past-1mo">Past 1mo</a>
-															</li>
-														</ul>
-													</li>
-												</ul>
-											</li>
-											<li class="sidenav-item">
-												<a href="#traffic-sources">Traffic Sources</a>
-											</li>
-											<li class="sidenav-item">
-												<a href="#events">Events</a>
-											</li>
+										<a href="#audience">I/O 제어</a>
+										<ul class="sidenav level-2 collapse">
+											<li class="sidenav-item"><a href="#none">IP 필터링</a></li>
+											<li class="sidenav-item"><a href="#none">IP 파일확장자 필터링</a></li>
 										</ul>
 									</li>
-									<li class="sidenav-item">
-										<a href="#audience">Audience</a>
+									<li class="sidenav-item has-subnav">
+										<a href="#behavior">폴더 관리</a>
+										<ul class="sidenav level-2 collapse">
+											<li class="sidenav-item"><a href="#none">폴더 용량 제한 현황</a></li>
+											<li class="sidenav-item"><a href="#none">폴더 권한 현황(부서 또는 사용자로 권한 조회 필요)</a></li>
+											<li class="sidenav-item"><a href="#none">폴더 파일 현황</a></li>
+											<li class="sidenav-item"><a href="#none">폴더 용량 추가 요청 처리</a></li>
+											<li class="sidenav-item"><a href="#none">폴더 관리자 신청 처리</a></li>
+										</ul>
 									</li>
-									<li class="sidenav-item">
-										<a href="#behavior">Behavior</a>
+									<li class="sidenav-item has-subnav">
+										<a href="#behavior">폴더 드라이브 연결</a>
+										<ul class="sidenav level-2 collapse">
+											<li class="sidenav-item"><a href="#none">현황보기</a></li>
+											<li class="sidenav-item"><a href="#none">설정</a></li>
+										</ul>
 									</li>
 								</ul>
 							</li>
@@ -538,19 +352,17 @@
 				</div>
 			</div>
 		</div>
-		<!-- 컨텐츠영역 -->
 		<div class="layout-content">
 			<div class="layout-content-body">
 				<div class="row gutter-xs">
 					<div class="page-title">
-						<h2>생성</h2>
-						<p>사용자 PC가 외부업무로 인한 문서 중앙화 서버 접근이 불가능 할 경우 ClouDoc 제품을 삭제할 수 있는 인증 정보를 클립보드로 복사하여 전달할 수 있습니다.</p>
+						<h2>IP 대역 정책 설정</h2>
+						<p>지정 IP대역에서 로그인 한 사용자에 대한 [PC 보안 정책]을 설정합니다. 이 정책은 사용자 개인에 설정된 정책과 관계 없이 우선 적용됩니다.</p>
 					</div>
 				</div>
 
-
 				<div class="row gutter-xs m-b-lg">
-					<div class="col-xs-12">
+					<div class="col-md-3">
 						<div class="card">
 							<div class="card-header">
 								<div class="text-right">
@@ -559,93 +371,88 @@
 								<p class="search-page">showing 1 to 10 of 57 entries</p>
 							</div>
 							<div class="card-body">
+								<h4 class="card-title fw-l">
+									<a class="link-muted" href="#">10 things not to miss in <span class="nowrap">San Francisco</span></a>
+								</h4>
+								<small>Esse quibusdam voluptatibus quos, unde minima incidunt voluptatum hic pariatur vero sequi distinctio non eum qui soluta saepe…</small>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-9">
+						<div class="card">
+							<div class="card-header">
+								<div class="media">
+									<div class="media-middle media-left">
+										<a href="#">
+											<img class="media-object img-circle" width="32" height="32" src="img/1099386850.jpg" alt="Jessica Brown">
+										</a>
+									</div>
+									<div class="media-middle media-body">
+										<em>by</em>
+										<a class="link-muted" href="#">
+											<strong>Jessica Brown</strong>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="card-image">
+								<img class="card-img-bottom img-responsive" src="img/7943544458.jpg" alt="Golden Gate Bridge, San Francisco">
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header">
+								<small>
+									<span class="icon icon-map-marker"></span>
+									Golden Gate Bridge, San Francisco
+								</small>
+							</div>
+							<div class="card-body">
+								<h4 class="card-title fw-l">
+									<a class="link-muted" href="#">10 things not to miss in <span class="nowrap">San Francisco</span></a>
+								</h4>
+								<small>Esse quibusdam voluptatibus quos, unde minima incidunt voluptatum hic pariatur vero sequi distinctio non eum qui soluta saepe…</small>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row gutter-xs">
+					<div class="col-xs-12">
+						<div class="card">
+							<div class="card-header">
+								<p class="m-t-md m-b-0">showing 1 to 10 of 57 entries</p>
+							</div>
+							<div class="card-body">
 								<table class="table table-striped table-left-td">
-									<colgroup>
-										<col style="width:30%;">
-										<col style="width:30%;">
-										<col style="width:30%;">
-										<col style="width:10%; text-align: center;">
-									</colgroup>
 									<thead>
 										<tr>
-											<th>COL1</th>
-											<th>COL2</th>
-											<th>COL3</th>
-											<th class="text-center">COL4</th>
+											<th>사용자 아이디(이름)</th>
+											<th>컴퓨터 이름</th>
+											<th>사용자IP</th>
+											<th>작업</th>
+											<th>요청시간</th>
+											<th>작업시간</th>
+											<th>삭제사유</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td>data1</td>
-											<td>data2</td>
-											<td>data3</td>
-											<td class="text-center">
-												<select name="" id="" class="form-control size-80">
-													<option value="">More</option>
-													<option value="">Modify</option>
-													<option value="">delete</option>
-												</select>
-											</td>
+											<td>test</td>
+											<td>test</td>
+											<td>test</td>
+											<td>test</td>
+											<td>test</td>
+											<td>test</td>
+											<td>test</td>
 										</tr>
 										<tr>
-											<td>data1</td>
-											<td>data2</td>
-											<td>data3</td>
-											<td class="text-center">
-												<select name="" id="" class="form-control size-80">
-													<option value="">More</option>
-													<option value="">Modify</option>
-													<option value="">delete</option>
-												</select>
-											</td>
-										</tr>
-										<tr>
-											<td>data1</td>
-											<td>data2</td>
-											<td>data3</td>
-											<td class="text-center">
-												<select name="" id="" class="form-control size-80">
-													<option value="">More</option>
-													<option value="">Modify</option>
-													<option value="">delete</option>
-												</select>
-											</td>
-										</tr>
-										<tr>
-											<td>data1</td>
-											<td>data2</td>
-											<td>data3</td>
-											<td class="text-center">
-												<select name="" id="" class="form-control size-80">
-													<option value="">More</option>
-													<option value="">Modify</option>
-													<option value="">delete</option>
-												</select>
-											</td>
-										</tr>
-										<tr>
-											<td>data1</td>
-											<td>data2</td>
-											<td>data3</td>
-											<td class="text-center">
-												<select name="" id="" class="form-control size-80">
-													<option value="">More</option>
-													<option value="">Modify</option>
-													<option value="">delete</option>
-												</select>
-											</td>
-										</tr>
-										<tr>
-											<td>data1</td>
-											<td>data2</td>
-											<td>data3</td>
-											<td class="text-center">
-												<select name="" id="" class="form-control size-80">
-													<option value="">More</option>
-													<option value="">Modify</option>
-													<option value="">delete</option>
-												</select>
-											</td>
+											<td>test</td>
+											<td>test</td>
+											<td>test</td>
+											<td>test</td>
+											<td>test</td>
+											<td>test</td>
+											<td>test</td>
 										</tr>
 									</tbody>
 								</table>
@@ -674,14 +481,10 @@
 				</div>
 			</div>
 		</div>
-		<!-- //컨텐츠영역 -->
-
-
 		<div class="layout-footer">
 			<div class="layout-footer-body">
 				<small class="version">Version 1.4.0</small>
-				<small class="copyright">2018 &copy; Elephant <a href="http://madebytilde.com/">Made by
-						Tilde</a></small>
+				<small class="copyright">2019 &copy; NETID <a href="#none">Made by NETID</a></small>
 			</div>
 		</div>
 	</div>

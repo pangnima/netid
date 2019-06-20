@@ -123,11 +123,12 @@
 					<div class="title-bar">
 						<h1 class="title-bar-title">
 							<ul>
-								<li>HOME</li>
+								<li><span class="icon icon-home"></span>HOME</li>
 								<li>Basic</li>
-								<li>로그인 제어</li>
-								<li>IP 인증</li>
-								<li><strong>IP 인증 검색</strong></li>
+								<li>공유·협업</li>
+								<li>협업게시판</li>
+								<li>일반협업게시판</li>
+								<li><strong>협업게시판개설</strong></li>
 							</ul>
 						</h1>
 					</div>
@@ -357,81 +358,79 @@
 		<div class="layout-content">
 			<div class="layout-content-body">
 				<div class="row gutter-xs">
+					<div class="page-title">
+						<h2>기본정보</h2>
+					</div>
+				</div>
+
+				<div class="row gutter-xs m-b-lg">
 					<div class="col-xs-12">
-						<div class="card">
-							<div class="card-header">
-								<div class="text-right">
-									<select name="" id="" class="form-control media-middle d-ib size-a">
-										<option value="">More</option>
-										<option value="">Modify</option>
-										<option value="">delete</option>
-									</select>
-									<select name="" id="" class="form-control media-middle d-ib size-a">
-										<option value="">More</option>
-										<option value="">Modify</option>
-										<option value="">delete</option>
-									</select>
-									<input id="pw" class="form-control media-middle size-200 d-ib" type="password">
-									<button class="btn btn-default" type="button">검색</button>
-								</div>
-								<p class="search-page">showing 1 to 10 of 57 entries</p>
-							</div>
-							<div class="card-body">
-								<div class="table-responsive">
-									<table class="table table-striped table-left-td">
-										<thead>
-											<tr>
-												<th>사용자</th>
-												<th>타입</th>
-												<th>시작IP</th>
-												<th>끝IP</th>
-												<th>시작일</th>
-												<th>종료일</th>
-												<th>등록일</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>test</td>
-												<td>test</td>
-												<td>test</td>
-												<td>test</td>
-												<td>test</td>
-												<td>test</td>
-												<td>test</td>
-											</tr>
-											<tr>
-												<td>test</td>
-												<td>test</td>
-												<td>test</td>
-												<td>test</td>
-												<td>test</td>
-												<td>test</td>
-												<td>test</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-								<div class="m-t-sm">
-									<div class="view-list">Show 
-										<select name="" id="" class="form-control d-ib size-80">
-											<option value="">10</option>
-											<option value="">15</option>
-											<option value="">20</option>
-										</select> entires</div>
-									<div class="text-center">
-										<ul class="pagination">
-											<li class="previous"><a href="#" class="icon icon-angle-left"></a></li>
-											<li class="active"><span>1</span></li>
-											<li><a href="">2</a></li>
-											<li><a href="">3</a></li>
-											<li><a href="">4</a></li>
-											<li><a href="">5</a></li>
-											<li class="next"><a href="#" class="icon icon-angle-right"></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
+						<table class="table table-bordered type-1">
+							<tr>
+								<th><label for="board_name">협업게시판이름</label></th>
+								<td>
+									<input id="board_name" class="form-control" type="input" value="">
+								</td>
+							</tr>
+							<tr>
+								<th>카테고리</th>
+								<td>
+									<input class="form-control d-ib size-a media-middle" type="text" readonly>
+									<button class="btn btn-default media-middle" type="button">선택</button>
+								</td>
+							</tr>
+							<tr>
+								<th>관리자</th>
+								<td>
+									<input class="form-control d-ib size-a media-middle" type="text" readonly>
+									<button class="btn btn-default media-middle" type="button">선택</button>
+								</td>
+							</tr>
+							<tr>
+								<th>공개 설정</th>
+								<td>
+									<label class="custom-control custom-control-success custom-radio">
+										<input class="custom-control-input" name="success" type="radio" value="none">
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-label">비공개</span>
+									</label>
+									<label class="custom-control custom-control-success custom-radio">
+										<input class="custom-control-input" name="success" type="radio" value="none" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-label">공개</span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>가입유형</th>
+								<td>
+									<label class="custom-control custom-control-success custom-radio">
+										<input class="custom-control-input" name="success" type="radio" value="none">
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-label">자동가입</span>
+									</label>
+									<label class="custom-control custom-control-success custom-radio">
+										<input class="custom-control-input" name="success" type="radio" value="none" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-label">승인 후 가입</span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>소개</th>
+								<td>
+									<textarea class="form-control" name="" id="" cols="30" rows="5"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<th>가입인사말</th>
+								<td>
+									<textarea class="form-control" name="" id="" cols="30" rows="5"></textarea>
+								</td>
+							</tr>
+						</table>
+						<div class="text-center">
+							<button class="btn btn-success" type="button">확인</button>
 						</div>
 					</div>
 				</div>
