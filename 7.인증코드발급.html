@@ -388,7 +388,6 @@
 								<div class="form-group">
 									<label for="password" class="control-label">제품 삭제 유효기간</label>
 									<div class="input-group">
-										
 										<div id="demo-timepicker-6" class="row gutter-xs">
 											<div class="col-xs-7 m-b">
 												<div class="input-with-icon">
@@ -480,31 +479,25 @@
 							<tr>
 								<th>제품 삭제 유효기간</th>
 								<td>
-									<div id="demo-timepicker-6" class="row gutter-xs">
-										<div class="col-xs-7 m-b">
-											<div class="input-with-icon">
-											<input class="form-control date start" type="text" placeholder="From date">
+									<div class="input-group input-daterange" data-provide="datepicker" data-date-autoclose="true" data-date-format="dd-M-yyyy">
+										<div class="input-with-icon">
+											<input class="form-control" type="text" data-provide="datepicker">
 											<span class="icon icon-calendar input-icon"></span>
-											</div>
 										</div>
-										<div class="col-xs-5 m-b">
-											<div class="input-with-icon">
-											<input class="form-control time start ui-timepicker-input" type="text" placeholder="From time" autocomplete="off">
-											<span class="icon icon-clock-o input-icon"></span>
-											</div>
-										</div>
-										<div class="col-xs-7">
-											<div class="input-with-icon">
-											<input class="form-control date end" type="text" placeholder="Until date">
+										<span class="input-group-addon">~</span>
+										<div class="input-with-icon">
+											<input class="form-control" type="text" data-provide="datepicker">
 											<span class="icon icon-calendar input-icon"></span>
-											</div>
 										</div>
-										<div class="col-xs-5">
-											<div class="input-with-icon">
-											<input class="form-control time end ui-timepicker-input" type="text" placeholder="Until time" autocomplete="off">
-											<span class="icon icon-clock-o input-icon"></span>
-											</div>
-										</div>
+									</div>
+									<div>
+										<button class="btn btn-default btn-sm" type="button">당일</button>
+										<button class="btn btn-default btn-sm" type="button">7일</button>
+										<button class="btn btn-default btn-sm" type="button">1개월</button>
+										<button class="btn btn-default btn-sm" type="button">3개월</button>
+										<button class="btn btn-default btn-sm" type="button">6개월</button>
+										<button class="btn btn-default btn-sm" type="button">1년</button>
+										<button class="btn btn-default btn-sm" type="button">3년</button>
 									</div>
 								</td>
 							</tr>
@@ -561,7 +554,7 @@
 	<script src="js/vendor.min.js"></script>
 	<script src="js/elephant.min.js"></script>
 	<script src="js/application.min.js"></script>
-	<script src="js/demo.min.js"></script>
+	<!-- <script src="js/demo.min.js"></script> -->
 
 </body>
 
