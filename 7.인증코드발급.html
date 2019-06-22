@@ -361,6 +361,93 @@
 					</div>
 				</div>
 
+				<div class="row gutter-xs m-b-lg">
+					<div class="col-md-5 col-sm-offset-3">
+						<div class="card">
+							<div class="card-header">
+								<h4>필수 정보 입력</h4>
+							</div>
+							<div class="card-body p-x-lg">
+								<div class="form-group">
+									<label for="username" class="control-label d-b">발급 종류</label>
+									<label class="custom-control custom-control-success custom-radio d-b m-y">
+										<input class="custom-control-input" name="success" type="radio" value="none">
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-label">사용자용(지정된 PC만 삭제 가능)</span>
+									</label>
+									<label class="custom-control custom-control-success custom-radio d-b m-y m-x-0">
+										<input class="custom-control-input" name="success" type="radio" value="none">
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-label">관리자용 (여려 PC 삭제 가능) </span>
+									</label>
+								</div>
+								<div class="form-group">
+									<label for="form-control-1" class="control-label">제품키</label>
+									<input id="form-control-1" class="form-control" type="text">
+								</div>
+								<div class="form-group">
+									<label for="password" class="control-label">제품 삭제 유효기간</label>
+									<div class="input-group">
+										<div id="demo-timepicker-6" class="row gutter-xs">
+											<div class="col-xs-7 m-b">
+												<div class="input-with-icon">
+													<input class="form-control date start" type="text" placeholder="From date">
+													<span class="icon icon-calendar input-icon"></span>
+												</div>
+											</div>
+											<div class="col-xs-5 m-b">
+												<div class="input-with-icon">
+													<input class="form-control time start ui-timepicker-input" type="text" placeholder="From time" autocomplete="off">
+													<span class="icon icon-clock-o input-icon"></span>
+												</div>
+											</div>
+											<div class="col-xs-7">
+												<div class="input-with-icon">
+													<input class="form-control date end" type="text" placeholder="Until date">
+													<span class="icon icon-calendar input-icon"></span>
+												</div>
+											</div>
+											<div class="col-xs-5">
+												<div class="input-with-icon">
+													<input class="form-control time end ui-timepicker-input" type="text" placeholder="Until time" autocomplete="off">
+													<span class="icon icon-clock-o input-icon"></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="form-control-2" class="control-label">인증 암호</label>
+									<input id="form-control-2" class="form-control" type="text">
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h4>추가 정보 입력  (미입력 시 추후 발급 내역에서 자세한 삭제 요청 정보를 확인할 수 있습니다.) </h4>
+							</div>
+							<div class="card-body p-x-lg">
+									<div class="form-group">
+										<label for="form-control-1" class="control-label">요청자 이름</label>
+										<input id="form-control-1" class="form-control" type="text">
+									</div>
+								<div class="form-group">
+									<label for="form-control-1" class="control-label">최근 로그인한 아이디</label>
+									<input id="form-control-1" class="form-control" type="text">
+								</div>
+								<div class="form-group">
+										<label for="form-control-1" class="control-label">삭제 사유</label>
+										<textarea id="form-control-8" class="form-control" rows="3"></textarea>
+									</div>
+							</div>
+						</div>
+						<div class="text-center">
+							<button class="btn btn-success" type="button">확인</button>
+						</div>
+					</div>		
+				</div>	
+
 				<div class="row gutter-xs">
 					<div class="col-xs-12">
 						<table class="table table-bordered type-1">
@@ -455,8 +542,6 @@
 				<div class="text-right">
 					<button class="btn btn-success" type="button">확인</button>
 				</div>
-
-
 			</div>
 		</div>
 		<div class="layout-footer">

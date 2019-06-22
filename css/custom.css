@@ -40,6 +40,7 @@ a {color:#7d7d8e; text-decoration: none;}
 .table > tbody > tr > td , .table > tbody > tr > th , .table > tfoot > tr > td , .table > tfoot > tr > th , .table > thead > tr > td , .table > thead > tr > th {vertical-align:middle;}
 .table > thead > tr > th , .table > tbody > tr > th {font-size:15px;}
 .table > tbody > tr > td {font-size:14px;}
+.table > tbody > tr > td .icon {font-size:18px;}
 .table-color {background:#f9f9f9;}
 .table-left-td td {border-left:solid 1px #e7e7ec; border-bottom: solid 1px #e7e7ec;}
 .table-left-td td:first-child {border-left:0;}
@@ -64,7 +65,7 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 /* card-header */
 .card-header {margin:0 5px; position: relative;}
 .card-header h3 {font-size:15px; margin:0;}
-.card-header h3 .icon-info-circle { font-size:12px; color:#13b6bc; margin-left:4px;}
+.card-header h3 .icon-info-circle { font-size:16px; color:#13b6bc; margin-left:4px;}
 .card-header .card-action.icon-plus {position:absolute; top:50%; right:10px; color:#13b6bc; font-size:20px; transform:translateY(-50%);}
 
 .card-header.green {background: #13b6bc; color:#fff; font-size:17px; margin:0;}
