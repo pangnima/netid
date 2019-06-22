@@ -80,16 +80,16 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 
 
 /* 셀렉트 박스 크기 변경 */
-.form-control.size-a {width:auto;}
-.form-control.size-xxs {width:13%; min-width:160px;}
-.form-control.size-xs {width:15%; min-width:200px;}
-.form-control.size-s {width:30%; min-width:250px;}
-.form-control.size-m {width:50%; min-width:300px;}
-.form-control.size-l {width:70%;}
-.form-control.size-50 {max-width:50px; margin:0 auto;}
-.form-control.size-80 {max-width:80px; margin:0 auto;}
-.form-control.size-100 {max-width:100px;}
-.form-control.size-200 {max-width:200px;}
+.size-a {width:auto;}
+.size-xxs {width:13%; min-width:160px;}
+.size-xs {width:15%; min-width:200px;}
+.size-s {width:30%; min-width:250px;}
+.size-m {width:50%; min-width:300px;}
+.size-l {width:70%;}
+.size-50 {max-width:50px; margin:0 auto;}
+.size-80 {max-width:80px; margin:0 auto;}
+.size-100 {max-width:100px;}
+.size-200 {max-width:200px;}
 
 .size-xs-1 {width:8.333333% !important;}
 .size-xs-2 {width:16.666667% !important;}
@@ -116,6 +116,8 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 
 /* 버튼 커스텀 추가 */
 .btn-basic , .btn-basic:hover , .btn-basic:active , .btn-basic:focus {background:#25c6cb; color:#fff;}
+.btn-link {color:inherit;}
+.btn-link:focus , .btn-link:hover {background-color:transparent; color:inherit; outline:none;}
 
 /* bordercolor */
 .border-color-f1 {border-color:#f1f1f1;}

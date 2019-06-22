@@ -124,8 +124,9 @@
 						<h1 class="title-bar-title">
 							<ul>
 								<li><span class="icon icon-home"></span>HOME</li>
-								<li>서비스관리자 관리</li>
-								<li><strong>생성</strong></li>
+								<li>로그인 제어</li>
+								<li>IP 인증</li>
+								<li><strong>IP대역 로그인 제한</strong></li>
 							</ul>
 						</h1>
 					</div>
@@ -543,8 +544,7 @@
 			<div class="layout-content-body">
 				<div class="row gutter-xs">
 					<div class="page-title">
-						<h2>생성</h2>
-						<p>사용자 PC가 외부업무로 인한 문서 중앙화 서버 접근이 불가능 할 경우 ClouDoc 제품을 삭제할 수 있는 인증 정보를 클립보드로 복사하여 전달할 수 있습니다.</p>
+						<h2>IP대역 로그인 제한</h2>
 					</div>
 				</div>
 
@@ -554,7 +554,9 @@
 						<div class="card">
 							<div class="card-header">
 								<div class="text-right">
-									<button class="btn btn-default" type="button">Add</button>
+									<span>우선 순위 변경 : </span>
+									<button class="btn btn-default btn-sm" type="button"><span class="icon icon-chevron-up"></span></button>
+									<button class="btn btn-default btn-sm" type="button"><span class="icon icon-chevron-down"></span></button>
 								</div>
 								<p class="search-page">showing 1 to 10 of 57 entries</p>
 							</div>
@@ -568,10 +570,10 @@
 									</colgroup>
 									<thead>
 										<tr>
-											<th>COL1</th>
-											<th>COL2</th>
-											<th>COL3</th>
-											<th class="text-center">COL4</th>
+											<th>접속설정</th>
+											<th>IP 대역</th>
+											<th>에이전트</th>
+											<th class="text-center">수정/삭제</th>
 										</tr>
 									</thead>
 									<tbody>
