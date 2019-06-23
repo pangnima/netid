@@ -366,9 +366,9 @@
 				<!-- // 타이틀 -->
 
 				<div class="row gutter-xs">
-					<div class="size-xs-12">
+					<div class="col-md-12">
 						<!-- 왼쪽 -->
-						<div class="size-xs-9">
+						<div class="col-md-8">
 							<div class="card">
 								<div class="card-header green">
 									<div class="card-actions">
@@ -379,54 +379,192 @@
 									</div>
 									<span>조직도</span>
 								</div>
+
+								<div class="card-header">
+									<!-- 대분류 -->
+									<table class="type-33">
+										<tr>
+											<th>부서사용자</th>
+											<th>설정된 정책</th>
+										</tr>
+									</table>
+									<!-- // 대분류 -->
+								</div>
 								<div class="card-body p-a-0" data-toggle="match-height">
-									<ul>
-										<li>
-											<span>SERVER</span>
-											<ul>
-												<li>
-													<span><i class="icon fas fa-users"></i>개발팀</span>
-													<ul>
-														<li><span>박지수 (jspark)</span></li>
-													</ul>
-												</li>
-												<li>
-													<span>경영지원팀</span>
-												</li>
-												<li>
-													<span>연구소</span>
-												</li>
-											</ul>
-										</li>
-									</ul>
-									<!-- <ul class="sidenav list-group list-group-divided hv99">
-										<li class="sidenav-item list-group-item has-subnav">
-											<a href="#" aria-haspopup="true" aria-expanded="false">
-												<span class="sidenav-label">JSPARK</span>
-												<button type="button" class="icon icon-ellipsis-v card-action"></button>
-											</a>
-											<ul class="sidenav collapse" aria-expanded="false" style="height: 0px;">
-												<li><a href="#">aaa</a>
-													<ul class="sidenav level-1 collapse" aria-expanded="false" style="height: 0px;">
-														<li><a href="#">개발 1팀</a></li>
-													</ul>
-												</li>
-												<li><a href="#">QA Team</a>
-													<ul class="sidenav level-1 collapse" aria-expanded="false" style="height: 0px;">
-														<li><a href="#">안내</a></li>
-													</ul>
-												</li>
-											</ul>
-										</li>
-									</ul> -->
+									<div class="slide-nav">
+										<!-- Depth-1 -->
+										<ul class="depth-01">
+											<li>
+												<table class="type-33">
+													<tr>
+														<th colspan="2">
+															<span class="icon icon-plus-square"></span>
+															Dapth-1
+														</th>
+													</tr>
+												</table>
+												<!-- Depth-2 -->
+												<ul class="depth-02">
+													<li>
+														<table class="type-33">
+															<tr>
+																<th>
+																	<span class="icon icon-plus-square-o"></span>
+																	Detph-2
+																</th>
+																<td></td>
+															</tr>
+														</table>
+														<!-- Depth-3 -->
+														<ul class="depth-03">
+															<li>
+																<table class="type-33">
+																	<th>Detph-3</th>
+																	<td></td>
+																</table>
+															</li>
+														</ul>
+														<!-- // Depth-3 -->
+													</li>
+	
+													<li>
+														<table class="type-33">
+															<tr>
+																<th>
+																	<span class="icon icon-plus-square-o"></span>
+																	Detph-2
+																</th>
+																<td></td>
+															</tr>
+														</table>
+														<!-- Depth-3 -->
+														<ul class="depth-03">
+															<li class="depth-03">
+																<table class="type-33">
+																	<th>Detph-3</th>
+																	<td></td>
+																</table>
+															</li>
+														</ul>
+														<!-- // Depth-3 -->
+													</li>
+
+													<li>
+														<table class="type-33">
+															<tr>
+																<th>
+																	<span class="icon icon-plus-square-o"></span>
+																	Detph-2
+																</th>
+																<td></td>
+															</tr>
+														</table>
+														<!-- Depth-3 -->
+														<ul class="depth-03">
+															<li>
+																<table class="type-33">
+																	<th>Detph-3</th>
+																	<td></td>
+																</table>
+															</li>
+															<li>
+																<table class="type-33">
+																	<th>Detph-3</th>
+																	<td>
+																		<strong>로그인</strong>
+																		<span class="label label-success">1</span>
+																		<span class="label label-success">2</span>
+																		<span class="label label-success">3</span>
+																	</td>
+																</table>
+															</li>
+															<li>
+																<table class="type-33">
+																	<th>Detph-3</th>
+																	<td>
+																		<strong>로그인</strong>
+																		<span class="label label-success">1</span>
+																		<span class="label label-success">2</span>
+																		<span class="label label-success">3</span>
+																	</td>
+																</table>
+															</li>
+														</ul>
+														<!-- // Depth-3 -->
+													</li>
+												</ul>
+												<!-- // Depth-2 -->
+											</li>
+										</ul>
+										<!-- Depth-1 -->
+									</div>
 								</div>
 							</div>
 						</div>
 						<!-- // 왼쪽 -->
 
 						<!-- 오른쪽 -->
-						<div class="size-xs-3">
+						<div class="col-md-4">
+							<div class="card">
+								<div class="card-body">
+									<div class="type-33-setting">
+										<p>설정</p>
+										<div>
+											<div>
+												<label class="custom-control custom-control-success custom-radio d-b m-b">
+													<input class="custom-control-input" name="success" type="radio" value="none">
+													<span class="custom-control-indicator"></span>
+													<span class="custom-control-label">지정하지 않음(정책제거,상속)</span>
+												</label>
+												<label class="custom-control custom-control-success custom-radio d-b m-l-0">
+													<input class="custom-control-input" name="success" type="radio" value="none" checked>
+													<span class="custom-control-indicator"></span>
+													<span class="custom-control-label">클라이언트 로그인 기준</span>
+												</label>
+											</div>
+											<ul class="">
+												<li>
+													<div class="num">1</div>
+													<div>
+														PC부팅 - 로그인전
+														<label class="switch switch-success">
+															<input class="switch-input" type="checkbox" checked="checked">
+															<span class="switch-track"></span>
+															<span class="switch-thumb"></span>
+														</label>
+													</div>
+												</li>
+												<li>
+													<div class="num">2</div>
+													<div>
+														로그인 - 로그아웃전
+														<label class="switch switch-success">
+															<input class="switch-input" type="checkbox">
+															<span class="switch-track"></span>
+															<span class="switch-thumb"></span>
+														</label>
+													</div>
+												</li>
+												<li>
+													<div class="num">3</div>
+													<div>
+														로그아웃 - PC종료
+														<label class="switch switch-success">
+															<input class="switch-input" type="checkbox" checked="checked">
+															<span class="switch-track"></span>
+															<span class="switch-thumb"></span>
+														</label>
+													</div>
+												</li>
+											</ul>
 
+											<div class="text-center">
+												<button class="btn btn-outline-success" type="button">적 용</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 						<!-- // 오른쪽 -->
 					</div>
@@ -445,6 +583,35 @@
 	<script src="js/elephant.min.js"></script>
 	<script src="js/application.min.js"></script>
 	<!-- <script src="js/demo.min.js"></script> -->
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var idx = true;
+			$('.depth-01 li').on('click' , function(e){
+				e.stopPropagation();
+				$(this).children('.depth-02').stop().slideToggle();
+				if( idx ) {
+					$(this).children('table').find("span").removeClass('icon-plus-square').addClass('icon-minus-square');
+					idx = false;
+				} else {
+					$(this).children('table').find("span").removeClass('icon-minus-square').addClass('icon-plus-square');
+					idx = true;
+				}
+			})
+
+			$('.depth-02 li').on('click' , function(e){
+				e.stopPropagation();
+				$(this).children('.depth-03').stop().slideToggle();
+				if( idx ) {
+					$(this).children('table').find("span").removeClass('icon-plus-square-o').addClass('icon-minus-square-o');
+					idx = false;
+				} else {
+					$(this).children('table').find("span").removeClass('icon-minus-square-o').addClass('icon-plus-square-o');
+					idx = true;
+				}
+			})
+		})
+	</script>
 
 </body>
 
