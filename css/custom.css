@@ -46,7 +46,7 @@ a {color:#7d7d8e; text-decoration: none;}
 .table-left-td td {border-left:solid 1px #e7e7ec; border-bottom: solid 1px #e7e7ec;}
 .table-left-td td:first-child {border-left:0;}
 
-.table tr:last-child th {border-bottom:solid 2px #e7e7ec;}
+.table tr:last-child th {border-bottom:solid 1px #e7e7ec;}
 .table tr:last-child td {border-bottom:solid 1px #e7e7ec;}
 
 table.type-1 tr th {background:#f5f5f5; min-width:120px; padding-left:20px; font-size:14px; font-weight:normal; font-weight:bold; vertical-align:middle;}
@@ -61,6 +61,14 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 .checkbox-board tr td {border-left:solid 1px #e7e7ec;}
 .checkbox-board tr th:first-child , .checkbox-board tr td:first-child {width:5%; border-left:0; text-align:center;}
 .checkbox-board tr th:nth-child(2) , .checkbox-board tr td:nth-child(2) {border-left:0;}
+
+.type-14 {width:100%;}
+.type-14 tr th {padding-left:20px; border-right:solid 1px #e7e7ec; font-size:14px;}
+.type-14 tr th span {display:block; font-size:12px;}
+.type-14 tr td {padding:10px 0 10px 20px; font-size:13px; width:80%}
+.type-14 tr td ul {padding:0; list-style:none;}
+
+
 
 /* 프린트용 */
 .print-board tbody tr th {background:#f5f5f5; font-size:15px; padding-left:20px;}
@@ -151,15 +159,6 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 .font-s16 {font-size:16px !important;}
 .font-s17 {font-size:17px !important;}
 .font-s18 {font-size:18px !important;}
-
-
-
-
-
-
-
-
-
 
 
 

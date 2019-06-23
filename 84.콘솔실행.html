@@ -124,10 +124,9 @@
 						<h1 class="title-bar-title">
 							<ul>
 								<li><span class="icon icon-home"></span>HOME</li>
-								<li>Basic</li>
-								<li>로그인 제어</li>
-								<li>IP 인증</li>
-								<li><strong>IP 인증 요청처리</strong></li>
+								<li>공통작업</li>
+								<li>IP 대역 정책 설정</li>
+								<li><strong>정책 적용</strong></li>
 							</ul>
 						</h1>
 					</div>
@@ -354,101 +353,54 @@
 				</div>
 			</div>
 		</div>
+		<!-- 컨텐츠영역 -->
 		<div class="layout-content">
 			<div class="layout-content-body">
+				<!-- 타이틀 -->
 				<div class="row gutter-xs">
 					<div class="page-title">
-						<h2>IP 인증 요청처리</h2>
+						<h2>콘솔실행</h2>
+						<p>디스크락 콘솔을 통하여 디스크 통제 대상을 설정할 수 있습니다.</p>
 					</div>
 				</div>
+				<!-- // 타이틀 -->
 
 				<div class="row gutter-xs">
-					<div class="col-xs-12">
-						<div class="card">
-							<div class="card-header">
-								<div class="text-right">
-									<button class="btn btn-success m-r-sm" type="button">승인</button>
-									<button class="btn btn-default" type="button">반려</button>
-								</div>
-								<p class="search-page">showing 1 to 10 of 57 entries</p>
-							</div>
-							<div class="card-body">
-								<div class="table-responsive">
-									<table class="table table-striped checkbox-board">
-										<thead>
-											<tr>
-												<th>
-													<label class="custom-control custom-control-success custom-checkbox">
-														<input class="custom-control-input" type="checkbox">
-														<span class="custom-control-indicator"></span>
-													</label>
-												</th>
-												<th>사용자</th>
-												<th>생성타입</th>
-												<th>시작IP</th>
-												<th>끝IP</th>
-												<th>요청타입</th>
-												<th>요청일</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>
-													<label class="custom-control custom-control-success custom-checkbox">
-														<input class="custom-control-input" type="checkbox">
-														<span class="custom-control-indicator"></span>
-													</label>
-												</td>
-												<td>data1</td>
-												<td>data2</td>
-												<td>data3</td>
-												<td>data</td>
-												<td>data</td>
-												<td>data</td>
-											</tr>
-											<tr>
-												<td>
-													<label class="custom-control custom-control-success custom-checkbox">
-														<input class="custom-control-input" type="checkbox">
-														<span class="custom-control-indicator"></span>
-													</label>
-												</td>
-												<td>data1</td>
-												<td>data2</td>
-												<td>data3</td>
-												<td>data</td>
-												<td>data</td>
-												<td>data</td>
-											</tr>
-										</tbody>
-									</table>									
-								</div>
-								<div class="m-t-sm">
-									<div class="view-list">Show 
-										<select name="" id="" class="form-control d-ib size-80">
-											<option value="">10</option>
-											<option value="">15</option>
-											<option value="">20</option>
-										</select> entires</div>
-
-									<div class="text-center">
-										<ul class="pagination">
-											<li class="previous"><a href="#" class="icon icon-angle-left"></a></li>
-											<li class="active"><span>1</span></li>
-											<li><a href="">2</a></li>
-											<li><a href="">3</a></li>
-											<li><a href="">4</a></li>
-											<li><a href="">5</a></li>
-											<li class="next"><a href="#" class="icon icon-angle-right"></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
+					<div class="card p-y-md">
+						<table class="type-14">
+							<tr>
+								<th>
+									디스크 통제 대상
+									<span>드라이브(예. X: )로 연결된 경우에만 통제 가능합니다</span>
+								</th>
+								<td>
+									<ul>
+										<li>1. USB 드라이브</li>
+										<li>2. CD/DVD 드라이브</li>
+										<li>3. 네트워크 드라이브</li>
+										<li>4. 로컬디스크 드라이브</li>
+										<li>5. ClouDoc 드라이브</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th>
+									정책 분류 방식
+								</th>
+								<td>
+									<ul>
+										<li><strong>White List :</strong> 로컬디스크에 대해 기본적으로 거부하고, 허용할 어플리케이션만 지정</li>
+										<li><strong>Black List :</strong> 로컬디스크에 대해 기본적으로 허용하고, 거부할 어플리케이션만 지정</li>
+									</ul>
+									<button class="btn btn-outline-success btn-pill btn-thick" type="button">DiskLock 콘솔 실행</button>
+								</td>
+							</tr>
+						</table>
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- //컨텐츠영역 -->
 		<div class="layout-footer">
 			<div class="layout-footer-body">
 				<small class="version">Version 1.4.0</small>
