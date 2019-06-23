@@ -124,8 +124,9 @@
 						<h1 class="title-bar-title">
 							<ul>
 								<li><span class="icon icon-home"></span>HOME</li>
-								<li>공통작업</li>
-								<li><strong>임시 정책 승인</strong></li>
+								<li>문서함 관리</li>
+								<li>I/O 제어</li>
+								<li><strong>파일확장자 필터링</strong></li>
 							</ul>
 						</h1>
 					</div>
@@ -352,12 +353,12 @@
 				</div>
 			</div>
 		</div>
+		<!-- 컨텐츠영역 -->
 		<div class="layout-content">
 			<div class="layout-content-body">
 				<div class="row gutter-xs">
 					<div class="page-title">
-						<h2>임시 정책 승인</h2>
-						<p>관리자 승인 후 신청 기간 동안 로컬 디스크 쓰기 권한이 부여됩니다.</p>
+						<h2>파일확장자 필터링</h2>
 					</div>
 				</div>
 
@@ -365,77 +366,89 @@
 					<div class="col-xs-12">
 						<table class="table table-bordered type-1">
 							<tr>
-								<th>도메인 선택</th>
+								<th>파일확장자 필터링</th>
 								<td>
-									<select name="" id="" class="form-control domain">
-										<option value="">기본</option>
-									</select>
-									<input id="form-control-5" class="form-control domain" type="input" value="기본도메인" readonly="readonly">
-								</td>
-							</tr>
-							<tr>
-								<th>기간 선택</th>
-								<td>
-									<div class="input-group input-daterange" data-provide="datepicker" data-date-autoclose="true" data-date-format="dd-M-yyyy">
-										<div class="input-with-icon">
-											<input class="form-control" type="text" data-provide="datepicker">
-											<span class="icon icon-calendar input-icon"></span>
-										</div>
-										<span class="input-group-addon">~</span>
-										<div class="input-with-icon">
-											<input class="form-control" type="text" data-provide="datepicker">
-											<span class="icon icon-calendar input-icon"></span>
-										</div>
-									</div>
 									<div>
-										<button class="btn btn-default btn-xs" type="button">당일</button>
-										<button class="btn btn-default btn-xs" type="button">7일</button>
-										<button class="btn btn-default btn-xs" type="button">1개월</button>
-										<button class="btn btn-default btn-xs" type="button">3개월</button>
-										<button class="btn btn-default btn-xs" type="button">6개월</button>
-										<button class="btn btn-default btn-xs" type="button">1년</button>
-										<button class="btn btn-default btn-xs" type="button">3년</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<th>검색어</th>
-								<td>
-									<div class="m-b-sm">
-										<strong class="font-n m-r-sm">상태 : </strong>
 										<label class="custom-control custom-control-success custom-checkbox">
 											<input class="custom-control-input" type="checkbox">
 											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">승인완료</span>
+											<span class="custom-control-label">AVI</span>
 										</label>
 										<label class="custom-control custom-control-success custom-checkbox">
 											<input class="custom-control-input" type="checkbox">
 											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">승인거절</span>
+											<span class="custom-control-label">MPG</span>
 										</label>
 										<label class="custom-control custom-control-success custom-checkbox">
 											<input class="custom-control-input" type="checkbox">
 											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">승인대기</span>
-										</label>
-									</div>
-									<div class="m-b-sm">
-										<strong class="font-n m-r-sm">검색어 : </strong>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">신청자 ID</span>
+											<span class="custom-control-label">WMA</span>
 										</label>
 										<label class="custom-control custom-control-success custom-checkbox">
 											<input class="custom-control-input" type="checkbox">
 											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">승인권자 ID</span>
+											<span class="custom-control-label">WMV</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">ASF</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">MP3</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">OGG</span>
 										</label>
 									</div>
 
-									<div class="input-with-icon d-ib">
-										<input class="form-control" type="text" placeholder="입력하세요">
-										<span class="icon icon-search input-icon"></span>
+									<div class="m-t-sm">
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">IMG</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">BWI</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">MDF</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">ISO</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">BIN</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">ZIP</span>
+										</label>
+										<label class="custom-control custom-control-success custom-checkbox">
+											<input class="custom-control-input" type="checkbox">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">RAR</span>
+										</label>
+									</div>
+
+									<div class="m-t-sm">
+										<p class="m-t-md">* 기타 확장자 ( ',' 로 구분하여 입력하세요. 예: jpg,gif,hwp ) </p>
+										<div class="input-with-icon">
+											<input class="form-control" type="text" placeholder="입력하세요">
+										</div>
 									</div>
 								</td>
 							</tr>
@@ -446,102 +459,9 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="row gutter-xs">
-					<div class="col-xs-12">
-						<div class="card">
-							<div class="card-header">
-								<div class="text-right">
-									<button class="btn btn-default" type="button">엑셀(CSV) 파일로 저장</button>
-								</div>
-								<p class="search-page">showing 1 to 10 of 57 entries</p>
-							</div>
-							<div class="card-body">
-								<div class="table-responsive">
-									<table class="table table-striped checkbox-board">
-										<thead>
-											<tr>
-												<th>
-													<label class="custom-control custom-control-success custom-checkbox">
-														<input class="custom-control-input" type="checkbox">
-														<span class="custom-control-indicator"></span>
-													</label>
-												</th>
-												<th>신청일</th>
-												<th>신청자</th>
-												<th>적용 정책</th>
-												<th>기존 정책</th>
-												<th>임시 정책</th>
-												<th>만료일</th>
-												<th>상태</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>
-													<label class="custom-control custom-control-success custom-checkbox">
-														<input class="custom-control-input" type="checkbox">
-														<span class="custom-control-indicator"></span>
-													</label>
-												</td>
-												<td>data1</td>
-												<td>data2</td>
-												<td>data3</td>
-												<td>data</td>
-												<td>data</td>
-												<td>data</td>
-												<td>data</td>
-											</tr>
-											<tr>
-												<td>
-													<label class="custom-control custom-control-success custom-checkbox">
-														<input class="custom-control-input" type="checkbox">
-														<span class="custom-control-indicator"></span>
-													</label>
-												</td>
-												<td>data1</td>
-												<td>data2</td>
-												<td>data3</td>
-												<td>data</td>
-												<td>data</td>
-												<td>data</td>
-												<td>data</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-
-								<div class="m-t-sm clear">
-									<div class="view-list pull-left size-xs-4">Show 
-										<select name="" id="" class="form-control d-ib size-80">
-											<option value="">10</option>
-											<option value="">15</option>
-											<option value="">20</option>
-										</select> entires</div>
-									<div class="form-group text-right pull-right">
-										<button class="btn btn-success m-l-sm" type="button">승인</button>
-										<button class="btn btn-default" type="button">반려</button>
-									</div>
-								</div>
-								<div class="m-t-sm">
-									<div class="text-center">
-										<ul class="pagination">
-											<li class="previous"><a href="#" class="icon icon-angle-left"></a></li>
-											<li class="active"><span>1</span></li>
-											<li><a href="">2</a></li>
-											<li><a href="">3</a></li>
-											<li><a href="">4</a></li>
-											<li><a href="">5</a></li>
-											<li class="next"><a href="#" class="icon icon-angle-right"></a></li>
-										</ul>										
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
+		<!-- //컨텐츠영역 -->
 		<div class="layout-footer">
 			<div class="layout-footer-body">
 				<small class="version">Version 1.4.0</small>

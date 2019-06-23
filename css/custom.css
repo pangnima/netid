@@ -62,6 +62,15 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 .checkbox-board tr th:first-child , .checkbox-board tr td:first-child {width:5%; border-left:0; text-align:center;}
 .checkbox-board tr th:nth-child(2) , .checkbox-board tr td:nth-child(2) {border-left:0;}
 
+/* 프린트용 */
+.print-board tbody tr th {background:#f5f5f5; font-size:15px; padding-left:20px;}
+.print-board table tr th { text-align: center; padding:0; border-top:0; border-left:solid 1px #e7e7ec; border-right:solid 1px #e7e7ec;}
+.print-board table tr td {border-top:0;}
+.print-board tr:last-child th {border-bottom:solid 1px #e7e7ec;}
+.print-board table tr td {background: #fff; padding-left:20px;}
+.print-board table tr td:last-child{border-bottom:0;}
+
+
 
 
 /* card-header */
@@ -137,6 +146,11 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 
 /* font-size */
 .font-s13 {font-size:13px !important;}
+.font-s14 {font-size:14px !important;}
+.font-s15 {font-size:15px !important;}
+.font-s16 {font-size:16px !important;}
+.font-s17 {font-size:17px !important;}
+.font-s18 {font-size:18px !important;}
 
 
 
