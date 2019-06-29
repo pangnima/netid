@@ -555,7 +555,7 @@
 								<tr>
 									<th>
 										<h4>IP 인증 사용</h4>
-										<p class="font-n">모든 사용자는 관리자가 지정한 IP 대역에서만 로그인 할 수 있습니다</p>
+										<p>모든 사용자는 관리자가 지정한 IP 대역에서만 로그인 할 수 있습니다</p>
 									</th>
 									<td class="text-center">
 										<label class="switch switch-success">
@@ -568,7 +568,7 @@
 								<tr>
 									<th>
 										<h4>사용자별 IP 인증 설정(기본인증IP,추가인증IP)</h4>
-										<p class="font-n">관리자가 지정한 IP 대역과 상관없이 사용자별로 IP 대역을 지정할 수 있습니다.</p>
+										<p>관리자가 지정한 IP 대역과 상관없이 사용자별로 IP 대역을 지정할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
 										<label class="switch switch-success">
@@ -609,7 +609,7 @@
 								<tr>
 									<th>
 										<h4>로그를 기록할 최소 파일 크기</h4>
-										<p class="font-n">모든크기</p>
+										<p>모든크기</p>
 									</th>
 									<td class="text-center">
 										<button class="btn btn-outline-success" type="button">변경</button>
@@ -618,7 +618,7 @@
 								<tr>
 									<th>
 										<h4>로그 기록 대상</h4>
-										<p class="font-n">다운로드,업로드,삭제,복사,이동,이름변경,수정</p>
+										<p>다운로드,업로드,삭제,복사,이동,이름변경,수정</p>
 									</th>
 									<td class="text-center">
 										<button class="btn btn-outline-success" type="button">변경</button>
@@ -627,7 +627,7 @@
 								<tr>
 									<th>
 										<h4>인증 로그 기록 대상</h4>
-										<p class="font-n">로그인,로그아웃,인증실패</p>
+										<p>로그인,로그아웃,인증실패</p>
 									</th>
 									<td class="text-center">
 										<button class="btn btn-outline-success" type="button">변경</button>
@@ -642,7 +642,7 @@
 						<div class="card m-b-0">
 							<div class="card-header clearfix">
 								<h4 class="pull-left m-a-0">로그보관기간<span class="d-b">90일</span></h4>
-								<button class="btn btn-outline-success pull-right" type="button">변경</button>
+								<button class="btn btn-outline-success pull-right btn-left-bar" type="button">변경</button>
 							</div>
 							<div class="card-body">
 								<div class="table-responsive">
@@ -694,7 +694,7 @@
 						<div class="card">
 							<div class="card-header clearfix">
 								<h4 class="pull-left m-a-0">로그 DB 자동 변경 사용 및 주기<span class="d-b">1개월 마다</span></h4>
-								<button class="btn btn-outline-success pull-right" type="button">변경</button>
+								<button class="btn btn-outline-success pull-right btn-left-bar" type="button">변경</button>
 							</div>
 							<div class="card-body">
 								<div class="table-responsive">
@@ -742,6 +742,7 @@
 								</div>
 							</div>
 						</div>
+						
 					</div>
 				</div>
 				<!-- //고급 설정 -->
@@ -805,6 +806,36 @@
 											<option value="">메뉴3</option>
 										</select>
 									</div>
+								</div>
+
+								<div class="text-center">
+									<button class="btn btn-success" type="button">변경</button>
+									<button class="btn btn-default" type="button">취소</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="successModalAlert" tabindex="-1" role="dialog" class="modal fade in" style="display:block; position: static;">
+					<div class="modal-dialog size-xs-2">
+						<div class="modal-content">
+							<div class="modal-header bg-success">
+								<h4 class="pull-left m-a-0">로그 기록 파일 크기 변경</h4>
+								<button type="button" class="close" data-dismiss="modal">
+									<span aria-hidden="true">×</span>
+									<span class="sr-only">Close</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div class="form-group">
+									<label for="username-1" class="control-label">파일 크기</label>
+									<select id="username-1" class="form-control" type="text" name="username_1">
+										<option>모든크기</option>
+										<option>모든크기</option>
+										<option>모든크기</option>
+										<option>모든크기</option>
+									</select>
 								</div>
 
 								<div class="text-center">

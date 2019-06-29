@@ -13,6 +13,7 @@ a {color:#7d7d8e; text-decoration: none;}
 /* border관련 */
 .border-none {border:0 !important;}
 .border-l-none {border-left:0 !important;}
+.border-b-none {border-bottom:0 !important;}
 .border-color-gray {border-color:#e7e7ec;}
 
 /* 마진관련 */
@@ -91,6 +92,7 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 
 .type-21 {width:100%;}
 .type-21 tbody tr td {padding:10px 20px;}
+.type-21 tbody tr td {padding:10px 20px;}
 
 .slide-nav ul {list-style:none;}
 .slide-nav ul li {cursor: pointer; padding:5px 0;}
@@ -112,11 +114,12 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 
 
 /* 설정페이지 */
-
 .setting-box .title {font-size:17px; font-weight:bold; margin-bottom:15px;}
-.setting-box .normal-list {padding:0; background: #fff; border-radius:5px; border:solid 1px #ddd;}
+.setting-box .normal-list {padding:0; background:#fff; border-radius:5px; border:solid 1px #ddd;}
 .setting-box .normal-list th {padding-left: 20px;}
-
+.setting-box .normal-list th p {font-weight:normal;}
+.setting-box .normal-list td {position:relative;}
+.setting-box .normal-list td button::before, .btn-left-bar::before {content:""; position:absolute; top:50%; left:-40px; background:#e7e7ec; width:1px; height:34px; transform:translateY(-50%);}
 
 /* card-header */
 .card-header {margin:0 5px; position: relative;}
@@ -183,6 +186,10 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 .btn-basic , .btn-basic:hover , .btn-basic:active , .btn-basic:focus {background:#25c6cb; color:#fff;}
 .btn-link {color:inherit;}
 .btn-link:focus , .btn-link:hover {background-color:transparent; color:inherit; outline:none;}
+
+/* 체크박스  */
+.checkbox_list {display:block; list-style:none; padding:0; overflow:hidden;}
+.checkbox_list li {float: left; margin-right:15px;}
 
 /* bordercolor */
 .border-color-f1 {border-color:#f1f1f1;}
