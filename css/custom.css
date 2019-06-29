@@ -11,7 +11,8 @@ a {color:#7d7d8e; text-decoration: none;}
 .sidenav-item {font-size:13px;}
 
 /* border관련 */
-.border-none {border:0;}
+.border-none {border:0 !important;}
+.border-l-none {border-left:0 !important;}
 .border-color-gray {border-color:#e7e7ec;}
 
 /* 마진관련 */
@@ -71,14 +72,14 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 .type-14 tbody tr td {padding:10px 0 10px 20px; font-size:13px; width:80%}
 .type-14 tbody tr td ul {padding:0; list-style:none;}
 
-.type-18 {width:100%;}
+.type-18 {width:100%; border-left:solid 1px #e7e7ec; border-right:solid 1px #e7e7ec;}
 .type-18 tbody tr th {background:#f5f5f5; padding-left:20px; border-right:solid 1px #e7e7ec; font-size:14px;}
 .type-18 tbody tr td {width:80%; padding-left:20px;font-size:13px;}
 
 
 .type-33 {width: 100%;}
 .type-33 ul li{list-style: none;}
-.type-33 tbody th {width:70%}
+.type-33 tbody th {width:67%}
 
 .type-33-setting {padding:10px 20px;}
 .type-33-setting p {font-size: 17px;}
@@ -88,11 +89,14 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 .type-33-setting ul li div label {float:right; margin-right:10px;}
 .type-33-setting ul li div.num {width:10%; text-align: center; border-right:solid 1px #ddd; padding:5px;}
 
+.type-21 {width:100%;}
+.type-21 tbody tr td {padding:10px 20px;}
 
 .slide-nav ul {list-style:none;}
 .slide-nav ul li {cursor: pointer; padding:5px 0;}
 .slide-nav ul li table td strong {position:relative; margin-right:10px; padding-right:10px; color:#13b6bc;}
 .slide-nav ul li table td strong:after {content:""; position:absolute; top:50%; right:0; background:#13b6bc; width:1px; height:14px; transform:translateY(-50%);}
+.slide-nav ul.depth-01 > li > table tr th {font-size:15px;}
 .slide-nav ul.depth-01.active .depth-02 {display: block; transition: all .2s;}
 
 .slide-nav ul.depth-02{display: none;}
@@ -150,6 +154,7 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 .size-80 {max-width:80px; margin:0 auto;}
 .size-100 {max-width:100px;}
 .size-200 {max-width:200px;}
+.size-min30 {min-width:30px;}
 
 .size-xs-1 {width:8.333333% !important;}
 .size-xs-2 {width:16.666667% !important;}
