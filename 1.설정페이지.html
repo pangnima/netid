@@ -545,16 +545,17 @@
 				<!-- 기본설정 -->
 				<div class="row size-xs-8 m-0-a">
 					<div class="setting-box">
+						<!-- IP 인증 설정 -->
 						<h3 class="title">기본</h3>
 						<div class="table-responsive">
-							<table class="table normal-list">
+							<table class="table normal-list shadow">
 								<colgroup>
 									<col>
 									<col style="width:10%">
 								</colgroup>
 								<tr>
 									<th>
-										<h4>IP 인증 사용</h4>
+										<h4 class="font-s14">IP 인증 사용</h4>
 										<p>모든 사용자는 관리자가 지정한 IP 대역에서만 로그인 할 수 있습니다</p>
 									</th>
 									<td class="text-center">
@@ -567,7 +568,7 @@
 								</tr>
 								<tr>
 									<th>
-										<h4>사용자별 IP 인증 설정(기본인증IP,추가인증IP)</h4>
+										<h4 class="font-s14">사용자별 IP 인증 설정(기본인증IP,추가인증IP)</h4>
 										<p>관리자가 지정한 IP 대역과 상관없이 사용자별로 IP 대역을 지정할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
@@ -580,7 +581,7 @@
 								</tr>
 								<tr>
 									<th>
-										<h4>관리자 접속 IP 대역 사용</h4>
+										<h4 class="font-s14">관리자 접속 IP 대역 사용</h4>
 									</th>
 									<td class="text-center">
 										<label class="switch switch-success">
@@ -592,6 +593,7 @@
 								</tr>
 							</table>
 						</div>
+						<!-- //IP 인증 설정 -->
 					</div>
 				</div>
 				<!-- // 기본설정 -->
@@ -599,16 +601,17 @@
 				<!-- 고급 설정 -->
 				<div class="row size-xs-8 m-0-a p-b-lg">
 					<div class="setting-box">
+						<!-- 파일 작업 로그 설정 -->
 						<h3 class="title">기본</h3>
 						<div class="table-responsive">
-							<table class="table normal-list">
+							<table class="table normal-list shadow">
 								<colgroup>
 									<col>
 									<col style="width:10%">
 								</colgroup>
 								<tr>
 									<th>
-										<h4>로그를 기록할 최소 파일 크기</h4>
+										<h4 class="font-s14">로그를 기록할 최소 파일 크기</h4>
 										<p>모든크기</p>
 									</th>
 									<td class="text-center">
@@ -617,7 +620,7 @@
 								</tr>
 								<tr>
 									<th>
-										<h4>로그 기록 대상</h4>
+										<h4 class="font-s14">로그 기록 대상</h4>
 										<p>다운로드,업로드,삭제,복사,이동,이름변경,수정</p>
 									</th>
 									<td class="text-center">
@@ -626,7 +629,7 @@
 								</tr>
 								<tr>
 									<th>
-										<h4>인증 로그 기록 대상</h4>
+										<h4 class="font-s14">인증 로그 기록 대상</h4>
 										<p>로그인,로그아웃,인증실패</p>
 									</th>
 									<td class="text-center">
@@ -635,29 +638,29 @@
 								</tr>
 							</table>
 						</div>
-						<div class="text-center">
-							고급
+						<div class="text-center m-y-lg">
+							<button class="btn-link p-x" type="button">고급 <span class="icon icon-caret-up p-x"></span></button>
 						</div>
 
-						<div class="card m-b-0">
+						<div class="card m-b-0 shadow round-box">
 							<div class="card-header clearfix">
-								<h4 class="pull-left m-a-0">로그보관기간<span class="d-b">90일</span></h4>
+								<h4 class="pull-left m-a-0 font-s14">로그보관기간<span class="d-b">90일</span></h4>
 								<button class="btn btn-outline-success pull-right btn-left-bar" type="button">변경</button>
 							</div>
 							<div class="card-body">
 								<div class="table-responsive">
-									<p>로그 DB 정보</p>
+									<p class="p-l-sm font-s14">로그 DB 정보</p>
 									<table class="table">
 										<thead>
 											<tr>
-												<th>운영 서버 IP</th>
-												<th>서버 IP</th>
-												<th>접속계정</th>
-												<th>비밀번호</th>
-												<th>데이터베이스</th>
-												<th>종류</th>
-												<th>포트</th>
-												<th></th>
+												<th class="font-n">운영 서버 IP</th>
+												<th class="font-n">서버 IP</th>
+												<th class="font-n">접속계정</th>
+												<th class="font-n">비밀번호</th>
+												<th class="font-n">데이터베이스</th>
+												<th class="font-n">종류</th>
+												<th class="font-n">포트</th>
+												<th class="font-n"></th>
 											</tr>
 										</thead>
 										<tbody>
@@ -691,25 +694,25 @@
 							</div>
 						</div>
 
-						<div class="card">
+						<div class="card shadow round-box">
 							<div class="card-header clearfix">
-								<h4 class="pull-left m-a-0">로그 DB 자동 변경 사용 및 주기<span class="d-b">1개월 마다</span></h4>
+								<h4 class="pull-left m-a-0 font-s14">로그 DB 자동 변경 사용 및 주기<span class="d-b">1개월 마다</span></h4>
 								<button class="btn btn-outline-success pull-right btn-left-bar" type="button">변경</button>
 							</div>
 							<div class="card-body">
 								<div class="table-responsive">
-									<p>로그 DB 정보</p>
+									<p class="p-l-sm font-s14">로그 DB 정보</p>
 									<table class="table">
 										<thead>
 											<tr>
-												<th>운영 서버 IP</th>
-												<th>서버 IP</th>
-												<th>접속계정</th>
-												<th>비밀번호</th>
-												<th>데이터베이스</th>
-												<th>종류</th>
-												<th>포트</th>
-												<th></th>
+												<th class="font-n">운영 서버 IP</th>
+												<th class="font-n">서버 IP</th>
+												<th class="font-n">접속계정</th>
+												<th class="font-n">비밀번호</th>
+												<th class="font-n">데이터베이스</th>
+												<th class="font-n">종류</th>
+												<th class="font-n">포트</th>
+												<th class="font-n"></th>
 											</tr>
 										</thead>
 										<tbody>
@@ -742,6 +745,7 @@
 								</div>
 							</div>
 						</div>
+						<!-- //파일 작업 로그 설정 -->
 						
 					</div>
 				</div>
@@ -749,13 +753,14 @@
 
 
 				<!-- 컨텐츠영역 -->
+				<!-- 팝업-로그 DB 정보 변경 -->
 				<div id="successModalAlert" tabindex="-1" role="dialog" class="modal fade in" style="display:block; position: static;">
 					<div class="modal-dialog">
-						<div class="modal-content">
+						<div class="modal-content round-box">
 							<div class="modal-header bg-success">
 								<h4 class="pull-left m-a-0">로그 DB 정보 변경</h4>
 								<button type="button" class="close" data-dismiss="modal">
-									<span aria-hidden="true">×</span>
+									<span aria-hidden="true" class="popup-close">×</span>
 									<span class="sr-only">Close</span>
 								</button>
 							</div>
@@ -816,14 +821,16 @@
 						</div>
 					</div>
 				</div>
+				<!-- //팝업-로그 DB 정보 변경 -->
 
+				<!-- 팝업-로그 기록 파일 크기 변경 -->
 				<div id="successModalAlert" tabindex="-1" role="dialog" class="modal fade in" style="display:block; position: static;">
-					<div class="modal-dialog size-xs-2">
-						<div class="modal-content">
+					<div class="modal-dialog">
+						<div class="modal-content round-box">
 							<div class="modal-header bg-success">
 								<h4 class="pull-left m-a-0">로그 기록 파일 크기 변경</h4>
 								<button type="button" class="close" data-dismiss="modal">
-									<span aria-hidden="true">×</span>
+									<span aria-hidden="true" class="popup-close">×</span>
 									<span class="sr-only">Close</span>
 								</button>
 							</div>
@@ -846,14 +853,16 @@
 						</div>
 					</div>
 				</div>
+				<!-- //팝업-로그 기록 파일 크기 변경 -->
 
+				<!-- 팝업-로그보관기간 변경 -->
 				<div id="successModalAlert" tabindex="-1" role="dialog" class="modal fade in" style="display:block; position: static;">
-					<div class="modal-dialog size-xs-2">
-						<div class="modal-content">
+					<div class="modal-dialog">
+						<div class="modal-content round-box">
 							<div class="modal-header bg-success">
 								<h4 class="pull-left m-a-0">로그보관기간 변경</h4>
 								<button type="button" class="close" data-dismiss="modal">
-									<span aria-hidden="true">×</span>
+									<span aria-hidden="true" class="popup-close">×</span>
 									<span class="sr-only">Close</span>
 								</button>
 							</div>
@@ -871,14 +880,16 @@
 						</div>
 					</div>
 				</div>
+				<!-- //팝업-로그보관기간 변경 -->
 
+				<!-- 팝업-로그 기록 파일 대상 변경 -->
 				<div id="successModalAlert" tabindex="-1" role="dialog" class="modal fade in" style="display:block; position: static;">
-					<div class="modal-dialog size-xs-3">
-						<div class="modal-content">
+					<div class="modal-dialog">
+						<div class="modal-content round-box">
 							<div class="modal-header bg-success">
 								<h4 class="pull-left m-a-0">로그 기록 파일 대상 변경</h4>
 								<button type="button" class="close" data-dismiss="modal">
-									<span aria-hidden="true">×</span>
+									<span aria-hidden="true" class="popup-close">×</span>
 									<span class="sr-only">Close</span>
 								</button>
 							</div>
@@ -886,42 +897,42 @@
 								<div class="form-group">
 									<label for="username-1" class="control-label">로그 기록 선택</label>
 									<ul class="checkbox_list m-t-sm">
-										<li class="size-xs-4">
+										<li class="size-xs-4 m-b">
 											<label class="custom-control custom-control-success custom-checkbox">
 												<input class="custom-control-input" type="checkbox">
 												<span class="custom-control-indicator"></span>
 												<span class="custom-control-label">다운로드</span>
 											</label>
 										</li>
-										<li class="size-xs-4">
+										<li class="size-xs-4 m-b">
 											<label class="custom-control custom-control-success custom-checkbox">
 												<input class="custom-control-input" type="checkbox">
 												<span class="custom-control-indicator"></span>
 												<span class="custom-control-label">업로드</span>
 											</label>
 										</li>
-										<li class="size-xs-4">
+										<li class="size-xs-4 m-b">
 											<label class="custom-control custom-control-success custom-checkbox">
 												<input class="custom-control-input" type="checkbox">
 												<span class="custom-control-indicator"></span>
 												<span class="custom-control-label">이름변경</span>
 											</label>
 										</li>
-										<li class="size-xs-4">
+										<li class="size-xs-4 m-b">
 											<label class="custom-control custom-control-success custom-checkbox">
 												<input class="custom-control-input" type="checkbox">
 												<span class="custom-control-indicator"></span>
 												<span class="custom-control-label">이동</span>
 											</label>
 										</li>
-										<li class="size-xs-4">
+										<li class="size-xs-4 m-b">
 											<label class="custom-control custom-control-success custom-checkbox">
 												<input class="custom-control-input" type="checkbox">
 												<span class="custom-control-indicator"></span>
 												<span class="custom-control-label">복사</span>
 											</label>
 										</li>
-										<li class="size-xs-4">
+										<li class="size-xs-4 m-b">
 											<label class="custom-control custom-control-success custom-checkbox">
 												<input class="custom-control-input" type="checkbox">
 												<span class="custom-control-indicator"></span>
@@ -939,14 +950,16 @@
 						</div>
 					</div>
 				</div>
+				<!-- //팝업-로그 기록 파일 대상 변경 -->
 
+				<!-- 팝업-인증 로그 기록 대상 변경 -->
 				<div id="successModalAlert" tabindex="-1" role="dialog" class="modal fade in" style="display:block; position: static;">
-					<div class="modal-dialog size-xs-3">
-						<div class="modal-content">
+					<div class="modal-dialog">
+						<div class="modal-content round-box">
 							<div class="modal-header bg-success">
 								<h4 class="pull-left m-a-0">인증 로그 기록 대상 변경</h4>
 								<button type="button" class="close" data-dismiss="modal">
-									<span aria-hidden="true">×</span>
+									<span aria-hidden="true" class="popup-close">×</span>
 									<span class="sr-only">Close</span>
 								</button>
 							</div>
@@ -954,21 +967,21 @@
 								<div class="form-group">
 									<label for="username-1" class="control-label">인증 로그 기록 선택</label>
 									<ul class="checkbox_list m-t-sm">
-										<li class="size-xs-4">
+										<li class="size-xs-4 m-b">
 											<label class="custom-control custom-control-success custom-checkbox">
 												<input class="custom-control-input" type="checkbox">
 												<span class="custom-control-indicator"></span>
 												<span class="custom-control-label">로그인</span>
 											</label>
 										</li>
-										<li class="size-xs-4">
+										<li class="size-xs-4 m-b">
 											<label class="custom-control custom-control-success custom-checkbox">
 												<input class="custom-control-input" type="checkbox">
 												<span class="custom-control-indicator"></span>
 												<span class="custom-control-label">로그아웃</span>
 											</label>
 										</li>
-										<li class="size-xs-4">
+										<li class="size-xs-4 m-b">
 											<label class="custom-control custom-control-success custom-checkbox">
 												<input class="custom-control-input" type="checkbox">
 												<span class="custom-control-indicator"></span>
@@ -986,14 +999,16 @@
 						</div>
 					</div>
 				</div>
+				<!-- //팝업-인증 로그 기록 대상 변경 -->
 
+				<!-- 팝업-로그 DB 자동 조건 변경 -->
 				<div id="successModalAlert" tabindex="-1" role="dialog" class="modal fade in" style="display:block; position: static;">
-					<div class="modal-dialog size-xs-3">
-						<div class="modal-content">
+					<div class="modal-dialog">
+						<div class="modal-content round-box">
 							<div class="modal-header bg-success">
 								<h4 class="pull-left m-a-0">로그 DB 자동 조건 변경</h4>
 								<button type="button" class="close" data-dismiss="modal">
-									<span aria-hidden="true">×</span>
+									<span aria-hidden="true" class="popup-close">×</span>
 									<span class="sr-only">Close</span>
 								</button>
 							</div>
@@ -1019,57 +1034,58 @@
 						</div>
 					</div>
 				</div>
+				<!-- //팝업-로그 DB 자동 조건 변경 -->
 				<!-- //컨텐츠영역 -->
 
-				<!-- 설정페이지2, 상세설정화면 -->
+				<!-- 설정페이지2-운영 -->
 				<div class="row size-xs-8 m-0-a p-b-lg">
 					<div class="setting-box">
 						<h3 class="title">운영</h3>
 						<div class="table-responsive">
-							<table class="table normal-list">
+							<table class="table normal-list shadow">
 								<colgroup>
 									<col>
 									<col style="width:10%">
 								</colgroup>
 								<tbody><tr>
 									<th>
-										<h4>제품버전</h4>
+										<h4 class="font-s14">제품버전</h4>
 										<p>프로그램 및 ActiveX 버전 정보를 관리할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
-										<span class="icon icon-caret-right text-right"></span>
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
 									</td>
 								</tr>
 								<tr>
 									<th>
-										<h4>데이터베이스</h4>
+										<h4 class="font-s14">데이터베이스</h4>
 										<p>운영 시 필요한 데이터를 저장하는 데이터베이스 정보를 설정할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
-										<span class="icon icon-caret-right text-right"></span>
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
 									</td>
 								</tr>
 								<tr>
 									<th>
-										<h4>메일서비스</h4>
+										<h4 class="font-s14">메일서비스</h4>
 										<p>비밀번호 찾기, 용량 신청 등과 같이 메일 발송이 필요한 경우 사용할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
-										<span class="icon icon-caret-right text-right"></span>
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
 									</td>
 								</tr>
 								<tr>
 									<th>
-										<h4>알림 및 메시지</h4>
+										<h4 class="font-s14">알림 및 메시지</h4>
 										<p>알림 및 시스템 관련 메시지에 대해 관리할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
-                      <span class="icon icon-caret-right text-right"></span>
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
 									</td>
 								</tr>
 								<tr>
 									<th>
-										<h4>프로그램 입출력 차단 목록</h4>
+										<h4 class="font-s14">프로그램 입출력 차단 목록</h4>
 										<p>비밀번호 찾기, 용량 신청 등과 같이 메일 발송이 필요한 경우 사용할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
@@ -1079,27 +1095,29 @@
 							</tbody></table>
 						</div>			
 					</div>
+					<!-- //설정페이지2-운영 -->
 
+					<!-- 설정페이지2-보안 -->
 					<div class="setting-box">
 						<h3 class="title">보안</h3>
 						<div class="table-responsive">
-							<table class="table normal-list">
+							<table class="table normal-list shadow">
 								<colgroup>
 									<col>
 									<col style="width:10%">
 								</colgroup>
 								<tbody><tr>
 									<th>
-										<h4>통신 및 프로토콜</h4>
+										<h4 class="font-s14">통신 및 프로토콜</h4>
 										<p>통신 및 프로토콜에 관련된 설정을 확인할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
-										<span class="icon icon-caret-right text-right"></span>
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
 									</td>
 								</tr>
 								<tr>
 									<th>
-										<h4>서버 암호화 사용</h4>
+										<h4 class="font-s14">서버 암호화 사용</h4>
 										<p>서버에 저장된 문서를 암호화하여 사용할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
@@ -1112,76 +1130,80 @@
 								</tr>
 								<tr>
 									<th>
-										<h4>권한</h4>
+										<h4 class="font-s14">권한</h4>
 										<p>기본적으로 부여할 권한을 설정할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
-										<span class="icon icon-caret-right text-right"></span>
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
 									</td>
 								</tr>
 							</tbody></table>
 						</div>			
 					</div>
+					<!-- //설정페이지2-보안 -->
 
+					<!-- 설정페이지2-사용자 -->
 					<div class="setting-box">
 						<h3 class="title">사용자</h3>
 						<div class="table-responsive">
-							<table class="table normal-list">
+							<table class="table normal-list shadow">
 								<colgroup>
 									<col>
 									<col style="width:10%">
 								</colgroup>
 								<tbody><tr>
 									<th>
-										<h4>로그인</h4>
+										<h4 class="font-s14">로그인</h4>
 										<p>설정한 내용에 따라 사용자 및 관리자 로그인 방식을 변경할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
-										<span class="icon icon-caret-right text-right"></span>
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
 									</td>
 								</tr>
 								<tr>
 									<th>
-										<h4>비밀번호</h4>
+										<h4 class="font-s14">비밀번호</h4>
 										<p>비밀번호에 관련된 설정을 변경할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
-											<span class="icon icon-caret-right text-right"></span>
-										</td>
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
+									</td>
 								</tr>
 								<tr>
 									<th>
-										<h4>휴지통</h4>
+										<h4 class="font-s14">휴지통</h4>
 										<p>각 문서함에 존재하는 휴지통에 대한 설정을 할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
-										<span class="icon icon-caret-right text-right"></span>
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
 									</td>
 								</tr>
 							</tbody></table>
 						</div>			
 					</div>
-
+					<!-- //설정페이지2-사용자 -->
+					
+					<!-- 설정페이지2-기능 -->
 					<div class="setting-box">
 						<h3 class="title">기능</h3>
 						<div class="table-responsive">
-							<table class="table normal-list">
+							<table class="table normal-list shadow">
 								<colgroup>
 									<col>
 									<col style="width:10%">
 								</colgroup>
 								<tbody><tr>
 									<th>
-										<h4>윈도우 탐색기 메뉴 관리</h4>
+										<h4 class="font-s14">윈도우 탐색기 메뉴 관리</h4>
 										<p>사용자 PC에서 컨텍스트 및 트레이아이콘 메뉴로 표시하여 사용할 수 있는 기능을 설정할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
-										<span class="icon icon-caret-right text-right"></span>
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
 									</td>
 								</tr>
 								<tr>
 									<th>
-										<h4>파일 검색 사용</h4>
+										<h4 class="font-s14">파일 검색 사용</h4>
 										<p>파일 이름 검색 및 내용 검색을 사용하기 위해 설정이 필요합니다.</p>
 									</th>
 									<td class="text-center">
@@ -1194,82 +1216,97 @@
 								</tr>
 								<tr>
 									<th>
-										<h4>추가 서버</h4>
+										<h4 class="font-s14">추가 서버</h4>
 										<p>대외문서교환서버,보안뷰어 기능을 사용하기 위해 추가 서버 설정이 필요합니다.</p>
 									</th>
 									<td class="text-center">
-										<span class="icon icon-caret-right text-right"></span>
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
 									</td>
 								</tr>
 								<tr>
 									<th>
-										<h4>웹/자바 탐색기</h4>
+										<h4 class="font-s14">웹/자바 탐색기</h4>
 										<p>웹탐색기 및 자바탐색기 관련하여 설정 할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
-										<span class="icon icon-caret-right text-right"></span>
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
 									</td>
 								</tr>
 							</tbody></table>
 						</div>			
 					</div>
+					<!-- //설정페이지2-기능 -->
 
-					<div class="card m-b-0">
-						<div class="card-header clearfix border-none">
-							<h4 class="pull-left m-a-0">제품버전</span></h4>
-							<button class="btn btn-outline-success pull-right" type="button">변경</button>
-						</div>
-						<div class="card-body p-a-0">
-							<div class="table-responsive">
-								<table class="table normal-list">
-									<colgroup>
-										<col>
-										<col style="width:10%">
-									</colgroup>
-									<tbody><tr>
-										<th>
-											<h4>윈도우 탐색기 메뉴 관리</h4>
-											<p>사용자 PC에서 컨텍스트 및 트레이아이콘 메뉴로 표시하여 사용할 수 있는 기능을 설정할 수 있습니다.</p>
-										</th>
-										<td class="text-center">
-											<span class="icon icon-caret-right text-right"></span>
-										</td>
-									</tr>
-									<tr>
-										<th>
-											<h4>파일 검색 사용</h4>
-											<p>파일 이름 검색 및 내용 검색을 사용하기 위해 설정이 필요합니다.</p>
-										</th>
-										<td class="text-center">
-											<label class="switch switch-success">
-												<input class="switch-input" type="checkbox" checked="checked">
-												<span class="switch-track"></span>
-												<span class="switch-thumb"></span>
-											</label>
-										</td>
-									</tr>
-									<tr>
-										<th>
-											<h4>추가 서버</h4>
-											<p>대외문서교환서버,보안뷰어 기능을 사용하기 위해 추가 서버 설정이 필요합니다.</p>
-										</th>
-										<td class="text-center">
-											<span class="icon icon-caret-right text-right"></span>
-										</td>
-									</tr>
-									<tr>
-										<th>
-											<h4>웹/자바 탐색기</h4>
-											<p>웹탐색기 및 자바탐색기 관련하여 설정 할 수 있습니다.</p>
-										</th>
-										<td class="text-center">
-											<span class="icon icon-caret-right text-right"></span>
-										</td>
-									</tr>
-								</tbody></table>
-							</div>
+					<!-- 상세설정화면 -->
+					<div class="setting-box">
+						<div class="table-responsive">
+							<table class="table normal-list shadow">
+								<colgroup>
+									<col>
+									<col style="width:10%">
+								</colgroup>
+								<tbody><tr>
+									<th>
+										<button class="d-ib btn-link p-l-0"><span class="icon icon-arrow-left icon-2x"></span></button>
+										<h4 class="m-a-0 d-ib">제품버전</button></h4>
+									</th>
+									<td class="text-center">
+										
+									</td>
+								</tr>
+								<tr>
+									<th class="border-none">
+										<h4 class="font-s14">Agent 버전</h4>
+										<p>2.407</p>
+									</th>
+									<td class="text-center border-none">
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<h4 class="font-s14">자바탐색기 버전</h4>
+										<p>1.0.0.0</p>
+									</th>
+									<td class="text-center">
+										<label class="switch switch-success">
+											<input class="switch-input" type="checkbox" checked="checked">
+											<span class="switch-track"></span>
+											<span class="switch-thumb"></span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<h4 class="font-s14">PC 백업 버전</h4>
+										<p>1</p>
+									</th>
+									<td class="text-center">
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<h4 class="font-s14">웹페이지에서 Agent 설치 및 실행하는 ActiveX 버전</h4>
+										<p>1,0,0,51</p>
+									</th>
+									<td class="text-center">
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<h4 class="font-s14">멀티 다운로드 ActiveX 버전<span class="icon icon-info-circle icon-lg text-success p-l-sm"></span></h4>
+										<p>1,0,0,39</p>
+									</th>
+									<td class="text-center">
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
+									</td>
+								</tr>
+							</tbody></table>
 						</div>
 					</div>
+					<!-- //상세설정화면 -->
 				</div>
 			</div>
 		</div>
