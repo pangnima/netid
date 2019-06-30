@@ -166,7 +166,6 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 .size-80 {max-width:80px; margin:0 auto;}
 .size-100 {max-width:100px;}
 .size-200 {max-width:200px;}
-.size-min30 {min-width:30px;}
 
 .size-xs-1 {width:8.333333% !important;}
 .size-xs-2 {width:16.666667% !important;}
@@ -198,7 +197,7 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 
 /* 체크박스  */
 .checkbox_list {display:block; list-style:none; padding:0; overflow:hidden;}
-.checkbox_list li {float: left; margin-right:15px;}
+.checkbox_list li {float: left; width:70px;}
 
 /* bordercolor */
 .border-color-f1 {border-color:#f1f1f1;}
