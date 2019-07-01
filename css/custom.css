@@ -45,7 +45,7 @@ a {color:#7d7d8e; text-decoration: none;}
 /* 테이블 타입 */
 .table > tbody > tr > td , .table > tbody > tr > th , .table > tfoot > tr > td , .table > tfoot > tr > th , .table > thead > tr > td , .table > thead > tr > th {vertical-align:middle;}
 .table > thead > tr > th , .table > tbody > tr > th {font-size:14px;}
-.table > tbody > tr > td {font-size:13px;}
+.table > tbody > tr > td {font-size:13px; padding-left:10px;}
 .table > tbody > tr > td .icon {font-size:18px;}
 .table-color {background:#f9f9f9;}
 .table-left-td td {border-left:solid 1px #e7e7ec; border-bottom: solid 1px #e7e7ec;}
@@ -54,9 +54,9 @@ a {color:#7d7d8e; text-decoration: none;}
 .table tr:last-child th {border-bottom:solid 1px #e7e7ec;}
 .table tr:last-child td {border-bottom:solid 1px #e7e7ec;}
 
-table.type-1 tr th {background:#f5f5f5; min-width:120px; padding-left:20px; font-size:14px; font-weight:normal; font-weight:bold; vertical-align:middle;}
+table.type-1 tr th {background:#f5f5f5; min-width:120px; width:170px; padding-left:20px; font-size:14px; font-weight:normal; font-weight:bold; vertical-align:middle;}
 table.type-1 tr th.table-title {background:#4c4847; color:#fff; text-align:center; font-size:18px;}
-table.type-1 tr td {width:80%; padding-left:20px;}
+table.type-1 tr td {padding-top:15px; padding-bottom:15px; padding-left:20px;}
 table.type-1 tr th label , table.type-1 tr td label {font-weight:normal;}
 table.type-1 tr td select.domain {display:inline-block; max-width:150px;}
 table.type-1 tr td input.domain {display:inline-block; max-width:250px;}
@@ -132,14 +132,14 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 .setting-box .normal-list td button.btn-outline-success::before, .btn-left-bar::before {content:""; position:absolute; top:50%; left:-15px; background:#e7e7ec; width:1px; height:34px; transform:translateY(-50%);}
 
 /* card-header */
-.card-header {margin:0 5px; position: relative;}
+.card-header {margin:0 20px; position:relative; border-bottom:1px solid #e7e7e7;}
 .card-header h3 {font-size:15px; margin:0;}
 .card-header h3 .icon-info-circle { font-size:16px; color:#13b6bc; margin-left:4px;}
 .card-header .card-action.icon-plus {position:absolute; top:50%; right:10px; color:#13b6bc; font-size:20px; transform:translateY(-50%);}
 
 .card-header.green {background: #13b6bc; color:#fff; font-size:17px; margin:0;}
-.card-header .search-page {position:absolute; left:10px; bottom:5px; margin:0;}
-
+.card-header .search-page {position:absolute; left:0; bottom:5px; margin:0;}
+.card-body {padding-left:20px; padding-right:20px;}
 
 /* 리스트그룹 */
 /* 12 */
@@ -195,6 +195,10 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 .btn-basic , .btn-basic:hover , .btn-basic:active , .btn-basic:focus {background:#25c6cb; color:#fff;}
 .btn-link {color:inherit;}
 .btn-link:focus , .btn-link:hover {background-color:transparent; color:inherit; outline:none;}
+.btn+.btn {margin-left:4px;}
+
+/* 셀렉트 커스텀 추가*/
+select+input, button+div, select+div, div+select, div+button, input+select, input+button {margin-left:4px;}
 
 /* 체크박스  */
 .checkbox_list {display:block; list-style:none; padding:0; overflow:hidden;}
@@ -228,7 +232,8 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 /* backgruond */
 .background-clear {background:none !important;}
 
-
+/* datepicker */
+.border-reverse {border-bottom-left-radius:0; border-top-left-radius:0; border-bottom-right-radius:4px !important; border-top-right-radius:4px !important;}
 
 
 
