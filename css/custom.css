@@ -225,6 +225,9 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 /* border-radius */
 .round-box {border-radius:5px; overflow: hidden;}
 
+/* backgruond */
+.background-clear {background:none !important;}
+
 
 
 
