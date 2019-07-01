@@ -129,7 +129,7 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 .setting-box .normal-list th {padding-left: 20px;}
 .setting-box .normal-list th p {font-weight:normal;}
 .setting-box .normal-list td {position:relative;}
-.setting-box .normal-list td button.btn-outline-success::before, .btn-left-bar::before {content:""; position:absolute; top:50%; left:-40px; background:#e7e7ec; width:1px; height:34px; transform:translateY(-50%);}
+.setting-box .normal-list td button.btn-outline-success::before, .btn-left-bar::before {content:""; position:absolute; top:50%; left:-15px; background:#e7e7ec; width:1px; height:34px; transform:translateY(-50%);}
 
 /* card-header */
 .card-header {margin:0 5px; position: relative;}
