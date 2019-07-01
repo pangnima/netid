@@ -54,7 +54,7 @@ a {color:#7d7d8e; text-decoration: none;}
 .table tr:last-child th {border-bottom:solid 1px #e7e7ec;}
 .table tr:last-child td {border-bottom:solid 1px #e7e7ec;}
 
-table.type-1 tr th {background:#f5f5f5; min-width:120px; width:170px; padding-left:20px; font-size:14px; font-weight:normal; font-weight:bold; vertical-align:middle;}
+table.type-1 tr th {background:#f5f5f5; min-width:120px; width:170px; padding-left:20px; font-size:14px; font-weight:bold; vertical-align:middle;}
 table.type-1 tr th.table-title {background:#4c4847; color:#fff; text-align:center; font-size:18px;}
 table.type-1 tr td {padding-top:15px; padding-bottom:15px; padding-left:20px;}
 table.type-1 tr th label , table.type-1 tr td label {font-weight:normal;}
@@ -132,12 +132,12 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 .setting-box .normal-list td button.btn-outline-success::before, .btn-left-bar::before {content:""; position:absolute; top:50%; left:-15px; background:#e7e7ec; width:1px; height:34px; transform:translateY(-50%);}
 
 /* card-header */
-.card-header {margin:0 20px; position:relative; border-bottom:1px solid #e7e7e7;}
+.card-header {position:relative; margin:0 20px; padding:20px 0 10px; border-bottom:1px solid #e7e7e7;;}
 .card-header h3 {font-size:15px; margin:0;}
 .card-header h3 .icon-info-circle { font-size:16px; color:#13b6bc; margin-left:4px;}
 .card-header .card-action.icon-plus {position:absolute; top:50%; right:10px; color:#13b6bc; font-size:20px; transform:translateY(-50%);}
 
-.card-header.green {background: #13b6bc; color:#fff; font-size:17px; margin:0;}
+.card-header.green {background:#13b6bc; margin:0; padding:10px 15px; color:#fff; font-size:17px;}
 .card-header .search-page {position:absolute; left:0; bottom:5px; margin:0;}
 .card-body {padding-left:20px; padding-right:20px;}
 
