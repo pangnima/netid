@@ -132,14 +132,14 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 .setting-box .normal-list td button.btn-outline-success::before, .btn-left-bar::before {content:""; position:absolute; top:50%; left:-15px; background:#e7e7ec; width:1px; height:34px; transform:translateY(-50%);}
 
 /* card-header */
-.card-header {position:relative; margin:0 20px; padding:20px 0 10px; border-bottom:1px solid #e7e7e7;;}
+/* .card-header {position:relative; margin:0 20px; padding:20px 0 10px; border-bottom:1px solid #e7e7e7;} */
 .card-header h3 {font-size:15px; margin:0;}
 .card-header h3 .icon-info-circle { font-size:16px; color:#13b6bc; margin-left:4px;}
 .card-header .card-action.icon-plus {position:absolute; top:50%; right:10px; color:#13b6bc; font-size:20px; transform:translateY(-50%);}
 
 .card-header.green {background:#13b6bc; margin:0; padding:10px 15px; color:#fff; font-size:17px;}
 .card-header .search-page {position:absolute; left:0; bottom:5px; margin:0;}
-.card-body {padding-left:20px; padding-right:20px;}
+/* .card-body {padding-left:20px; padding-right:20px;} */
 
 /* 리스트그룹 */
 /* 12 */
