@@ -13,8 +13,8 @@
 	<meta name="theme-color" content="#ffffff">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,700">
 	<link rel="stylesheet" href="css/vendor.min.css">
-	<link rel="stylesheet" href="css/elephant.min.css">
-	<link rel="stylesheet" href="css/application.min.css">
+	<link rel="stylesheet" href="css/elephant.css">
+	<link rel="stylesheet" href="css/application.css">
 	<link rel="stylesheet" href="css/demo.min.css">
 
 	<!-- 커스텀  -->
@@ -363,7 +363,7 @@
 				</div>
 
 				<div class="row gutter-xs m-b-lg">
-					<div class="col-xs-12">
+					<ul class="col-xs-12">
 						<table class="table table-bordered type-1">
 							<tr>
 								<th>기간 선택</th>
@@ -393,40 +393,50 @@
 							<tr>
 								<th>구분</th>
 								<td>
-									<div class="m-b-sm">
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">허용</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">차단</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">미지정</span>
-										</label>
-									</div>
+									<ul class="checkbox_list m-t-sm">
+										<li class="size-xs-4 m-b">
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">허용</span>
+											</label>
+										</li>
+										<li class="size-xs-4 m-b">
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">차단</span>
+											</label>
+										</li>
+										<li class="size-xs-4 m-b"></li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">미지정</span>
+											</label>
+										</li>
+									</ul>
 								</td>
 							</tr>
 							<tr>
 								<th>디지털 서명</th>
 								<td>
-									<div class="m-b-sm">
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">서명됨</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">안됨</span>
-										</label>
-									</div>
+									<ul class="checkbox_list m-t-sm">
+										<li class="size-xs-4 m-b">
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">서명됨</span>
+											</label>
+										</li>
+										<li class="size-xs-4 m-b">
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">안됨</span>
+											</label>
+										<li>
+									</ul>
 								</td>
 							</tr>
 							<tr>
