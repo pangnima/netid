@@ -555,7 +555,7 @@
 								</colgroup>
 								<tr>
 									<th>
-										<h4 class="font-s14">IP 인증 사용</h4>
+										<h4>IP 인증 사용</h4>
 										<p>모든 사용자는 관리자가 지정한 IP 대역에서만 로그인 할 수 있습니다</p>
 									</th>
 									<td class="text-center">
@@ -568,7 +568,7 @@
 								</tr>
 								<tr>
 									<th>
-										<h4 class="font-s14">사용자별 IP 인증 설정(기본인증IP,추가인증IP)</h4>
+										<h4>사용자별 IP 인증 설정(기본인증IP,추가인증IP)</h4>
 										<p>관리자가 지정한 IP 대역과 상관없이 사용자별로 IP 대역을 지정할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
@@ -581,7 +581,7 @@
 								</tr>
 								<tr>
 									<th>
-										<h4 class="font-s14">관리자 접속 IP 대역 사용</h4>
+										<h4>관리자 접속 IP 대역 사용</h4>
 									</th>
 									<td class="text-center">
 										<label class="switch switch-success">
@@ -611,29 +611,29 @@
 								</colgroup>
 								<tr>
 									<th>
-										<h4 class="font-s14">로그를 기록할 최소 파일 크기</h4>
+										<h4>로그를 기록할 최소 파일 크기</h4>
 										<p>모든크기</p>
 									</th>
 									<td class="text-center">
-										<button class="btn btn-outline-success" type="button">변경</button>
+										<button class="btn btn-outline-success p-x-lg p-x-lg" type="button">변경</button>
 									</td>
 								</tr>
 								<tr>
 									<th>
-										<h4 class="font-s14">로그 기록 대상</h4>
+										<h4>로그 기록 대상</h4>
 										<p>다운로드,업로드,삭제,복사,이동,이름변경,수정</p>
 									</th>
 									<td class="text-center">
-										<button class="btn btn-outline-success" type="button">변경</button>
+										<button class="btn btn-outline-success p-x-lg p-x-lg" type="button">변경</button>
 									</td>
 								</tr>
 								<tr>
 									<th>
-										<h4 class="font-s14">인증 로그 기록 대상</h4>
+										<h4>인증 로그 기록 대상</h4>
 										<p>로그인,로그아웃,인증실패</p>
 									</th>
 									<td class="text-center">
-										<button class="btn btn-outline-success" type="button">변경</button>
+										<button class="btn btn-outline-success p-x-lg p-x-lg" type="button">변경</button>
 									</td>
 								</tr>
 							</table>
@@ -650,29 +650,39 @@
 								</colgroup>
 								<tr>
 									<th>
-										<h4 class="m-a-0 font-s14 p-t">로그보관기간</h4>
-										<span class="d-ib m-t p-b">90일</span>
+										<h4>로그보관기간</h4>
+										<span>90일</span>
 									</th>
 									<td class="text-center">
-										<button class="btn btn-outline-success" type="button">변경</button>
+										<button class="btn btn-outline-success p-x-lg p-x-lg" type="button">변경</button>
 									</td>
 								</tr>
 								<tr>
 									<th colspan="2">
-										<h4 class="m-a-0 font-s14">로그 DB 정보</h4>
+										<h4>로그 DB 정보</h4>
 										<div class="table-responsive">
 											<!-- <p class="p-l-sm font-s14">로그 DB 정보</p> -->
 											<table class="table background-clear">
+												<colgroup>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col style="width:5%;">
+												</colgroup>
 												<thead>
 													<tr>
-														<th class="font-n">운영 서버 IP</th>
-														<th class="font-n">서버 IP</th>
-														<th class="font-n">접속계정</th>
-														<th class="font-n">비밀번호</th>
-														<th class="font-n">데이터베이스</th>
-														<th class="font-n">종류</th>
-														<th class="font-n">포트</th>
-														<th class="font-n"></th>
+														<th>운영 서버 IP</th>
+														<th>서버 IP</th>
+														<th>접속계정</th>
+														<th>비밀번호</th>
+														<th>데이터베이스</th>
+														<th>종류</th>
+														<th>포트</th>
+														<th></th>
 													</tr>
 												</thead>
 												<tbody>
@@ -707,11 +717,11 @@
 								</tr>
 								<tr>
 									<th>
-										<h4 class="m-a-0 font-s14 p-t">로그 DB 자동 변경 사용 및 주기</h4>
-										<span class="d-ib m-t p-b">1개월 마다</span>
+										<h4>로그 DB 자동 변경 사용 및 주기</h4>
+										<span>1개월 마다</span>
 									</th>
 									<td class="text-center">
-										<button class="btn btn-outline-success" type="button">변경</button>
+										<button class="btn btn-outline-success p-x-lg p-x-lg" type="button">변경</button>
 									</td>
 								</tr>
 							</table>
@@ -767,7 +777,7 @@
 									<input id="username-1" class="form-control" type="text" name="username_1">
 								</div>
 								<div class="form-group clearfix">
-									<div class="col-md-5 p-x-0">
+									<div class="col-md-6 p-l-0">
 										<label for="">종류</label>
 										<select name="" id="" class="form-control">
 											<option value="">mysql</option>
@@ -775,7 +785,7 @@
 											<option value="">메뉴3</option>
 										</select>
 									</div>
-									<div class="col-md-6 pull-right p-x-0">
+									<div class="col-md-6 p-x-0">
 										<label for="">포트</label>
 										<select name="" id="" class="form-control">
 											<option value="">3369</option>
@@ -786,7 +796,7 @@
 								</div>
 
 								<div class="text-center">
-									<button class="btn btn-outline-success p-x-lg" type="button">변경</button>
+									<button class="btn btn-outline-success p-x-lg p-x-lg" type="button">변경</button>
 									<button class="btn btn-default p-x-lg" type="button">취소</button>
 								</div>
 							</div>
@@ -818,7 +828,7 @@
 								</div>
 
 								<div class="text-center">
-									<button class="btn btn-outline-success p-x-lg" type="button">변경</button>
+									<button class="btn btn-outline-success p-x-lg p-x-lg" type="button">변경</button>
 									<button class="btn btn-default p-x-lg" type="button">취소</button>
 								</div>
 							</div>
@@ -840,12 +850,12 @@
 							</div>
 							<div class="modal-body">
 								<div class="form-group">
-									<label for="username-1" class="control-label">보관 기간 </label>
-									<input id="username-1" class="form-control size-xs-11 d-ib" type="text" name="username_1"><span class="d-ib p-l-sm text-right">일</span>
+									<label for="" class="d-b">보관 기간 </label>
+									<input id="" class="form-control size-xs-11 d-ib" type="text" name="username_1"><span class="d-ib p-l-sm text-right">일</span>
 								</div>
 
 								<div class="text-center">
-									<button class="btn btn-outline-success p-x-lg" type="button">변경</button>
+									<button class="btn btn-outline-success p-x-lg p-x-lg" type="button">변경</button>
 									<button class="btn btn-default p-x-lg" type="button">취소</button>
 								</div>
 							</div>
@@ -867,7 +877,7 @@
 							</div>
 							<div class="modal-body">
 								<div class="form-group">
-									<label for="username-1" class="control-label">로그 기록 선택</label>
+									<label class="d-b">로그 기록 선택</label>
 									<ul class="checkbox-list">
 										<li>
 											<label class="custom-control custom-control-success custom-checkbox">
@@ -915,7 +925,7 @@
 								</div>
 
 								<div class="text-center">
-									<button class="btn btn-outline-success p-x-lg" type="button">변경</button>
+									<button class="btn btn-outline-success p-x-lg p-x-lg" type="button">변경</button>
 									<button class="btn btn-default p-x-lg" type="button">취소</button>
 								</div>
 							</div>
@@ -937,7 +947,7 @@
 							</div>
 							<div class="modal-body">
 								<div class="form-group">
-									<label for="username-1" class="control-label">인증 로그 기록 선택</label>
+									<label class="d-b">인증 로그 기록 선택</label>
 									<ul class="checkbox-list">
 										<li>
 											<label class="custom-control custom-control-success custom-checkbox">
@@ -964,7 +974,7 @@
 								</div>
 
 								<div class="text-center">
-									<button class="btn btn-outline-success p-x-lg" type="button">변경</button>
+									<button class="btn btn-outline-success p-x-lg p-x-lg" type="button">변경</button>
 									<button class="btn btn-default p-x-lg" type="button">취소</button>
 								</div>
 							</div>
@@ -999,7 +1009,7 @@
 								</div>
 
 								<div class="text-center">
-									<button class="btn btn-outline-success p-x-lg" type="button">변경</button>
+									<button class="btn btn-outline-success p-x-lg p-x-lg" type="button">변경</button>
 									<button class="btn btn-default p-x-lg" type="button">취소</button>
 								</div>
 							</div>
@@ -1021,7 +1031,7 @@
 								</colgroup>
 								<tbody><tr>
 									<th>
-										<h4 class="font-s14">제품버전</h4>
+										<h4>제품버전</h4>
 										<p>프로그램 및 ActiveX 버전 정보를 관리할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
@@ -1030,7 +1040,7 @@
 								</tr>
 								<tr>
 									<th>
-										<h4 class="font-s14">데이터베이스</h4>
+										<h4>데이터베이스</h4>
 										<p>운영 시 필요한 데이터를 저장하는 데이터베이스 정보를 설정할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
@@ -1039,7 +1049,7 @@
 								</tr>
 								<tr>
 									<th>
-										<h4 class="font-s14">메일서비스</h4>
+										<h4>메일서비스</h4>
 										<p>비밀번호 찾기, 용량 신청 등과 같이 메일 발송이 필요한 경우 사용할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
@@ -1048,7 +1058,7 @@
 								</tr>
 								<tr>
 									<th>
-										<h4 class="font-s14">알림 및 메시지</h4>
+										<h4>알림 및 메시지</h4>
 										<p>알림 및 시스템 관련 메시지에 대해 관리할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
@@ -1057,11 +1067,11 @@
 								</tr>
 								<tr>
 									<th>
-										<h4 class="font-s14">프로그램 입출력 차단 목록</h4>
+										<h4>프로그램 입출력 차단 목록</h4>
 										<p>비밀번호 찾기, 용량 신청 등과 같이 메일 발송이 필요한 경우 사용할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
-										<button class="btn btn-outline-success" type="button">관리</button>
+										<button class="btn btn-outline-success p-x-lg" type="button">관리</button>
 									</td>
 								</tr>
 							</tbody></table>
@@ -1080,7 +1090,7 @@
 								</colgroup>
 								<tbody><tr>
 									<th>
-										<h4 class="font-s14">통신 및 프로토콜</h4>
+										<h4>통신 및 프로토콜</h4>
 										<p>통신 및 프로토콜에 관련된 설정을 확인할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
@@ -1089,7 +1099,7 @@
 								</tr>
 								<tr>
 									<th>
-										<h4 class="font-s14">서버 암호화 사용</h4>
+										<h4>서버 암호화 사용</h4>
 										<p>서버에 저장된 문서를 암호화하여 사용할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
@@ -1102,7 +1112,7 @@
 								</tr>
 								<tr>
 									<th>
-										<h4 class="font-s14">권한</h4>
+										<h4>권한</h4>
 										<p>기본적으로 부여할 권한을 설정할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
@@ -1125,7 +1135,7 @@
 								</colgroup>
 								<tbody><tr>
 									<th>
-										<h4 class="font-s14">로그인</h4>
+										<h4>로그인</h4>
 										<p>설정한 내용에 따라 사용자 및 관리자 로그인 방식을 변경할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
@@ -1134,7 +1144,7 @@
 								</tr>
 								<tr>
 									<th>
-										<h4 class="font-s14">비밀번호</h4>
+										<h4>비밀번호</h4>
 										<p>비밀번호에 관련된 설정을 변경할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
@@ -1143,7 +1153,7 @@
 								</tr>
 								<tr>
 									<th>
-										<h4 class="font-s14">휴지통</h4>
+										<h4>휴지통</h4>
 										<p>각 문서함에 존재하는 휴지통에 대한 설정을 할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
@@ -1166,7 +1176,7 @@
 								</colgroup>
 								<tbody><tr>
 									<th>
-										<h4 class="font-s14">윈도우 탐색기 메뉴 관리</h4>
+										<h4>윈도우 탐색기 메뉴 관리</h4>
 										<p>사용자 PC에서 컨텍스트 및 트레이아이콘 메뉴로 표시하여 사용할 수 있는 기능을 설정할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
@@ -1175,7 +1185,7 @@
 								</tr>
 								<tr>
 									<th>
-										<h4 class="font-s14">파일 검색 사용</h4>
+										<h4>파일 검색 사용</h4>
 										<p>파일 이름 검색 및 내용 검색을 사용하기 위해 설정이 필요합니다.</p>
 									</th>
 									<td class="text-center">
@@ -1188,7 +1198,7 @@
 								</tr>
 								<tr>
 									<th>
-										<h4 class="font-s14">추가 서버</h4>
+										<h4>추가 서버</h4>
 										<p>대외문서교환서버,보안뷰어 기능을 사용하기 위해 추가 서버 설정이 필요합니다.</p>
 									</th>
 									<td class="text-center">
@@ -1197,7 +1207,7 @@
 								</tr>
 								<tr>
 									<th>
-										<h4 class="font-s14">웹/자바 탐색기</h4>
+										<h4>웹/자바 탐색기</h4>
 										<p>웹탐색기 및 자바탐색기 관련하여 설정 할 수 있습니다.</p>
 									</th>
 									<td class="text-center">
@@ -1219,7 +1229,7 @@
 								</colgroup>
 								<tbody><tr>
 									<th>
-										<button class="d-ib btn-link p-l-0"><span class="icon icon-arrow-left icon-lg"></span></button>
+										<button class="d-ib btn-link p-l-0"><span class="icon icon-arrow-left"></span></button>
 										<h4 class="m-a-0 d-ib">제품버전</button></h4>
 									</th>
 									<td class="text-center">
@@ -1228,16 +1238,16 @@
 								</tr>
 								<tr>
 									<th class="border-none">
-										<h4 class="font-s14">Agent 버전</h4>
+										<h4>Agent 버전</h4>
 										<p>2.407</p>
 									</th>
 									<td class="text-center border-none">
-										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
+										<button class="btn btn-outline-success p-x-lg" type="button">변경</button>
 									</td>
 								</tr>
 								<tr>
 									<th>
-										<h4 class="font-s14">자바탐색기 버전</h4>
+										<h4>자바탐색기 버전</h4>
 										<p>1.0.0.0</p>
 									</th>
 									<td class="text-center">
@@ -1250,29 +1260,29 @@
 								</tr>
 								<tr>
 									<th>
-										<h4 class="font-s14">PC 백업 버전</h4>
+										<h4>PC 백업 버전</h4>
 										<p>1</p>
 									</th>
 									<td class="text-center">
-										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
+										<button class="btn btn-outline-success p-x-lg" type="button">변경</button>
 									</td>
 								</tr>
 								<tr>
 									<th>
-										<h4 class="font-s14">웹페이지에서 Agent 설치 및 실행하는 ActiveX 버전</h4>
+										<h4>웹페이지에서 Agent 설치 및 실행하는 ActiveX 버전</h4>
 										<p>1,0,0,51</p>
 									</th>
 									<td class="text-center">
-										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
+										<button class="btn btn-outline-success p-x-lg" type="button">변경</button>
 									</td>
 								</tr>
 								<tr>
 									<th>
-										<h4 class="font-s14">멀티 다운로드 ActiveX 버전<span class="icon icon-info-circle icon-lg text-success p-l-sm"></span></h4>
+										<h4>멀티 다운로드 ActiveX 버전<span class="icon icon-info-circle icon-lg text-success p-l-sm"></span></h4>
 										<p>1,0,0,39</p>
 									</th>
 									<td class="text-center">
-										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
+										<button class="btn btn-outline-success p-x-lg" type="button">변경</button>
 									</td>
 								</tr>
 							</tbody></table>
