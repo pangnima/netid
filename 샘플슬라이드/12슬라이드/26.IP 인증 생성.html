@@ -121,15 +121,13 @@
 						</li>
 					</ul>
 					<div class="title-bar">
-						<h1 class="title-bar-title">
-							<ul>
-								<li><span class="icon icon-home"></span>HOME</li>
-								<li>Basic</li>
-								<li>로그인 제어</li>
-								<li>IP 인증</li>
-								<li><strong>IP 인증 생성</strong></li>
-							</ul>
-						</h1>
+						<ul class="title-bar-title">
+							<li><span class="icon icon-home"></span>HOME</li>
+							<li>Basic</li>
+							<li>로그인 제어</li>
+							<li>IP 인증</li>
+							<li><strong>IP 인증 생성</strong></li>
+						</ul>
 					</div>
 				</nav>
 			</div>
@@ -356,70 +354,78 @@
 		</div>
 		<div class="layout-content">
 			<div class="layout-content-body">
+				<div class="row gutter">
+					<div class="page-title">
+						<h2>IP 인증 생성</h2>
+					</div>
+				</div>
+
 				<!-- 컨텐츠 시작 -->
-				<div class="row gutter-xs m-b-lg">
+				<div class="row gutter m-b-lg">
 					<div class="col-xs-12">
-						<table class="table table-bordered type-1">
-							<tr>
-								<th>도메인 선택</th>
-								<td>
-									<select name="" id="" class="form-control domain">
-										<option value="">기본인증IP</option>
-										<option value="">추가인증IP</option>
-										<option value="">안전인증IP</option>
-									</select>
-									<input id="form-control-5" class="form-control domain" type="input" value="">
-									<button class="btn btn-default" type="button">찾아보기</button>
-								</td>
-							</tr>
-							<tr>
-								<th>시작IP</th>
-								<td>
-									<div>
-										<input class="form-control d-ib size-80" type="text">.
-										<input class="form-control d-ib size-80" type="text">.
-										<input class="form-control d-ib size-80" type="text">.
-										<input class="form-control d-ib size-80" type="text">
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<th>끝IP</th>
-								<td>
-									<div>
-										<input class="form-control d-ib size-80" type="text">.
-										<input class="form-control d-ib size-80" type="text">.
-										<input class="form-control d-ib size-80" type="text">.
-										<input class="form-control d-ib size-80" type="text">
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<th>시작일</th>
-								<td>
-									<div class="input-with-icon size-a d-ib">
-										<input class="form-control" type="text" data-provide="datepicker">
-										<span class="icon icon-calendar input-icon"></span>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<th>종료일</th>
-								<td>
-									<select name="" id="" class="form-control d-ib size-a">
-										<option value="">제한없음</option>
-										<option value="">직적입력</option>
-									</select>
-									<div class="input-with-icon size-a d-ib">
-										<input class="form-control border-reverse" type="text" data-provide="datepicker">
-										<span class="icon icon-calendar input-icon"></span>
-									</div>
-								</td>
-							</tr>
-						</table>
+						<div class="table-responsive">
+							<table class="table table-bordered type-1">
+								<tr>
+									<th>도메인 선택</th>
+									<td>
+										<select name="" id="" class="form-control d-ib size-a media-middle">
+											<option value="">기본인증IP</option>
+											<option value="">추가인증IP</option>
+											<option value="">안전인증IP</option>
+										</select>
+										<input id="form-control-5" class="form-control d-ib size-a media-middle" type="input" value="">
+										<button class="btn btn-default" type="button">찾아보기</button>
+									</td>
+								</tr>
+								<tr>
+									<th>시작IP</th>
+									<td>
+										<div>
+											<input class="form-control d-ib size-80" type="text">.
+											<input class="form-control d-ib size-80" type="text">.
+											<input class="form-control d-ib size-80" type="text">.
+											<input class="form-control d-ib size-80" type="text">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>끝IP</th>
+									<td>
+										<div>
+											<input class="form-control d-ib size-80" type="text">.
+											<input class="form-control d-ib size-80" type="text">.
+											<input class="form-control d-ib size-80" type="text">.
+											<input class="form-control d-ib size-80" type="text">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>시작일</th>
+									<td>
+										<div class="input-with-icon size-a d-ib">
+											<input class="form-control" type="text" data-provide="datepicker">
+											<span class="icon icon-calendar input-icon"></span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>종료일</th>
+									<td>
+										<select name="" id="" class="form-control d-ib size-a media-middle">
+											<option value="">제한없음</option>
+											<option value="">직적입력</option>
+										</select>
+										<div class="input-with-icon size-a d-ib media-middle">
+											<input class="form-control border-reverse" type="text" data-provide="datepicker">
+											<span class="icon icon-calendar input-icon"></span>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
 						<div class="text-center">
-							<button class="btn btn-success" type="button">확인</button>
-							<button class="btn btn-default" type="button">취소</button>
+							<button class="btn btn-success btn-basic" type="button">확인</button>
+							<button class="btn btn-default btn-basic" type="button">취소</button>
 						</div>
 					</div>
 				</div>

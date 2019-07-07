@@ -422,9 +422,6 @@ h5, .h5 {
 h6, .h6 {
   font-size: 12px;
 }
-p {
-  margin: 0 0 10px;
-}
 .lead {
   margin-bottom: 20px;
   font-size: 14px;
@@ -1436,7 +1433,7 @@ th {
 .table > tbody > tr > td,
 .table > tfoot > tr > th,
 .table > tfoot > tr > td {
-  padding: 20px;
+  padding:10px;
   line-height: 1.538462;
   vertical-align: top;
   border-top: 1px solid #e7e7ec;
@@ -2519,7 +2516,7 @@ fieldset[disabled] .btn-link:focus {
   border-radius: 3px;
 }
 .btn-xs, .btn-group-xs > .btn {
-  padding: 1px 5px;
+  padding: 2px 5px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px;
@@ -7778,6 +7775,14 @@ input[type="month"] {
 textarea {
   resize: vertical;
 }
+.row.gutter {
+	margin-left:0;
+	margin-right:0;
+}
+.row.gutter > .col-xs-1, .row.gutter > .col-sm-1, .row.gutter > .col-md-1, .row.gutter > .col-lg-1, .row.gutter > .col-xs-2, .row.gutter > .col-sm-2, .row.gutter > .col-md-2, .row.gutter > .col-lg-2, .row.gutter > .col-xs-3, .row.gutter > .col-sm-3, .row.gutter > .col-md-3, .row.gutter > .col-lg-3, .row.gutter > .col-xs-4, .row.gutter > .col-sm-4, .row.gutter > .col-md-4, .row.gutter > .col-lg-4, .row.gutter > .col-xs-5, .row.gutter > .col-sm-5, .row.gutter > .col-md-5, .row.gutter > .col-lg-5, .row.gutter > .col-xs-6, .row.gutter > .col-sm-6, .row.gutter > .col-md-6, .row.gutter > .col-lg-6, .row.gutter > .col-xs-7, .row.gutter > .col-sm-7, .row.gutter > .col-md-7, .row.gutter > .col-lg-7, .row.gutter > .col-xs-8, .row.gutter > .col-sm-8, .row.gutter > .col-md-8, .row.gutter > .col-lg-8, .row.gutter > .col-xs-9, .row.gutter > .col-sm-9, .row.gutter > .col-md-9, .row.gutter > .col-lg-9, .row.gutter > .col-xs-10, .row.gutter > .col-sm-10, .row.gutter > .col-md-10, .row.gutter > .col-lg-10, .row.gutter > .col-xs-11, .row.gutter > .col-sm-11, .row.gutter > .col-md-11, .row.gutter > .col-lg-11, .row.gutter > .col-xs-12, .row.gutter > .col-sm-12, .row.gutter > .col-md-12, .row.gutter > .col-lg-12 { 
+	padding-left: 0;
+	padding-right: 0;
+}
 .row.gutter-xs {
   margin-left: -5px;
   margin-right: -5px;
@@ -8563,6 +8568,7 @@ button.collapsed .bars-x .bar-line:last-child {
   display: block;
   margin-bottom: 10px;
   position: relative;
+  padding:20px;
 }
 .card-title {
   margin-bottom: 5px;
@@ -8576,8 +8582,9 @@ button.collapsed .bars-x .bar-line:last-child {
   margin-bottom: 0;
 }
 .card-header {
-  border-bottom: 2px solid #f1f1f1;
-  padding: 20px;
+  border-bottom: 1px solid #f2f2f2;
+  /* padding: 20px; */
+  padding-bottom:8px;
   position: relative;
 }
 .card-header:before, .card-header:after {
@@ -8592,7 +8599,7 @@ button.collapsed .bars-x .bar-line:last-child {
   border-top-left-radius: 3px;
 }
 .card-body {
-  padding: 20px;
+  /* padding: 20px; */
   position: relative;
 }
 .card-body:before, .card-body:after {

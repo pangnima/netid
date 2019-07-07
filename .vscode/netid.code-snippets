@@ -95,7 +95,7 @@
 		"scope": "html",
 		"prefix": "div-r",
 		"body": [
-			"<div class=\"row gutter-xs\">${1:0}</div>"
+			"<div class=\"row gutter\">${1:0}</div>"
 		],
 		"description": "블록"
 	},

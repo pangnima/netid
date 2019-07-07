@@ -121,14 +121,12 @@
 						</li>
 					</ul>
 					<div class="title-bar">
-						<h1 class="title-bar-title">
-							<ul>
-								<li><span class="icon icon-home"></span>HOME</li>
-								<li>DiskLock Plus</li>
-								<li>프린트 워터마크</li>
-								<li><strong>정책 관리</strong></li>
-							</ul>
-						</h1>
+						<ul class="title-bar-title">
+							<li><span class="icon icon-home"></span>HOME</li>
+							<li>DiskLock Plus</li>
+							<li>프린트 워터마크</li>
+							<li><strong>정책 관리</strong></li>
+						</ul>
 					</div>
 				</nav>
 			</div>
@@ -356,7 +354,7 @@
 		<!-- 컨텐츠영역 -->
 		<div class="layout-content">
 			<div class="layout-content-body">
-				<div class="row gutter-xs">
+				<div class="row gutter">
 					<div class="page-title">
 						<h2>설정</h2>
 						<p>프린트 워터마크에서 사용할 이미지 및 텍스트 등과 같은 환경설정을 할 수 있습니다.</p>
@@ -364,10 +362,12 @@
 				</div>
 
 				<!-- 워터마크 -->
-				<div class="row gutter-xs m-b-lg">
+				<div class="row gutter m-b-lg">
 					<div class="card">
+						<div class="card-header border-b-none">
+							<h3 class="font-s17">백그라운드 설정</h3>
+						</div>
 						<div class="card-body">
-							<p class="font-s17">백그라운드 설정</p>
 							<div class="size-xs-12">
 								<div class="table-responsive">
 									<table class="table table-bordered print-board type-21">
@@ -426,7 +426,7 @@
 																<input id="" class="form-control" type="text" name="">
 																<span>(0~350pt까지 지정 가능) </span>
 															</div>
-															<div class="form-group">
+															<div class="form-group m-b-0">
 																<label for="" class="control-label">텍스트 기울기</label>
 																<input id="" class="form-control" type="text" name="">
 																<span>(0~360도까지 지정 가능) </span>
@@ -475,10 +475,14 @@
 				<!-- //워터마크 -->
 
 				<!-- 사용자 정보 출력 -->
-				<div class="row gutter-xs m-b-lg">
+				<div class="row gutter">
 					<div class="card">
+						<div class="card-header border-b-none">
+							<h3 class="font-s17">사용자 정보 출력 설정
+								<span class="font-s13">(컴퓨터 이름,윈도우 계정 이름,부서 정보,사용자 IP,날짜,시간,사용자 이름,사용자 아이디)</span>
+							</h3>
+						</div>
 						<div class="card-body">
-							<p class="font-s17">사용자 정보 출력 설정 <span class="font-s14">(컴퓨터 이름,윈도우 계정 이름,부서 정보,사용자 IP,날짜,시간,사용자 이름,사용자 아이디)</span></p>
 							<div class="size-xs-12">
 								<div class="table-responsive">
 									<table class="table print-board">
@@ -497,33 +501,41 @@
 											</td>
 										</tr>
 										<tr>
-											<th>사용자 정보 출력 위치 (중복 체크가 가능합니다.)</th>
+											<th>사용자 정보 출력 위치<span>(중복 체크가 가능합니다.)</span></th>
 											<td colspan="2">
-												<label class="custom-control custom-control-success custom-checkbox">
-													<input class="custom-control-input" type="checkbox">
-													<span class="custom-control-indicator"></span>
-													<span class="custom-control-label">상단</span>
-												</label>
-												<label class="custom-control custom-control-success custom-checkbox">
-													<input class="custom-control-input" type="checkbox">
-													<span class="custom-control-indicator"></span>
-													<span class="custom-control-label">중앙</span>
-												</label>
-												<label class="custom-control custom-control-success custom-checkbox">
-													<input class="custom-control-input" type="checkbox">
-													<span class="custom-control-indicator"></span>
-													<span class="custom-control-label">하단</span>
-												</label>
+												<ul class="checkbox-list">
+													<li>
+														<label class="custom-control custom-control-success custom-checkbox">
+															<input class="custom-control-input" type="checkbox">
+															<span class="custom-control-indicator"></span>
+															<span class="custom-control-label">상단</span>
+														</label>
+													</li>
+													<li>
+														<label class="custom-control custom-control-success custom-checkbox">
+															<input class="custom-control-input" type="checkbox">
+															<span class="custom-control-indicator"></span>
+															<span class="custom-control-label">중앙</span>
+														</label>
+													</li>
+													<li>
+														<label class="custom-control custom-control-success custom-checkbox">
+															<input class="custom-control-input" type="checkbox">
+															<span class="custom-control-indicator"></span>
+															<span class="custom-control-label">하단</span>
+														</label>
+													</li>
+												</ul>
 											</td>
 										</tr>
 										<tr>
 											<th>사용자 정보 폰트명 </th>
 											<td colspan="2">
-												<div class="input-with-icon d-ib">
+												<div class="input-with-icon d-ib media-middle">
 													<input class="form-control" type="text" placeholder="입력하세요">
 													<span class="icon icon-search input-icon"></span>
 												</div>
-												<select name="" id="" class="form-control d-ib size-a">
+												<select name="" id="" class="form-control d-ib size-a media-middle">
 													<option value="">직접입력</option>
 													<option value="">Arial</option>
 													<option value="">Courier</option>
@@ -545,7 +557,7 @@
 											</td>
 										</tr>
 										<tr>
-											<th>사용자 정보 출력 내용</th>
+											<th rowspan="3">사용자 정보 출력 내용</th>
 											<td class="p-a-0">
 												<table class="table table-bordered print-board type-21 border-none">
 													<colgroup>
@@ -554,37 +566,42 @@
 														<col style="width: 20%">
 													</colgroup>
 													<tr>
-														<th rowspan="2" class="border-b-none">Top</th>
+														<th rowspan="2" class="border-b-none">상단</th>
 														<td>
 															<div class="d-tb size-xs-12">
 																<div class="d-tbc size-xs-4">
 																	<div class="form-group">
-																		<label for="" class="control-label">텍스트 폰트명</label>
+																		<label for="" class="control-label">상단 텍스트 내용</label>
+																		<textarea class="form-control" rows="2" required="" aria-required="true"></textarea>
+																	</div>
+																	<div class="form-group">
+																		<label for="" class="control-label">상단 텍스트 크기</label>
 																		<input id="" class="form-control" type="text" name="">
 																	</div>
 																	<div class="form-group">
-																		<label for="" class="control-label">텍스트 내용</label>
-																		<input id="" class="form-control" type="text" name="">
-																	</div>
-																	<div class="form-group">
-																		<span class="d-ib m-b-sm">텍스트 내용</span>
+																		<span class="d-ib m-b-sm">상단 좌우정렬</span>
 																		<div>
 																			<label class="custom-control custom-control-success custom-radio">
 																				<input class="custom-control-input" name="success" type="radio" value="none">
 																				<span class="custom-control-indicator"></span>
-																				<span class="custom-control-label">Left</span>
+																				<span class="custom-control-label">왼쪽정렬</span>
 																			</label>
 																			<label class="custom-control custom-control-success custom-radio">
 																				<input class="custom-control-input" name="success" type="radio" value="none">
 																				<span class="custom-control-indicator"></span>
-																				<span class="custom-control-label">Center</span>
+																				<span class="custom-control-label">가운데정렬</span>
 																			</label>
 																			<label class="custom-control custom-control-success custom-radio">
 																				<input class="custom-control-input" name="success" type="radio" value="none">
 																				<span class="custom-control-indicator"></span>
-																				<span class="custom-control-label">Right</span>
+																				<span class="custom-control-label">오른쪽정렬</span>
 																			</label>
 																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label for="" class="control-label">상단 기울기</label>
+																		<input id="" class="form-control" type="text" name="">
+																		<span>(0 ~ 306도까지 지정가능)</span>
 																	</div>
 																</div>
 																<div class="d-tbc size-xs-2 text-right media-bottom">
@@ -623,7 +640,7 @@
 											</td>
 										</tr>
 										<tr>
-											<th>사용자 정보 출력 내용</th>
+											<!-- <th>사용자 정보 출력 내용</th> -->
 											<td class="p-a-0">
 												<table class="table table-bordered print-board type-21 border-none">
 													<colgroup>
@@ -632,37 +649,42 @@
 														<col style="width: 20%">
 													</colgroup>
 													<tr>
-														<th rowspan="2" class="border-b-none">Middle</th>
+														<th rowspan="2" class="border-b-none">중단</th>
 														<td>
 															<div class="d-tb size-xs-12">
 																<div class="d-tbc size-xs-4">
 																	<div class="form-group">
-																		<label for="" class="control-label">텍스트 폰트명</label>
+																		<label for="" class="control-label">중단 텍스트 내용</label>
+																		<textarea class="form-control" rows="2" required="" aria-required="true"></textarea>
+																	</div>
+																	<div class="form-group">
+																		<label for="" class="control-label">중단 텍스트 크기</label>
 																		<input id="" class="form-control" type="text" name="">
 																	</div>
 																	<div class="form-group">
-																		<label for="" class="control-label">텍스트 내용</label>
-																		<input id="" class="form-control" type="text" name="">
-																	</div>
-																	<div class="form-group">
-																		<span class="d-ib m-b-sm">텍스트 내용</span>
+																		<span class="d-ib m-b-sm">중단 좌우정렬</span>
 																		<div>
 																			<label class="custom-control custom-control-success custom-radio">
 																				<input class="custom-control-input" name="success" type="radio" value="none">
 																				<span class="custom-control-indicator"></span>
-																				<span class="custom-control-label">Left</span>
+																				<span class="custom-control-label">왼쪽정렬</span>
 																			</label>
 																			<label class="custom-control custom-control-success custom-radio">
 																				<input class="custom-control-input" name="success" type="radio" value="none">
 																				<span class="custom-control-indicator"></span>
-																				<span class="custom-control-label">Center</span>
+																				<span class="custom-control-label">가운데정렬</span>
 																			</label>
 																			<label class="custom-control custom-control-success custom-radio">
 																				<input class="custom-control-input" name="success" type="radio" value="none">
 																				<span class="custom-control-indicator"></span>
-																				<span class="custom-control-label">Right</span>
+																				<span class="custom-control-label">오른쪽정렬</span>
 																			</label>
 																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label for="" class="control-label">중단 기울기</label>
+																		<input id="" class="form-control" type="text" name="">
+																		<span>(0 ~ 306도까지 지정가능)</span>
 																	</div>
 																</div>
 																<div class="d-tbc size-xs-2 text-right media-bottom">
@@ -701,7 +723,7 @@
 											</td>
 										</tr>
 										<tr>
-											<th>사용자 정보 출력 내용</th>
+											<!-- <th>사용자 정보 출력 내용</th> -->
 											<td class="p-a-0">
 												<table class="table table-bordered print-board type-21 border-none">
 													<colgroup>
@@ -710,37 +732,42 @@
 														<col style="width: 20%">
 													</colgroup>
 													<tr>
-														<th rowspan="2" class="border-b-none">Bottom</th>
+														<th rowspan="2" class="border-b-none">하단</th>
 														<td>
 															<div class="d-tb size-xs-12">
 																<div class="d-tbc size-xs-4">
 																	<div class="form-group">
-																		<label for="" class="control-label">텍스트 폰트명</label>
+																		<label for="" class="control-label">하단 텍스트 내용</label>
+																		<textarea class="form-control" rows="2" required="" aria-required="true"></textarea>
+																	</div>
+																	<div class="form-group">
+																		<label for="" class="control-label">하단 텍스트 크기</label>
 																		<input id="" class="form-control" type="text" name="">
 																	</div>
 																	<div class="form-group">
-																		<label for="" class="control-label">텍스트 내용</label>
-																		<input id="" class="form-control" type="text" name="">
-																	</div>
-																	<div class="form-group">
-																		<span class="d-ib m-b-sm">텍스트 내용</span>
+																		<span class="d-ib m-b-sm">하단 좌우정렬</span>
 																		<div>
 																			<label class="custom-control custom-control-success custom-radio">
 																				<input class="custom-control-input" name="success" type="radio" value="none">
 																				<span class="custom-control-indicator"></span>
-																				<span class="custom-control-label">Left</span>
+																				<span class="custom-control-label">왼쪽정렬</span>
 																			</label>
 																			<label class="custom-control custom-control-success custom-radio">
 																				<input class="custom-control-input" name="success" type="radio" value="none">
 																				<span class="custom-control-indicator"></span>
-																				<span class="custom-control-label">Center</span>
+																				<span class="custom-control-label">가운데정렬</span>
 																			</label>
 																			<label class="custom-control custom-control-success custom-radio">
 																				<input class="custom-control-input" name="success" type="radio" value="none">
 																				<span class="custom-control-indicator"></span>
-																				<span class="custom-control-label">Right</span>
+																				<span class="custom-control-label">오른쪽정렬</span>
 																			</label>
 																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label for="" class="control-label">하단 기울기</label>
+																		<input id="" class="form-control" type="text" name="">
+																		<span>(0 ~ 306도까지 지정가능)</span>
 																	</div>
 																</div>
 																<div class="d-tbc size-xs-2 text-right media-bottom">
@@ -780,15 +807,15 @@
 										</tr>
 									</table>
 								</div>
-								<div class="text-center m-t-md">
-									<button class="btn btn-success" type="button">확인</button>
-									<button class="btn btn-default" type="button">취소</button>
-								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<!-- // 사용자 정보 출력 -->
+				<div class="text-center m-y">
+					<button class="btn btn-success btn-basic" type="button">확인</button>
+					<button class="btn btn-default btn-basic" type="button">취소</button>
+				</div>
 			</div>
 		</div>
 		<!-- //컨텐츠영역 -->

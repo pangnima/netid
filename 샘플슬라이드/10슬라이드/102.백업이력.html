@@ -121,14 +121,12 @@
 						</li>
 					</ul>
 					<div class="title-bar">
-						<h1 class="title-bar-title">
-							<ul>
-								<li><span class="icon icon-home"></span>HOME</li>
-								<li>DiskLock</li>
-								<li>보안디스크 백업</li>
-								<li><strong>백업 이력</strong></li>
-							</ul>
-						</h1>
+						<ul class="title-bar-title">
+							<li><span class="icon icon-home"></span>HOME</li>
+							<li>DiskLock</li>
+							<li>보안디스크 백업</li>
+							<li><strong>백업 이력</strong></li>
+						</ul>
 					</div>
 				</nav>
 			</div>
@@ -355,14 +353,14 @@
 		</div>
 		<div class="layout-content">
 			<div class="layout-content-body">
-				<div class="row gutter-xs">
+				<div class="row gutter">
 					<div class="page-title">
 						<h2>백업 이력</h2>
 						<p>보안디스크에 대해 백업된 이력을 확인할 수 있습니다.</p>
 					</div>
 				</div>
 
-				<div class="row gutter-xs m-b-lg">
+				<div class="row gutter m-b-lg">
 					<div class="col-xs-12">
 						<table class="table table-bordered type-1">
 							<tr>
@@ -393,54 +391,66 @@
 							<tr>
 								<th>검색 조건</th>
 								<td>
-									<div class="m-b-sm">
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">성공</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">실패</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">부분 성공</span>
-										</label>
-									</div>
+									<ul class="checkbox-list">
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">성공</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">실패</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">부분 성공</span>
+											</label>
+										</li>
+									</ul>
 								</td>
 							</tr>
 							<tr>
 								<th>검색 조건</th>
 								<td>
-									<div class="m-b-sm">
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">사용자 이름</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">사용자 ID</span>
-										</label>
-									</div>
+									<ul class="checkbox-list">
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">사용자 이름</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">사용자 ID</span>
+											</label>
+										</li>
+									</ul>
 								</td>
 							</tr>
 						</table>
 						<div class="text-center">
-							<button type="button" class="btn btn-default bnt-">검 색</button>
+							<button type="button" class="btn btn-default btn-basic">검 색</button>
 						</div>
 					</div>
 				</div>
 
-				<div class="row gutter-xs">
+				<div class="row gutter">
 					<div class="col-xs-12">
 						<div class="card">
 							<div class="card-header">
-								<p class="m-t-md m-b-0">showing 1 to 10 of 57 entries</p>
+								<div class="left-position">
+									<p>showing 1 to 10 of 57 entries</p>
+								</div>
 							</div>
 							<div class="card-body">
 								<div class="table-responsive">

@@ -121,14 +121,12 @@
 						</li>
 					</ul>
 					<div class="title-bar">
-						<h1 class="title-bar-title">
-							<ul>
-								<li><span class="icon icon-home"></span>HOME</li>
-								<li>DiskLock</li>
-								<li>DLLLock</li>
-								<li><strong>DLL 처리이력</strong></li>
-							</ul>
-						</h1>
+						<ul class="title-bar-title">
+							<li><span class="icon icon-home"></span>HOME</li>
+							<li>DiskLock</li>
+							<li>DLLLock</li>
+							<li><strong>DLL 처리이력</strong></li>
+						</ul>
 					</div>
 				</nav>
 			</div>
@@ -355,14 +353,14 @@
 		</div>
 		<div class="layout-content">
 			<div class="layout-content-body">
-				<div class="row gutter-xs">
+				<div class="row gutter">
 					<div class="page-title">
 						<h2>DLL 처리이력</h2>
 						<p>전체 DLL에 대해 처리한 이력을 확인할 수 있습니다.</p>
 					</div>
 				</div>
 
-				<div class="row gutter-xs m-b-lg">
+				<div class="row gutter m-b-lg">
 					<div class="col-xs-12">
 						<table class="table table-bordered type-1">
 							<tr>
@@ -393,108 +391,154 @@
 							<tr>
 								<th>처리내역</th>
 								<td>
-									<div class="m-b-sm">
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">카테고리 추가</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">카테고리 삭제</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">안전구역 IO권한 변경</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">비안전구역 IO권한 변경</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">관지자 허용</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">관리자 차단</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">악성코드 지정</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">악성코드 해제</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">허용요청 승인</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">차단요청 승인</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">허용요청 거부</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">차단요청 거부</span>
-										</label>
-									</div>
+									<ul class="checkbox-list">
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">처리내역 전체</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">카테고리 추가</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">카테고리 삭제</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">안전구역 IO권한 변경</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">비안전구역 IO권한 변경</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">관지자 허용</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">관리자 차단</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">악성코드 지정</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">악성코드 해제</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">허용요청 승인</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">차단요청 승인</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">허용요청 거부</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">차단요청 거부</span>
+											</label>
+										</li>
+									</ul>
 								</td>
 							</tr>
 							<tr>
 								<th>검색 조건</th>
 								<td>
-									<div class="m-b-sm">
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">DLL 파일명</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">처리자 ID</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">요청자 ID</span>
-										</label>
-										<div class="input-with-icon d-ib m-l-md">
-											<input class="form-control" type="text" placeholder="입력하세요">
-											<span class="icon icon-search input-icon"></span>
-										</div>
-									</div>									
+									<ul class="checkbox-list">
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">전체</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">DLL 파일명</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">처리자 ID</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">요청자 ID</span>
+											</label>
+										</li>
+									</ul>
+									<div class="input-with-icon d-ib media-middle">
+										<input class="form-control" type="text" placeholder="입력하세요">
+										<span class="icon icon-search input-icon"></span>
+									</div>
 								</td>
 							</tr>
 						</table>
 						<div class="text-center">
-							<button type="button" class="btn btn-default bnt-">검 색</button>
+							<button type="button" class="btn btn-default btn-basic">검 색</button>
 						</div>
 					</div>
 				</div>
 
-				<div class="row gutter-xs">
+				<div class="row gutter">
 					<div class="col-xs-12">
 						<div class="card">
 							<div class="card-header">
-								<p class="m-t-dm m-b-0">showing 1 to 10 of 57 entries</p>
+								<div class="left-position">
+									<p>showing 1 to 10 of 57 entries</p>
+								</div>
 							</div>
 							<div class="card-body">
 								<div class="table-responsive">

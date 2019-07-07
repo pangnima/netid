@@ -121,13 +121,11 @@
 						</li>
 					</ul>
 					<div class="title-bar">
-						<h1 class="title-bar-title">
-							<ul>
-								<li><span class="icon icon-home"></span>HOME</li>
-								<li>개인정보보호</li>
-								<li><strong>검출 이력</strong></li>
-							</ul>
-						</h1>
+						<ul class="title-bar-title">
+							<li><span class="icon icon-home"></span>HOME</li>
+							<li>개인정보보호</li>
+							<li><strong>검출 이력</strong></li>
+						</ul>
 					</div>
 				</nav>
 			</div>
@@ -354,22 +352,22 @@
 		</div>
 		<div class="layout-content">
 			<div class="layout-content-body">
-				<div class="row gutter-xs">
+				<div class="row gutter">
 					<div class="page-title">
 						<h2>검출 이력</h2>
 					</div>
 				</div>
 
-				<div class="row gutter-xs m-b-lg">
+				<div class="row gutter m-b-lg">
 					<div class="col-xs-12">
 						<table class="table table-bordered type-1">
 							<tr>
 								<th>도메인 선택</th>
 								<td>
-									<select name="" id="" class="form-control domain">
+									<select name="" id="" class="form-control d-ib size-a media-middle">
 										<option value="">기본</option>
 									</select>
-									<input id="form-control-5" class="form-control domain" type="input" value="기본도메인" readonly="readonly">
+									<input id="form-control-5" class="form-control d-ib size-a media-middle" type="input" value="기본도메인">
 								</td>
 							</tr>
 							<tr>
@@ -398,67 +396,163 @@
 								</td>
 							</tr>
 							<tr>
-								<th>검색 조건</th>
+								<th>문서함</th>
 								<td>
-									<select name="" class="form-control d-ib size-a">
-										<option value="" selected="">전체문서함</option>
-										<option value="00000">TTA_홈폴더</option>
-										<option value="00001">부서문서함</option>
-										<option value="00002">상용소프트웨어</option>
-									</select>
-									<select name="" class="form-control d-ib size-a">
-										<option value="" selected="">검출 항목</option>
-										<option value="1">주민번호</option>
-										<option value="10">휴대폰번호</option>
-										<option value="2">외국인주민번호</option>
-										<option value="3">법인등록번호</option>
-										<option value="4">사업자등록번호</option>
-										<option value="5">카드번호16자리</option>
-										<option value="6">여권번호</option>
-										<option value="7">구 여권번호</option>
-										<option value="8">이메일</option>
-										<option value="9">전화번호</option>
-									</select>
+									<ul class="checkbox-list">
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">전체문서함</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">TTA_홈폴더</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">부서문서함</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">상용소프트웨어</span>
+											</label>
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th>검출 항목</th>
+								<td>
+									<ul class="checkbox-list">
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">주민번호</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">휴대폰번호</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">외국인주민번호</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">법인등록번호</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">사업자등록번호</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">카드번호16자리</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">여권번호</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">구 여권번호</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">이메일</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">전화번호</span>
+											</label>
+										</li>
+									</ul>
 								</td>
 							</tr>
 							<tr>
 								<th>검색어</th>
 								<td>
-									<div class="m-b-sm">
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">파일 이름</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">파일 경로</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">파일 생성자</span>
-										</label>
-										<div class="input-with-icon d-ib m-l-md">
-											<input class="form-control" type="text" placeholder="입력하세요">
-											<span class="icon icon-search input-icon"></span>
-										</div>
+									<ul class="checkbox-list">
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">파일 이름</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">파일 경로</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">파일 생성자</span>
+											</label>
+										</li>
+									</ul>
+									<div class="input-with-icon d-ib media-middle">
+										<input class="form-control" type="text" placeholder="입력하세요">
+										<span class="icon icon-search input-icon"></span>
 									</div>
 								</td>
 							</tr>
 						</table>
 						<div class="text-center">
-							<button type="button" class="btn btn-default bnt-">검 색</button>
+							<button type="button" class="btn btn-default btn-basic">검 색</button>
 						</div>
 					</div>
 				</div>
 
-				<div class="row gutter-xs">
+				<div class="row gutter">
 					<div class="col-xs-12">
 						<div class="card">
 							<div class="card-header">
-								<p class="m-t-dm m-b-0">showing 1 to 10 of 57 entries</p>
+								<div class="left-position">
+									<p>showing 1 to 10 of 57 entries</p>
+								</div>
 							</div>
 							<div class="card-body">
 								<div class="table-responsive">
@@ -468,7 +562,7 @@
 												<th>검출 날짜</th>
 												<th>파일 생성자</th>
 												<th>파일 이름</th>
-												<th>검출 항목<br>(검출 개수)</th>
+												<th>검출 항목<span>(검출 개수)</span></th>
 												<th>파일 날짜</th>
 											</tr>
 										</thead>

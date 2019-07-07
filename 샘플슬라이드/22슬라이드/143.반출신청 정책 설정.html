@@ -121,13 +121,11 @@
 						</li>
 					</ul>
 					<div class="title-bar">
-						<h1 class="title-bar-title">
-							<ul>
-								<li><span class="icon icon-home"></span>HOME</li>
-								<li>외부 DRM</li>
-								<li><strong>반출신청 정책 설정</strong></li>
-							</ul>
-						</h1>
+						<ul class="title-bar-title">
+							<li><span class="icon icon-home"></span>HOME</li>
+							<li>외부 DRM</li>
+							<li><strong>반출신청 정책 설정</strong></li>
+						</ul>
 					</div>
 				</nav>
 			</div>
@@ -541,71 +539,34 @@
 		<!-- 컨텐츠영역 -->
 		<div class="layout-content">
 			<div class="layout-content-body">
-				<div class="row gutter-xs">
+				<div class="row gutter">
 					<div class="page-title">
 						<h2>반출신청 정책 설정</h2>
 						<p>사용자가 외부DRM 반출 신청 시 선택 가능한 범위를 설정합니다.</p>
 					</div>
 				</div>
 
-				<div class="row gutter-xs m-b-lg">
+				<div class="row gutter m-b-lg">
 					<div class="col-xs-12">
 						<!-- 메뉴 -->
 						<div class="col-sm-3 p-a-0">
-							<div class="card">
+							<div class="card p-a-0 hv100">
 								<div class="card-header green">
+									<h3>정책 목록 <i class="fas fa-plus"></i></h3>
 									<div class="card-actions">
 										<button type="button" class="card-action" title="Collapse">
 											<span class="icon icon-plus"></span>
 										</button>
 										<button type="button" class="card-action card-reload" title="Reload"></button>
 									</div>
-									<span>정책 목록</span>
 								</div>
 								<div class="card-body p-a-0" data-toggle="match-height">
-									<ul class="sidenav list-group list-group-divided hv99">
-										<li class="sidenav-item list-group-item has-subnav">
-											<a href="#" aria-haspopup="true" aria-expanded="false">
-												<span class="sidenav-label">상용소프트웨어</span>
-												<button type="button" class="icon icon-ellipsis-v card-action"></button>
-											</a>
-											<ul class="sidenav collapse" aria-expanded="false" style="height: 0px;">
-												<li><a href="#">개발팀</a>
-													<ul class="sidenav level-1 collapse" aria-expanded="false" style="height: 0px;">
-														<li><a href="#">개발 1팀</a></li>
-													</ul>
-												</li>
-												<li><a href="#">공용폴더</a>
-													<ul class="sidenav level-1 collapse" aria-expanded="false" style="height: 0px;">
-														<li><a href="#">안내</a></li>
-													</ul>
-												</li>
-											</ul>
-										</li>
-										<li class="sidenav-item list-group-item">
-											<a href="#" aria-haspopup="true" aria-expanded="false">
-												<span class="sidenav-label">메뉴</span>
-												<button type="button" class="icon icon-ellipsis-v card-action"></button>
-											</a>
-										</li>
-										<li class="sidenav-item list-group-item">
-											<a href="#" aria-haspopup="true" aria-expanded="false">
-												<span class="sidenav-label">메뉴</span>
-												<button type="button" class="icon icon-ellipsis-v card-action"></button>
-											</a>
-										</li>
-										<li class="sidenav-item list-group-item">
-											<a href="#" aria-haspopup="true" aria-expanded="false">
-												<span class="sidenav-label">메뉴</span>
-												<button type="button" class="icon icon-ellipsis-v card-action"></button>
-											</a>
-										</li>
-										<li class="sidenav-item list-group-item">
-											<a href="#" aria-haspopup="true" aria-expanded="false">
-												<span class="sidenav-label">메뉴</span>
-												<button type="button" class="icon icon-ellipsis-v card-action"></button>
-											</a>
-										</li>
+									<ul class="list-group list-group-divided">
+										<li class="list-group-item">메뉴 <button type="button" class="icon icon-ellipsis-v card-action m-r-md"></button></li>
+										<li class="list-group-item">메뉴 <button type="button" class="icon icon-ellipsis-v card-action m-r-md"></button></li>
+										<li class="list-group-item">메뉴 <button type="button" class="icon icon-ellipsis-v card-action m-r-md"></button></li>
+										<li class="list-group-item">메뉴 <button type="button" class="icon icon-ellipsis-v card-action m-r-md"></button></li>
+										<li class="list-group-item">메뉴 <button type="button" class="icon icon-ellipsis-v card-action m-r-md"></button></li>
 									</ul>
 								</div>
 							</div>
@@ -618,12 +579,12 @@
 							<div>
 								<div class="card">
 									<div class="card-header p-x-0 border-none">
-										<h3>선택한 정책 목록 : <span>00000.기본정책</span></h3>
+										<h3 class="big">선택한 정책 목록 : <span>00000.기본정책</span></h3>
 									</div>
 									<div class="card-body">
 										<table class="table table-bordered type-1">
 											<tr>
-												<th>결제 방식</th>
+												<th>결제 방식 <span class="icon icon-info-circle"></span></th>
 												<td>
 													<div>
 														<label class="custom-control custom-control-success custom-radio">
@@ -645,7 +606,7 @@
 												</td>
 											</tr>
 											<tr>
-												<th>용량 제한</th>
+												<th>용량 제한 <span class="icon icon-info-circle"></span></th>
 												<td>
 													<div class="m-b-sm">
 														<label class="custom-control custom-control-success custom-radio">
@@ -665,7 +626,7 @@
 												</td>
 											</tr>
 											<tr>
-												<th>반출 기한</th>
+												<th>반출 기한 <span class="icon icon-info-circle"></span></th>
 												<td>
 													<div class="m-b-sm">
 														<label class="custom-control custom-control-success custom-radio">
@@ -685,9 +646,9 @@
 												</td>
 											</tr>
 											<tr>
-												<th>전송 방법</th>
+												<th>전송 방법 <span class="icon icon-info-circle"></span></th>
 												<td>
-													<div class="m-b-sm">
+													<div>
 														<label class="custom-control custom-control-success custom-radio">
 															<input class="custom-control-input" name="success" type="radio" value="none">
 															<span class="custom-control-indicator"></span>
@@ -707,9 +668,9 @@
 												</td>
 											</tr>
 											<tr>
-												<th>인증 방식</th>
+												<th>인증 방식 <span class="icon icon-info-circle"></span></th>
 												<td>
-													<div class="m-b-sm">
+													<div>
 														<label class="custom-control custom-control-success custom-radio">
 															<input class="custom-control-input" name="success" type="radio" value="none">
 															<span class="custom-control-indicator"></span>
@@ -729,11 +690,11 @@
 												</td>
 											</tr>
 										</table>
-										<div class="text-right m-t-sm">
-											<button class="btn btn-success" type="button">확인</button>
-											<button class="btn btn-default" type="button">취소</button>
-										</div>
 									</div>
+								</div>
+								<div class="text-right m-t-sm">
+									<button class="btn btn-success btn-basic" type="button">확인</button>
+									<button class="btn btn-default btn-basic" type="button">취소</button>
 								</div>
 							</div>
 							<!-- // 정책관리 -->

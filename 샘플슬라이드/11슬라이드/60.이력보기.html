@@ -121,15 +121,13 @@
 						</li>
 					</ul>
 					<div class="title-bar">
-						<h1 class="title-bar-title">
-							<ul>
-								<li><span class="icon icon-home"></span>HOME</li>
-								<li>Basic</li>
-								<li>공유·협업</li>
-								<li>대외용 웹링크 복사·대외용 링크메일</li>
-								<li><strong>이력 보기</strong></li>
-							</ul>
-						</h1>
+						<ul class="title-bar-title">
+							<li><span class="icon icon-home"></span>HOME</li>
+							<li>Basic</li>
+							<li>공유·협업</li>
+							<li>대외용 웹링크 복사·대외용 링크메일</li>
+							<li><strong>이력 보기</strong></li>
+						</ul>
 					</div>
 				</nav>
 			</div>
@@ -356,17 +354,15 @@
 		</div>
 		<div class="layout-content">
 			<div class="layout-content-body">
-				<div class="row gutter-xs">
+				<div class="row gutter">
 					<div class="page-title">
 						<h2>이력보기</h2>
 					</div>
 				</div>
 
-				<div class="row gutter-xs m-b-lg">
+				<div class="row gutter m-b-lg">
 					<div class="col-xs-12">
-						<div class="text-right">
-							<button class="btn btn-default m-b-sm" type="button">엑셀(CSV) 파일로 저장</button>
-						</div>
+
 						<table class="table table-bordered type-1">
 							<tr>
 								<th>기간선택</th>
@@ -396,98 +392,129 @@
 							<tr>
 								<th>상태</th>
 								<td>
-									<div class="m-b-sm">
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">승인대기</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">승인완료</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">승인취소</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">승인거절</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">완료</span>
-										</label>
-									</div>
+									<ul class="checkbox-list">
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">승인대기</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">승인완료</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">승인취소</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">승인거절</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">완료</span>
+											</label>
+										</li>
+									</ul>
 								</td>
 							</tr>
 							<tr>
 								<th>검색 조건</th>
 								<td>
-									<div class="m-b-sm">
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">발송자 아이디</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">발송자</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">승인권자 아이디</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">승인권자</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">제목</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">부서</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">파일명</span>
-										</label>
-										<label class="custom-control custom-control-success custom-checkbox">
-											<input class="custom-control-input" type="checkbox">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-label">파일 확장자</span>
-										</label>
-										<div class="input-with-icon d-ib m-l-md">
-											<input class="form-control" type="text" placeholder="입력하세요">
-											<span class="icon icon-search input-icon"></span>
-										</div>
+									<ul class="checkbox-list">
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">발송자 아이디</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">발송자</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">승인권자 아이디</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">승인권자</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">제목</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">부서</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">파일명</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">파일 확장자</span>
+											</label>
+										</li>
+									</ul>
+									<div class="input-with-icon d-ib media-middle">
+										<input class="form-control" type="text" placeholder="입력하세요">
+										<span class="icon icon-search input-icon"></span>
 									</div>
 								</td>
 							</tr>
 						</table>
 						<div class="text-center">
-							<button type="button" class="btn btn-default bnt-">검 색</button>
+							<button type="button" class="btn btn-default btn-basic">검 색</button>
 						</div>
 					</div>
 				</div>
 
-				<div class="row gutter-xs">
+				<div class="row gutter">
 					<div class="col-xs-12">
 						<div class="card">
-							<div class="card-header">
-								<p class="m-t-md m-b-0">showing 1 to 10 of 57 entries</p>
+							<div class="card-header no-title">
+								<div class="left-position">
+									<p>showing 1 to 10 of 57 entries</p>
+								</div>
+								<div class="right-position">
+									<button class="btn btn-default" type="button">엑셀(CSV) 파일로 저장</button>
+								</div>
 							</div>
 							<div class="card-body">
 								<div class="table-responsive">
