@@ -24,6 +24,8 @@ p {margin:0;}
 .page-title {display:table; margin-bottom:30px;}
 .page-title h2 {display:table-cell; padding-right:15px; font-size:25px; vertical-align:middle;}
 .page-title p {display:table-cell; padding-left:10px; font-size:15px; border-left:solid 1px #ddd; vertical-align:middle; }
+.page-title.big h2 {font-size:40px;}
+.page-title.big p {font-size:20px;}
 @media screen and (max-width:640px) {
 	.page-title h2{display: block;}
 	.page-title p{display: block; border:0; padding:0;}
@@ -267,6 +269,12 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 
 /* datepicker */
 .border-reverse {border-bottom-left-radius:0; border-top-left-radius:0; border-bottom-right-radius:4px !important; border-top-right-radius:4px !important;}
+
+/* 업로드 파일 */
+.upload-file-list ul {list-style:none; padding:10px;}
+.upload-file-list ul li p {display:block; position:relative; background:#ddd; max-width:400px; margin-top:10px; padding:3px 5px;}
+.upload-file-list ul li p i {position:absolute; top:50%; right:5px; cursor:pointer; transform:translateY(-50%);}
+
 
 
 
