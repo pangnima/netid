@@ -11,7 +11,7 @@
 	<link rel="manifest" href="manifest.json">
 	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#f1595d">
 	<meta name="theme-color" content="#ffffff">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,700">
+	
 	<link rel="stylesheet" href="../../css/vendor.min.css">
 	<link rel="stylesheet" href="../../css/elephant.css">
 	<link rel="stylesheet" href="../../css/application.css">
@@ -549,9 +549,9 @@
 					<div class="col-xs-12">
 						<!-- 메뉴 -->
 						<div class="col-sm-3 p-a-0">
-							<div class="card p-a-0">
+							<div class="card p-a-0 hv100">
 								<div class="card-header green">
-									<h3>폴더 목록</h3>
+									<h3>폴더 목록 <i class="fas fa-plus"></i></h3>
 									<div class="card-actions">
 										<button type="button" class="card-action" title="Collapse">
 											<span class="icon icon-plus"></span>
@@ -560,49 +560,19 @@
 									</div>
 								</div>
 								<div class="card-body p-a-0" data-toggle="match-height">
-									<ul class="sidenav list-group list-group-divided hv99">
-										<li class="sidenav-item list-group-item has-subnav">
-											<a href="#" aria-haspopup="true" aria-expanded="false">
-												<span class="sidenav-label">부서문서함</span>
-												<button type="button" class="icon icon-ellipsis-v card-action"></button>
-											</a>
-											<ul class="sidenav collapse" aria-expanded="false" style="height: 0px;">
-												<li><a href="#">개발팀</a>
-													<ul class="sidenav level-1 collapse" aria-expanded="false" style="height: 0px;">
-														<li><a href="#">개발 1팀</a></li>
-													</ul>
-												</li>
-												<li><a href="#">공용폴더</a>
-													<ul class="sidenav level-1 collapse" aria-expanded="false" style="height: 0px;">
-														<li><a href="#">안내</a></li>
-													</ul>
-												</li>
-											</ul>
+									<ul class="list-group list-group-divided">
+										<li class="list-group-item">메뉴 <button type="button" class="icon icon-ellipsis-v card-action m-r-md"></button>
+											<div class="layer-pop">
+												<ul>
+													<li>메뉴</li>
+													<li>메뉴</li>
+												</ul>
+											</div>
 										</li>
-										<li class="sidenav-item list-group-item">
-											<a href="#" aria-haspopup="true" aria-expanded="false">
-												<span class="sidenav-label">메뉴</span>
-												<button type="button" class="icon icon-ellipsis-v card-action"></button>
-											</a>
-										</li>
-										<li class="sidenav-item list-group-item">
-											<a href="#" aria-haspopup="true" aria-expanded="false">
-												<span class="sidenav-label">메뉴</span>
-												<button type="button" class="icon icon-ellipsis-v card-action"></button>
-											</a>
-										</li>
-										<li class="sidenav-item list-group-item">
-											<a href="#" aria-haspopup="true" aria-expanded="false">
-												<span class="sidenav-label">메뉴</span>
-												<button type="button" class="icon icon-ellipsis-v card-action"></button>
-											</a>
-										</li>
-										<li class="sidenav-item list-group-item">
-											<a href="#" aria-haspopup="true" aria-expanded="false">
-												<span class="sidenav-label">메뉴</span>
-												<button type="button" class="icon icon-ellipsis-v card-action"></button>
-											</a>
-										</li>
+										<li class="list-group-item">메뉴 <button type="button" class="icon icon-ellipsis-v card-action m-r-md"></button></li>
+										<li class="list-group-item">메뉴 <button type="button" class="icon icon-ellipsis-v card-action m-r-md"></button></li>
+										<li class="list-group-item">메뉴 <button type="button" class="icon icon-ellipsis-v card-action m-r-md"></button></li>
+										<li class="list-group-item">메뉴 <button type="button" class="icon icon-ellipsis-v card-action m-r-md"></button></li>
 									</ul>
 								</div>
 							</div>
@@ -614,10 +584,10 @@
 							<div>
 								<div class="card">
 									<div class="card-header p-x-0 border-none">
-										<h3>부서문서함</h3>
+										<h3 class="biger">부서문서함</h3>
 									</div>
 									<div class="card-body">
-										<table class="table table-bordered type-1">
+										<table class="table table-bordered type-1 big">
 											<tr>
 												<th>드라이브 이름 설정</th>
 												<td>
@@ -634,7 +604,7 @@
 							<div>
 								<div class="card">
 									<div class="card-header p-x-0 border-none">
-										<h3>폴더 드라이브 연결 대상</h3>
+										<h3 class="biger">폴더 드라이브 연결 대상</h3>
 									</div>
 									<div class="card-body">
 										<div class="text-right m-b-sm">

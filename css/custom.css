@@ -1,5 +1,5 @@
 @import url(./font.css);
-body {font-family:"Noto Sans KR"; color: #737373;}
+body {font-family:"Noto Sans KR",sans-serif; color: #737373;}
 a {color:#7d7d8e; text-decoration: none;}
 p {margin:0;}
 .layout-content-body {padding:25px 30px 35px 40px;}
@@ -68,6 +68,8 @@ table.type-1 tr td select.domain {display:inline-block; max-width:150px;}
 table.type-1 tr td input.domain {display:inline-block; max-width:250px;}
 @media screen and (max-width:540px) {table.type-1 tr td input.domain {margin-top:5px;}}
 table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
+
+table.type-1.big tr th {font-size:17px;}
 
 .checkbox-board tr td {border-left:solid 1px #e7e7ec;}
 .checkbox-board tr th:first-child , .checkbox-board tr td:first-child {width:3%; border-left:0; text-align:center;}
@@ -227,7 +229,7 @@ table.type-1 tr td .input-daterange {max-width:300px; margin-bottom:5px;}
 .pagination > .active > a , .pagination > .active > a:focus , .pagination > .active > a:hover , .pagination > .active > span , .pagination > .active > span:focus , .pagination > .active > span:hover {background-color:#13b6bc; border-color:#13b6bc;}
 
 /* 버튼 커스텀 추가 */
-.btn-basic , .btn-basic:hover , .btn-basic:active , .btn-basic:focus {min-width:85px; min-height:30px; padding:0 16px; box-sizing:border-box;}
+.btn-basic , .btn-basic:hover , .btn-basic:active , .btn-basic:focus {min-width:85px; min-height:30px; padding:10px 18px; box-sizing:border-box;}
 .btn-link {color:inherit;}
 .btn-link:focus , .btn-link:hover {background-color:transparent; color:inherit; outline:none;}
 .btn-exl {margin-left:10px !important;}
