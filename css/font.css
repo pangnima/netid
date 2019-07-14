@@ -2,11 +2,11 @@
 @font-face {
 	font-family:"Noto Sans KR"; 
 	font-style:normal; 
-	src:url(../font/NotoSansCJKkr-Regular.eot) format("eot"),
-	url(../font/NotoSansCJKkr-Regular.ttf) format("ttf"),
-	url(../font/NotoSansCJKkr-Regular.woff) format("woff2"),
-	url(../font/NotoSansCJKkr-Regular.woff2) format("woff2"),
-	url(../font/NotoSansCJKkr-Regular.svg) format("svg");
+	src:url(../fonts/NotoSansCJKkr-Regular.eot) format("eot"),
+	url(../fonts/NotoSansCJKkr-Regular.ttf) format("ttf"),
+	url(../fonts/NotoSansCJKkr-Regular.woff) format("woff2"),
+	url(../fonts/NotoSansCJKkr-Regular.woff2) format("woff2"),
+	url(../fonts/NotoSansCJKkr-Regular.svg) format("svg");
 }
 
 @font-face {

@@ -5,12 +5,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>NETID</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="manifest.json">
-	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#f1595d">
-	<meta name="theme-color" content="#ffffff">
 	
 	<link rel="stylesheet" href="../../css/vendor.min.css">
 	<link rel="stylesheet" href="../../css/elephant.css">
@@ -358,6 +352,7 @@
 				<div class="row gutter">
 					<div class="page-title">
 						<h2>협업게시판 개설</h2>
+						<p></p>
 					</div>
 				</div>
 
@@ -368,21 +363,35 @@
 								<tr>
 									<th><label for="board_name">협업게시판이름</label></th>
 									<td>
-										<input id="board_name" class="form-control" type="input" value="">
+										<div class="search-input">
+											<div class="d-b">
+												<input class="form-control" type="text">
+											</div>
+										</div>
 									</td>
 								</tr>
 								<tr>
 									<th>카테고리</th>
 									<td>
-										<input class="form-control d-ib size-a media-middle" type="text">
-										<button class="btn btn-default media-middle" type="button">선택</button>
+										<div class="search-input">
+											<div class="input-with-icon d-ib media-middle">
+												<input class="form-control" type="text" placeholder="입력하세요">
+												<span class="icon icon-search input-icon"></span>
+											</div>
+											<button class="btn btn-default media-middle" type="button">선택</button>
+										</div>
 									</td>
 								</tr>
 								<tr>
 									<th>관리자</th>
 									<td>
-										<input class="form-control d-ib size-a media-middle" type="text">
-										<button class="btn btn-default media-middle" type="button">선택</button>
+										<div class="search-input">
+											<div class="input-with-icon d-ib media-middle">
+												<input class="form-control" type="text" placeholder="입력하세요">
+												<span class="icon icon-search input-icon"></span>
+											</div>
+											<button class="btn btn-default media-middle" type="button">선택</button>
+										</div>
 									</td>
 								</tr>
 								<tr>
@@ -404,12 +413,12 @@
 									<th>가입유형</th>
 									<td>
 										<label class="custom-control custom-control-success custom-radio">
-											<input class="custom-control-input" name="success" type="radio" value="none">
+											<input class="custom-control-input" name="success2" type="radio" value="none">
 											<span class="custom-control-indicator"></span>
 											<span class="custom-control-label">자동가입</span>
 										</label>
 										<label class="custom-control custom-control-success custom-radio">
-											<input class="custom-control-input" name="success" type="radio" value="none" checked>
+											<input class="custom-control-input" name="success2" type="radio" value="none" checked>
 											<span class="custom-control-indicator"></span>
 											<span class="custom-control-label">승인 후 가입</span>
 										</label>
@@ -444,10 +453,10 @@
 			</div>
 		</div>
 	</div>
-	<script src="../../js/vendor.min.js"></script>
-	<script src="../../js/elephant.min.js"></script>
-	<script src="../../js/application.min.js"></script>
-	<!-- <script src="../../js/demo.min.js"></script> -->
+	<script src="../../js/vendor.js"></script>
+	<script src="../../js/elephant.js"></script>
+	<script src="../../js/application.js"></script>
+	<!-- <script src="../../js/demo.js"></script> -->
 
 </body>
 

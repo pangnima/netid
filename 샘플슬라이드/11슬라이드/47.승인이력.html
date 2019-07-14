@@ -356,6 +356,7 @@
 				<div class="row gutter">
 					<div class="page-title">
 						<h2>승인 이력</h2>
+						<p></p>
 					</div>
 				</div>
 
@@ -365,14 +366,14 @@
 							<tr>
 								<th>기간 선택</th>
 								<td>
-									<div class="input-group input-daterange" data-provide="datepicker" data-date-autoclose="true" data-date-format="dd-M-yyyy">
+									<div class="input-group input-daterange" data-provide="datepicker" data-date-autoclose="true" data-date-format="yyyy-mm-dd">
 										<div class="input-with-icon">
-											<input class="form-control" type="text" data-provide="datepicker">
+											<input class="form-control" type="text">
 											<span class="icon icon-calendar input-icon"></span>
 										</div>
 										<span class="input-group-addon">~</span>
 										<div class="input-with-icon">
-											<input class="form-control border-reverse" type="text" data-provide="datepicker">
+											<input class="form-control border-reverse" type="text">
 											<span class="icon icon-calendar input-icon"></span>
 										</div>
 									</div>
@@ -469,9 +470,11 @@
 											</label>
 										</li>
 									</ul>
-									<div class="input-with-icon d-ib media-middle">
-										<input class="form-control" type="text" placeholder="입력하세요">
-										<span class="icon icon-search input-icon"></span>
+									<div class="search-input">
+										<div class="input-with-icon d-ib media-middle">
+											<input class="form-control" type="text" placeholder="입력하세요">
+											<span class="icon icon-search input-icon"></span>
+										</div>
 									</div>
 								</td>
 							</tr>
@@ -526,13 +529,13 @@
 
 								<div class="m-t">
 									<div class="view-list">Show 
-										<select name="" id="" class="form-control d-ib size-80">
+										<select name="" id="" class="form-control d-ib">
 											<option value="">10</option>
 											<option value="">15</option>
 											<option value="">20</option>
 										</select> entires</div>
 									<div class="text-center">
-										<ul class="pagination m-t-0">
+										<ul class="pagination">
 											<li class="previous"><a href="#" class="icon icon-angle-left"></a></li>
 											<li class="active"><span>1</span></li>
 											<li><a href="">2</a></li>
@@ -556,10 +559,10 @@
 			</div>
 		</div>
 	</div>
-	<script src="../../js/vendor.min.js"></script>
-	<script src="../../js/elephant.min.js"></script>
-	<script src="../../js/application.min.js"></script>
-	<!-- <script src="../../js/demo.min.js"></script> -->
+	<script src="../../js/vendor.js"></script>
+	<script src="../../js/elephant.js"></script>
+	<script src="../../js/application.js"></script>
+	<!-- <script src="../../js/demo.js"></script> -->
 
 </body>
 

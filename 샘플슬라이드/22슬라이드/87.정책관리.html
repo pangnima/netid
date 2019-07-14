@@ -5,12 +5,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>NETID</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="manifest.json">
-	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#f1595d">
-	<meta name="theme-color" content="#ffffff">
 	
 	<link rel="stylesheet" href="../../css/vendor.min.css">
 	<link rel="stylesheet" href="../../css/elephant.css">
@@ -579,8 +573,8 @@
 							<!-- 정책관리 -->
 							<div>
 								<div class="card">
-									<div class="card-header p-x-0 border-none">
-										<h3 class="biger">선택한 정책 목록 : <span>00000.기본정책</span></h3>
+									<div class="card-header m-b">
+										<h3 class="big">선택한 정책 목록 : <span>00000.기본정책</span></h3>
 									</div>
 									<div class="card-body">
 										<table class="table table-bordered type-1 big">
@@ -614,12 +608,12 @@
 													<div>
 														<p class="m-a-0 p-y-sm">■ [선후결]을 선택한 경우 기본표시</p>
 														<label class="custom-control custom-control-success custom-radio">
-															<input class="custom-control-input" name="success" type="radio" value="none">
+															<input class="custom-control-input" name="success2" type="radio" value="none">
 															<span class="custom-control-indicator"></span>
 															<span class="custom-control-label">선결</span>
 														</label>
 														<label class="custom-control custom-control-success custom-radio">
-															<input class="custom-control-input" name="success" type="radio" value="none">
+															<input class="custom-control-input" name="success2" type="radio" value="none">
 															<span class="custom-control-indicator"></span>
 															<span class="custom-control-label">후결</span>
 														</label>
@@ -631,19 +625,19 @@
 												<td>
 													<div class="m-b-sm">
 														<label class="custom-control custom-control-success custom-radio">
-															<input class="custom-control-input" name="success" type="radio" value="none">
+															<input class="custom-control-input" name="success3" type="radio" value="none">
 															<span class="custom-control-indicator"></span>
 															<span class="custom-control-label">제한</span>
 														</label>
 														<label class="custom-control custom-control-success custom-radio">
-															<input class="custom-control-input" name="success" type="radio" value="none">
+															<input class="custom-control-input" name="success3" type="radio" value="none">
 															<span class="custom-control-indicator"></span>
 															<span class="custom-control-label">제한하지 않음</span>
 														</label>
 													</div>
-													<div class="input-with-icon d-ib">
-														<input class="form-control" type="text" placeholder="입력하세요" value="100">
-													</div> MB
+													<div>
+														<input class="form-control d-ib" type="text" placeholder="입력하세요" value="100"> MB
+													</div>
 												</td>
 											</tr>
 											<tr>
@@ -652,12 +646,12 @@
 													<div>
 														<div class="m-b-sm">
 															<label class="custom-control custom-control-success custom-radio">
-																<input class="custom-control-input" name="success" type="radio" value="none">
+																<input class="custom-control-input" name="success4" type="radio" value="none">
 																<span class="custom-control-indicator"></span>
 																<span class="custom-control-label">고정</span>
 															</label>
 															<label class="custom-control custom-control-success custom-radio">
-																<input class="custom-control-input" name="success" type="radio" value="none">
+																<input class="custom-control-input" name="success4" type="radio" value="none">
 																<span class="custom-control-indicator"></span>
 																<span class="custom-control-label">최대</span>
 															</label>
@@ -667,9 +661,9 @@
 																<span class="custom-control-label">제한하지 않음</span>
 															</label>
 														</div>
-														<div class="input-with-icon d-ib">
-															<input class="form-control" type="text" placeholder="입력하세요" value="100">
-														</div> 일
+														<div>
+															<input class="form-control d-ib" type="text" placeholder="입력하세요" value="100"> 일
+														</div>
 													</div>
 												</td>
 											</tr>
@@ -677,74 +671,94 @@
 												<td>
 													<div>
 														<p class="m-b-sm">■ 최대, 제한하지 않음]을 선택한 경우 기본표시</p>
-														<div class="input-with-icon d-ib">
-															<input class="form-control" type="text" placeholder="입력하세요" value="100">
-														</div> 일
+														<div>
+															<input class="form-control d-ib" type="text" placeholder="입력하세요" value="100"> 일
+														</div>
 													</div>
 												</td>
 											</tr>
 											<tr>
 												<th rowspan="2">공개 반출일 경우 반출 가능한 디스크 범위 선택 <span class="icon icon-info-circle"></span></th>
 												<td>
-													<div>
-														<label class="custom-control custom-control-success custom-checkbox">
-															<input class="custom-control-input" type="checkbox">
-															<span class="custom-control-indicator"></span>
-															<span class="custom-control-label">반출 디스트</span>
-														</label>
-														<label class="custom-control custom-control-success custom-checkbox">
-															<input class="custom-control-input" type="checkbox">
-															<span class="custom-control-indicator"></span>
-															<span class="custom-control-label">USB 디스크</span>
-														</label>
-														<label class="custom-control custom-control-success custom-checkbox">
-															<input class="custom-control-input" type="checkbox">
-															<span class="custom-control-indicator"></span>
-															<span class="custom-control-label">로컬 디스크</span>
-														</label>
-														<label class="custom-control custom-control-success custom-checkbox">
-															<input class="custom-control-input" type="checkbox">
-															<span class="custom-control-indicator"></span>
-															<span class="custom-control-label">네트워크 디스크</span>
-														</label>
-														<label class="custom-control custom-control-success custom-checkbox">
-															<input class="custom-control-input" type="checkbox">
-															<span class="custom-control-indicator"></span>
-															<span class="custom-control-label">CD-ROM</span>
-														</label>
-													</div>
+													<ul class="checkbox-list">
+														<li>
+															<label class="custom-control custom-control-success custom-checkbox">
+																<input class="custom-control-input" type="checkbox">
+																<span class="custom-control-indicator"></span>
+																<span class="custom-control-label">반출 디스크</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-control custom-control-success custom-checkbox">
+																<input class="custom-control-input" type="checkbox">
+																<span class="custom-control-indicator"></span>
+																<span class="custom-control-label">USB 디스크</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-control custom-control-success custom-checkbox">
+																<input class="custom-control-input" type="checkbox">
+																<span class="custom-control-indicator"></span>
+																<span class="custom-control-label">로컬 디스크</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-control custom-control-success custom-checkbox">
+																<input class="custom-control-input" type="checkbox">
+																<span class="custom-control-indicator"></span>
+																<span class="custom-control-label">네트워크 디스크</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-control custom-control-success custom-checkbox">
+																<input class="custom-control-input" type="checkbox">
+																<span class="custom-control-indicator"></span>
+																<span class="custom-control-label">CD-ROM</span>
+															</label>
+														</li>
+													</ul>
 												</td>
 											</tr>
 											<tr>
 												<td>
-													<div>
-														<p class="m-b-sm">■ 반출 신청 시 기본으로 표시할 반출 가능 디스크 범위</p>
-														<label class="custom-control custom-control-success custom-checkbox">
-															<input class="custom-control-input" type="checkbox">
-															<span class="custom-control-indicator"></span>
-															<span class="custom-control-label">반출 디스트</span>
-														</label>
-														<label class="custom-control custom-control-success custom-checkbox">
-															<input class="custom-control-input" type="checkbox">
-															<span class="custom-control-indicator"></span>
-															<span class="custom-control-label">USB 디스크</span>
-														</label>
-														<label class="custom-control custom-control-success custom-checkbox">
-															<input class="custom-control-input" type="checkbox">
-															<span class="custom-control-indicator"></span>
-															<span class="custom-control-label">로컬 디스크</span>
-														</label>
-														<label class="custom-control custom-control-success custom-checkbox">
-															<input class="custom-control-input" type="checkbox">
-															<span class="custom-control-indicator"></span>
-															<span class="custom-control-label">네트워크 디스크</span>
-														</label>
-														<label class="custom-control custom-control-success custom-checkbox">
-															<input class="custom-control-input" type="checkbox">
-															<span class="custom-control-indicator"></span>
-															<span class="custom-control-label">CD-ROM</span>
-														</label>
-													</div>
+													<p class="m-b-sm">■ 반출 신청 시 기본으로 표시할 반출 가능 디스크 범위</p>
+													<ul class="checkbox-list">
+														<li>
+															<label class="custom-control custom-control-success custom-checkbox">
+																<input class="custom-control-input" type="checkbox">
+																<span class="custom-control-indicator"></span>
+																<span class="custom-control-label">반출 디스크</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-control custom-control-success custom-checkbox">
+																<input class="custom-control-input" type="checkbox">
+																<span class="custom-control-indicator"></span>
+																<span class="custom-control-label">USB 디스크</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-control custom-control-success custom-checkbox">
+																<input class="custom-control-input" type="checkbox">
+																<span class="custom-control-indicator"></span>
+																<span class="custom-control-label">로컬 디스크</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-control custom-control-success custom-checkbox">
+																<input class="custom-control-input" type="checkbox">
+																<span class="custom-control-indicator"></span>
+																<span class="custom-control-label">네트워크 디스크</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-control custom-control-success custom-checkbox">
+																<input class="custom-control-input" type="checkbox">
+																<span class="custom-control-indicator"></span>
+																<span class="custom-control-label">CD-ROM</span>
+															</label>
+														</li>
+													</ul>
 												</td>
 											</tr>
 										</table>
@@ -774,10 +788,10 @@
 			</div>
 		</div>
 	</div>
-	<script src="../../js/vendor.min.js"></script>
-	<script src="../../js/elephant.min.js"></script>
-	<script src="../../js/application.min.js"></script>
-	<!-- <script src="../../js/demo.min.js"></script> -->
+	<script src="../../js/vendor.js"></script>
+	<script src="../../js/elephant.js"></script>
+	<script src="../../js/application.js"></script>
+	<!-- <script src="../../js/demo.js"></script> -->
 
 </body>
 

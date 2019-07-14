@@ -5,12 +5,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>NETID</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="manifest.json">
-	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#f1595d">
-	<meta name="theme-color" content="#ffffff">
 	
 	<link rel="stylesheet" href="../../css/vendor.min.css">
 	<link rel="stylesheet" href="../../css/elephant.css">
@@ -579,8 +573,8 @@
 							<!-- 정책관리 -->
 							<div>
 								<div class="card">
-									<div class="card-header p-x-0 border-none">
-										<h3 class="biger">선택한 정책 목록 : <span>00000.기본정책</span></h3>
+									<div class="card-header m-b">
+										<h3 class="big">선택한 정책 목록 : <span>00000.기본정책</span></h3>
 									</div>
 									<div class="card-body">
 										<table class="table table-bordered type-1 big">
@@ -619,79 +613,55 @@
 															시간 간격
 															<button class="btn btn-sm btn-default" type="button">추가</button>
 														</div>
-														<table class="table checkbox-board">
+														<table class="table type-22">
 															<colgroup>
-																<col style="width:2%">
-																<col style="width:80%">
-																<col style="width:18%">
+																<col>
+																<col style="width:120px">
 															</colgroup>
-															<tr>
-																<th>
-																	<label class="custom-control custom-control-success custom-checkbox">
-																		<input class="custom-control-input" type="checkbox">
-																		<span class="custom-control-indicator"></span>
-																		<span class="custom-control-label"></span>
-																	</label>
-																</th>
-																<th>설정된 예약 시간</th>
-																<th class="text-center">편집/삭제</th>
-															</tr>
-															<tr>
-																<td>
-																	<label class="custom-control custom-control-success custom-checkbox">
-																		<input class="custom-control-input" type="checkbox">
-																		<span class="custom-control-indicator"></span>
-																		<span class="custom-control-label"></span>
-																	</label>
-																</td>
-																<td>15:12</td>
-																<td class="text-center">
-																	<button class="btn-link p-x" type="button"><span class="icon icon-pencil"></span></button>
-																	<button class="btn-link p-x" type="button"><span class="icon icon-trash"></span></button>
-																</td>
-															</tr>
-															<tr>
-																<td>
-																	<label class="custom-control custom-control-success custom-checkbox">
-																		<input class="custom-control-input" type="checkbox">
-																		<span class="custom-control-indicator"></span>
-																		<span class="custom-control-label"></span>
-																	</label>
-																</td>
-																<td>15:12</td>
-																<td class="text-center">
-																	<button class="btn-link p-x" type="button"><span class="icon icon-pencil"></span></button>
-																	<button class="btn-link p-x" type="button"><span class="icon icon-trash"></span></button>
-																</td>
-															</tr>
-															<tr>
-																<td>
-																	<label class="custom-control custom-control-success custom-checkbox">
-																		<input class="custom-control-input" type="checkbox">
-																		<span class="custom-control-indicator"></span>
-																		<span class="custom-control-label"></span>
-																	</label>
-																</td>
-																<td>15:12</td>
-																<td class="text-center">
-																	<button class="btn-link p-x" type="button"><span class="icon icon-pencil"></span></button>
-																	<button class="btn-link p-x" type="button"><span class="icon icon-trash"></span></button>
-																</td>
-															</tr>
-															<tr>
-																<td>
-																	<label class="custom-control custom-control-success custom-checkbox">
-																		<input class="custom-control-input" type="checkbox">
-																		<span class="custom-control-indicator"></span>
-																		<span class="custom-control-label"></span>
-																	</label>
-																</td>
-																<td>15:12</td>
-																<td class="text-center">
-																	<button class="btn-link p-x" type="button"><span class="icon icon-pencil"></span></button>
-																	<button class="btn-link p-x" type="button"><span class="icon icon-trash"></span></button>
-																</td>
-															</tr>
+															<thead>
+																<tr>
+																	<th>설정된 예약 시간</th>
+																	<th class="text-center">편집/삭제</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>15:12</td>
+																	<td>
+																		<div class="btn-wrap-icon">
+																			<button type="button"><span class="icon icon-pencil"></span></button>
+																			<button type="button"><span class="icon icon-trash"></span></button>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td>15:12</td>
+																	<td>
+																		<div class="btn-wrap-icon">
+																			<button type="button"><span class="icon icon-pencil"></span></button>
+																			<button type="button"><span class="icon icon-trash"></span></button>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td>15:12</td>
+																	<td>
+																		<div class="btn-wrap-icon">
+																			<button type="button"><span class="icon icon-pencil"></span></button>
+																			<button type="button"><span class="icon icon-trash"></span></button>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td>15:12</td>
+																	<td>
+																		<div class="btn-wrap-icon">
+																			<button type="button"><span class="icon icon-pencil"></span></button>
+																			<button type="button"><span class="icon icon-trash"></span></button>
+																		</div>
+																	</td>
+																</tr>
+															</tbody>
 														</table>
 													</div>
 												</td>
@@ -706,21 +676,21 @@
 																<span class="custom-control-indicator"></span>
 																<span class="custom-control-label">매일</span>
 															</label>
-															<label class="custom-control custom-control-success custom-checkbox">
-																<input class="custom-control-input" type="checkbox">
+															<label class="custom-control custom-control-success custom-radio">
+																<input class="custom-control-input" name="success" type="radio" value="none">
 																<span class="custom-control-indicator"></span>
 																<span class="custom-control-label">매주</span>
 															</label>
 														</div>
 														<div>
-															<ul class="table-bordered p-x-md p-y-sm m-t-md m-b-0">
+															<ul class="table-bordered p-x-md p-y-sm m-t m-b-0">
 																<li class="d-ib m-r-md">
 																	<label class="custom-control custom-control-success custom-radio">
 																		<input class="custom-control-input" name="success" type="radio" value="none">
 																		<span class="custom-control-indicator"></span>
 																		<span class="custom-control-label">매</span>
 																	</label>
-																	<input type="text" class="form-control size-a d-ib"> 일 마다
+																	<input type="text" class="form-control d-ib"> 일 마다
 																</li>
 																<li class="d-ib">
 																	<label class="custom-control custom-control-success custom-radio">
@@ -841,10 +811,10 @@
 			</div>
 		</div>
 	</div>
-	<script src="../../js/vendor.min.js"></script>
-	<script src="../../js/elephant.min.js"></script>
-	<script src="../../js/application.min.js"></script>
-	<!-- <script src="../../js/demo.min.js"></script> -->
+	<script src="../../js/vendor.js"></script>
+	<script src="../../js/elephant.js"></script>
+	<script src="../../js/application.js"></script>
+	<!-- <script src="../../js/demo.js"></script> -->
 
 </body>
 
