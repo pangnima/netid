@@ -443,7 +443,7 @@ mark,
   padding: .2em;
 }
 .text-left {
-  text-align: left;
+  text-align: left !important;
 }
 .text-right {
   text-align: right;
@@ -8698,6 +8698,8 @@ button.collapsed .bars-x .bar-line:last-child {
   position: absolute;
   top: 0;
   width: 14px;
+  top:50%;
+  transform: translateY(-50%);
 }
 .custom-control-label {
   display: block;
