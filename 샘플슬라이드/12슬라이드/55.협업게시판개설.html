@@ -39,7 +39,7 @@
 					<span class="sr-only">토글 네비 게이션</span>
 					<span class="arrow-up"></span>
 					<span class="ellipsis ellipsis-vertical">
-						<img class="ellipsis-object" width="32" height="32" src="../..//img/0180441436.jpg" alt="유저 이름">
+						<img class="ellipsis-object" width="32" height="32" src="../../img/0180441436.jpg" alt="유저 이름">
 					</span>
 				</button>
 			</div>
@@ -63,7 +63,7 @@
 						</li>
 						<li class="dropdown hidden-xs">
 							<button class="navbar-account-btn" data-toggle="dropdown" aria-haspopup="true">
-								<img class="circle" width="36" height="36" src="../..//img/0180441436.jpg" alt="유저 이미지">
+								<img class="circle" width="36" height="36" src="../../img/0180441436.jpg" alt="유저 이미지">
 								유저 이름
 								<span class="caret"></span>
 							</button>
@@ -358,41 +358,48 @@
 
 				<div class="row gutter m-b-lg">
 					<div class="col-xs-12">
-						<div class="table-responsive">
-							<table class="table table-bordered type-1">
-								<tr>
-									<th>부서(협업게시판이름)</th>
-									<td>
-										<div class="search-input">
-											<div class="input-with-icon d-ib media-middle">
-												<input class="form-control" type="text" placeholder="입력하세요">
-												<span class="icon icon-search input-icon"></span>
-											</div>
-											<button class="btn btn-default media-middle" type="button">선택</button>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th>관리자</th>
-									<td>
-										<div class="search-input">
-											<div class="input-with-icon d-ib media-middle">
-												<input class="form-control" type="text" placeholder="입력하세요">
-												<span class="icon icon-search input-icon"></span>
-											</div>
-											<button class="btn btn-default media-middle" type="button">선택</button>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th>소개</th>
-									<td>
-										<textarea class="form-control" name="" id="" cols="30" rows="5"></textarea>
-									</td>
-								</tr>
-							</table>
+						<div class="card">
+							<div class="card-header border-b-none">
+								<h3 class="big">기본 정보</h3>
+							</div>
+							<div class="card-body">
+								<div class="table-responsive">
+									<table class="table type-1">
+										<tr>
+											<th>부서(협업게시판이름)</th>
+											<td>
+												<div class="search-input">
+													<div class="input-with-icon d-ib media-middle">
+														<input class="form-control" type="text" placeholder="입력하세요">
+														<span class="icon icon-search input-icon"></span>
+													</div>
+													<button class="btn btn-default media-middle" type="button">선택</button>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>관리자</th>
+											<td>
+												<div class="search-input">
+													<div class="input-with-icon d-ib media-middle">
+														<input class="form-control" type="text" placeholder="입력하세요">
+														<span class="icon icon-search input-icon"></span>
+													</div>
+													<button class="btn btn-default media-middle" type="button">선택</button>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>소개</th>
+											<td>
+												<textarea class="form-control" name="" id="" cols="30" rows="5"></textarea>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
 						</div>
-						<div class="text-center">
+						<div class="text-right">
 							<button class="btn btn-success btn-basic" type="button">확인</button>
 							<button class="btn btn-default btn-basic" type="button">취소</button>
 						</div>

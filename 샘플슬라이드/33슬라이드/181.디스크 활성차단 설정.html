@@ -5,12 +5,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>NETID</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="manifest.json">
-	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#f1595d">
-	<meta name="theme-color" content="#ffffff">
 	
 	<link rel="stylesheet" href="../../css/vendor.min.css">
 	<link rel="stylesheet" href="../../css/elephant.css">
@@ -45,7 +39,7 @@
 					<span class="sr-only">토글 네비 게이션</span>
 					<span class="arrow-up"></span>
 					<span class="ellipsis ellipsis-vertical">
-						<img class="ellipsis-object" width="32" height="32" src="../..//img/0180441436.jpg" alt="유저 이름">
+						<img class="ellipsis-object" width="32" height="32" src="../../img/0180441436.jpg" alt="유저 이름">
 					</span>
 				</button>
 			</div>
@@ -69,7 +63,7 @@
 						</li>
 						<li class="dropdown hidden-xs">
 							<button class="navbar-account-btn" data-toggle="dropdown" aria-haspopup="true">
-								<img class="circle" width="36" height="36" src="../..//img/0180441436.jpg" alt="유저 이미지">
+								<img class="circle" width="36" height="36" src="../../img/0180441436.jpg" alt="유저 이미지">
 								유저 이름
 								<span class="caret"></span>
 							</button>
@@ -368,159 +362,152 @@
 						<!-- 왼쪽 -->
 						<div class="col-xs-9 p-a-0">
 							<div class="card hv100 p-a-0">
-								<div class="card-header green p-a-0">
+								<div class="card-header green">
 									<h3>조직도</h3>
 								</div>
-								<div class="card-body p-a-0">
-									<!-- 대분류 -->
-									<div class="big-category">
-										<table class="type-33">
-											<tr>
-												<th>부서사용자</th>
-												<td>설정된 정책</td>
-											</tr>
-										</table>
-									</div>
-									<!-- // 대분류 -->
-									<div class="slide-nav">
-										<!-- Depth-1 -->
-										<ul class="depth-01">
-											<li>
-												<table class="type-33">
-													<tr>
-														<th colspan="2">
-															<span class="icon icon-plus-square"></span>
-															SERVER
-														</th>
-													</tr>
-												</table>
-												<!-- Depth-2 -->
-												<ul class="depth-02">
-													<li>
-														<table class="type-33">
-															<tr>
-																<th>
-																	<span class="icon icon-plus-square-o"></span>
-																	개발팀
-																</th>
-																<td>
-																	<strong>로그인</strong>
-																	<span class="label label-success">1</span>
-																	<span class="label label-success">2</span>
-																	<span class="label label-success">3</span>
-																</td>
-															</tr>
-														</table>
-														<!-- Depth-3 -->
-														<ul class="depth-03">
-															<li>
-																<table class="type-33">
-																	<tr>
-																		<th>박지수 (jspark)</th>
-																		<td></td>
-																	</tr>
-																</table>
-															</li>
-														</ul>
-														<!-- // Depth-3 -->
-													</li>
-	
-													<li>
-														<table class="type-33">
-															<tr>
-																<th>
-																	<span class="icon icon-plus-square-o"></span>
-																	경영지원팀
-																</th>
-																<td></td>
-															</tr>
-														</table>
-														<!-- Depth-3 -->
-														<ul class="depth-03">
-															<li class="depth-03">
-																<table class="type-33">
-																	<tr>
-																		<th>인사팀</th>
-																		<td></td>
-																	</tr>
-																</table>
+								<div class="card-body green">
+									<table class="type-33">
+										<tr class="table-title">
+											<th><h4>부서사용자</h4></th>
+											<td><h4>설정된 정책</h4></td>
+										</tr>
+										<tr class="depth">
+											<th>
+												<div><span class="icon icon-plus-square"></span>SERVER</div>
+											</th>
+											<td></td>
+										</tr>
+										<tr class="depth-1">
+											<th>
+												<div class="toggle-wrap">
+													<span class="icon icon-plus-square-o"></span>
+													개발팀
+												</div>
+											</th>
+											<td>
+												<div class="toggle-wrap">
+													<strong>로그인</strong>
+													<em class="label label-success">1</em>
+													<em class="label label-success">2</em>
+													<em class="label label-success">3</em>
+												</div>
+											</td>
+										</tr>
+										<tr class="depth-2">
+											<th>
+												<div class="toggle-wrap">
+													<span class="icon icon-plus-square-o"></span>
+													박지수 (jspark)
+												</div>
+											</th>
+											<td>
+												<div class="toggle-wrap">
+													<strong>로그인</strong>
+													<em class="label label-success">1</em>
+													<em class="label label-success">2</em>
+													<em class="label label-success">3</em>
+												</div>
+											</td>
+										</tr>
 
-																<!-- Depth-4 -->
-																<ul>
-																	<li>
-																		<table class="type-33">
-																			<tr>
-																				<th>test (akyd0424)</th>
-																				<td>
-																					<strong>로그인</strong>
-																					<span class="label label-success">1</span>
-																					<span class="label label-success">2</span>
-																					<span class="label label-success">3</span>
-																				</td>
-																			</tr>
-																		</table>
-																	</li>
-																</ul>
-															</li>
-														</ul>
-														<!-- // Depth-3 -->
-													</li>
+										<tr class="depth-1">
+											<th>
+												<div class="toggle-wrap">
+													<span class="icon icon-plus-square-o"></span>
+													경영지원팀
+												</div>
+											</th>
+											<td>
+												<div class="toggle-wrap">
+													<strong>로그인</strong>
+													<em class="label label-success">1</em>
+													<em class="label label-success">2</em>
+													<em class="label label-success">3</em>
+												</div>
+											</td>
+										</tr>
+										<tr class="depth-2">
+											<th>
+												<div class="toggle-wrap">
+													<span class="icon icon-plus-square-o"></span>
+													인사팀
+												</div>
+											</th>
+											<td>
+												<div class="toggle-wrap">
+													<strong>로그인</strong>
+													<em class="label label-success">1</em>
+													<em class="label label-success">2</em>
+													<em class="label label-success">3</em>
+												</div>
+											</td>
+										</tr>
+										<tr class="depth-3">
+											<th>
+												<div class="toggle-wrap">
+													<span class="icon icon-plus-square-o"></span>
+													text (akyd0424)
+												</div>
+											</th>
+											<td>
+												<div class="toggle-wrap">
+													<strong>로그인</strong>
+													<em class="label label-success">1</em>
+													<em class="label label-success">2</em>
+													<em class="label label-success">3</em>
+												</div>
+											</td>
+										</tr>
 
-													<li>
-														<table class="type-33">
-															<tr>
-																<th>
-																	<span class="icon icon-plus-square-o"></span>
-																	Detph-2
-																</th>
-																<td></td>
-															</tr>
-														</table>
-														<!-- Depth-3 -->
-														<ul class="depth-03">
-															<li>
-																<table class="type-33">
-																	<tr>
-																		<th>Detph-3</th>
-																		<td></td>
-																	</tr>
-																</table>
-															</li>
-															<li>
-																<table class="type-33">
-																	<tr>
-																		<th>Detph-3</th>
-																		<td>
-																			<strong>로그인</strong>
-																			<span class="label label-success">1</span>
-																			<span class="label label-success">2</span>
-																			<span class="label label-success">3</span>
-																		</td>
-																	</tr>
-																</table>
-															</li>
-															<li>
-																<table class="type-33">
-																	<tr>
-																		<th>Detph-3</th>
-																		<td>
-																			<strong>로그인</strong>
-																			<span class="label label-success">1</span>
-																			<span class="label label-success">2</span>
-																			<span class="label label-success">3</span>
-																		</td>
-																	</tr>
-																</table>
-															</li>
-														</ul>
-														<!-- // Depth-3 -->
-													</li>
-												</ul>
-												<!-- // Depth-2 -->
-											</li>
-										</ul>
-										<!-- Depth-1 -->
-									</div>
+										<tr class="depth-1">
+											<th>
+												<div class="toggle-wrap">
+													<span class="icon icon-plus-square-o"></span>
+													Depth-1
+												</div>
+											</th>
+											<td>
+												<div class="toggle-wrap">
+													<strong>로그인</strong>
+													<em class="label label-success">1</em>
+													<em class="label label-success">2</em>
+													<em class="label label-success">3</em>
+												</div>
+											</td>
+										</tr>
+										<tr class="depth-2">
+											<th>
+												<div class="toggle-wrap">
+													<span class="icon icon-plus-square-o"></span>
+													Depth-2
+												</div>
+											</th>
+											<td>
+												<div class="toggle-wrap">
+													<strong>로그인</strong>
+													<em class="label label-success">1</em>
+													<em class="label label-success">2</em>
+													<em class="label label-success">3</em>
+												</div>
+											</td>
+										</tr>
+										<tr class="depth-3">
+											<th>
+												<div class="toggle-wrap">
+													<span class="icon icon-plus-square-o"></span>
+													Depth-3
+												</div>
+											</th>
+											<td>
+												<div class="toggle-wrap">
+													<strong>로그인</strong>
+													<em class="label label-success">1</em>
+													<em class="label label-success">2</em>
+													<em class="label label-success">3</em>
+												</div>
+											</td>
+										</tr>
+									</table>
 								</div>
 							</div>
 						</div>
@@ -529,7 +516,7 @@
 						<!-- 오른쪽 -->
 						<div class="col-xs-3">
 							<div class="card">
-								<div class="card-header border-b-none">
+								<div class="card-header">
 									<h3 class="big">디스크 활성/차단 설정</h3>
 								</div>
 								<div class="card-body">
@@ -585,35 +572,14 @@
 	<script src="../../js/application.js"></script>
 	<!-- <script src="../../js/demo.js"></script> -->
 
-	<script type="text/javascript">
-		$(document).ready(function(){
-			var idx = true;
-			$('.depth-01 li').on('click' , function(e){
-				e.stopPropagation();
-				$(this).children('.depth-02').stop().slideToggle();
-				if( idx ) {
-					$(this).children('table').find("span").removeClass('icon-plus-square').addClass('icon-minus-square');
-					idx = false;
-				} else {
-					$(this).children('table').find("span").removeClass('icon-minus-square').addClass('icon-plus-square');
-					idx = true;
-				}
-			})
-
-			$('.depth-02 li').on('click' , function(e){
-				e.stopPropagation();
-				$(this).children('.depth-03').stop().slideToggle();
-				if( idx ) {
-					$(this).children('table').find("span").removeClass('icon-plus-square-o').addClass('icon-minus-square-o');
-					idx = false;
-				} else {
-					$(this).children('table').find("span").removeClass('icon-minus-square-o').addClass('icon-plus-square-o');
-					idx = true;
-				}
-			})
-		})
+	<script src="../../js/colResizable-1.6.min.js"></script>
+	<script src="../../js/custom.js"></script>
+	<script>
+		window.onload = function(){
+			tableResize();
+			treeTable();
+		}
 	</script>
-
 </body>
 
 </html>

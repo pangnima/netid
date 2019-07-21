@@ -40,7 +40,7 @@
 					<span class="sr-only">토글 네비 게이션</span>
 					<span class="arrow-up"></span>
 					<span class="ellipsis ellipsis-vertical">
-						<img class="ellipsis-object" width="32" height="32" src="../..//img/0180441436.jpg" alt="유저 이름">
+						<img class="ellipsis-object" width="32" height="32" src="../../img/0180441436.jpg" alt="유저 이름">
 					</span>
 				</button>
 			</div>
@@ -64,7 +64,7 @@
 						</li>
 						<li class="dropdown hidden-xs">
 							<button class="navbar-account-btn" data-toggle="dropdown" aria-haspopup="true">
-								<img class="circle" width="36" height="36" src="../..//img/0180441436.jpg" alt="유저 이미지">
+								<img class="circle" width="36" height="36" src="../../img/0180441436.jpg" alt="유저 이미지">
 								유저 이름
 								<span class="caret"></span>
 							</button>
@@ -368,21 +368,21 @@
 								<div class="card-header green">
 									<h3>폴더목록</h3>
 								</div>
-								<div class="card-body p-a-0" data-toggle="match-height">
+								<div class="card-body green" data-toggle="match-height">
 									<div class="slide-nav">
-										<!-- Depth-1 -->
-										<ul class="depth-01">
+										<!-- Depth -->
+										<ul class="depth">
 											<li>
 												<span class="icon icon-plus-square"></span>
-												상용소프트웨어
-												<!-- Depth-2 -->
-												<ul class="depth-02">
+												부서문서함
+												<!-- Depth-1 -->
+												<ul class="depth-1">
 													<li>
 														<span class="icon icon-plus-square-o"></span>
 														개발팀
-														<!-- Depth-3 -->
-														<ul class="depth-03">
-															<li>개발1팀</li>
+														<!-- Depth-2 -->
+														<ul class="depth-2">
+															<li><span class="icon icon-plus-square-o"></span>개발1팀</li>
 														</ul>
 														<!-- // Depth-3 -->
 													</li>
@@ -390,21 +390,18 @@
 													<li>
 														<span class="icon icon-plus-square-o"></span>
 														공용폴더
-														<!-- Depth-3 -->
-														<ul class="depth-03">
-															<li class="depth-03">
-																<span class="icon icon-plus-square-o"></span>
-																안내
-															</li>
+														<!-- Depth-2 -->
+														<ul class="depth-2">
+															<li><span class="icon icon-plus-square-o"></span> 안내</li>
 														</ul>
-														<!-- // Depth-3 -->
+														<!-- // Depth-2 -->
 													</li>
 
 													<li>
 														<span class="icon icon-plus-square-o"></span>
 														Depth-2
-														<!-- Depth-3 -->
-														<ul class="depth-03">
+														<!-- Depth-2 -->
+														<ul class="depth-2">
 															<li>
 																<span class="icon icon-plus-square-o"></span>
 																Depth-3
@@ -416,15 +413,31 @@
 															<li>
 																<span class="icon icon-plus-square-o"></span>
 																Depth-3
+																<!-- Depth-3 -->
+																<ul class="depth-3">
+																	<li>
+																		<span class="icon icon-plus-square-o"></span>
+																		Depth-4
+																	</li>
+																	<li>
+																		<span class="icon icon-plus-square-o"></span>
+																		Depth-4
+																	</li>
+																	<li>
+																		<span class="icon icon-plus-square-o"></span>
+																		Depth-4
+																	</li>
+																</ul>
+																<!-- // Depth-3 -->
 															</li>
 														</ul>
-														<!-- // Depth-3 -->
+														<!-- // Depth-2 -->
 													</li>
 												</ul>
-												<!-- // Depth-2 -->
+												<!-- // Depth-1 -->
 											</li>
 										</ul>
-										<!-- Depth-1 -->
+										<!-- Depth -->
 									</div>
 								</div>
 							</div>
@@ -439,7 +452,7 @@
 								</div>
 								<div class="card-body">
 									<div class="table-responsive">
-										<table class="table table-bordered type-1">
+										<table class="table type-1">
 											<tbody>
 												<tr>
 													<th>프로그램 정보 입력 여부</th>
@@ -492,7 +505,7 @@
 								</div>
 							</div>
 							<div class="text-right">
-								<button class="btn btn-default" type="button">적용</button>
+								<button class="btn btn-default btn-basic" type="button">적용</button>
 							</div>
 						</div>
 						<!-- // 오른쪽 -->
@@ -516,37 +529,12 @@
 	<script src="../../js/elephant.js"></script>
 	<script src="../../js/application.js"></script>
 	<!-- <script src="../../js/demo.js"></script> -->
-	<script type="text/javascript">
-		$(document).ready(function () {
-			var idx = true;
-			$('.depth-01 li').on('click', function (e) {
-				e.stopPropagation();
-				$(this).children('.depth-02').stop().slideToggle();
-				if (idx) {
-					$(this).children('table').find("span").removeClass('icon-plus-square').addClass(
-						'icon-minus-square');
-					idx = false;
-				} else {
-					$(this).children('table').find("span").removeClass('icon-minus-square').addClass(
-						'icon-plus-square');
-					idx = true;
-				}
-			})
 
-			$('.depth-02 li').on('click', function (e) {
-				e.stopPropagation();
-				$(this).children('.depth-03').stop().slideToggle();
-				if (idx) {
-					$(this).children('table').find("span").removeClass('icon-plus-square-o').addClass(
-						'icon-minus-square-o');
-					idx = false;
-				} else {
-					$(this).children('table').find("span").removeClass('icon-minus-square-o').addClass(
-						'icon-plus-square-o');
-					idx = true;
-				}
-			})
-		})
+	<script src="../../js/custom.js"></script>
+	<script>
+		window.onload = function(){
+			slideNav();
+		}
 	</script>
 </body>
 

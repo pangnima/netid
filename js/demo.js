@@ -1021,7 +1021,7 @@
 		var $datatablesResponsive = $('#demo-datatables-responsive-2');
 		$datatablesResponsive.DataTable({
 			responsive: true,
-			dom: "<'row'<'col-sm-6 col-sm-push-6'i><'col-sm-6 col-md-pull-6'f>>" + "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-6'l><'col-sm-6'p>>",
+			dom: "<'row'<'col-sm-6 col-sm-push-6'i><'col-sm-6 col-xs-pull-6'f>>" + "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-6'l><'col-sm-6'p>>",
 			language: {
 				paginate: {
 					previous: '&laquo;',
@@ -1116,7 +1116,7 @@
 				scrollCollapse: true,
 				scroller: true,
 				responsive: true,
-				dom: "<'row'<'col-sm-6 col-sm-push-6'i><'col-sm-6 col-md-pull-6'f>>" + "<'row'<'col-sm-12'tr>>",
+				dom: "<'row'<'col-sm-6 col-sm-push-6'i><'col-sm-6 col-xs-pull-6'f>>" + "<'row'<'col-sm-12'tr>>",
 				language: {
 					paginate: {
 						previous: '&laquo;',

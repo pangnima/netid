@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>NETID</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	
+	<link rel="stylesheet" href="../../css/vendor.min.css">
+	<link rel="stylesheet" href="../../css/elephant.css">
+	<link rel="stylesheet" href="../../css/application.css">
+	<link rel="stylesheet" href="../../css/demo.min.css">
+
+	<!-- 커스텀  -->
+	<link rel="stylesheet" href="../../css/custom.css">
+</head>
+
+<body class="layout layout-header-fixed">
+	<div class="layout-header">
+		<div class="navbar navbar-default">
+			<div class="navbar-header">
+				<a class="navbar-brand navbar-brand-center" href="index.html">
+					<img class="navbar-brand-logo" src="../../img/logo.png" alt="NETID">
+				</a>
+				<button class="navbar-toggler visible-xs-block collapsed" type="button" data-toggle="collapse" data-target="#sidenav">
+					<span class="sr-only">토글 네비게이션</span>
+					<span class="bars">
+						<span class="bar-line bar-line-1 out"></span>
+						<span class="bar-line bar-line-2 out"></span>
+						<span class="bar-line bar-line-3 out"></span>
+					</span>
+					<span class="bars bars-x">
+						<span class="bar-line bar-line-4"></span>
+						<span class="bar-line bar-line-5"></span>
+					</span>
+				</button>
+				<button class="navbar-toggler visible-xs-block collapsed" type="button" data-toggle="collapse"
+					data-target="#navbar">
+					<span class="sr-only">토글 네비 게이션</span>
+					<span class="arrow-up"></span>
+					<span class="ellipsis ellipsis-vertical">
+						<img class="ellipsis-object" width="32" height="32" src="../../img/0180441436.jpg" alt="유저 이름">
+					</span>
+				</button>
+			</div>
+			<div class="navbar-toggleable">
+				<nav id="navbar" class="navbar-collapse collapse">
+					<button class="sidenav-toggler hidden-xs" title="Collapse sidenav ( [ )" aria-expanded="true"
+						type="button">
+						<span class="sr-only">토글 네비 게이션</span>
+						<span class="bars">
+							<span class="bar-line bar-line-1 out"></span>
+							<span class="bar-line bar-line-2 out"></span>
+							<span class="bar-line bar-line-3 out"></span>
+							<span class="bar-line bar-line-4 in"></span>
+							<span class="bar-line bar-line-5 in"></span>
+							<span class="bar-line bar-line-6 in"></span>
+						</span>
+					</button>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="visible-xs-block">
+							<h4 class="navbar-text text-center">유저 아이디</h4>
+						</li>
+						<li class="dropdown hidden-xs">
+							<button class="navbar-account-btn" data-toggle="dropdown" aria-haspopup="true">
+								<img class="circle" width="36" height="36" src="../../img/0180441436.jpg" alt="유저 이미지">
+								유저 이름
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li>
+									<a href="upgrade.html">
+										<h5 class="navbar-upgrade-heading">
+											Upgrade Now
+											<small class="navbar-upgrade-notification">You have 15 days left in your
+												trial.</small>
+										</h5>
+									</a>
+								</li>
+								<li class="divider"></li>
+								<li class="navbar-upgrade-version">Version: 1.0.0</li>
+								<li class="divider"></li>
+								<li><a href="contacts.html">Contacts</a></li>
+								<li><a href="profile.html">Profile</a></li>
+								<li><a href="login-1.html">Sign out</a></li>
+							</ul>
+						</li>
+						<li class="dropdown hidden-xs">
+							<button class="langs navbar-account-btn" data-toggle="dropdown" aria-haspopup="true">
+								한국어<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li><a href="upgrade.html">영어</a></li>
+								<li><a href="upgrade.html">일본어</a></li>
+								<li><a href="upgrade.html">중국어</a></li>
+							</ul>
+						</li>
+						<li class="visible-xs-block">
+							<a href="contacts.html">
+								<span class="icon icon-users icon-lg icon-fw"></span>
+								Contacts
+							</a>
+						</li>
+						<li class="visible-xs-block">
+							<a href="profile.html">
+								<span class="icon icon-user icon-lg icon-fw"></span>
+								Profile
+							</a>
+						</li>
+						<li class="visible-xs-block">
+							<a href="login-1.html">
+								<span class="icon icon-power-off icon-lg icon-fw"></span>
+								Sign out
+							</a>
+						</li>
+					</ul>
+					<div class="title-bar">
+						<ul class="title-bar-title">
+							<li><span class="icon icon-home"></span>HOME</li>
+							<li>DiskLock</li>
+							<li>DLLLock</li>
+							<li><strong>DLL 자동등록</strong></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="layout-main">
+		<div class="layout-sidebar">
+			<div class="layout-sidebar-backdrop"></div>
+			<div class="layout-sidebar-body">
+				<div class="custom-scrollbar">
+					<nav id="sidenav" class="sidenav-collapse collapse">
+						<ul class="sidenav level-1">
+							<!-- 서치 -->
+							<li class="sidenav-search">
+								<form class="sidenav-form" action="/">
+									<div class="form-group form-group-sm">
+										<div class="input-with-icon">
+											<input class="form-control" type="text" placeholder="Search…">
+											<span class="icon icon-search input-icon"></span>
+										</div>
+									</div>
+								</form>
+							</li>
+							<!-- //서치 -->
+
+							<!-- 서비스관리자 관리 -->
+							<li class="sidenav-heading">서비스관리자 관리</li>
+							<li class="sidenav-item">
+								<a href="#none" aria-haspopup="true">
+									<span class="sidenav-icon icon icon-works">&#103;</span>
+									<span class="sidenav-label">생성/수정/메뉴표시여부</span>
+								</a>
+							</li>
+							<li class="sidenav-item">
+								<a href="#none">
+									<span class="sidenav-icon icon icon-works">&#40;</span>
+									<span class="sidenav-label">보안등급 설정</span>
+								</a>
+							</li>
+							<!-- //서비스관리자 관리 -->
+
+							<!-- 공통 작업 -->
+							<li class="sidenav-heading">공통 작업</li>
+							<li class="sidenav-item has-subnav">
+								<a href="#" aria-haspopup="true">
+									<span class="sidenav-icon icon icon-works">&#73;</span>
+									<span class="sidenav-label">클라이언트 설치&삭제</span>
+								</a>
+								<ul class="sidenav level-2 collapse">
+									<li>
+										<a href="#none">오프라인 제품 삭제</a>
+										<ul class="sidenav level-3 collapse">
+											<li><a href="#">인증코드 발급</a></li>
+											<li><a href="#">인증코드 발급 이력</a></li>
+										</ul>
+									</li>
+									<li><a href="#none">온라인 제품 삭제</a>
+										<ul class="sidenav level-3 collapse">
+											<li><a href="#none">요청 처리</a></li>
+											<li><a href="#none">작업 일력</a></li>
+											<li><a href="#none">설치현황</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="sidenav-item has-subnav">
+								<a href="#" aria-haspopup="true">
+									<span class="sidenav-icon icon icon-works">&#73;</span>
+									<span class="sidenav-label">IP 대역 정책 설정</span>
+								</a>
+								<ul class="sidenav level-2 collapse">
+									<li><a href="#none">정책 설정</a></li>
+									<li><a href="#none">정책 적용</a></li>
+								</ul>
+							</li>
+							<li class="sidenav-item has-subnav">
+								<a href="#" aria-haspopup="true">
+									<span class="sidenav-icon icon icon-works">&#110;</span>
+									<span class="sidenav-label">정책 구간 설정</span>
+								</a>
+								<ul class="sidenav level-2 collapse">
+									<li class="sidenav-heading">Tables</li>
+									<li><a href="static-tables.html">Static tables</a></li>
+									<li><a href="responsive-tables.html">Responsive tables</a></li>
+									<li><a href="bootstrap-tables.html">Bootstrap tables</a></li>
+									<li><a href="datatables.html">Datatables</a></li>
+									<li><a href="datatables-buttons.html">Datatables Buttons</a></li>
+									<li><a href="datatables-responsive.html">Datatables Responsive</a></li>
+									<li><a href="datatables-fixedheader.html">Datatables FixedHeader</a></li>
+									<li><a href="datatables-rowreorder.html">Datatables RowReorder</a></li>
+									<li><a href="datatables-colreorder.html">Datatables ColReorder</a></li>
+									<li><a href="datatables-scroller.html">Datatables Scroller</a></li>
+								</ul>
+							</li>
+							<li class="sidenav-item has-subnav">
+								<a href="#" aria-haspopup="true">
+									<span class="sidenav-icon icon icon-works">&#97;</span>
+									<span class="sidenav-label">임시 정책 승인</span>
+								</a>
+								<ul class="sidenav level-2 collapse">
+									<li class="sidenav-heading">Charts</li>
+									<li><a href="peity.html">Peity</a></li>
+									<li><a href="chartjs.html">Chart.js</a></li>
+								</ul>
+							</li>
+							<li class="sidenav-item has-subnav">
+								<a href="#" aria-haspopup="true">
+									<span class="sidenav-icon icon icon-works">&#38;</span>
+									<span class="sidenav-label">정책 수정 이력</span>
+								</a>
+								<ul class="sidenav level-2 collapse">
+									<li class="sidenav-heading">Maps</li>
+									<li><a href="vector-maps.html">Vector maps</a></li>
+									<li><a href="google-maps.html">Google maps</a></li>
+								</ul>
+							</li>
+							<li class="sidenav-item has-subnav">
+								<a href="#" aria-haspopup="true">
+									<span class="sidenav-icon icon icon-works">&#38;</span>
+									<span class="sidenav-label">정책 적용 이력</span>
+								</a>
+								<ul class="sidenav level-2 collapse">
+									<li class="sidenav-heading">Maps</li>
+									<li><a href="vector-maps.html">Vector maps</a></li>
+									<li><a href="google-maps.html">Google maps</a></li>
+								</ul>
+							</li>
+							<li class="sidenav-item has-subnav">
+								<a href="#" aria-haspopup="true">
+									<span class="sidenav-icon icon icon-works">&#38;</span>
+									<span class="sidenav-label">사용자 PC 정책 적용 이력</span>
+								</a>
+								<ul class="sidenav level-2 collapse">
+									<li class="sidenav-heading">Maps</li>
+									<li><a href="vector-maps.html">Vector maps</a></li>
+									<li><a href="google-maps.html">Google maps</a></li>
+								</ul>
+							</li>
+							<li class="sidenav-item has-subnav">
+								<a href="#" aria-haspopup="true">
+									<span class="sidenav-icon icon icon-works">&#38;</span>
+									<span class="sidenav-label">정책 설정 현황(모든정책)</span>
+								</a>
+								<ul class="sidenav level-2 collapse">
+									<li class="sidenav-heading">Maps</li>
+									<li><a href="vector-maps.html">Vector maps</a></li>
+									<li><a href="google-maps.html">Google maps</a></li>
+								</ul>
+							</li>
+							<!-- //공통 작업 -->
+
+							<!-- Basic -->
+							<li class="sidenav-heading">Basic</li>
+							<li class="sidenav-item has-subnav">
+								<a href="#multi-level-menu" aria-haspopup="true">
+									<span class="sidenav-icon icon icon-works">&#103;</span>
+									<span class="sidenav-label">로그</span>
+								</a>
+								<ul class="sidenav level-2 collapse">
+									<li class="sidenav-item"><a href="#none">파일 작업 로그</a></li>
+									<li class="sidenav-item"><a href="#none">파일 작업 로그 설정</a></li>
+									<li class="sidenav-item"><a href="#none">폴더 권한/공유 설정 로그</a></li>
+									<li class="sidenav-item"><a href="#none">서버 성능 모니터링 로그</a></li>
+									<li class="sidenav-item"><a href="#none">서버 성능 모니터링 로그 설정</a></li>
+								</ul>
+							</li>
+							<li class="sidenav-item has-subnav">
+								<a href="#multi-level-menu" aria-haspopup="true">
+									<span class="sidenav-icon icon icon-works">&#103;</span>
+									<span class="sidenav-label">로그인 제어</span>
+								</a>
+								<ul class="sidenav level-2">
+									<li class="sidenav-item has-subnav">
+										<a href="#none">IP 인증</a>
+										<ul class="sidenav level-3 collapse">
+											<li class="sidenav-item"><a href="#none">IP 인증 검색+생성</a></li>
+											<li class="sidenav-item"><a href="#none">IP 인증 요청처리</a></li>
+											<li class="sidenav-item"><a href="#none">IP 인증 설정</a></li>
+											<li class="sidenav-item"><a href="#none">IP대역 로그인 제한</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="sidenav-item has-subnav">
+								<a href="#multi-level-menu" aria-haspopup="true">
+									<span class="sidenav-icon icon icon-works">&#103;</span>
+									<span class="sidenav-label">문서함 관리</span>
+								</a>
+								<ul class="sidenav level-2 collapse">
+									<li class="sidenav-item">
+										<a href="#none">문서함 드라이브 마운트 설정</a>
+									</li>
+									<li class="sidenav-item has-subnav">
+										<a href="#audience">I/O 제어</a>
+										<ul class="sidenav level-2 collapse">
+											<li class="sidenav-item"><a href="#none">IP 필터링</a></li>
+											<li class="sidenav-item"><a href="#none">IP 파일확장자 필터링</a></li>
+										</ul>
+									</li>
+									<li class="sidenav-item has-subnav">
+										<a href="#behavior">폴더 관리</a>
+										<ul class="sidenav level-2 collapse">
+											<li class="sidenav-item"><a href="#none">폴더 용량 제한 현황</a></li>
+											<li class="sidenav-item"><a href="#none">폴더 권한 현황(부서 또는 사용자로 권한 조회 필요)</a></li>
+											<li class="sidenav-item"><a href="#none">폴더 파일 현황</a></li>
+											<li class="sidenav-item"><a href="#none">폴더 용량 추가 요청 처리</a></li>
+											<li class="sidenav-item"><a href="#none">폴더 관리자 신청 처리</a></li>
+										</ul>
+									</li>
+									<li class="sidenav-item has-subnav">
+										<a href="#behavior">폴더 드라이브 연결</a>
+										<ul class="sidenav level-2 collapse">
+											<li class="sidenav-item"><a href="#none">현황보기</a></li>
+											<li class="sidenav-item"><a href="#none">설정</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<!-- // Basic -->
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="layout-content">
+			<div class="layout-content-body">
+				<div class="row gutter">
+					<div class="page-title">
+						<h2>DLL 자동등록</h2>
+						<p>
+							사용자 PC에서 Agent가 등록 요청한 DLL을 자동으로 허용할 조건을 등록합니다.<br>
+							주의 : 아래 조건 중 한가지만 만족하여도 DLL을 허용하도록 등록합니다.
+						</p>
+					</div>
+				</div>
+
+				<!-- 컨텐츠 시작 -->
+				<div class="row gutter m-b-lg">
+					<div class="card">
+						<div class="card-header border-b-none">
+							<h3 class="big">디지털 서명 기준 자동등록</h3>
+						</div>
+						<div class="card-body">
+							<div class="table-responsive">
+								<table class="table type-1">
+									<tr>
+										<th>사용 여부</th>
+										<td>
+											<ul class="checkbox-list">
+												<li>
+													<label class="custom-control custom-control-success custom-radio">
+														<input class="custom-control-input" name="success" type="radio" value="none">
+														<span class="custom-control-indicator"></span>
+														<span class="custom-control-label">사용</span>
+													</label>
+												</li>
+												<li>
+													<label class="custom-control custom-control-success custom-radio">
+														<input class="custom-control-input" name="success" type="radio" value="none">
+														<span class="custom-control-indicator"></span>
+														<span class="custom-control-label">사용 안함</span>
+													</label>
+												</li>
+											</ul>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row gutter m-b-lg">
+					<div class="card">
+						<div class="card-header border-b-none">
+							<h3 class="big">요청 PC 대수 기준 자동등록</h3>
+						</div>
+						<div class="card-body">
+							<div class="table-responsive">
+								<table class="table type-1">
+									<tr>
+										<th>사용 여부</th>
+										<td>
+											<ul class="checkbox-list">
+												<li>
+													<label class="custom-control custom-control-success custom-radio">
+														<input class="custom-control-input" name="success" type="radio" value="none">
+														<span class="custom-control-indicator"></span>
+														<span class="custom-control-label">사용</span>
+													</label>
+												</li>
+												<li>
+													<label class="custom-control custom-control-success custom-radio">
+														<input class="custom-control-input" name="success" type="radio" value="none">
+														<span class="custom-control-indicator"></span>
+														<span class="custom-control-label">사용 안함</span>
+													</label>
+												</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th>요청 수 / 비율 기준 설정</th>
+										<td>
+											<div class="pos-box"></div>
+												<div class="d-ib">
+													<label class="custom-control custom-control-success custom-radio">
+														<input class="custom-control-input" name="success" type="radio" value="none">
+														<span class="custom-control-indicator"></span>
+														<span class="custom-control-label">최소 요청 수 <input class="form-control d-ib size-xs-2" type="text" value="10">개 초과된 DLL 허용</span>
+													</label>
+												</div>
+												<div class="d-ib m-t-sm">
+													<label class="custom-control custom-control-success custom-radio">
+														<input class="custom-control-input" name="success" type="radio" value="none">
+														<span class="custom-control-indicator"></span>
+														<span class="custom-control-label">최소 요청 비율(전체 사용자 수 대비)</span>
+													</label>
+												</div>
+											</div>
+											<div class="btn-wrap-right">
+												<button class="btn btn-default" type="button">변경</button>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row gutter m-b-lg">
+					<div class="card">
+						<div class="card-header border-b-none">
+							<h3 class="big">파일 속성 기준 자동등록</h3>
+						</div>
+						<div class="card-body">
+							<div class="table-responsive">
+								<table class="table type-1">
+									<tr>
+										<th>사용 여부</th>
+										<td>
+											<label class="custom-control custom-control-success custom-radio">
+												<input class="custom-control-input" name="success" type="radio" value="none">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">사용</span>
+											</label>
+											<label class="custom-control custom-control-success custom-radio">
+												<input class="custom-control-input" name="success" type="radio" value="none">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">사용 안함</span>
+											</label>
+										</td>
+									</tr>
+									<tr>
+										<th>등록 목록 설정</th>
+										<td>
+											<button class="btn btn-default" type="button">추가/편집</button>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- // 컨텐츠 종료 -->
+			</div>
+		</div>
+		<div class="layout-footer">
+			<div class="layout-footer-body">
+				<small class="version">Version 1.4.0</small>
+				<small class="copyright">2019 &copy; NETID <a href="#none">Made by NETID</a></small>
+			</div>
+		</div>
+	</div>
+	<script src="../../js/vendor.js"></script>
+	<script src="../../js/elephant.js"></script>
+	<script src="../../js/application.js"></script>
+	<!-- <script src="../../js/demo.js"></script> -->
+
+</body>
+
+</html>
