@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>NETID</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="manifest.json">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#f1595d">
+	<meta name="theme-color" content="#ffffff">
+	
+	<link rel="stylesheet" href="../../css/vendor.min.css">
+	<link rel="stylesheet" href="../../css/elephant.css">
+	<link rel="stylesheet" href="../../css/application.css">
+	<link rel="stylesheet" href="../../css/demo.min.css">
+
+	<!-- 커스텀  -->
+	<link rel="stylesheet" href="../../css/custom.css">
+</head>
+
+<body class="layout layout-header-fixed">
+	<div class="layout-header">
+		<div class="navbar navbar-default">
+			<div class="navbar-header">
+				<a class="navbar-brand navbar-brand-center" href="index.html">
+					<img class="navbar-brand-logo" src="../../img/logo.png" alt="NETID">
+				</a>
+				<button class="navbar-toggler visible-xs-block collapsed" type="button" data-toggle="collapse" data-target="#sidenav">
+					<span class="sr-only">토글 네비게이션</span>
+					<span class="bars">
+						<span class="bar-line bar-line-1 out"></span>
+						<span class="bar-line bar-line-2 out"></span>
+						<span class="bar-line bar-line-3 out"></span>
+					</span>
+					<span class="bars bars-x">
+						<span class="bar-line bar-line-4"></span>
+						<span class="bar-line bar-line-5"></span>
+					</span>
+				</button>
+				<button class="navbar-toggler visible-xs-block collapsed" type="button" data-toggle="collapse"
+					data-target="#navbar">
+					<span class="sr-only">토글 네비 게이션</span>
+					<span class="arrow-up"></span>
+					<span class="ellipsis ellipsis-vertical">
+						<img class="ellipsis-object" width="32" height="32" src="../../img/0180441436.jpg" alt="유저 이름">
+					</span>
+				</button>
+			</div>
+			<div class="navbar-toggleable">
+				<nav id="navbar" class="navbar-collapse collapse">
+					<button class="sidenav-toggler hidden-xs" title="Collapse sidenav ( [ )" aria-expanded="true"
+						type="button">
+						<span class="sr-only">토글 네비 게이션</span>
+						<span class="bars">
+							<span class="bar-line bar-line-1 out"></span>
+							<span class="bar-line bar-line-2 out"></span>
+							<span class="bar-line bar-line-3 out"></span>
+							<span class="bar-line bar-line-4 in"></span>
+							<span class="bar-line bar-line-5 in"></span>
+							<span class="bar-line bar-line-6 in"></span>
+						</span>
+					</button>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="visible-xs-block">
+							<h4 class="navbar-text text-center">유저 아이디</h4>
+						</li>
+						<li class="dropdown hidden-xs">
+							<button class="navbar-account-btn" data-toggle="dropdown" aria-haspopup="true">
+								<img class="circle" width="36" height="36" src="../../img/0180441436.jpg" alt="유저 이미지">
+								유저 이름
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li>
+									<a href="upgrade.html">
+										<h5 class="navbar-upgrade-heading">
+											Upgrade Now
+											<small class="navbar-upgrade-notification">You have 15 days left in your
+												trial.</small>
+										</h5>
+									</a>
+								</li>
+								<li class="divider"></li>
+								<li class="navbar-upgrade-version">Version: 1.0.0</li>
+								<li class="divider"></li>
+								<li><a href="contacts.html">Contacts</a></li>
+								<li><a href="profile.html">Profile</a></li>
+								<li><a href="login-1.html">Sign out</a></li>
+							</ul>
+						</li>
+						<li class="dropdown hidden-xs">
+							<button class="langs navbar-account-btn" data-toggle="dropdown" aria-haspopup="true">
+								한국어<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li><a href="upgrade.html">영어</a></li>
+								<li><a href="upgrade.html">일본어</a></li>
+								<li><a href="upgrade.html">중국어</a></li>
+							</ul>
+						</li>
+						<li class="visible-xs-block">
+							<a href="contacts.html">
+								<span class="icon icon-users icon-lg icon-fw"></span>
+								Contacts
+							</a>
+						</li>
+						<li class="visible-xs-block">
+							<a href="profile.html">
+								<span class="icon icon-user icon-lg icon-fw"></span>
+								Profile
+							</a>
+						</li>
+						<li class="visible-xs-block">
+							<a href="login-1.html">
+								<span class="icon icon-power-off icon-lg icon-fw"></span>
+								Sign out
+							</a>
+						</li>
+					</ul>
+					<div class="title-bar">
+						<ul class="title-bar-title">
+							<li><span class="icon icon-home"></span>HOME</li>
+							<li>서비스관리자 관리</li>
+							<li><strong>생성</strong></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="layout-main">
+		<div class="layout-sidebar">
+			<div class="layout-sidebar-backdrop"></div>
+			<div class="layout-sidebar-body">
+				<div class="custom-scrollbar">
+					<nav id="sidenav" class="sidenav-collapse collapse">
+						<ul class="sidenav level-1">
+							<!-- 서치 -->
+							<li class="sidenav-search">
+								<form class="sidenav-form" action="/">
+									<div class="form-group form-group-sm">
+										<div class="input-with-icon">
+											<input class="form-control" type="text" placeholder="Search…">
+											<span class="icon icon-search input-icon"></span>
+										</div>
+									</div>
+								</form>
+							</li>
+							<!-- //서치 -->
+
+							<!-- 서비스관리자 관리 -->
+							<li class="sidenav-heading">서비스관리자 관리</li>
+							<li class="sidenav-item has-subnav">
+								<a href="#" aria-haspopup="true">
+									<span class="sidenav-icon icon icon-works">&#103;</span>
+									<span class="sidenav-label">생성/수정/메뉴표시여부</span>
+								</a>
+								<ul class="sidenav level-2 collapse">
+									<li class="sidenav-heading">Dashboards</li>
+									<li><a href="dashboard-1.html">Dashboard 1</a></li>
+									<li><a href="dashboard-2.html">Dashboard 2</a></li>
+									<li><a href="dashboard-3.html">Dashboard 3</a></li>
+								</ul>
+							</li>
+							<li class="sidenav-item">
+								<a href="widgets.html">
+									<!-- <span class="sidenav-badge badge badge-primary">26</span> -->
+									<span class="sidenav-icon icon icon-works">&#40;</span>
+									<span class="sidenav-label">보안등급 설정</span>
+								</a>
+							</li>
+							<!-- //서비스관리자 관리 -->
+
+							<!-- 공통 작업 -->
+							<li class="sidenav-heading">공통 작업</li>
+							<li class="sidenav-item has-subnav">
+								<a href="#" aria-haspopup="true">
+									<span class="sidenav-icon icon icon-works">&#73;</span>
+									<span class="sidenav-label">클라이언트 설치&삭제</span>
+								</a>
+								<ul class="sidenav level-2 collapse">
+									<li class="sidenav-heading">UI Elements</li>
+									<li><a href="arrows.html">Arrows</a></li>
+									<li><a href="badges.html">Badges</a></li>
+								</ul>
+							</li>
+							<li class="sidenav-item has-subnav">
+								<a href="#" aria-haspopup="true">
+									<span class="sidenav-icon icon icon-works">&#73;</span>
+									<span class="sidenav-label">IP 대역 정책 설정</span>
+								</a>
+								<ul class="sidenav level-2 collapse">
+									<li class="sidenav-heading">Forms</li>
+									<li><a href="cropper.html">Cropper</a></li>
+								</ul>
+							</li>
+							<li class="sidenav-item has-subnav">
+								<a href="#" aria-haspopup="true">
+									<span class="sidenav-icon icon icon-works">&#110;</span>
+									<span class="sidenav-label">정책 구간 설정</span>
+								</a>
+								<ul class="sidenav level-2 collapse">
+									<li class="sidenav-heading">Tables</li>
+									<li><a href="static-tables.html">Static tables</a></li>
+									<li><a href="responsive-tables.html">Responsive tables</a></li>
+									<li><a href="bootstrap-tables.html">Bootstrap tables</a></li>
+									<li><a href="datatables.html">Datatables</a></li>
+									<li><a href="datatables-buttons.html">Datatables Buttons</a></li>
+									<li><a href="datatables-responsive.html">Datatables Responsive</a></li>
+									<li><a href="datatables-fixedheader.html">Datatables FixedHeader</a></li>
+									<li><a href="datatables-rowreorder.html">Datatables RowReorder</a></li>
+									<li><a href="datatables-colreorder.html">Datatables ColReorder</a></li>
+									<li><a href="datatables-scroller.html">Datatables Scroller</a></li>
+								</ul>
+							</li>
+							<li class="sidenav-item has-subnav">
+								<a href="#" aria-haspopup="true">
+									<span class="sidenav-icon icon icon-works">&#97;</span>
+									<span class="sidenav-label">임시 정책 승인</span>
+								</a>
+								<ul class="sidenav level-2 collapse">
+									<li class="sidenav-heading">Charts</li>
+									<li><a href="peity.html">Peity</a></li>
+									<li><a href="chartjs.html">Chart.js</a></li>
+								</ul>
+							</li>
+							<li class="sidenav-item has-subnav">
+								<a href="#" aria-haspopup="true">
+									<span class="sidenav-icon icon icon-works">&#38;</span>
+									<span class="sidenav-label">정책 수정 이력</span>
+								</a>
+								<ul class="sidenav level-2 collapse">
+									<li class="sidenav-heading">Maps</li>
+									<li><a href="vector-maps.html">Vector maps</a></li>
+									<li><a href="google-maps.html">Google maps</a></li>
+								</ul>
+							</li>
+							<li class="sidenav-item has-subnav">
+								<a href="#" aria-haspopup="true">
+									<span class="sidenav-icon icon icon-works">&#38;</span>
+									<span class="sidenav-label">정책 적용 이력</span>
+								</a>
+								<ul class="sidenav level-2 collapse">
+									<li class="sidenav-heading">Maps</li>
+									<li><a href="vector-maps.html">Vector maps</a></li>
+									<li><a href="google-maps.html">Google maps</a></li>
+								</ul>
+							</li>
+							<li class="sidenav-item has-subnav">
+								<a href="#" aria-haspopup="true">
+									<span class="sidenav-icon icon icon-works">&#38;</span>
+									<span class="sidenav-label">사용자 PC 정책 적용 이력</span>
+								</a>
+								<ul class="sidenav level-2 collapse">
+									<li class="sidenav-heading">Maps</li>
+									<li><a href="vector-maps.html">Vector maps</a></li>
+									<li><a href="google-maps.html">Google maps</a></li>
+								</ul>
+							</li>
+							<li class="sidenav-item has-subnav">
+								<a href="#" aria-haspopup="true">
+									<span class="sidenav-icon icon icon-works">&#38;</span>
+									<span class="sidenav-label">정책 설정 현황(모든정책)</span>
+								</a>
+								<ul class="sidenav level-2 collapse">
+									<li class="sidenav-heading">Maps</li>
+									<li><a href="vector-maps.html">Vector maps</a></li>
+									<li><a href="google-maps.html">Google maps</a></li>
+								</ul>
+							</li>
+							<!-- //공통 작업 -->
+
+							<!-- Basic -->
+							<li class="sidenav-heading">Basic</li>
+							<li class="sidenav-item has-subnav">
+								<a href="#multi-level-menu" aria-haspopup="true">
+									<span class="sidenav-icon icon icon-works">&#103;</span>
+									<span class="sidenav-label">로그</span>
+								</a>
+								<ul class="sidenav level-2 collapse">
+									<li class="sidenav-heading">With Icons</li>
+									<li class="sidenav-item has-subnav">
+										<a href="#real-time">
+											<span class="icon icon-works">&#105;</span>Real-Time
+										</a>
+										<ul class="sidenav level-3 collapse">
+											<li class="sidenav-item has-subnav">
+												<a href="#overview">
+													<span class="icon icon-works">&#102;</span>Overview
+												</a>
+												<ul class="sidenav level-4 collapse">
+													<li class="sidenav-item has-subnav">
+														<a href="#top-keywords">
+															<span class="icon icon-works">&#83;</span>Top Keywords
+														</a>
+														<ul class="sidenav level-5 collapse">
+															<li class="sidenav-item">
+																<a href="#past-24h">
+																	<span class="icon icon-works">&#90;</span>Past 24h
+																</a>
+															</li>
+															<li class="sidenav-item">
+																<a href="#past-1wk">
+																	<span class="icon icon-works">&#90;</span>Past 1wk
+																</a>
+															</li>
+															<li class="sidenav-item">
+																<a href="#past-1mo">
+																	<span class="icon icon-works">&#90;</span>Past 1mo
+																</a>
+															</li>
+														</ul>
+													</li>
+													<li class="sidenav-item has-subnav">
+														<a href="#top-locations">
+															<span class="icon icon-works">&#38;</span>Top Locations
+														</a>
+														<ul class="sidenav level-5 collapse">
+															<li class="sidenav-item">
+																<a href="#past-24h">
+																	<span class="icon icon-works">&#90;</span>Past 24h
+																</a>
+															</li>
+															<li class="sidenav-item">
+																<a href="#past-1wk">
+																	<span class="icon icon-works">&#90;</span>Past 1wk
+																</a>
+															</li>
+															<li class="sidenav-item">
+																<a href="#past-1mo">
+																	<span class="icon icon-works">&#90;</span>Past 1mo
+																</a>
+															</li>
+														</ul>
+													</li>
+													<li class="sidenav-item has-subnav">
+														<a href="#top-referrals">
+															<span class="icon icon-works">&#57;</span>Top Referrals
+														</a>
+														<ul class="sidenav level-5 collapse">
+															<li class="sidenav-item">
+																<a href="#past-24h">
+																	<span class="icon icon-works">&#90;</span>Past 24h
+																</a>
+															</li>
+															<li class="sidenav-item">
+																<a href="#past-1wk">
+																	<span class="icon icon-works">&#90;</span>Past 1wk
+																</a>
+															</li>
+															<li class="sidenav-item">
+																<a href="#past-1mo">
+																	<span class="icon icon-works">&#90;</span>Past 1mo
+																</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li class="sidenav-item">
+												<a href="#traffic-sources">
+													<span class="icon icon-works">&#213;</span>Traffic Sources
+												</a>
+											</li>
+											<li class="sidenav-item">
+												<a href="#events">
+													<span class="icon icon-works">&#102;</span>Events
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li class="sidenav-item">
+										<a href="#audience">
+											<span class="icon icon-works">&#80;</span>Audience
+										</a>
+									</li>
+									<li class="sidenav-item">
+										<a href="#behavior">
+											<span class="icon icon-works">&#70;</span>Behavior
+										</a>
+									</a>
+								</ul>
+							</li>
+							<li class="sidenav-item has-subnav">
+								<a href="#multi-level-menu" aria-haspopup="true">
+									<span class="sidenav-icon icon icon-works">&#103;</span>
+									<span class="sidenav-label">로그인 제어</span>
+								</a>
+								<ul class="sidenav level-2 collapse">
+									<li class="sidenav-heading">Just Text</li>
+									<li class="sidenav-item has-subnav">
+										<a href="#real-time">Real-Time</a>
+										<ul class="sidenav level-3 collapse">
+											<li class="sidenav-item has-subnav">
+												<a href="#overview">Overview</a>
+												<ul class="sidenav level-4 collapse">
+													<li class="sidenav-item has-subnav">
+														<a href="#top-keywords">Top Keywords</a>
+														<ul class="sidenav level-5 collapse">
+															<li class="sidenav-item">
+																<a href="#past-24h">Past 24h</a>
+															</li>
+															<li class="sidenav-item">
+																<a href="#past-1wk">Past 1wk</a>
+															</li>
+															<li class="sidenav-item">
+																<a href="#past-1mo">Past 1mo</a>
+															</li>
+														</ul>
+													</li>
+													<li class="sidenav-item has-subnav">
+														<a href="#top-locations">Top Locations</a>
+														<ul class="sidenav level-5 collapse">
+															<li class="sidenav-item">
+																<a href="#past-24h">Past 24h</a>
+															</li>
+															<li class="sidenav-item">
+																<a href="#past-1wk">Past 1wk</a>
+															</li>
+															<li class="sidenav-item">
+																<a href="#past-1mo">Past 1mo</a>
+															</li>
+														</ul>
+													</li>
+													<li class="sidenav-item has-subnav">
+														<a href="#top-referrals">Top Referrals</a>
+														<ul class="sidenav level-5 collapse">
+															<li class="sidenav-item">
+																<a href="#past-24h">Past 24h</a>
+															</li>
+															<li class="sidenav-item">
+																<a href="#past-1wk">Past 1wk</a>
+															</li>
+															<li class="sidenav-item">
+																<a href="#past-1mo">Past 1mo</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li class="sidenav-item">
+												<a href="#traffic-sources">Traffic Sources</a>
+											</li>
+											<li class="sidenav-item">
+												<a href="#events">Events</a>
+											</li>
+										</ul>
+									</li>
+									<li class="sidenav-item">
+										<a href="#audience">Audience</a>
+									</li>
+									<li class="sidenav-item">
+										<a href="#behavior">Behavior</a>
+									</li>
+								</ul>
+							</li>
+							<li class="sidenav-item has-subnav">
+								<a href="#multi-level-menu" aria-haspopup="true">
+									<span class="sidenav-icon icon icon-works">&#103;</span>
+									<span class="sidenav-label">문서함 관리</span>
+								</a>
+								<ul class="sidenav level-2 collapse">
+									<li class="sidenav-heading">Just Text</li>
+									<li class="sidenav-item has-subnav">
+										<a href="#real-time">Real-Time</a>
+										<ul class="sidenav level-3 collapse">
+											<li class="sidenav-item has-subnav">
+												<a href="#overview">Overview</a>
+												<ul class="sidenav level-4 collapse">
+													<li class="sidenav-item has-subnav">
+														<a href="#top-keywords">Top Keywords</a>
+														<ul class="sidenav level-5 collapse">
+															<li class="sidenav-item">
+																<a href="#past-24h">Past 24h</a>
+															</li>
+															<li class="sidenav-item">
+																<a href="#past-1wk">Past 1wk</a>
+															</li>
+															<li class="sidenav-item">
+																<a href="#past-1mo">Past 1mo</a>
+															</li>
+														</ul>
+													</li>
+													<li class="sidenav-item has-subnav">
+														<a href="#top-locations">Top Locations</a>
+														<ul class="sidenav level-5 collapse">
+															<li class="sidenav-item">
+																<a href="#past-24h">Past 24h</a>
+															</li>
+															<li class="sidenav-item">
+																<a href="#past-1wk">Past 1wk</a>
+															</li>
+															<li class="sidenav-item">
+																<a href="#past-1mo">Past 1mo</a>
+															</li>
+														</ul>
+													</li>
+													<li class="sidenav-item has-subnav">
+														<a href="#top-referrals">Top Referrals</a>
+														<ul class="sidenav level-5 collapse">
+															<li class="sidenav-item">
+																<a href="#past-24h">Past 24h</a>
+															</li>
+															<li class="sidenav-item">
+																<a href="#past-1wk">Past 1wk</a>
+															</li>
+															<li class="sidenav-item">
+																<a href="#past-1mo">Past 1mo</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li class="sidenav-item">
+												<a href="#traffic-sources">Traffic Sources</a>
+											</li>
+											<li class="sidenav-item">
+												<a href="#events">Events</a>
+											</li>
+										</ul>
+									</li>
+									<li class="sidenav-item">
+										<a href="#audience">Audience</a>
+									</li>
+									<li class="sidenav-item">
+										<a href="#behavior">Behavior</a>
+									</li>
+								</ul>
+							</li>
+							<!-- // Basic -->
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		
+		<div class="layout-content">
+			<div class="layout-content-body" style="height:550px;">
+
+				<!-- 기본설정 -->
+				<div class="row size-xs-8 m-0-a">
+					<div class="setting-box">
+						<!-- IP 인증 설정 -->
+						<h3 class="title">기본</h3>
+						<div class="table-responsive">
+							<table class="table normal-list shadow">
+								<colgroup>
+									<col>
+									<col style="width:10%">
+								</colgroup>
+								<tr>
+									<th>
+										<h4>IP 인증 사용</h4>
+										<p>모든 사용자는 관리자가 지정한 IP 대역에서만 로그인 할 수 있습니다</p>
+									</th>
+									<td class="text-center">
+										<label class="switch switch-success">
+											<input class="switch-input" type="checkbox" checked="checked">
+											<span class="switch-track"></span>
+											<span class="switch-thumb"></span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<h4>사용자별 IP 인증 설정(기본인증IP,추가인증IP)</h4>
+										<p>관리자가 지정한 IP 대역과 상관없이 사용자별로 IP 대역을 지정할 수 있습니다.</p>
+									</th>
+									<td class="text-center">
+										<label class="switch switch-success">
+											<input class="switch-input" type="checkbox" checked="checked">
+											<span class="switch-track"></span>
+											<span class="switch-thumb"></span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<h4>관리자 접속 IP 대역 사용</h4>
+									</th>
+									<td class="text-center">
+										<label class="switch switch-success">
+											<input class="switch-input" type="checkbox" checked="checked">
+											<span class="switch-track"></span>
+											<span class="switch-thumb"></span>
+										</label>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!-- //IP 인증 설정 -->
+					</div>
+				</div>
+				<!-- // 기본설정 -->
+
+				<!-- 고급 설정 -->
+				<div class="row size-xs-8 m-0-a p-b-lg">
+					<div class="setting-box">
+						<!-- 파일 작업 로그 설정 -->
+						<h3 class="title">기본</h3>
+						<div class="table-responsive">
+							<table class="table normal-list shadow">
+								<colgroup>
+									<col>
+									<col style="width:10%">
+								</colgroup>
+								<tr>
+									<th>
+										<h4>로그를 기록할 최소 파일 크기</h4>
+										<p>모든크기</p>
+									</th>
+									<td class="text-center">
+										<button class="btn btn-outline-success p-x-lg p-x-lg" type="button">변경</button>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<h4>로그 기록 대상</h4>
+										<p>다운로드,업로드,삭제,복사,이동,이름변경,수정</p>
+									</th>
+									<td class="text-center">
+										<button class="btn btn-outline-success p-x-lg p-x-lg" type="button">변경</button>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<h4>인증 로그 기록 대상</h4>
+										<p>로그인,로그아웃,인증실패</p>
+									</th>
+									<td class="text-center">
+										<button class="btn btn-outline-success p-x-lg p-x-lg" type="button">변경</button>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="text-center m-y-lg">
+							<button class="btn-link p-x" type="button">고급 <span class="icon icon-caret-up p-x"></span></button>
+						</div>
+
+						<div class="table-responsive">
+							<table class="table normal-list shadow">
+								<colgroup>
+									<col>
+									<col style="width:10%">
+								</colgroup>
+								<tr>
+									<th>
+										<h4>로그보관기간</h4>
+										<span>90일</span>
+									</th>
+									<td class="text-center">
+										<button class="btn btn-outline-success p-x-lg p-x-lg" type="button">변경</button>
+									</td>
+								</tr>
+								<tr>
+									<th colspan="2">
+										<h4>로그 DB 정보</h4>
+										<div class="table-responsive">
+											<!-- <p class="p-l-sm font-s14">로그 DB 정보</p> -->
+											<table class="table background-clear">
+												<colgroup>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col style="width:5%;">
+												</colgroup>
+												<thead>
+													<tr>
+														<th>운영 서버 IP</th>
+														<th>서버 IP</th>
+														<th>접속계정</th>
+														<th>비밀번호</th>
+														<th>데이터베이스</th>
+														<th>종류</th>
+														<th>포트</th>
+														<th></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>test</td>
+														<td>test</td>
+														<td>test</td>
+														<td>test</td>
+														<td>test</td>
+														<td>test</td>
+														<td>test</td>
+														<td class="text-center">
+															<button class="btn-link p-x" type="button"><span class="icon icon-pencil-square-o"></span></button>
+														</td>
+													</tr>
+													<tr>
+														<td>test</td>
+														<td>test</td>
+														<td>test</td>
+														<td>test</td>
+														<td>test</td>
+														<td>test</td>
+														<td>test</td>
+														<td class="text-center">
+															<button class="btn-link p-x" type="button"><span class="icon icon-pencil-square-o"></span></button>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</th>
+								</tr>
+								<tr>
+									<th>
+										<h4>로그 DB 자동 변경 사용 및 주기</h4>
+										<span>1개월 마다</span>
+									</th>
+									<td class="text-center">
+										<button class="btn btn-outline-success p-x-lg p-x-lg" type="button">변경</button>
+									</td>
+								</tr>
+							</table>
+						</div>
+
+						<!-- //파일 작업 로그 설정 -->
+						
+					</div>
+				</div>
+				<!-- //고급 설정 -->
+
+
+				<!-- 컨텐츠영역 -->
+				<!-- 팝업-로그 DB 정보 변경 -->
+				<div id="successModalAlert" tabindex="-1" role="dialog" class="modal fade in" style="display:block; position: static;">
+					<div class="modal-dialog">
+						<div class="modal-content round-box">
+							<div class="modal-header bg-success">
+								<h4 class="pull-left m-a-0">로그 DB 정보 변경</h4>
+								<button type="button" class="close" data-dismiss="modal">
+									<span aria-hidden="true" class="popup-close">×</span>
+									<span class="sr-only">Close</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div class="form-group">
+									<label for="username-1" class="control-label">운영 서버 IP</label>
+									<input id="username-1" class="form-control" type="text" name="username_1">
+								</div>
+								<div class="form-group">
+									<label for="username-1" class="control-label">서버 IP</label>
+									<input id="username-1" class="form-control" type="text" name="username_1">
+								</div>
+								<div class="form-group">
+									<label for="username-1" class="control-label">접속계정</label>
+									<input id="username-1" class="form-control" type="text" name="username_1">
+								</div>
+								<div class="form-group">
+									<label for="password-1" class="control-label">비밀번호</label>
+									<div class="input-group">
+										<input id="password-1" class="form-control" type="password" name="password_1" data-rule-required="true" data-rule-minlength="6" data-msg-required="Please enter your password." data-msg-minlength="Password must be 6 characters or more.">
+										<span class="input-group-addon">
+										<label class="custom-control custom-control-primary custom-checkbox">
+											<input class="custom-control-input" type="checkbox" name="password_toggler">
+											<span class="custom-control-indicator"></span>
+											<span class="custom-control-label">Show</span>
+										</label>
+										</span>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="username-1" class="control-label">데이터베이스 (ORACLE일 SID값으로 작성</label>
+									<input id="username-1" class="form-control" type="text" name="username_1">
+								</div>
+								<div class="form-group clearfix">
+									<div class="col-xs-6 p-l-0">
+										<label for="">종류</label>
+										<select name="" id="" class="form-control">
+											<option value="">mysql</option>
+											<option value="">메뉴2</option>
+											<option value="">메뉴3</option>
+										</select>
+									</div>
+									<div class="col-xs-6 p-x-0">
+										<label for="">포트</label>
+										<select name="" id="" class="form-control">
+											<option value="">3369</option>
+											<option value="">메뉴2</option>
+											<option value="">메뉴3</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="text-center">
+									<button class="btn btn-outline-success p-x-lg p-x-lg" type="button">변경</button>
+									<button class="btn btn-default p-x-lg" type="button">취소</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //팝업-로그 DB 정보 변경 -->
+
+				<!-- 팝업-로그 기록 파일 크기 변경 -->
+				<div id="successModalAlert" tabindex="-1" role="dialog" class="modal fade in" style="display:block; position: static;">
+					<div class="modal-dialog">
+						<div class="modal-content round-box">
+							<div class="modal-header bg-success">
+								<h4 class="pull-left m-a-0">로그 기록 파일 크기 변경</h4>
+								<button type="button" class="close" data-dismiss="modal">
+									<span aria-hidden="true" class="popup-close">×</span>
+									<span class="sr-only">Close</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div class="form-group">
+									<label for="username-1" class="control-label">파일 크기</label>
+									<select id="username-1" class="form-control" type="text" name="username_1">
+										<option>모든크기</option>
+										<option>모든크기</option>
+										<option>모든크기</option>
+										<option>모든크기</option>
+									</select>
+								</div>
+
+								<div class="text-center">
+									<button class="btn btn-outline-success p-x-lg p-x-lg" type="button">변경</button>
+									<button class="btn btn-default p-x-lg" type="button">취소</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //팝업-로그 기록 파일 크기 변경 -->
+
+				<!-- 팝업-로그보관기간 변경 -->
+				<div id="successModalAlert" tabindex="-1" role="dialog" class="modal fade in" style="display:block; position: static;">
+					<div class="modal-dialog">
+						<div class="modal-content round-box">
+							<div class="modal-header bg-success">
+								<h4 class="pull-left m-a-0">로그보관기간 변경</h4>
+								<button type="button" class="close" data-dismiss="modal">
+									<span aria-hidden="true" class="popup-close">×</span>
+									<span class="sr-only">Close</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div class="form-group">
+									<label for="" class="d-b">보관 기간 </label>
+									<input id="" class="form-control size-xs-11 d-ib" type="text" name="username_1"><span class="d-ib p-l-sm text-right">일</span>
+								</div>
+
+								<div class="text-center">
+									<button class="btn btn-outline-success p-x-lg p-x-lg" type="button">변경</button>
+									<button class="btn btn-default p-x-lg" type="button">취소</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //팝업-로그보관기간 변경 -->
+
+				<!-- 팝업-로그 기록 파일 대상 변경 -->
+				<div id="successModalAlert" tabindex="-1" role="dialog" class="modal fade in" style="display:block; position: static;">
+					<div class="modal-dialog">
+						<div class="modal-content round-box">
+							<div class="modal-header bg-success">
+								<h4 class="pull-left m-a-0">로그 기록 파일 대상 변경</h4>
+								<button type="button" class="close" data-dismiss="modal">
+									<span aria-hidden="true" class="popup-close">×</span>
+									<span class="sr-only">Close</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div class="form-group">
+									<label class="d-b">로그 기록 선택</label>
+									<ul class="checkbox-list">
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">다운로드</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">업로드</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">이름변경</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">이동</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">복사</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">수정</span>
+											</label>
+										</li>
+									</ul>
+								</div>
+
+								<div class="text-center">
+									<button class="btn btn-outline-success p-x-lg p-x-lg" type="button">변경</button>
+									<button class="btn btn-default p-x-lg" type="button">취소</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //팝업-로그 기록 파일 대상 변경 -->
+
+				<!-- 팝업-인증 로그 기록 대상 변경 -->
+				<div id="successModalAlert" tabindex="-1" role="dialog" class="modal fade in" style="display:block; position: static;">
+					<div class="modal-dialog">
+						<div class="modal-content round-box">
+							<div class="modal-header bg-success">
+								<h4 class="pull-left m-a-0">인증 로그 기록 대상 변경</h4>
+								<button type="button" class="close" data-dismiss="modal">
+									<span aria-hidden="true" class="popup-close">×</span>
+									<span class="sr-only">Close</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div class="form-group">
+									<label class="d-b">인증 로그 기록 선택</label>
+									<ul class="checkbox-list">
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">로그인</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">로그아웃</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">인증실패</span>
+											</label>
+										</li>
+									</ul>
+								</div>
+
+								<div class="text-center">
+									<button class="btn btn-outline-success p-x-lg p-x-lg" type="button">변경</button>
+									<button class="btn btn-default p-x-lg" type="button">취소</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //팝업-인증 로그 기록 대상 변경 -->
+
+				<!-- 팝업-로그 DB 자동 조건 변경 -->
+				<div id="successModalAlert" tabindex="-1" role="dialog" class="modal fade in" style="display:block; position: static;">
+					<div class="modal-dialog">
+						<div class="modal-content round-box">
+							<div class="modal-header bg-success">
+								<h4 class="pull-left m-a-0">로그 DB 자동 조건 변경</h4>
+								<button type="button" class="close" data-dismiss="modal">
+									<span aria-hidden="true" class="popup-close">×</span>
+									<span class="sr-only">Close</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div class="form-group">
+									<label for="username-1" class="control-label">로그 DB 자동 변경 사용</label>
+									<select id="username-1" class="form-control" type="text" name="username_1">
+										<option>사용함</option>
+										<option>사용안함</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label for="username-1" class="control-label">로그 DB 자동 변경 주기</label>
+									<input id="username-1" class="form-control size-xs-11 d-ib" type="text" name="username_1"><span class="d-ib p-l-sm text-right">개월</span>
+								</div>
+
+								<div class="text-center">
+									<button class="btn btn-outline-success p-x-lg p-x-lg" type="button">변경</button>
+									<button class="btn btn-default p-x-lg" type="button">취소</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //팝업-로그 DB 자동 조건 변경 -->
+				<!-- //컨텐츠영역 -->
+
+				<!-- 설정페이지2-운영 -->
+				<div class="row size-xs-8 m-0-a p-b-lg">
+					<div class="setting-box">
+						<h3 class="title">운영</h3>
+						<div class="table-responsive">
+							<table class="table normal-list shadow">
+								<colgroup>
+									<col>
+									<col style="width:10%">
+								</colgroup>
+								<tbody><tr>
+									<th>
+										<h4>제품버전</h4>
+										<p>프로그램 및 ActiveX 버전 정보를 관리할 수 있습니다.</p>
+									</th>
+									<td class="text-center">
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<h4>데이터베이스</h4>
+										<p>운영 시 필요한 데이터를 저장하는 데이터베이스 정보를 설정할 수 있습니다.</p>
+									</th>
+									<td class="text-center">
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<h4>메일서비스</h4>
+										<p>비밀번호 찾기, 용량 신청 등과 같이 메일 발송이 필요한 경우 사용할 수 있습니다.</p>
+									</th>
+									<td class="text-center">
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<h4>알림 및 메시지</h4>
+										<p>알림 및 시스템 관련 메시지에 대해 관리할 수 있습니다.</p>
+									</th>
+									<td class="text-center">
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<h4>프로그램 입출력 차단 목록</h4>
+										<p>비밀번호 찾기, 용량 신청 등과 같이 메일 발송이 필요한 경우 사용할 수 있습니다.</p>
+									</th>
+									<td class="text-center">
+										<button class="btn btn-outline-success p-x-lg" type="button">관리</button>
+									</td>
+								</tr>
+							</tbody></table>
+						</div>			
+					</div>
+					<!-- //설정페이지2-운영 -->
+
+					<!-- 설정페이지2-보안 -->
+					<div class="setting-box">
+						<h3 class="title">보안</h3>
+						<div class="table-responsive">
+							<table class="table normal-list shadow">
+								<colgroup>
+									<col>
+									<col style="width:10%">
+								</colgroup>
+								<tbody><tr>
+									<th>
+										<h4>통신 및 프로토콜</h4>
+										<p>통신 및 프로토콜에 관련된 설정을 확인할 수 있습니다.</p>
+									</th>
+									<td class="text-center">
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<h4>서버 암호화 사용</h4>
+										<p>서버에 저장된 문서를 암호화하여 사용할 수 있습니다.</p>
+									</th>
+									<td class="text-center">
+										<label class="switch switch-success">
+											<input class="switch-input" type="checkbox" checked="checked">
+											<span class="switch-track"></span>
+											<span class="switch-thumb"></span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<h4>권한</h4>
+										<p>기본적으로 부여할 권한을 설정할 수 있습니다.</p>
+									</th>
+									<td class="text-center">
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
+									</td>
+								</tr>
+							</tbody></table>
+						</div>			
+					</div>
+					<!-- //설정페이지2-보안 -->
+
+					<!-- 설정페이지2-사용자 -->
+					<div class="setting-box">
+						<h3 class="title">사용자</h3>
+						<div class="table-responsive">
+							<table class="table normal-list shadow">
+								<colgroup>
+									<col>
+									<col style="width:10%">
+								</colgroup>
+								<tbody><tr>
+									<th>
+										<h4>로그인</h4>
+										<p>설정한 내용에 따라 사용자 및 관리자 로그인 방식을 변경할 수 있습니다.</p>
+									</th>
+									<td class="text-center">
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<h4>비밀번호</h4>
+										<p>비밀번호에 관련된 설정을 변경할 수 있습니다.</p>
+									</th>
+									<td class="text-center">
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<h4>휴지통</h4>
+										<p>각 문서함에 존재하는 휴지통에 대한 설정을 할 수 있습니다.</p>
+									</th>
+									<td class="text-center">
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
+									</td>
+								</tr>
+							</tbody></table>
+						</div>			
+					</div>
+					<!-- //설정페이지2-사용자 -->
+					
+					<!-- 설정페이지2-기능 -->
+					<div class="setting-box">
+						<h3 class="title">기능</h3>
+						<div class="table-responsive">
+							<table class="table normal-list shadow">
+								<colgroup>
+									<col>
+									<col style="width:10%">
+								</colgroup>
+								<tbody><tr>
+									<th>
+										<h4>윈도우 탐색기 메뉴 관리</h4>
+										<p>사용자 PC에서 컨텍스트 및 트레이아이콘 메뉴로 표시하여 사용할 수 있는 기능을 설정할 수 있습니다.</p>
+									</th>
+									<td class="text-center">
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<h4>파일 검색 사용</h4>
+										<p>파일 이름 검색 및 내용 검색을 사용하기 위해 설정이 필요합니다.</p>
+									</th>
+									<td class="text-center">
+										<label class="switch switch-success">
+											<input class="switch-input" type="checkbox" checked="checked">
+											<span class="switch-track"></span>
+											<span class="switch-thumb"></span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<h4>추가 서버</h4>
+										<p>대외문서교환서버,보안뷰어 기능을 사용하기 위해 추가 서버 설정이 필요합니다.</p>
+									</th>
+									<td class="text-center">
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<h4>웹/자바 탐색기</h4>
+										<p>웹탐색기 및 자바탐색기 관련하여 설정 할 수 있습니다.</p>
+									</th>
+									<td class="text-center">
+										<button class="btn-link p-x"><span class="icon icon-caret-right text-right"></span></button>
+									</td>
+								</tr>
+							</tbody></table>
+						</div>			
+					</div>
+					<!-- //설정페이지2-기능 -->
+
+					<!-- 상세설정화면 -->
+					<div class="setting-box">
+						<div class="table-responsive">
+							<table class="table normal-list shadow">
+								<colgroup>
+									<col>
+									<col style="width:10%">
+								</colgroup>
+								<tbody><tr>
+									<th>
+										<button class="d-ib btn-link p-l-0"><span class="icon icon-arrow-left"></span></button>
+										<h4 class="m-a-0 d-ib">제품버전</button></h4>
+									</th>
+									<td class="text-center">
+										
+									</td>
+								</tr>
+								<tr>
+									<th class="border-none">
+										<h4>Agent 버전</h4>
+										<p>2.407</p>
+									</th>
+									<td class="text-center border-none">
+										<button class="btn btn-outline-success p-x-lg" type="button">변경</button>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<h4>자바탐색기 버전</h4>
+										<p>1.0.0.0</p>
+									</th>
+									<td class="text-center">
+										<label class="switch switch-success">
+											<input class="switch-input" type="checkbox" checked="checked">
+											<span class="switch-track"></span>
+											<span class="switch-thumb"></span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<h4>PC 백업 버전</h4>
+										<p>1</p>
+									</th>
+									<td class="text-center">
+										<button class="btn btn-outline-success p-x-lg" type="button">변경</button>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<h4>웹페이지에서 Agent 설치 및 실행하는 ActiveX 버전</h4>
+										<p>1,0,0,51</p>
+									</th>
+									<td class="text-center">
+										<button class="btn btn-outline-success p-x-lg" type="button">변경</button>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<h4>멀티 다운로드 ActiveX 버전<span class="icon icon-info-circle icon-lg text-success p-l-sm"></span></h4>
+										<p>1,0,0,39</p>
+									</th>
+									<td class="text-center">
+										<button class="btn btn-outline-success p-x-lg" type="button">변경</button>
+									</td>
+								</tr>
+							</tbody></table>
+						</div>
+					</div>
+					<!-- //상세설정화면 -->
+				</div>
+			</div>
+		</div>
+
+		<div class="layout-footer" style="position: fixed;">
+			<div class="layout-footer-body">
+				<small class="version">Version 1.4.0</small>
+				<small class="copyright">2019 &copy; NETID <a href="http://madebytilde.com/">Made by NETID</a></small>
+			</div>
+		</div>
+
+	</div>
+
+	
+	<script src="../../js/vendor.js"></script>
+	<script src="../../js/elephant.js"></script>
+	<script src="../../js/application.js"></script>
+	<!-- <script src="../../js/demo.js"></script> -->
+
+</body>
+
+</html>

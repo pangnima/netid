@@ -206,7 +206,7 @@
 		});
 
 		$datepicker.datepicker({
-			'format': 'MM d, yyyy',
+			'format': 'yyyy-mm-dd',
 			'autoclose': true
 		});
 
@@ -703,7 +703,7 @@
 	function datatablesBasicTableExample() {
 		var $datatables = $('#demo-datatables-1');
 		$datatables.DataTable({
-			dom: "<'row'<'col-sm-6'i><'col-sm-6'f>>" + "<'table-responsive'tr>" + "<'row'<'col-sm-6'l><'col-sm-6'p>>",
+			dom: "<'row'<'col-xs-6'i><'col-xs-6'f>>" + "<'table-responsive'tr>" + "<'row'<'col-xs-6'l><'col-xs-6'p>>",
 			language: {
 				paginate: {
 					previous: '&laquo;',
@@ -721,7 +721,7 @@
 	function datatablesComplexHeaderExample() {
 		var $datatables = $('#demo-datatables-2');
 		$datatables.DataTable({
-			dom: "<'row'<'col-sm-6'i><'col-sm-6'f>>" + "<'table-responsive'tr>" + "<'row'<'col-sm-6'l><'col-sm-6'p>>",
+			dom: "<'row'<'col-xs-6'i><'col-xs-6'f>>" + "<'table-responsive'tr>" + "<'row'<'col-xs-6'l><'col-xs-6'p>>",
 			language: {
 				paginate: {
 					previous: '&laquo;',
@@ -751,7 +751,7 @@
 
 			// DataTable
 			var $datatables = $datatables.DataTable({
-				dom: "<'row'<'col-sm-12'i>>" + "<'table-responsive'tr>" + "<'row'<'col-sm-6'l><'col-sm-6'p>>",
+				dom: "<'row'<'col-xs-12'i>>" + "<'table-responsive'tr>" + "<'row'<'col-xs-6'l><'col-xs-6'p>>",
 				language: {
 					paginate: {
 						previous: '&laquo;',
@@ -787,7 +787,7 @@
 			});
 
 			$datatables.DataTable({
-				dom: "<'row'<'col-sm-12'i>>" + "<'table-responsive'tr>" + "<'row'<'col-sm-6'l><'col-sm-6'p>>",
+				dom: "<'row'<'col-xs-12'i>>" + "<'table-responsive'tr>" + "<'row'<'col-xs-6'l><'col-xs-6'p>>",
 				language: {
 					paginate: {
 						previous: '&laquo;',
@@ -817,7 +817,7 @@
 	function datatablesAlternativePaginationExample() {
 		var $datatables = $('#demo-datatables-5');
 		$datatables.DataTable({
-			dom: "<'row'<'col-sm-6'l><'col-sm-6'f>>" + "<'table-responsive'tr>" + "<'row'<'col-sm-12'p>>",
+			dom: "<'row'<'col-xs-6'l><'col-xs-6'f>>" + "<'table-responsive'tr>" + "<'row'<'col-xs-12'p>>",
 			language: {
 				paginate: {
 					previous: '&laquo;',
@@ -860,7 +860,7 @@
 			]
 		});
 
-		$datatablesButtons.buttons().container().appendTo('#demo-datatables-buttons-1_wrapper .col-sm-6:eq(0)');
+		$datatablesButtons.buttons().container().appendTo('#demo-datatables-buttons-1_wrapper .col-xs-6:eq(0)');
 	}
 
 	function datatablesButtonsTableBorderedExample() {
@@ -890,7 +890,7 @@
 			]
 		});
 
-		$datatablesButtons.buttons().container().appendTo('#demo-datatables-buttons-2_wrapper .col-sm-6:eq(0)');
+		$datatablesButtons.buttons().container().appendTo('#demo-datatables-buttons-2_wrapper .col-xs-6:eq(0)');
 	}
 
 	function datatablesColreorderExample() {
@@ -898,7 +898,7 @@
 		$datatablesColreorder.DataTable({
 			colReorder: true,
 			responsive: true,
-			dom: "<'row'<'col-sm-6'i><'col-sm-6'f>>" + "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-6'l><'col-sm-6'p>>",
+			dom: "<'row'<'col-xs-6'i><'col-xs-6'f>>" + "<'row'<'col-xs-12'tr>>" + "<'row'<'col-xs-6'l><'col-xs-6'p>>",
 			language: {
 				paginate: {
 					previous: '&laquo;',
@@ -916,7 +916,7 @@
 			colReorder: true,
 			responsive: true,
 			stateSave: true,
-			dom: "<'row'<'col-sm-6'i><'col-sm-6'f>>" + "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-6'l><'col-sm-6'p>>",
+			dom: "<'row'<'col-xs-6'i><'col-xs-6'f>>" + "<'row'<'col-xs-12'tr>>" + "<'row'<'col-xs-6'l><'col-xs-6'p>>",
 			language: {
 				paginate: {
 					previous: '&laquo;',
@@ -934,7 +934,7 @@
 			$datatablesFixedheader = $datatablesFixedheader.DataTable({
 				fixedHeader: true,
 				responsive: true,
-				dom: "<'row'<'col-sm-6'i><'col-sm-6'f>>" + "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-6'l><'col-sm-6'p>>",
+				dom: "<'row'<'col-xs-6'i><'col-xs-6'f>>" + "<'row'<'col-xs-12'tr>>" + "<'row'<'col-xs-6'l><'col-xs-6'p>>",
 				language: {
 					paginate: {
 						previous: '&laquo;',
@@ -969,7 +969,7 @@
 			$datatablesFixedheader = $datatablesFixedheader.DataTable({
 				fixedHeader: true,
 				responsive: true,
-				dom: "<'row'<'col-sm-6'l><'col-sm-6'f>>" + "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-6'i><'col-sm-6'p>>",
+				dom: "<'row'<'col-xs-6'l><'col-xs-6'f>>" + "<'row'<'col-xs-12'tr>>" + "<'row'<'col-xs-6'i><'col-xs-6'p>>",
 				language: {
 					paginate: {
 						previous: '&laquo;',
@@ -1002,7 +1002,7 @@
 		var $datatablesResponsive = $('#demo-datatables-responsive-1');
 		$datatablesResponsive.DataTable({
 			responsive: true,
-			dom: "<'row'<'col-sm-6'i><'col-sm-6'f>>" + "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-6'><'col-sm-6'p>>",
+			dom: "<'row'<'col-xs-6'i><'col-xs-6'f>>" + "<'row'<'col-xs-12'tr>>" + "<'row'<'col-xs-6'><'col-xs-6'p>>",
 			language: {
 				paginate: {
 					previous: '&laquo;',
@@ -1021,7 +1021,7 @@
 		var $datatablesResponsive = $('#demo-datatables-responsive-2');
 		$datatablesResponsive.DataTable({
 			responsive: true,
-			dom: "<'row'<'col-sm-6 col-sm-push-6'i><'col-sm-6 col-xs-pull-6'f>>" + "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-6'l><'col-sm-6'p>>",
+			dom: "<'row'<'col-xs-6 col-xs-push-6'i><'col-xs-6 col-xs-pull-6'f>>" + "<'row'<'col-xs-12'tr>>" + "<'row'<'col-xs-6'l><'col-xs-6'p>>",
 			language: {
 				paginate: {
 					previous: '&laquo;',
@@ -1040,7 +1040,7 @@
 		var $datatablesRowreorder = $('#demo-datatables-rowreorder-1');
 		$datatablesRowreorder.DataTable({
 			rowReorder: true,
-			dom: "<'row'<'col-sm-6'i><'col-sm-6'f>>" + "<'table-responsive'tr>" + "<'row'<'col-sm-6'><'col-sm-6'p>>",
+			dom: "<'row'<'col-xs-6'i><'col-xs-6'f>>" + "<'table-responsive'tr>" + "<'row'<'col-xs-6'><'col-xs-6'p>>",
 			language: {
 				paginate: {
 					previous: '&laquo;',
@@ -1065,7 +1065,7 @@
 		var $datatablesRowreorder = $('#demo-datatables-rowreorder-2').DataTable({
 			buttons: ['print', 'copy', 'pdf'],
 			rowReorder: true,
-			dom: "<'row'<'col-sm-6'><'col-sm-6'f>>" + "<'table-responsive'tr>" + "<'row'<'col-sm-6'i><'col-sm-6'p>>",
+			dom: "<'row'<'col-xs-6'><'col-xs-6'f>>" + "<'table-responsive'tr>" + "<'row'<'col-xs-6'i><'col-xs-6'p>>",
 			language: {
 				paginate: {
 					previous: '&laquo;',
@@ -1076,7 +1076,7 @@
 			}
 		});
 
-		$datatablesRowreorder.buttons().container().appendTo('#demo-datatables-rowreorder-2_wrapper .col-sm-6:eq(0)');
+		$datatablesRowreorder.buttons().container().appendTo('#demo-datatables-rowreorder-2_wrapper .col-xs-6:eq(0)');
 	}
 
 	function datatablesScrollerExample() {
@@ -1088,7 +1088,7 @@
 				scrollCollapse: true,
 				scroller: true,
 				responsive: true,
-				dom: "<'row'<'col-sm-6'i><'col-sm-6'f>>" + "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-6'l><'col-sm-6'p>>",
+				dom: "<'row'<'col-xs-6'i><'col-xs-6'f>>" + "<'row'<'col-xs-12'tr>>" + "<'row'<'col-xs-6'l><'col-xs-6'p>>",
 				language: {
 					paginate: {
 						previous: '&laquo;',
@@ -1116,7 +1116,7 @@
 				scrollCollapse: true,
 				scroller: true,
 				responsive: true,
-				dom: "<'row'<'col-sm-6 col-sm-push-6'i><'col-sm-6 col-xs-pull-6'f>>" + "<'row'<'col-sm-12'tr>>",
+				dom: "<'row'<'col-xs-6 col-xs-push-6'i><'col-xs-6 col-xs-pull-6'f>>" + "<'row'<'col-xs-12'tr>>",
 				language: {
 					paginate: {
 						previous: '&laquo;',
