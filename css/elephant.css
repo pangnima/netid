@@ -1036,6 +1036,7 @@ pre code {
 	min-height: 1px;
 	padding-left: 15px;
 	padding-right: 15px;
+	overflow: hidden;
 }
 
 .col-xs-1,
@@ -3405,7 +3406,7 @@ tbody.collapse.in {
 	list-style: none;
 	font-size: 13px;
 	text-align: left;
-	z-index: 1031 !important;
+	z-index: 9999 !important;
 	background-color: #fff;
 	border: 1px solid #e7e7ec;
 	border: 1px solid #e7e7ec;
@@ -11463,7 +11464,7 @@ button.collapsed .bars-x .bar-line:last-child {
 
 
 .custom-checkbox.red .custom-control-input:checked~.custom-control-indicator {
-    background-image: url(../../img/check-red.svg);
+    background-image: url(../img/check-red.svg);
 }
 
 .has-error .custom-control-indicator {

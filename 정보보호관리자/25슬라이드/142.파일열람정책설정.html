@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>NETID</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-	
+
 	<link rel="stylesheet" href="../../css/vendor.min.css">
 	<link rel="stylesheet" href="../../css/elephant.css">
 	<link rel="stylesheet" href="../../css/application.css">
@@ -22,7 +23,8 @@
 				<a class="navbar-brand navbar-brand-center" href="index.html">
 					<img class="navbar-brand-logo" src="../../img/logo.png" alt="NETID">
 				</a>
-				<button class="navbar-toggler visible-xs-block collapsed" type="button" data-toggle="collapse" data-target="#sidenav">
+				<button class="navbar-toggler visible-xs-block collapsed" type="button" data-toggle="collapse"
+					data-target="#sidenav">
 					<span class="sr-only">토글 네비게이션</span>
 					<span class="bars">
 						<span class="bar-line bar-line-1 out"></span>
@@ -323,7 +325,8 @@
 										<a href="#behavior">폴더 관리</a>
 										<ul class="sidenav level-2 collapse">
 											<li class="sidenav-item"><a href="#none">폴더 용량 제한 현황</a></li>
-											<li class="sidenav-item"><a href="#none">폴더 권한 현황(부서 또는 사용자로 권한 조회 필요)</a></li>
+											<li class="sidenav-item"><a href="#none">폴더 권한 현황(부서 또는 사용자로 권한 조회 필요)</a>
+											</li>
 											<li class="sidenav-item"><a href="#none">폴더 파일 현황</a></li>
 											<li class="sidenav-item"><a href="#none">폴더 용량 추가 요청 처리</a></li>
 											<li class="sidenav-item"><a href="#none">폴더 관리자 신청 처리</a></li>
@@ -433,10 +436,12 @@
 				<div class="row gutter">
 					<div class="col-xs-12">
 						<div class="card">
-							<div class="card-header">
+							<div class="card-header no-title">
 								<div class="left-position">
-									<h3>협력사 사용자 열람 가능한 프로그램 목록</h3>
-									
+									<h3 class="small">협력사 사용자 열람 가능한 프로그램 목록</h3>
+								</div>
+								<div class="right-position">
+									<button class="btn btn-sm btn-default" type="button">추가</button>
 								</div>
 							</div>
 							<div class="card-body">
@@ -466,8 +471,10 @@
 												<td>허용</td>
 												<td>
 													<div class="btn-wrap-icon">
-														<button type="button"><span class="icon icon-pencil"></span></button>
-														<button type="button"><span class="icon icon-trash"></span></button>
+														<button type="button"><span
+																class="icon icon-pencil"></span></button>
+														<button type="button"><span
+																class="icon icon-trash"></span></button>
 													</div>
 												</td>
 											</tr>
@@ -478,8 +485,10 @@
 												<td>허용</td>
 												<td>
 													<div class="btn-wrap-icon">
-														<button type="button"><span class="icon icon-pencil"></span></button>
-														<button type="button"><span class="icon icon-trash"></span></button>
+														<button type="button"><span
+																class="icon icon-pencil"></span></button>
+														<button type="button"><span
+																class="icon icon-trash"></span></button>
 													</div>
 												</td>
 											</tr>
@@ -487,7 +496,7 @@
 									</table>
 								</div>
 								<div class="m-t">
-									<div class="view-list">Show 
+									<div class="view-list">Show
 										<select name="" id="" class="form-control d-ib">
 											<option value="">10</option>
 											<option value="">15</option>
@@ -518,11 +527,266 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- 팝업 -->
+<div id="successModalAlert" role="dialog" class="modal modal-34">
+		<div class="modal-dialog">
+			<div class="modal-content round-box">
+				<div class="modal-header bg-success">
+					<h4 class="pull-left m-a-0">정책 아이템 추가</h4>
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true" class="popup-close">×</span>
+						<span class="sr-only">Close</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<ul class="step">
+						<li class="active">인쇄 허용 프린터선택</li>
+						<li>허용 어플리케이션 추가</li>
+						<li>차단 어플리케이션 추가</li>
+					</ul>
+					<div class="form-group">
+						<strong>인쇄를 허용할 프린터 선택</strong>
+						<ul>
+							<li>
+								<label class="custom-control custom-control-success custom-radio">
+									<input class="custom-control-input" name="success" type="radio" value="none">
+									<span class="custom-control-indicator"></span>
+									<span class="custom-control-label">프린터 직접 선택</span>
+								</label>
+							</li>
+							<li>
+								<label class="custom-control custom-control-success custom-radio">
+									<input class="custom-control-input" name="success" type="radio" value="none">
+									<span class="custom-control-indicator"></span>
+									<span class="custom-control-label">프린터 이름으로 선택</span>
+								</label>
+								<div>
+									<div>
+										<input class="form-control d-ib" type="text" placeholder="입력하세요">
+										<button class="btn btn-default" type="button">찾기</button>
+										<p>예) 개발팀 프린터, 영업팀 프린터</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="table-wrap">
+						<table class="table">
+							<tr>
+								<th>프린트 목록</th>
+							</tr>
+							<tr>
+								<td>Canon G4010 series</td>
+							</tr>
+							<tr>
+								<td>Canon G4010 series</td>
+							</tr>
+							<tr>
+								<td>Canon G4010 series</td>
+							</tr>
+							<tr>
+								<td>Canon G4010 series</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="btn-wrap">
+							<button class="btn btn-basic btn-default btn-prev" type="button"><span class="icon icon-angle-left m-r-sm"></span>이전</button>
+							<button class="btn btn-basic btn-default btn-next" type="button">다음<span class="icon icon-angle-right m-l-sm"></span></button>
+						<button class="btn btn-basic btn-outline-success btn-right" type="button">적용</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //팝업-->
+	
+	<!-- 팝업 -->
+	<div id="successModalAlert" role="dialog" class="modal modal-34">
+		<div class="modal-dialog">
+			<div class="modal-content round-box">
+				<div class="modal-header bg-success">
+					<h4 class="pull-left m-a-0">정책 아이템 추가</h4>
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true" class="popup-close">×</span>
+						<span class="sr-only">Close</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<ul class="step">
+						<li class="active">인쇄 허용 프린터선택</li>
+						<li class="active">허용 어플리케이션 추가</li>
+						<li>차단 어플리케이션 추가</li>
+					</ul>
+					<div class="form-group">
+						<strong>추가할 허용 어플리케이션 선택</strong>
+						<ul>
+							<li>
+								<label class="custom-control custom-control-success custom-radio">
+									<input class="custom-control-input" name="success" type="radio" value="none">
+									<span class="custom-control-indicator"></span>
+									<span class="custom-control-label">프린터 직접 선택</span>
+								</label>
+							</li>
+							<li>
+								<label class="custom-control custom-control-success custom-radio">
+									<input class="custom-control-input" name="success" type="radio" value="none">
+									<span class="custom-control-indicator"></span>
+									<span class="custom-control-label">프린터 이름으로 선택</span>
+								</label>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="tree-wrap">
+						<div class="left">
+							<h3>카테고리 선택</h3>
+							<div class="slide-nav">
+								<!-- Depth -->
+								<ul class="depth">
+									<li>
+										<span class="icon icon-minus-square"></span>
+										모든 어플리케이션
+										<!-- Depth-1 -->
+										<ul class="depth-1" style="display: block;">
+											<li>
+												<span class="icon icon-plus-square-o"></span>
+												<img src="../../img/folder.jpg" alt="">
+												Allow Write
+												<!-- Depth-2 -->
+												<ul class="depth-2">
+													<li>
+														<span class="icon icon-plus-square-o"></span>
+														<img src="../../img/folder.jpg" alt="">
+														Allow Write2
+													</li>
+												</ul>
+												<!-- // Depth-3 -->
+											</li>
+	
+											<li>
+												<span class="icon icon-plus-square-o"></span>
+												<img src="../../img/folder.jpg" alt="">
+												Reject All
+												<!-- Depth-2 -->
+												<ul class="depth-2">
+													<li>
+														<span class="icon icon-plus-square-o"></span>
+														<img src="../../img/folder.jpg" alt="">
+														Allow Write2
+														<!-- Depth-3 -->
+														<ul class="depth-3">
+															<li>
+																<span class="icon icon-plus-square-o"></span>
+																<img src="../../img/folder.jpg" alt="">
+																Allow Write2
+															</li>
+														</ul>
+														<!-- // Depth-3 -->
+													</li>
+												</ul>
+												<!-- // Depth-2 -->
+											</li>
+	
+											<li>
+												<span class="icon icon-plus-square-o"></span>
+												<img src="../../img/folder.jpg" alt="">
+												Reject All
+												<!-- Depth-2 -->
+												<ul class="depth-2">
+													<li>
+														<span class="icon icon-plus-square-o"></span>
+														<img src="../../img/folder.jpg" alt="">
+														Allow Write2
+													</li>
+													<li>
+														<span class="icon icon-plus-square-o"></span>
+														<img src="../../img/folder.jpg" alt="">
+														Allow Write3
+													</li>
+													<li>
+														<span class="icon icon-plus-square-o"></span>
+														<img src="../../img/folder.jpg" alt="">
+														Allow Write4
+														<!-- Depth-3 -->
+														<ul class="depth-3">
+															<li>
+																<span class="icon icon-plus-square-o"></span>
+																<img src="../../img/folder.jpg" alt="">
+																Allow Write5
+															</li>
+															<li>
+																<span class="icon icon-plus-square-o"></span>
+																<img src="../../img/folder.jpg" alt="">
+																Allow Write6
+															</li>
+															<li>
+																<span class="icon icon-plus-square-o"></span>
+																<img src="../../img/folder.jpg" alt="">
+																Allow Write7
+															</li>
+														</ul>
+														<!-- // Depth-3 -->
+													</li>
+												</ul>
+												<!-- // Depth-2 -->
+											</li>
+										</ul>
+										<!-- // Depth-1 -->
+									</li>
+								</ul>
+								<!-- Depth -->
+							</div>
+						</div>
+						<div class="arrow">
+							<div>
+								<button class="btn btn-default" type="button"><span class="icon icon-arrow-right"></span></button>
+								<button class="btn btn-default" type="button"><span class="icon icon-arrow-left"></span></button>
+							</div>
+						</div>
+						<div class="right">
+							<h3>선택 된 카테고리</h3>
+						</div>
+					</div>
+					
+					<div class="btn-wrap">
+						<button class="btn btn-basic btn-default btn-prev" type="button"><span class="icon icon-angle-left m-r-sm"></span>이전</button>
+						<button class="btn btn-basic btn-default btn-next" type="button">다음<span class="icon icon-angle-right m-l-sm"></span></button>
+						<button class="btn btn-basic btn-outline-success btn-right" type="button">적용</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //팝업-->
 	<script src="../../js/vendor.js"></script>
 	<script src="../../js/elephant.js"></script>
 	<script src="../../js/application.js"></script>
 	<!-- <script src="../../js/demo.js"></script> -->
+	<script src="../../js/custom.js"></script>
+	<script>
+		window.onload = function(){
+			slideFolder();
+			$('.modal .close ').on('click' , function(e){
+				$(this).parents('#successModalAlert').fadeOut();
+			});
+			
+			$('.right-position button').on('click' , function(){
+				$('#successModalAlert').fadeIn();
+			})
 
+			$('.btn-next').on('click' ,function(){
+				$(this).parents('#successModalAlert').fadeOut();
+				$(this).parents('#successModalAlert').next().fadeIn();
+			})
+
+			$('.btn-prev').on('click' ,function(){
+				$(this).parents('#successModalAlert').fadeOut();
+				$(this).parents('#successModalAlert').prev().fadeIn();
+			})
+		}
+	</script>
 </body>
 
 </html>

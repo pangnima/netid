@@ -1040,7 +1040,7 @@
 		var $datatablesRowreorder = $('#demo-datatables-rowreorder-1');
 		$datatablesRowreorder.DataTable({
 			rowReorder: true,
-			dom: "<'row'<'col-xs-6'i><'col-xs-6'f>>" + "<'table-responsive'tr>" + "<'row'<'col-xs-6'><'col-xs-6'p>>",
+			dom: "<'table-responsive'tr>",
 			language: {
 				paginate: {
 					previous: '&laquo;',

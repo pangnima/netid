@@ -60336,7 +60336,7 @@ $.extend( RowReorder.prototype, {
 		var update = function () {
 			if ( that.c.update ) {
 				for ( i=0, ien=fullDiff.length ; i<ien ; i++ ) {
-					var row = dt.row( fullDiff[i].node );
+					var row = dt.row( fullDiff[i+1].node );
 					var rowData = row.data();
 
 					setDataFn( rowData, fullDiff[i].newData );

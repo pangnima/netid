@@ -367,7 +367,7 @@
 									<div class="form-group">
 										<label for="#" class="control-label">도메인</label>
 										<div>
-											<input id="#" class="form-control" type="text">
+											<input id="#" class="form-control d-ib" type="text">
 											<button class="btn btn-default" type="button">중복확인</button>
 										</div>
 									</div>
@@ -397,22 +397,25 @@
 				</div>
 
 				<div class="row gutter">
-					<ul>
-						<li>
-							<label class="custom-control custom-control-success custom-checkbox">
-								<input class="custom-control-input" type="checkbox">
-								<span class="custom-control-indicator"></span>
-								<span class="custom-control-label">정보보호관리자 </span>
-							</label>
-						</li>
-						<li>
-							<label class="custom-control custom-control-success custom-checkbox">
-								<input class="custom-control-input" type="checkbox">
-								<span class="custom-control-indicator"></span>
-								<span class="custom-control-label">서비스관리자</span>
-							</label>
-						</li>
-					</ul>
+					<div class="check-wrap">
+						<strong>생성계정</strong>
+						<ul class="checkbox-list">
+							<li>
+								<label class="custom-control custom-control-success custom-checkbox">
+									<input class="custom-control-input" type="checkbox">
+									<span class="custom-control-indicator"></span>
+									<span class="custom-control-label">정보보호관리자 </span>
+								</label>
+							</li>
+							<li>
+								<label class="custom-control custom-control-success custom-checkbox">
+									<input class="custom-control-input" type="checkbox">
+									<span class="custom-control-indicator"></span>
+									<span class="custom-control-label">서비스관리자</span>
+								</label>
+							</li>
+						</ul>
+					</div>
 				</div>
 
 				<div class="row gutter">
@@ -426,7 +429,7 @@
 									<div class="form-group">
 										<label for="#" class="control-label">아이디</label>
 										<div>
-											<input id="#" class="form-control" type="text">
+											<input id="#" class="form-control d-ib" type="text">
 											<button class="btn btn-default" type="button">중복확인</button>
 										</div>
 									</div>
@@ -544,7 +547,10 @@
 									<div class="form-group">
 										<label for="#" class="control-label">로고이미지</label>
 										<div>
-											<img src="" alt="">
+											<div class="m-b">
+												<img src="http://placehold.it/201x48" />
+												<span>201 * 48, gif 파일만 설정가능</span>
+											</div>
 											<button class="btn btn-default" type="file">파일선택</button>
 										</div>
 									</div>
