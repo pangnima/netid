@@ -544,65 +544,137 @@
 
 				<div class="row gutter m-b-md">
 					<div class="col-xs-12">
-						<!-- 메뉴 -->
+						<!-- 왼쪽 -->
 						<div class="col-xs-3 p-a-0">
 							<div class="card p-a-0 hv100">
 								<div class="card-header green">
-									<h3>폴더 목록 <i class="fas fa-plus"></i></h3>
-									<div class="card-actions">
-										<button type="button" class="card-action" title="Collapse">
-											<span class="icon icon-plus"></span>
-										</button>
-										<button type="button" class="card-action card-reload" title="Reload"></button>
-									</div>
+									<h3>폴더목록</h3>
 								</div>
-								<div class="card-body p-a-0" data-toggle="match-height">
-									<ul class="list-group list-group-divided">
-										<li class="list-group-item">메뉴 
-											<button type="button" class="icon icon-ellipsis-v card-action m-r-md"></button>
-											<div class="layer-pop arrow-up arrow-outline-success border">
-												<ul>
-													<li>레이어팝업 메뉴1</li>
-													<li>레이어팝업 메뉴2</li>
-													<li>레이어팝업 메뉴3</li>
+								<div class="card-body green" data-toggle="match-height">
+									<div class="slide-nav">
+										<!-- Depth -->
+										<ul class="depth">
+											<li>
+												<span class="icon icon-plus-square"></span>
+												부서문서함
+												<!-- Depth-1 -->
+												<ul class="depth-1">
+													<li>
+														<span class="icon icon-plus-square-o"></span>
+														<label class="custom-control custom-control-success custom-checkbox">
+															<input class="custom-control-input" type="checkbox">
+															<span class="custom-control-indicator"></span>
+															<span class="custom-control-label">개발팀</span>
+														</label>
+														<!-- Depth-2 -->
+														<ul class="depth-2">
+															<li>
+																<span class="icon icon-plus-square-o"></span>
+																<label class="custom-control custom-control-success custom-checkbox">
+																	<input class="custom-control-input" type="checkbox">
+																	<span class="custom-control-indicator"></span>
+																	<span class="custom-control-label">test</span>
+																</label>	
+															</li>
+														</ul>
+														<!-- // Depth-3 -->
+													</li>
+
+													<li>
+														<span class="icon icon-plus-square-o"></span>
+														<label class="custom-control custom-control-success custom-checkbox">
+															<input class="custom-control-input" type="checkbox">
+															<span class="custom-control-indicator"></span>
+															<span class="custom-control-label">공용폴더</span>
+														</label>
+														<!-- Depth-2 -->
+														<ul class="depth-2">
+															<li>
+																<span class="icon icon-plus-square-o"></span>
+																<label class="custom-control custom-control-success custom-checkbox">
+																	<input class="custom-control-input" type="checkbox">
+																	<span class="custom-control-indicator"></span>
+																	<span class="custom-control-label">안내</span>
+																</label>
+															</li>
+														</ul>
+														<!-- // Depth-2 -->
+													</li>
+
+													<li>
+														<span class="icon icon-plus-square-o"></span>
+														<label class="custom-control custom-control-success custom-checkbox">
+															<input class="custom-control-input" type="checkbox">
+															<span class="custom-control-indicator"></span>
+															<span class="custom-control-label">Depth-1</span>
+														</label>
+														<!-- Depth-2 -->
+														<ul class="depth-2">
+															<li>
+																<span class="icon icon-plus-square-o"></span>
+																<label class="custom-control custom-control-success custom-checkbox">
+																	<input class="custom-control-input" type="checkbox">
+																	<span class="custom-control-indicator"></span>
+																	<span class="custom-control-label">Depth-2</span>
+																</label>
+															</li>
+															<li>
+																<span class="icon icon-plus-square-o"></span>
+																<label class="custom-control custom-control-success custom-checkbox">
+																	<input class="custom-control-input" type="checkbox">
+																	<span class="custom-control-indicator"></span>
+																	<span class="custom-control-label">Depth-2</span>
+																</label>
+															</li>
+															<li>
+																<span class="icon icon-plus-square-o"></span>
+																<label class="custom-control custom-control-success custom-checkbox">
+																	<input class="custom-control-input" type="checkbox">
+																	<span class="custom-control-indicator"></span>
+																	<span class="custom-control-label">Depth-2</span>
+																</label>
+																<!-- Depth-3 -->
+																<ul class="depth-3">
+																	<li>
+																		<span class="icon icon-plus-square-o"></span>
+																		<label class="custom-control custom-control-success custom-checkbox">
+																			<input class="custom-control-input" type="checkbox">
+																			<span class="custom-control-indicator"></span>
+																			<span class="custom-control-label">Depth-3</span>
+																		</label>
+																	</li>
+																	<li>
+																		<span class="icon icon-plus-square-o"></span>
+																		<label class="custom-control custom-control-success custom-checkbox">
+																			<input class="custom-control-input" type="checkbox">
+																			<span class="custom-control-indicator"></span>
+																			<span class="custom-control-label">Depth-3</span>
+																		</label>
+																	</li>
+																	<li>
+																		<span class="icon icon-plus-square-o"></span>
+																		<label class="custom-control custom-control-success custom-checkbox">
+																			<input class="custom-control-input" type="checkbox">
+																			<span class="custom-control-indicator"></span>
+																			<span class="custom-control-label">Depth-3</span>
+																		</label>
+																	</li>
+																</ul>
+																<!-- // Depth-3 -->
+															</li>
+														</ul>
+														<!-- // Depth-2 -->
+													</li>
 												</ul>
-											</div>
-										</li>
-										<li class="list-group-item">메뉴 
-											<button type="button" class="icon icon-ellipsis-v card-action m-r-md"></button>
-											<div class="layer-pop arrow-up arrow-outline-success border">
-												<ul>
-													<li>레이어팝업 메뉴1</li>
-													<li>레이어팝업 메뉴2</li>
-													<li>레이어팝업 메뉴3</li>
-												</ul>
-											</div>
-										</li>
-										<li class="list-group-item">메뉴 
-											<button type="button" class="icon icon-ellipsis-v card-action m-r-md"></button>
-											<div class="layer-pop arrow-up arrow-outline-success border">
-												<ul>
-													<li>레이어팝업 메뉴1</li>
-													<li>레이어팝업 메뉴2</li>
-													<li>레이어팝업 메뉴3</li>
-												</ul>
-											</div>
-										</li>
-										<li class="list-group-item">메뉴 
-											<button type="button" class="icon icon-ellipsis-v card-action m-r-md"></button>
-											<div class="layer-pop arrow-up arrow-outline-success border">
-												<ul>
-													<li>레이어팝업 메뉴1</li>
-													<li>레이어팝업 메뉴2</li>
-													<li>레이어팝업 메뉴3</li>
-												</ul>
-											</div>
-										</li>
-									</ul>
+												<!-- // Depth-1 -->
+											</li>
+										</ul>
+										<!-- Depth -->
+									</div>
 								</div>
 							</div>
 						</div>
-						<!-- //메뉴 -->
+						<!-- // 왼쪽 -->
 
 						<div class="col-xs-9">
 							<!-- 부서문서함 -->
@@ -697,24 +769,12 @@
 	<script src="../../js/elephant.js"></script>
 	<script src="../../js/application.js"></script>
 	<!-- <script src="../../js/demo.js"></script> -->
+	<script src="../../js/custom.js"></script>
 	<script>
-			$(document).ready(function(){
-				$('.list-group-item button').on('click' , function(e){
-					e.stopPropagation();
-					$(this).siblings('.layer-pop').fadeIn();
-				})
-				
-				$('html,body').on('click' , function(e){
-					if (!$('.layer-pop').is(e.target) && $('.layer-pop').has(e.target).length === 0){
-						$('.layer-pop').fadeOut();
-					}	
-				})
-
-				$('.layer-pop').on('click' , function(){
-					$(this).fadeOut();
-				})
-			})
-		</script>
+		window.onload = function(){
+			slideNavCheck();
+		}
+	</script>
 </body>
 
 </html>

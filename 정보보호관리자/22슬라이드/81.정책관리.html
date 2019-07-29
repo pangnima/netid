@@ -670,53 +670,67 @@
 												<tr>
 													<th>수집에서 제외할 폴더 목록</th>
 													<td>
-														<ul class="list-unstyled table-bordered p-x p-y">
-															<li>
-																<label class="custom-control custom-control-success custom-checkbox">
-																	<input class="custom-control-input" type="checkbox">
-																	<span class="custom-control-indicator"></span>
-																	<span class="custom-control-label">Microsoft Excel - (*.xls, *.xlsx)</span>
-																</label>
-															</li>
-															<li>
-																<label class="custom-control custom-control-success custom-checkbox">
-																	<input class="custom-control-input" type="checkbox">
-																	<span class="custom-control-indicator"></span>
-																	<span class="custom-control-label">Microsoft Word - (*.doc, *.docx)</span>
-																</label>
-															</li>
-															<li>
-																<label class="custom-control custom-control-success custom-checkbox">
-																	<input class="custom-control-input" type="checkbox">
-																	<span class="custom-control-indicator"></span>
-																	<span class="custom-control-label">Microsoft PowerPoint - (*.ppt, *.pptx)</span>
-																</label>
-															</li>
-															<li>
-																<label class="custom-control custom-control-success custom-checkbox">
-																	<input class="custom-control-input" type="checkbox">
-																	<span class="custom-control-indicator"></span>
-																	<span class="custom-control-label">한컴오피스 - (*.hwp)</span>
-																</label>
-															</li>
-															<li>
-																<label class="custom-control custom-control-success custom-checkbox">
-																	<input class="custom-control-input" type="checkbox">
-																	<span class="custom-control-indicator"></span>
-																	<span class="custom-control-label">Adobe PDF - (*.pdf)</span>
-																</label>
-															</li>
-															<li>
-																<label class="custom-control custom-control-success custom-checkbox">
-																	<input class="custom-control-input" type="checkbox">
-																	<span class="custom-control-indicator"></span>
-																	<span class="custom-control-label">AutoCAD - (*.dwg, *.dws)</span>
-																</label>
-															</li>
-														</ul>
-														<div class="text-center">
-															<button class="btn btn-success" type="button">설정</button>
-															<button class="btn btn-default" type="button">삭제</button>
+														<div class="text-right">
+															<button class="btn btn-sm btn-default" type="button">추가</button>
+														</div>
+														<div class="table-wrap">
+															<table class="table table-left-td type-22">
+																<colgroup>
+																	<col>
+																	<col style="width:80px;">
+																</colgroup>
+																<tr>
+																	<td>Microsoft Excel - (*.xls, *.xlsx)</td>
+																	<td>
+																		<div class="btn-wrap-icon">
+																			<button type="button"><span class="icon icon-trash"></span></button>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td>Microsoft Word - (*.doc, *.docx)</td>
+																	<td>
+																		<div class="btn-wrap-icon">
+																			<button type="button"><span class="icon icon-trash"></span></button>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td>Microsoft PowerPoint - (*.ppt, *.pptx)</td>
+																	<td>
+																		<div class="btn-wrap-icon">
+																			<button type="button"><span class="icon icon-trash"></span></button>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td>한컴오피스 - (*.hwp)</td>
+																	<td>
+																		<div class="btn-wrap-icon">
+																			<button type="button"><span class="icon icon-trash"></span></button>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td>Adobe PDF - (*.pdf)</td>
+																	<td>
+																		<div class="btn-wrap-icon">
+																			<button type="button"><span class="icon icon-trash"></span></button>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td>AutoCAD - (*.dwg, *.dws)</td>
+																	<td>
+																		<div class="btn-wrap-icon">
+																			<button type="button"><span class="icon icon-trash"></span></button>
+																		</div>
+																	</td>
+																</tr>
+															</table>
+														</div>
+														<div class="text-right">
+															<button class="btn btn-sm btn-success" type="button">설정</button>
 														</div>
 													</td>
 												</tr>
@@ -724,7 +738,13 @@
 													<th>수집 디스크 보여줄 마지막 일자</th>
 													<td>
 														<div class="d-ib">
-															<input class="form-control d-ib" type="text"> 일 이후 표시 안함
+															<div class="input-group input-daterange" data-provide="datepicker" data-date-autoclose="true" data-date-format="yyyy-mm-dd">
+																<div class="input-with-icon d-ib media-middle">
+																	<input class="form-control" type="text">
+																	<span class="icon icon-calendar input-icon"></span>
+																</div>
+																일 이후 표시 안함
+															</div>
 														</div>
 													</td>
 												</tr>

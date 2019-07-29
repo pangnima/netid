@@ -11454,11 +11454,16 @@ button.collapsed .bars-x .bar-line:last-child {
 }
 
 .custom-control-danger .custom-control-input:checked~.custom-control-indicator {
-	background-color: #fd442b;
+	background-color: #f5f5f5;
 }
 
 .custom-control-danger .custom-control-input:active~.custom-control-indicator {
-	background-color: #feb3a9;
+	background-color: #f5f5f5;
+}
+
+
+.custom-checkbox.red .custom-control-input:checked~.custom-control-indicator {
+    background-image: url(../../img/check-red.svg);
 }
 
 .has-error .custom-control-indicator {

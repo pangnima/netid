@@ -617,54 +617,75 @@
 									</div>
 									<div class="card-body">
 										<div class="table-responsive">
-											<table class="table table-striped checkbox-board">
+											<table class="table table-striped table-left-td type-23">
 												<colgroup>
-													<col>
 													<col>
 													<col style="width:120px">
 												</colgroup>
 												<thead>
 													<tr>
-														<th>
-															<label class="custom-control custom-control-success custom-checkbox">
-																<input class="custom-control-input" type="checkbox">
-																<span class="custom-control-indicator"></span>
-																<span class="custom-control-label"></span>
-															</label>
-														</th>
 														<th>어플리케이션 목록</th>
-														<th></th>
+														<th class="text-center">수정</th>
 													</tr>
 												</thead>
 												<tr>
-													<td>
-														<label class="custom-control custom-control-success custom-checkbox">
-															<input class="custom-control-input" type="checkbox">
-															<span class="custom-control-indicator"></span>
-															<span class="custom-control-label"></span>
-														</label>
-													</td>
-													<td>허용</td>
+													<td>모든 프린터</td>
 													<td>
 														<div class="btn-wrap-icon">
 															<button type="button"><span class="icon icon-pencil"></span></button>
-															<button type="button"><span class="icon icon-trash"></span></button>
+														</div>
+													</td>
+												</tr>
+												<tr class="toggle">
+													<td colspan="2">
+														<div class="toggle-box">
+															<p><em>허용</em> 어플리케이션 목록</p>
+															<ul>
+																<li>Email (Application Export>Email)</li>
+																<li>Instant Messaging (Application Export>Instant Messaging)</li>
+																<li>FTP (Application Export>FTP)</li>
+															</ul>
 														</div>
 													</td>
 												</tr>
 												<tr>
-													<td>
-														<label class="custom-control custom-control-success custom-checkbox">
-															<input class="custom-control-input" type="checkbox">
-															<span class="custom-control-indicator"></span>
-															<span class="custom-control-label"></span>
-														</label>
-													</td>
-													<td>허용</td>
+													<td>모든 프린터</td>
 													<td>
 														<div class="btn-wrap-icon">
 															<button type="button"><span class="icon icon-pencil"></span></button>
-															<button type="button"><span class="icon icon-trash"></span></button>
+														</div>
+													</td>
+												</tr>
+												<tr class="toggle">
+													<td colspan="2">
+														<div class="toggle-box cut">
+															<p><em>차단</em> 어플리케이션 목록</p>
+															<ul>
+																<li>Email (Application Export>Email)</li>
+																<li>Instant Messaging (Application Export>Instant Messaging)</li>
+																<li>FTP (Application Export>FTP)</li>
+															</ul>
+														</div>
+													</td>
+												</tr>
+
+												<tr>
+													<td>모든 프린터</td>
+													<td>
+														<div class="btn-wrap-icon">
+															<button type="button"><span class="icon icon-pencil"></span></button>
+														</div>
+													</td>
+												</tr>
+												<tr class="toggle">
+													<td colspan="2">
+														<div class="toggle-box cut">
+															<p><em>차단</em> 어플리케이션 목록</p>
+															<ul>
+																<li>Email (Application Export>Email)</li>
+																<li>Instant Messaging (Application Export>Instant Messaging)</li>
+																<li>FTP (Application Export>FTP)</li>
+															</ul>
 														</div>
 													</td>
 												</tr>
@@ -694,19 +715,33 @@
 	<script src="../../js/application.js"></script>
 	<!-- <script src="../../js/demo.js"></script> -->
 	<script>
-			$(document).ready(function(){
-				$('.list-group-item button').on('click' , function(e){
-					e.stopPropagation();
-					$(this).siblings('.layer-pop').fadeIn();
-				})
-				
-				$('html,body').on('click' , function(e){
-					if (!$('.layer-pop').is(e.target) && $('.layer-pop').has(e.target).length === 0){
-						$('.layer-pop').fadeOut();
-					}	
-				})
+		$(document).ready(function(){
+			$('.list-group-item button').on('click' , function(e){
+				e.stopPropagation();
+				$(this).siblings('.layer-pop').fadeIn();
 			})
-		</script>
+			
+			$('html,body').on('click' , function(e){
+				if (!$('.layer-pop').is(e.target) && $('.layer-pop').has(e.target).length === 0){
+					$('.layer-pop').fadeOut();
+				}	
+			})
+
+			var idx = true
+			$('.type-23 tr').on('click' , function(e){
+				e.stopPropagation()
+				if( idx ) {
+					$(this).next('.toggle').show();
+					$(this).next('.toggle').find('.toggle-box').slideDown()
+					idx = false;
+				} else {
+					$(this).next('.toggle').find('.toggle-box').slideUp()
+					// $(this).next('.toggle').hide();
+					idx = true;
+				}
+			})
+		})
+	</script>
 </body>
 
 </html>

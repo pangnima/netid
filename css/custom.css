@@ -25,11 +25,12 @@ ul , li {list-style:none;}
 .ip-wrap {overflow:hidden;}
 .ip-wrap div {display:inline-block; margin-right:1%; vertical-align:middle;}
 .ip-wrap .ip-box {width:45%; margin:0;}
-.ip-wrap .ip-box input {width:23% !important;}
+.ip-wrap .ip-box input {width:23%;}
 .ip-wrap .ip-box span {vertical-align:bottom;}
 @media screen and (max-width:1240px) {.ip-wrap div {display:block; width:100%;}
 	.ip-wrap .ip-box {display:block; width:100%;}
-	.ip-wrap .ip-box input {width:21% !important;}}
+	.ip-wrap .ip-box input {width:21%}
+}
 
 /* 페이지 타이틀 */
 .page-title {display:table; margin-bottom:30px;}
@@ -123,9 +124,24 @@ table.type-1.big tr th {font-size:15px;}
 .type-22 thead tr th {width:auto; padding:10px 20px; font-size:14px !important; }
 .type-22 tbody tr td  {padding:10px 20px; background: #fff;}
 
+.type-23 td {border-top:0 !important;}
+.type-23 .toggle {display:none; border:0;}
+.type-23 .toggle td {border:0 !important; padding:0;}
+.type-23 .toggle-box{display: none; padding:10px 20px 0 ; border-bottom:solid 1px #e7e7ec;}
+.type-23 .toggle-box em {color:#20b6c0; font-style:normal;}
+.type-23 .toggle-box.cut em {color:#df4647; font-style:normal;}
+.type-23 .toggle-box p {font-size:15px;}
+.type-23 .toggle-box ul {padding-left:20px;}
+.type-23 .toggle-box ul li{padding:3px 0;}
+.type-23 .toggle-box ul li:before {content:""; display:inline-block; width:0; height:0; margin-right:5px; border-top:4px solid transparent; border-right:none solid #df4647; border-bottom:4px solid transparent; border-left:4px solid #20b6c0; vertical-align:middle;}
+.type-23 .toggle-box.cut ul li:before {content:""; display:inline-block; width:0; height:0; margin-right:5px; border-top:4px solid transparent; border-right:none solid #df4647; border-bottom:4px solid transparent; border-left:4px solid #df4647; vertical-align:middle;}
+
+
+
 .type-24 tbody tr th {border:0;}
 .type-24 tbody tr td {position:relative; border:0 !important;}
 
+.table-wrap {border:1px solid #e7e7ec; margin:10px 0; border-top:0; border-bottom:0;}
 
 .JCLRgripDrag {border:none !important;}
 .type-33 {width:100%; padding:0;}
@@ -343,6 +359,8 @@ table.type-1.big tr th {font-size:15px;}
 
 .checkbox-list.w20 li {width:20%; margin-right:0;}
 
+.checkbox-list.block li{display: block; float:none;}
+
 
 /* bordercolor */
 .border-color-f1 {border-color:#f1f1f1;}
@@ -410,6 +428,11 @@ table.type-1.big tr th {font-size:15px;}
 
 
 /* 모달팝업 */
+.modal-26 .modal-dialog {top:50%; left:50%; transform: translate(-50%,-50%) !important; margin:0;}
+.modal-26 .form-group strong {display:block; margin-bottom:5px;}
+.modal-26 .modal-dialog .close {color:#fff; opacity:1;}
+.modal-26 .ip-box input {width:20%; margin-right:5px; vertical-align: bottom;} 
+
 .modal-35 .modal-dialog {top:50%; transform: translateY(-50%);}
 .modal-35 h3 {display:inline-block; margin:0; font-size:20px; vertical-align:middle;}
 .modal-35 h4 {font-size:17px;}
