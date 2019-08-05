@@ -543,6 +543,9 @@ table.type-1.big tr th {font-size:15px;}
 	.col-xs-table > div.col-xs-3 {height: auto;}
 	
 	.max-height-sn {max-height: 200px; overflow-y: auto;}
+
+	.col-xs-toggle .col-xs-9 .card {margin-bottom:15px;}
+	.col-xs-toggle .col-xs-9 .card .card-body {max-height:200px; overflow-y:auto;}
 }
 
 @media screen and (max-width:768px) {.layout-content-body {padding:15px 20px;}
