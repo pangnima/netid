@@ -559,7 +559,7 @@
 										<span class="icon icon-search input-icon"></span>
 									</div>
 									<button class="btn btn-default" type="button">검색</button>
-									<button class="btn btn-default btn-bar-border" type="button">등록</button>
+									<button class="btn btn-default btn-bar-border btn-register" type="button">등록</button>
 								</div>
 							</div>
 							<div class="card-body">
@@ -641,7 +641,7 @@
 		</div>
 
 		<!-- 팝업-로그보관기간 변경 -->
-		<div id="successModalAlert" tabindex="-1" role="dialog" class="modal modal-38" style="display:block;">
+		<div id="successModalAlert" tabindex="-1" role="dialog" class="modal modal-38" style="display:none;">
 			<div class="modal-dialog">
 				<div class="modal-content round-box">
 					<div class="modal-header bg-success">
@@ -669,7 +669,7 @@
 								<input id="" class="form-control d-ib" type="text" name="">
 							</div>
 						</div>
-						<div class="text-center">
+						<div class="text-center p-t-sm">
 							<button class="btn btn-outline-success btn-basic" type="button">확인</button>
 							<button class="btn btn-default btn-basic btn-cancel" type="button">취소</button>
 						</div>
@@ -689,7 +689,7 @@
 				$('#successModalAlert').fadeOut();
 			});
 
-			$('.card-action .icon-plus').on('click' , function(){
+			$('.btn-register').on('click' , function(){
 				$('#successModalAlert').fadeIn();
 			})
 

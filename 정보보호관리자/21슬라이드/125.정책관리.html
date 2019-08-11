@@ -375,7 +375,7 @@
 											<td>
 												<strong>워터마크 이미지 설정 ( png 만 가능합니다. )</strong>
 												<div class="p-y-sm">
-													<img src="http://placehold.it/320x100" />
+													<div class="img" style="width:320px; height:100px;"></div>
 												</div>
 												<div class="d-tb size-xs-12">
 													<div class="d-tbc size-xs-4">
@@ -396,7 +396,7 @@
 											</td>
 											<td class="text-center">
 												<div class="p-y-sm preview ">
-													<img src="http://placehold.it/120x147" />
+													<div class="img m-0-a" style="width:120px; height:147px;"></div>
 												</div>
 												<p class="m-a-0"><strong>미리보기</strong>  A4 (210mm*297mm) 용지 기준</p>
 											</td>
@@ -434,7 +434,7 @@
 											</td>
 											<td class="text-center">
 												<div class="p-y-sm preview ">
-													<img src="http://placehold.it/120x147" />
+													<div class="img m-0-a" style="width:120px; height:147px;"></div>
 												</div>
 												<p class="m-a-0"><strong>미리보기</strong>  A4 (210mm*297mm) 용지 기준</p>
 											</td>
@@ -471,7 +471,7 @@
 				<!-- 사용자 정보 출력 -->
 				<div class="row gutter">
 					<div class="card">
-						<div class="card-header border-b-none">
+						<div class="card-header">
 							<h3 class="big">사용자 정보 출력 설정</h3>
 							<span>(컴퓨터 이름,윈도우 계정 이름,부서 정보,사용자 IP,날짜,시간,사용자 이름,사용자 아이디)</span>
 						</div>
@@ -560,7 +560,14 @@
 																<div class="d-tbc size-xs-4">
 																	<div class="form-group">
 																		<label for="" class="control-label">상단 텍스트 내용</label>
-																		<textarea class="form-control" rows="2" required="" aria-required="true"></textarea>
+																		<div class="textarea-table">
+																			<div>
+																				<textarea class="form-control" rows="2" required="" aria-required="true"></textarea>
+																			</div>
+																			<div class="btn-modify">
+																				<button class="btn btn-default btn-sm" type="button">편집</button>
+																			</div>
+																		</div>
 																	</div>
 																	<div class="form-group">
 																		<label for="" class="control-label">상단 텍스트 크기</label>
@@ -592,14 +599,11 @@
 																		<span>(0 ~ 306도까지 지정가능)</span>
 																	</div>
 																</div>
-																<div class="d-tbc size-xs-2 text-right media-bottom">
-																	<button class="btn btn-outline-success" type="button">Apply</button>
-																</div>
 															</div>
 														</td>
 														<td class="text-center">
 															<div class="p-y-sm preview ">
-																<img src="http://placehold.it/120x147" />
+																<div class="img m-0-a" style="width:120px; height:147px;"></div>
 															</div>
 															<p class="m-a-0"><strong>미리보기</strong>  A4 (210mm*297mm) 용지 기준</p>
 														</td>
@@ -618,9 +622,6 @@
 																		<span class="pull-right">불투명</span>
 																	</div>
 																</div>
-																<div class="d-tbc size-xs-2 text-right media-middle">
-																	<button class="btn btn-outline-success" type="button">Apply</button>
-																</div>
 															</div>
 														</td>
 													</tr>
@@ -638,14 +639,21 @@
 																<div class="d-tbc size-xs-4">
 																	<div class="form-group">
 																		<label for="" class="control-label">중단 텍스트 내용</label>
-																		<textarea class="form-control" rows="2" required="" aria-required="true"></textarea>
+																		<div class="textarea-table">
+																			<div>
+																				<textarea class="form-control" rows="2" required="" aria-required="true"></textarea>
+																			</div>
+																			<div class="btn-modify">
+																				<button class="btn btn-default btn-sm" type="button">편집</button>
+																			</div>
+																		</div>
 																	</div>
 																	<div class="form-group">
 																		<label for="" class="control-label">중단 텍스트 크기</label>
 																		<input id="" class="form-control" type="text" name="">
 																	</div>
 																	<div class="form-group">
-																		<strong>중단 좌우정렬</strong>
+																		<strong class="m-b-sm">중단 좌우정렬</strong>
 																		<div>
 																			<label class="custom-control custom-control-success custom-radio">
 																				<input class="custom-control-input" name="success" type="radio" value="none">
@@ -670,14 +678,11 @@
 																		<span>(0 ~ 306도까지 지정가능)</span>
 																	</div>
 																</div>
-																<div class="d-tbc size-xs-2 text-right media-bottom">
-																	<button class="btn btn-outline-success" type="button">Apply</button>
-																</div>
 															</div>
 														</td>
 														<td class="text-center">
 															<div class="p-y-sm preview ">
-																<img src="http://placehold.it/120x147" />
+																<div class="img m-0-a" style="width:120px; height:147px;"></div>
 															</div>
 															<p class="m-a-0"><strong>미리보기</strong>  A4 (210mm*297mm) 용지 기준</p>
 														</td>
@@ -696,9 +701,6 @@
 																		<span class="pull-right">불투명</span>
 																	</div>
 																</div>
-																<div class="d-tbc size-xs-2 text-right media-middle">
-																	<button class="btn btn-outline-success" type="button">Apply</button>
-																</div>
 															</div>
 														</td>
 													</tr>
@@ -716,7 +718,14 @@
 																<div class="d-tbc size-xs-4">
 																	<div class="form-group">
 																		<label for="" class="control-label">하단 텍스트 내용</label>
-																		<textarea class="form-control" rows="2" required="" aria-required="true"></textarea>
+																		<div class="textarea-table">
+																			<div>
+																				<textarea class="form-control" rows="2" required="" aria-required="true"></textarea>
+																			</div>
+																			<div class="btn-modify">
+																				<button class="btn btn-default btn-sm" type="button">편집</button>
+																			</div>
+																		</div>
 																	</div>
 																	<div class="form-group">
 																		<label for="" class="control-label">하단 텍스트 크기</label>
@@ -748,9 +757,6 @@
 																		<span>(0 ~ 306도까지 지정가능)</span>
 																	</div>
 																</div>
-																<div class="d-tbc size-xs-2 text-right media-bottom">
-																	<button class="btn btn-outline-success" type="button">Apply</button>
-																</div>
 															</div>
 														</td>
 														<td class="text-center">
@@ -774,9 +780,6 @@
 																		<span class="pull-right">불투명</span>
 																	</div>
 																</div>
-																<div class="d-tbc size-xs-2 text-right media-middle">
-																	<button class="btn btn-outline-success" type="button">Apply</button>
-																</div>
 															</div>
 														</td>
 													</tr>
@@ -787,9 +790,9 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="text-center">
-						<button class="btn btn-success btn-basic" type="button">확인</button><button class="btn btn-default btn-basic" type="button">취소</button>
+						<div class="text-right m-t-md">
+							<button class="btn btn-success btn-basic" type="button">적용</button>
+						</div>
 					</div>
 				</div>
 				<!-- // 사용자 정보 출력 -->

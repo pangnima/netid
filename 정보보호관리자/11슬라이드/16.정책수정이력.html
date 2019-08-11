@@ -116,7 +116,7 @@
 					</ul>
 					<div class="title-bar">
 						<ul class="title-bar-title">
-							<li>HOME</li>
+							<li><span class="icon icon-home"></span>HOME</li>
 							<li>공통작업</li>
 							<li><strong>정책 수정 이력</strong></li>
 						</ul>
@@ -461,35 +461,17 @@
 							<tr>
 								<th>검색 조건</th>
 								<td>
-									<ul class="checkbox-list">
-										<li>
-											<label class="custom-control custom-control-success custom-checkbox">
-												<input class="custom-control-input" type="checkbox">
-												<span class="custom-control-indicator"></span>
-												<span class="custom-control-label">전체</span>
-											</label>
-										</li>
-										<li>
-											<label class="custom-control custom-control-success custom-checkbox">
-												<input class="custom-control-input" type="checkbox">
-												<span class="custom-control-indicator"></span>
-												<span class="custom-control-label">정책이름</span>
-											</label>
-										</li>
-										<li>
-											<label class="custom-control custom-control-success custom-checkbox">
-												<input class="custom-control-input" type="checkbox">
-												<span class="custom-control-indicator"></span>
-												<span class="custom-control-label">수행아이디</span>
-											</label>
-										</li>
-									</ul>
-									<div class="search-input">
-										<div class="input-with-icon d-ib media-middle">
-											<input class="form-control" type="text" placeholder="입력하세요">
-											<span class="icon icon-search input-icon"></span>
-										</div>
+									<select name="" id="" class="form-control d-ib size-a">
+										<option value="">전체</option>
+										<option value="">정책이름</option>
+										<option value="">수행아이디</option>
+									</select>
+							
+									<div class="input-with-icon d-ib media-middle">
+										<input class="form-control" type="text" placeholder="입력하세요">
+										<span class="icon icon-search input-icon"></span>
 									</div>
+
 								</td>
 							</tr>
 						</table>

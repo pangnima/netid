@@ -405,42 +405,18 @@
 							<tr>
 								<th>검색 조건</th>
 								<td>
-									<ul class="checkbox-list">
-										<li>
-											<label class="custom-control custom-control-success custom-checkbox">
-												<input class="custom-control-input" type="checkbox">
-												<span class="custom-control-indicator"></span>
-												<span class="custom-control-label">전체</span>
-											</label>
-										</li>
-										<li>
-											<label class="custom-control custom-control-success custom-checkbox">
-												<input class="custom-control-input" type="checkbox">
-												<span class="custom-control-indicator"></span>
-												<span class="custom-control-label">사용자</span>
-											</label>
-										</li>
-										<li>
-											<label class="custom-control custom-control-success custom-checkbox">
-												<input class="custom-control-input" type="checkbox">
-												<span class="custom-control-indicator"></span>
-												<span class="custom-control-label">시작IP</span>
-											</label>
-										</li>
-										<li>
-											<label class="custom-control custom-control-success custom-checkbox">
-												<input class="custom-control-input" type="checkbox">
-												<span class="custom-control-indicator"></span>
-												<span class="custom-control-label">끝IP</span>
-											</label>
-										</li>
-									</ul>
-									<div class="search-input">
-										<div class="input-with-icon d-ib media-middle">
-											<input class="form-control" type="text" placeholder="입력하세요">
-											<span class="icon icon-search input-icon"></span>
-										</div>
+									<select name="" id="" class="form-control d-ib size-a">
+										<option value="">전체</option>
+										<option value="">사용자</option>
+										<option value="">시작IP</option>
+										<option value="">끝IP</option>
+									</select>
+
+									<div class="input-with-icon d-ib media-middle">
+										<input class="form-control" type="text" placeholder="입력하세요">
+										<span class="icon icon-search input-icon"></span>
 									</div>
+
 								</td>
 							</tr>
 						</table>
@@ -531,7 +507,7 @@
 
 
 	<!-- 팝업 -->
-	<div id="successModalAlert" tabindex="-1" role="dialog" class="modal modal-26" style="display:block;">
+	<div id="successModalAlert" tabindex="-1" role="dialog" class="modal modal-26" style="display:none;">
 		<div class="modal-dialog">
 			<div class="modal-content round-box">
 				<div class="modal-header bg-success">
@@ -601,7 +577,7 @@
 						</div>
 					</div>
 					
-					<div class="text-center">
+					<div class="text-center p-t-sm">
 						<button class="btn btn-basic btn-outline-success" type="button">확인</button>
 						<button class="btn btn-basic btn-default btn-cancel" type="button">취소</button>
 					</div>

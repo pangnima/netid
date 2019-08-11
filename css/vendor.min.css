@@ -6238,7 +6238,7 @@ div.fixed-table-scroll-outer {
 .slider-horizontal {
   display: block;
   height: 2px;
-  margin: 20px 0;
+  margin: 5px 0;
 }
 .slider-horizontal .slider-handle {
   height: 12px;

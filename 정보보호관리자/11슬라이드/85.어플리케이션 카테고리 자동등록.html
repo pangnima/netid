@@ -558,35 +558,17 @@
 							<tr>
 								<th>검색 조건</th>
 								<td>
-									<ul class="checkbox-list">
-										<li>
-											<label class="custom-control custom-control-success custom-checkbox">
-												<input class="custom-control-input" type="checkbox">
-												<span class="custom-control-indicator"></span>
-												<span class="custom-control-label">전체</span>
-											</label>
-										</li>
-										<li>
-											<label class="custom-control custom-control-success custom-checkbox">
-												<input class="custom-control-input" type="checkbox">
-												<span class="custom-control-indicator"></span>
-												<span class="custom-control-label">카테고리명</span>
-											</label>
-										</li>
-										<li>
-											<label class="custom-control custom-control-success custom-checkbox">
-												<input class="custom-control-input" type="checkbox">
-												<span class="custom-control-indicator"></span>
-												<span class="custom-control-label">어플리케이션파일명</span>
-											</label>
-										</li>
-									</ul>
-									<div class="search-input">
-										<div class="input-with-icon d-ib media-middle">
-											<input class="form-control" type="text" placeholder="입력하세요">
-											<span class="icon icon-search input-icon"></span>
-										</div>
+									<select name="" id="" class="form-control d-ib size-a">
+										<option value="">전체</option>
+										<option value="">카테고리명</option>
+										<option value="">어플리케이션파일명</option>
+									</select>
+									
+									<div class="input-with-icon d-ib media-middle">
+										<input class="form-control" type="text" placeholder="입력하세요">
+										<span class="icon icon-search input-icon"></span>
 									</div>
+
 								</td>
 							</tr>
 						</table>
@@ -602,11 +584,11 @@
 						<div class="card">
 							<div class="card-header no-title">
 								<div class="left-position">
-
+									<button class="btn btn-default" type="button">사용여부적용</button>
 								</div>
 								<div class="right-position">
-									<button class="btn btn-default" type="button">자동등록 실행</button>
-									<button class="btn btn-default" type="button">글쓰기</button>
+									<button class="btn btn-default" type="button">추가</button>
+									<button class="btn btn-default btn-bar-border" type="button">자동등록 실행</button>
 								</div>
 							</div>
 							<div class="card-body">
@@ -720,11 +702,27 @@
 										</tbody>
 									</table>
 								</div>
+								<div class="m-t">
+									<div class="view-list">Show 
+										<select name="" id="" class="form-control d-ib">
+											<option value="">10</option>
+											<option value="">15</option>
+											<option value="">20</option>
+										</select> entires</div>
+									<div class="text-center">
+										<ul class="pagination">
+											<li class="previous"><a href="#" class="icon icon-angle-left"></a></li>
+											<li class="active"><span>1</span></li>
+											<li><a href="">2</a></li>
+											<li><a href="">3</a></li>
+											<li><a href="">4</a></li>
+											<li><a href="">5</a></li>
+											<li class="next"><a href="#" class="icon icon-angle-right"></a></li>
+										</ul>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="text-right">
-						<button class="btn btn-default" type="button">사용여부적용</button>
 					</div>
 				</div>
 				

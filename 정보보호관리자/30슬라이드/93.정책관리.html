@@ -609,10 +609,10 @@
 								<div class="card">
 									<div class="card-header no-title">
 										<div class="left-position">
-											<h3 class="small">선택된 IE 반출 예외 정책</h3>
+											<h3>선택된 IE 반출 예외 정책</h3>
 										</div>
 										<div class="right-position">
-											<button class="btn btn-sm btn-default" type="button">추가</button>
+											<button class="btn btn-sm btn-default btn-more" type="button">추가</button>
 										</div>
 									</div>
 									<div class="card-body">
@@ -675,7 +675,7 @@
 									</div>
 								</div>
 								<div class="text-right m-t-md">
-									<button class="btn btn-default btn-basic" type="button">적용</button>
+									<button class="btn btn-success btn-basic" type="button">적용</button>
 								</div>
 							</div>
 							<!-- // 목록 -->
@@ -693,7 +693,7 @@
 		</div>
 
 		<!-- 팝업 -->
-		<div id="successModalAlert" class="modal modal-35" style="display: block;">
+		<div id="successModalAlert" class="modal modal-35" style="display: none;">
 			<div class="modal-dialog">
 				<div class="modal-content round-box">
 					<div class="modal-header bg-success">
@@ -705,7 +705,7 @@
 					</div>
 					<div class="modal-body">
 						<div class="form-group">
-							<h3>이 정책 아이템 활성화</h3>
+							<h3>정책 아이템 활성화</h3>
 							<label class="switch switch-success">
 								<input class="switch-input" type="checkbox" checked="checked">
 								<span class="switch-track"></span>
@@ -807,7 +807,7 @@
 						</div>
 
 						<div class="text-center">
-							<button class="btn btn-outline-success btn-basic" type="button">변경</button>
+							<button class="btn btn-outline-success btn-basic" type="button">확인</button>
 							<button class="btn btn-default btn-basic btn-cancel" type="button">취소</button>
 						</div>
 					</div>
@@ -826,7 +826,7 @@
 				$('#successModalAlert').fadeOut();
 			});
 
-			$('.card-action .icon-plus').on('click' , function(){
+			$('.btn-more').on('click' , function(){
 				$('#successModalAlert').fadeIn();
 			})
 

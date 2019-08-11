@@ -367,15 +367,10 @@
 										<option value="">도메인전체</option>
 									</select>
 									<input id="form-control" class="form-control d-ib" type="input" value="기본도메인">
-									<select name="" id="" class="form-control d-ib">
-										<option value="">전체</option>
-										<option value="">개인문서함</option>
-										<option value="">부서문서함</option>
-									</select>
 								</td>
 							</tr>
 							<tr>
-								<th>검색 조건</th>
+								<th>문서함</th>
 								<td>
 									<ul class="checkbox-list">
 										<li>
@@ -389,29 +384,31 @@
 											<label class="custom-control custom-control-success custom-checkbox">
 												<input class="custom-control-input" type="checkbox">
 												<span class="custom-control-indicator"></span>
-												<span class="custom-control-label">아이디</span>
+												<span class="custom-control-label">개인문서함</span>
 											</label>
 										</li>
 										<li>
 											<label class="custom-control custom-control-success custom-checkbox">
 												<input class="custom-control-input" type="checkbox">
 												<span class="custom-control-indicator"></span>
-												<span class="custom-control-label">이름</span>
-											</label>
-										</li>
-										<li>
-											<label class="custom-control custom-control-success custom-checkbox">
-												<input class="custom-control-input" type="checkbox">
-												<span class="custom-control-indicator"></span>
-												<span class="custom-control-label">소유자아이디</span>
+												<span class="custom-control-label">부서문서함</span>
 											</label>
 										</li>
 									</ul>
-									<div class="search-input">
-										<div class="input-with-icon d-ib media-middle">
-											<input class="form-control" type="text" placeholder="입력하세요">
-											<span class="icon icon-search input-icon"></span>
-										</div>
+								</td>
+							</tr>
+							<tr>
+								<th>검색 조건</th>
+								<td>
+									<select name="" id="" class="form-control d-ib size-a">
+										<option value="">전체</option>
+										<option value="">아이디</option>
+										<option value="">이름</option>
+										<option value="">소유자아이디</option>
+									</select>
+									<div class="input-with-icon d-ib media-middle">
+										<input class="form-control" type="text" placeholder="입력하세요">
+										<span class="icon icon-search input-icon"></span>
 									</div>
 								</td>
 							</tr>
