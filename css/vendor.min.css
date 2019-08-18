@@ -5195,10 +5195,10 @@ html[xmlns] .flexslider .slides {
   width: 36px;
 }
 .table.dataTable {
-  /* border-collapse: separate; */
+  border-collapse: collapse;
   clear: both;
-  /* margin-bottom: 5px; */
-  /* margin-top: 5px; */
+  margin-bottom: 5px;
+  margin-top: 5px;
   max-width: none;
 }
 .table.dataTable > thead > tr > th,
@@ -5230,7 +5230,7 @@ html[xmlns] .flexslider .slides {
   text-align: center;
   width: 20px;
 }
-/* .table.dataTable .sorting_asc,
+.table.dataTable .sorting_asc,
 .table.dataTable .sorting_desc {
   border-bottom-color: #13b6bc;
   color: #13b6bc;
@@ -5238,15 +5238,15 @@ html[xmlns] .flexslider .slides {
 .table.dataTable .sorting:after {
   color: #cbcbd2;
   content: "\f0dc";
-} */
-/* .table.dataTable .sorting_asc:after {
+}
+.table.dataTable .sorting_asc:after {
   color: #13b6bc;
   content: "\f0de";
-} */
-/* .table.dataTable .sorting_desc:after {
+}
+.table.dataTable .sorting_desc:after {
   color: #13b6bc;
   content: "\f0dd";
-} */
+}
 .dataTables_length {
   margin-bottom: 5px;
   margin-top: 5px;
@@ -5634,7 +5634,7 @@ html[xmlns] .flexslider .slides {
 .dataTable.dt-rowReorder > tbody > tr > th:first-child {
   white-space: nowrap;
 }
-/* .dataTable.dt-rowReorder > tbody > tr > td:first-child:before,
+.dataTable.dt-rowReorder > tbody > tr > td:first-child:before,
 .dataTable.dt-rowReorder > tbody > tr > th:first-child:before {
   color: #cbcbd2;
   content: "\f0c9";
@@ -5647,7 +5647,7 @@ html[xmlns] .flexslider .slides {
   margin-right: 5px;
   text-align: center;
   width: 20px;
-} */
+}
 .dataTable.dt-rowReorder-float {
   opacity: 0.8;
   outline: 2px solid #13b6bc;

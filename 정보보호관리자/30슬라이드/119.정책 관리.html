@@ -557,11 +557,11 @@
 										<button type="button" class="card-action card-reload" title="Reload"></button>
 									</div>
 								</div>
-								<div class="card-body max-height-sn" data-toggle="match-height">
+								<div class="card-body" data-toggle="match-height">
 									<ul class="list-group list-group-divided">
 										<li class="list-group-item">메뉴
 											<button type="button"
-												class="icon icon-ellipsis-v card-action m-r-md"></button>
+												class="icon icon-ellipsis-v card-action"></button>
 											<div class="layer-pop arrow-up arrow-outline-success border">
 												<ul>
 													<li>레이어팝업 메뉴1</li>
@@ -572,7 +572,7 @@
 										</li>
 										<li class="list-group-item">메뉴
 											<button type="button"
-												class="icon icon-ellipsis-v card-action m-r-md"></button>
+												class="icon icon-ellipsis-v card-action"></button>
 											<div class="layer-pop arrow-up arrow-outline-success border">
 												<ul>
 													<li>레이어팝업 메뉴1</li>
@@ -583,7 +583,7 @@
 										</li>
 										<li class="list-group-item">메뉴
 											<button type="button"
-												class="icon icon-ellipsis-v card-action m-r-md"></button>
+												class="icon icon-ellipsis-v card-action"></button>
 											<div class="layer-pop arrow-up arrow-outline-success border">
 												<ul>
 													<li>레이어팝업 메뉴1</li>
@@ -594,7 +594,7 @@
 										</li>
 										<li class="list-group-item">메뉴
 											<button type="button"
-												class="icon icon-ellipsis-v card-action m-r-md"></button>
+												class="icon icon-ellipsis-v card-action"></button>
 											<div class="layer-pop arrow-up arrow-outline-success border">
 												<ul>
 													<li>레이어팝업 메뉴1</li>
@@ -912,20 +912,8 @@
 	<!-- <script src="../../js/demo.js"></script> -->
 	<script src="../../js/custom.js"></script>
 	<script>
-		$(document).ready(function () {
-			$('.list-group-item button').on('click', function (e) {
-				e.stopPropagation();
-				$(this).siblings('.layer-pop').fadeIn();
-			})
-
-			$('html,body').on('click', function (e) {
-				if (!$('.layer-pop').is(e.target) && $('.layer-pop').has(e.target).length === 0) {
-					$('.layer-pop').fadeOut();
-				}
-			});
-
-
-			slideFolder();
+		$(document).ready(function(){
+			type22();
 			$('.modal .close ').on('click' , function(e){
 				$(this).parents('#successModalAlert').fadeOut();
 			});
@@ -933,18 +921,19 @@
 			$('.right-position button').on('click' , function(){
 				$('#successModalAlert').fadeIn();
 			})
-
+	
 			$('.btn-next').on('click' ,function(){
 				$(this).parents('#successModalAlert').fadeOut();
 				$(this).parents('#successModalAlert').next().fadeIn();
 			})
-
+	
 			$('.btn-prev').on('click' ,function(){
 				$(this).parents('#successModalAlert').fadeOut();
 				$(this).parents('#successModalAlert').prev().fadeIn();
 			})
 		})
 	</script>
+
 </body>
 
 </html>

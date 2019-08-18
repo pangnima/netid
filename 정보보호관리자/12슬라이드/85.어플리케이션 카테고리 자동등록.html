@@ -356,181 +356,183 @@
 
 				<div class="row gutter m-b-md">
 					<div class="col-xs-12">
-						<table class="table type-1">
-							<colgroup>
-								<col style="width:90px">
-								<col>
-								<col>
-							</colgroup>
-							<tr>
-								<td class="text-center"></td>
-								<th>자동등록</th>
-								<td>
-									<ul class="checkbox-list">
-										<li>
-											<label class="custom-control custom-control-success custom-radio">
-												<input class="custom-control-input" name="success" type="radio" value="none">
-												<span class="custom-control-indicator"></span>
-												<span class="custom-control-label">YES 신규 등록 어플리케이션을 자동분류</span>
-											</label>
-										</li>
-										<li>
-											<label class="custom-control custom-control-success custom-radio">
-												<input class="custom-control-input" name="success" type="radio" value="none">
-												<span class="custom-control-indicator"></span>
-												<span class="custom-control-label">No 신규 등록 어플리케이션의 자동분류 없음 </span>
-											</label>
-										</li>
-									</ul>
-								</td>
-							</tr>
-							<tr>
-								<td class="text-center"></td>
-								<th><em>*</em> 윈도우프로세스</th>
-								<td>
-									<p>* MS윈도우 운영체제에서 제공하는 프로세스 여부</p>
-									<ul class="checkbox-list">
-										<li>
-											<label class="custom-control custom-control-success custom-radio">
-												<input class="custom-control-input" name="success" type="radio" value="none">
-												<span class="custom-control-indicator"></span>
-												<span class="custom-control-label">YES 신규 등록 어플리케이션을 자동분류</span>
-											</label>
-										</li>
-										<li>
-											<label class="custom-control custom-control-success custom-radio">
-												<input class="custom-control-input" name="success" type="radio" value="none">
-												<span class="custom-control-indicator"></span>
-												<span class="custom-control-label">No 신규 등록 어플리케이션의 자동분류 없음 </span>
-											</label>
-										</li>
-									</ul>
-								</td>
-							</tr>
-							<tr>
-								<td class="text-center"></td>
-								<th><em>*</em> 등록주체</th>
-								<td>
-									<p> * 현재 서버만 지원중</p>
-									<ul class="checkbox-list">
-										<li>
-											<label class="custom-control custom-control-success custom-radio">
-												<input class="custom-control-input" name="success" type="radio" value="none">
-												<span class="custom-control-indicator"></span>
-												<span class="custom-control-label">서버</span>
-											</label>
-										</li>
-										<li>
-											<label class="custom-control custom-control-success custom-radio">
-												<input class="custom-control-input" name="success" type="radio" value="none">
-												<span class="custom-control-indicator"></span>
-												<span class="custom-control-label">클라이언트</span>
-											</label>
-										</li>
-									</ul>
-								</td>
-							</tr>
-							<tr>
-								<td class="text-center"></td>
-								<th><em>*</em> 등록명</th>
-								<td>
-									<input class="form-control d-ib" type="text">
-								</td>
-							</tr>
-							<tr>
-								<td class="text-center">
-									<label class="switch switch-success">
-										<input class="switch-input" type="checkbox" checked="checked">
-										<span class="switch-track"></span>
-										<span class="switch-thumb"></span>
-									</label>
-								</td>
-								<th>어플리케이션 파일명</th>
-								<td>
-									<input class="form-control d-ib" type="text" readonly>
-									<p>예) winword.exe, excel.exe</p>
-								</td>
-							</tr>
-							<tr>
-								<td class="text-center"></td>
-								<th><em>*</em> 카테고리</th>
-								<td>
-									<input class="form-control d-ib" type="text" placeholder="입력하세요">
-									<button class="btn btn-default" type="button">선택</button>
-								</td>
-							</tr>
-							<tr>
-								<td class="text-center">
-									<label class="switch switch-success">
-										<input class="switch-input" type="checkbox" checked="checked">
-										<span class="switch-track"></span>
-										<span class="switch-thumb"></span>
-									</label>
-								</td>
-								<th>제품명</th>
-								<td>
-									<input class="form-control d-ib" type="text" readonly>
-									<p>* 반드시 DiskLock 콘솔에 표시된 이름을 사용하세요!</p>
-								</td>
-							</tr>
-							<tr>
-								<td class="text-center">
-									<label class="switch switch-success">
-										<input class="switch-input" type="checkbox" checked="checked">
-										<span class="switch-track"></span>
-										<span class="switch-thumb"></span>
-									</label>
-								</td>
-								<th>회사명</th>
-								<td>
-									<input class="form-control d-ib" type="text" readonly>
-									<p>* 반드시 DiskLock 콘솔에 표시된 이름을 사용하세요!</p>
-								</td>
-							</tr>
-							<tr>
-								<td class="text-center">
-									<label class="switch switch-success">
-										<input class="switch-input" type="checkbox" checked="checked">
-										<span class="switch-track"></span>
-										<span class="switch-thumb"></span>
-									</label>
-								</td>
-								<th>어플리케이션 경로</th>
-								<td>
-									<input class="form-control d-ib" type="text" readonly>
-									<select name="" id="" class="form-control d-ib">
-										<option value="">직접입력</option>
-										<option value="">윈도우즈폴더</option>
-										<option value="">시스템폴더</option>
-									</select>
-									<p>* 예약폴더가 아니면 경로를 직접 넣어주세요</p>
-									<ol class="m-t">
-										<li>직접입력시<br>예)C:\ProgramFiles\MicrosoftOffice</li>
-										<li>윈도우즈폴더: C:\Windows, C:\WinNT<br>예) C:\Windows\Microsoft -> &lt;WINDOWS&gt;\Microsoft</li>
-										<li>시스템폴더: C:\Windows\System32, C:\Windows\SysWow64<br>  예) C:\Windows\System32\Microsoft -> &lt;SYSTEM&gt;\Microsoft</li>
-									</ol>
-								</td>
-							</tr>
-							<tr>
-								<td class="text-center">
-									<label class="switch switch-success">
-										<input class="switch-input" type="checkbox" checked="checked">
-										<span class="switch-track"></span>
-										<span class="switch-thumb"></span>
-									</label>
-								</td>
-								<th>버젼</th>
-								<td>
-									<input class="form-control d-ib" type="text" readonly>
-									<select name="" id="" class="form-control d-ib">
-										<option value="">직접입력</option>
-										<option value="">윈도우즈폴더</option>
-										<option value="">시스템폴더</option>
-									</select>
-									<p>예) 1,2,3,4 또는 1,2</p>
-								</td>
-							</tr>
-						</table>
+						<div class="table-responsive">
+							<table class="table type-1">
+								<colgroup>
+									<col style="width:90px">
+									<col>
+									<col>
+								</colgroup>
+								<tr>
+									<td class="text-center"></td>
+									<th>자동등록</th>
+									<td>
+										<ul class="checkbox-list">
+											<li>
+												<label class="custom-control custom-control-success custom-radio">
+													<input class="custom-control-input" name="success" type="radio" value="none">
+													<span class="custom-control-indicator"></span>
+													<span class="custom-control-label">YES 신규 등록 어플리케이션을 자동분류</span>
+												</label>
+											</li>
+											<li>
+												<label class="custom-control custom-control-success custom-radio">
+													<input class="custom-control-input" name="success" type="radio" value="none">
+													<span class="custom-control-indicator"></span>
+													<span class="custom-control-label">No 신규 등록 어플리케이션의 자동분류 없음 </span>
+												</label>
+											</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-center"></td>
+									<th><em>*</em> 윈도우프로세스</th>
+									<td>
+										<p>* MS윈도우 운영체제에서 제공하는 프로세스 여부</p>
+										<ul class="checkbox-list">
+											<li>
+												<label class="custom-control custom-control-success custom-radio">
+													<input class="custom-control-input" name="success" type="radio" value="none">
+													<span class="custom-control-indicator"></span>
+													<span class="custom-control-label">YES 신규 등록 어플리케이션을 자동분류</span>
+												</label>
+											</li>
+											<li>
+												<label class="custom-control custom-control-success custom-radio">
+													<input class="custom-control-input" name="success" type="radio" value="none">
+													<span class="custom-control-indicator"></span>
+													<span class="custom-control-label">No 신규 등록 어플리케이션의 자동분류 없음 </span>
+												</label>
+											</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-center"></td>
+									<th><em>*</em> 등록주체</th>
+									<td>
+										<p> * 현재 서버만 지원중</p>
+										<ul class="checkbox-list">
+											<li>
+												<label class="custom-control custom-control-success custom-radio">
+													<input class="custom-control-input" name="success" type="radio" value="none">
+													<span class="custom-control-indicator"></span>
+													<span class="custom-control-label">서버</span>
+												</label>
+											</li>
+											<li>
+												<label class="custom-control custom-control-success custom-radio">
+													<input class="custom-control-input" name="success" type="radio" value="none">
+													<span class="custom-control-indicator"></span>
+													<span class="custom-control-label">클라이언트</span>
+												</label>
+											</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-center"></td>
+									<th><em>*</em> 등록명</th>
+									<td>
+										<input class="form-control d-ib" type="text">
+									</td>
+								</tr>
+								<tr>
+									<td class="text-center">
+										<label class="switch switch-success">
+											<input class="switch-input" type="checkbox" checked="checked">
+											<span class="switch-track"></span>
+											<span class="switch-thumb"></span>
+										</label>
+									</td>
+									<th>어플리케이션 파일명</th>
+									<td>
+										<input class="form-control d-ib" type="text" readonly>
+										<p>예) winword.exe, excel.exe</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-center"></td>
+									<th><em>*</em> 카테고리</th>
+									<td>
+										<input class="form-control d-ib" type="text" placeholder="입력하세요">
+										<button class="btn btn-default" type="button">선택</button>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-center">
+										<label class="switch switch-success">
+											<input class="switch-input" type="checkbox" checked="checked">
+											<span class="switch-track"></span>
+											<span class="switch-thumb"></span>
+										</label>
+									</td>
+									<th>제품명</th>
+									<td>
+										<input class="form-control d-ib" type="text" readonly>
+										<p>* 반드시 DiskLock 콘솔에 표시된 이름을 사용하세요!</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-center">
+										<label class="switch switch-success">
+											<input class="switch-input" type="checkbox" checked="checked">
+											<span class="switch-track"></span>
+											<span class="switch-thumb"></span>
+										</label>
+									</td>
+									<th>회사명</th>
+									<td>
+										<input class="form-control d-ib" type="text" readonly>
+										<p>* 반드시 DiskLock 콘솔에 표시된 이름을 사용하세요!</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-center">
+										<label class="switch switch-success">
+											<input class="switch-input" type="checkbox" checked="checked">
+											<span class="switch-track"></span>
+											<span class="switch-thumb"></span>
+										</label>
+									</td>
+									<th>어플리케이션 경로</th>
+									<td>
+										<input class="form-control d-ib" type="text" readonly>
+										<select name="" id="" class="form-control d-ib">
+											<option value="">직접입력</option>
+											<option value="">윈도우즈폴더</option>
+											<option value="">시스템폴더</option>
+										</select>
+										<p>* 예약폴더가 아니면 경로를 직접 넣어주세요</p>
+										<ol class="m-t">
+											<li>직접입력시<br>예)C:\ProgramFiles\MicrosoftOffice</li>
+											<li>윈도우즈폴더: C:\Windows, C:\WinNT<br>예) C:\Windows\Microsoft -> &lt;WINDOWS&gt;\Microsoft</li>
+											<li>시스템폴더: C:\Windows\System32, C:\Windows\SysWow64<br>  예) C:\Windows\System32\Microsoft -> &lt;SYSTEM&gt;\Microsoft</li>
+										</ol>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-center">
+										<label class="switch switch-success">
+											<input class="switch-input" type="checkbox" checked="checked">
+											<span class="switch-track"></span>
+											<span class="switch-thumb"></span>
+										</label>
+									</td>
+									<th>버젼</th>
+									<td>
+										<input class="form-control d-ib" type="text" readonly>
+										<select name="" id="" class="form-control d-ib">
+											<option value="">직접입력</option>
+											<option value="">윈도우즈폴더</option>
+											<option value="">시스템폴더</option>
+										</select>
+										<p>예) 1,2,3,4 또는 1,2</p>
+									</td>
+								</tr>
+							</table>
+						</div>
 						<div class="text-center">
 							<button class="btn btn-success btn-basic" type="button">확인</button>
 							<button class="btn btn-default btn-basic" type="button">취소</button>

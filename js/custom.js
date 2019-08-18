@@ -1,5 +1,13 @@
 function tableResize(){
-	$(".type-33").colResizable({
+	// $(".type-33").colResizable({
+	// 	liveDrag:true, 
+	// 	resizeMode:'fit', 
+	// 	minWidth:100,
+	// 	postbackSafe:true,
+	// 	partialRefresh:true
+	// });
+
+	$(".drag-table-box").colResizable({
 		liveDrag:true, 
 		resizeMode:'fit', 
 		minWidth:100,
@@ -7,6 +15,70 @@ function tableResize(){
 		partialRefresh:true
 	});
 }
+
+function type22(){
+	$('.list-group-item button').on('click' , function(e){
+		e.stopPropagation();
+		$('.layer-pop').stop().fadeOut();
+		$(this).siblings('.layer-pop').stop().fadeIn();
+	})
+	
+	$('html,body').on('click' , function(e){
+		if (!$('.layer-pop').is(e.target) && $('.layer-pop').has(e.target).length === 0){
+			$('.layer-pop').stop().fadeOut();
+		}	
+	})
+	$('.layer-pop').on('click' , function(){
+		$(this).stop().fadeOut();
+	})
+}
+
+function type23(){
+	type22();
+	var idx = true
+	$('.type-23 tr td:first-child').on('click' , function(e){
+		if( idx ) {
+			$(this).parents('tr').next('.toggle').show();
+			$(this).parents('tr').next('.toggle').find('.toggle-box').stop().slideDown();
+			$(this).children('span').removeClass('icon-arrow-circle-down').addClass('icon-arrow-circle-up')
+			idx = false;
+		} else {
+			$(this).parents('tr').next('.toggle').find('.toggle-box').stop().slideUp();
+			$(this).children('span').removeClass('icon-arrow-circle-up').addClass('icon-arrow-circle-down')
+			idx = true;
+		}
+	});
+}
+
+function tableResize2(){
+	$( ".drag-table-box .left-box" ).resizable({
+		minWidth: 100,    //최소 100px 까지 축소.
+		maxWidth: "100%",   //최대 600px 까지 확장.
+		handles: "e",    //리사이즈 되는 모서리는 오른쪽(east)으로 고정시켰다.
+	});
+}
+function treeTable2() {
+	tableResize2()
+	$('.drag-table-box .toggle-depth li').on('click' , function(e){
+		e.stopPropagation();
+		var depth = $(this).parents("ul").attr('depth');
+
+		var depthData = $(this).children("ul").data('dep');
+		$('.toggle-depth [data-dep="'+depthData+'"]').stop().slideToggle('fast');
+
+		if(  $(this).children('div').children('span').is('.icon-plus-square-o') == true ){
+			$(this).children('div').children('span').removeClass('icon-plus-square-o').addClass('icon-minus-square-o')
+		} else {
+			$(this).children('div').children('span').removeClass('icon-minus-square-o').addClass('icon-plus-square-o')
+		}
+		if( $(this).children('.top').children('span').is('.icon-plus-square') == true ){
+			$(this).children('.top').children('span').removeClass('icon-plus-square').addClass('icon-minus-square')
+		} else {
+			$(this).children('.top').children('span').removeClass('icon-minus-square').addClass('icon-plus-square')
+		}
+	});
+}
+
 function treeTable() {
 		var depth = true;
 	$('.depth').on('click' , function(){
@@ -100,41 +172,16 @@ function treeTable() {
 		
 		$('.depth li').on('click' ,function(e){
 			e.stopPropagation();
-			if( $(this).children('span').is('.icon-plus-square') == true ){
+			var depth = $(this).parents("ul").attr('depth')
+
+			$(this).children('ul').attr('depth' , Number(depth)+1 ).slideToggle('fast')
+
+			if( $(this).children('span').is('.icon-plus-square') == true ||  $(this).children('span').is('.icon-plus-square-o') == true ){
 				$(this).children('span').removeClass('icon-plus-square').addClass('icon-minus-square')
+				$(this).children('span').removeClass('icon-plus-square-o').addClass('icon-minus-square-o')
 			} else {
 				$(this).children('span').removeClass('icon-minus-square').addClass('icon-plus-square')
-			}
-			$(this).find('.depth-1').stop().slideToggle('fast');
-		})
-		$('.depth-1 li label').on('click' , function(e){
-			e.stopPropagation();
-			if( $(this).children('input').is(":checked") == true) {
-				$(this).siblings('.depth-2').stop().slideDown();
-				$(this).siblings('span').removeClass('icon-plus-square-o').addClass('icon-minus-square-o')
-			} else {
-				$(this).siblings('.depth-2').stop().slideUp();
-				$(this).siblings('span').removeClass('icon-minus-square-o').addClass('icon-plus-square-o')
-			}
-		})
-		$('.depth-2 li label').on('click' , function(e){
-			e.stopPropagation();
-			if( $(this).children('input').is(":checked") == true) {
-				$(this).siblings('.depth-3').stop().slideDown();
-				$(this).siblings('span').removeClass('icon-plus-square-o').addClass('icon-minus-square-o')
-			} else {
-				$(this).siblings('.depth-3').stop().slideUp();
-				$(this).siblings('span').removeClass('icon-minus-square-o').addClass('icon-plus-square-o')
-			}
-		})
-		$('.depth-3 li label').on('click' , function(e){
-			e.stopPropagation();
-			if( $(this).children('input').is(":checked") == true) {
-				$(this).siblings('.depth-4').stop().slideDown();
-				$(this).siblings('span').removeClass('icon-plus-square-o').addClass('icon-minus-square-o')
-			} else {
-				$(this).siblings('.depth-4').stop().slideUp();
-				$(this).siblings('span').removeClass('icon-minus-square-o').addClass('icon-plus-square-o')
+				$(this).children('span').removeClass('icon-minus-square-o').addClass('icon-plus-square-o')
 			}
 		})
 	}

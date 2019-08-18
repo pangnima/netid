@@ -355,83 +355,91 @@
 				</div>
 
 				<!-- 컨텐츠 시작 -->
-				<div class="row gutter m-b-md">
+				<div class="row gutter">
 					<div class="col-xs-12">
-						<table class="table type-1">
-							<tr>
-								<th>서버주소</th>
-								<td>
-									<input class="form-control d-ib" type="text">
-									<select name="" id="" class="form-control d-ib">
-										<option value="">1.212.69.220</option>
-										<option value="">직접입력</option>
-									</select>
-								</td>
-							</tr>
-							<tr>
-								<th>파티션</th>
-								<td>
-									<input class="form-control d-ib" type="text">
-									<p class="m-t-sm">관리자 클라이언트 실행시 홈폴더 드라이브명입니다.</p>
-									<p class="p-l">예) '사이트명_홈폴더 (G:)'로 생성됨</p>
-								</td>
-							</tr>
-							<tr>
-								<th>전체용량</th>
-								<td>
-									<div>
+						<div class="card">
+							<table class="table type-1 table-left-td">
+								<tr>
+									<th>서버주소</th>
+									<td>
 										<input class="form-control d-ib" type="text">
-										<span class="m-r">GB</span>
+										<select name="" id="" class="form-control d-ib">
+											<option value="">1.212.69.220</option>
+											<option value="">직접입력</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th>파티션</th>
+									<td>
 										<input class="form-control d-ib" type="text">
-										<span>MB</span>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<th>수용여부</th>
-								<td>
-									<select name="" id="" class="form-control d-ib">
-										<option value="">수용함</option>
-										<option value="">수용안함</option>
-									</select>
-								</td>
-							</tr>
-							<tr>
-								<th>용도</th>
-								<td>
-									<select name="" id="" class="form-control d-ib">
-										<option value="">개인</option>
-									</select>
-								</td>
-							</tr>
-							<!-- <tr>
-								<th>이름</th>
-								<td>
-									<input class="form-control d-ib" type="text">
-									<p class="m-t-sm">관리자 클라이언트 실행시 홈폴더 드라이브명입니다.</p>
-									<p class="p-l">예) '사이트명_홈폴더 (G:)'로 생성됨</p>
-								</td>
-							</tr> -->
-							<tr>
-								<th>중요도</th>
-								<td>
-									<select name="" id="" class="form-control d-ib">
-										<option value="">일반</option>
-										<option value="">VIP</option>
-									</select>
-								</td>
-							</tr>
-							<tr>
-								<th>지역</th>
-								<td>
-									<input class="form-control d-ib" type="text" placeholder="local">
-								</td>
-							</tr>
-						</table>
+										<p class="m-t-sm">관리자 클라이언트 실행시 홈폴더 드라이브명입니다.</p>
+										<p class="p-l">예) '사이트명_홈폴더 (G:)'로 생성됨</p>
+									</td>
+								</tr>
+								<tr>
+									<th>전체용량</th>
+									<td>
+										<div>
+											<input class="form-control d-ib" type="text">
+											<span class="m-r">GB</span>
+											<input class="form-control d-ib" type="text">
+											<span>MB</span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>수용여부</th>
+									<td>
+										<select name="" id="" class="form-control d-ib">
+											<option value="">수용함</option>
+											<option value="">수용안함</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th>용도</th>
+									<td>
+										<select name="" id="" class="form-control d-ib">
+											<option value="">개인</option>
+										</select>
+									</td>
+								</tr>
+								<!-- <tr>
+									<th>이름</th>
+									<td>
+										<input class="form-control d-ib" type="text">
+										<p class="m-t-sm">관리자 클라이언트 실행시 홈폴더 드라이브명입니다.</p>
+										<p class="p-l">예) '사이트명_홈폴더 (G:)'로 생성됨</p>
+									</td>
+								</tr> -->
+								<tr>
+									<th>중요도</th>
+									<td>
+										<select name="" id="" class="form-control d-ib">
+											<option value="">일반</option>
+											<option value="">VIP</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th>지역</th>
+									<td>
+										<input class="form-control d-ib" type="text" placeholder="local">
+									</td>
+								</tr>
+							</table>
+						</div>
 
 						<div class="text-center">
 							<button class="btn btn-success btn-basic" type="button">확인</button>
 							<button class="btn btn-default btn-basic" type="button">취소</button>
+						</div>
+
+						<div class="m-t-lg">
+							<p class="dot color-blue">등록 후에 해당 서버에 디렉토리(폴더)를 생성해야 합니다.</p>
+							<p class="dot">서버OS가 리눅스일 경우 '/plusdrive/파티션명' 으로 디렉토리를 생성하세요.</p>
+							<p class="dot">서버OS가 윈도우일 경우 '드라이브명:\plusdrive\파티션명' 으로 디렉토리를 생성하세요.</p>
 						</div>
 					</div>
 				</div>

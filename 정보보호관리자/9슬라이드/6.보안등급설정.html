@@ -622,7 +622,12 @@
 										</thead>
 										<tbody>
 											<tr>
-												<td></td>
+												<td>
+													<label class="custom-control custom-control-danger custom-checkbox red">
+														<input class="custom-control-input" type="checkbox">
+														<span class="custom-control-indicator"></span>
+													</label>
+												</td>
 												<td><span>상</span></td>
 												<td><span class="text-danger">X</span></td>
 												<td><span class="text-danger">X</span></td>
@@ -638,7 +643,12 @@
 												</td>
 											</tr>
 											<tr>
-												<td></td>
+												<td>
+													<label class="custom-control custom-control-danger custom-checkbox red">
+														<input class="custom-control-input" type="checkbox">
+														<span class="custom-control-indicator"></span>
+													</label>
+												</td>
 												<td><span>중</span></td>
 												<td><span class="text-danger">X</span></td>
 												<td><span class="text-success">O</span></td>
@@ -654,7 +664,12 @@
 												</td>
 											</tr>
 											<tr>
-												<td></td>
+												<td>
+													<label class="custom-control custom-control-danger custom-checkbox red">
+														<input class="custom-control-input" type="checkbox">
+														<span class="custom-control-indicator"></span>
+													</label>
+												</td>
 												<td><span>하</span></td>
 												<td><span class="text-success">O</span></td>
 												<td><span class="text-success">O</span></td>
@@ -669,10 +684,10 @@
 													</div>
 												</td>
 											</tr>
-											<tr class="active">
+											<tr>
 												<td>
 													<label class="custom-control custom-control-danger custom-checkbox red">
-														<input class="custom-control-input" type="checkbox" checked>
+														<input class="custom-control-input" type="checkbox">
 														<span class="custom-control-indicator"></span>
 													</label>
 												</td>
@@ -755,6 +770,10 @@
 			} else {
 				$(this).parents("tr").removeClass('active')
 			}
+		})
+
+		$('.switch-table tr button').on('click' , function(){
+			$(this).parents("tr").find('.custom-checkbox').addClass('on')
 		})
 	</script>
 </body>

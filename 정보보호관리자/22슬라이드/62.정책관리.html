@@ -545,7 +545,7 @@
 					<div class="col-xs-12 col-xs-table">
 						<!-- 메뉴 -->
 						<div class="col-xs-3">
-							<div class="card p-a-0 hv100">
+							<div class="card">
 								<div class="card-header green">
 									<h3>정책 목록 <i class="fas fa-plus"></i></h3>
 									<div class="card-actions">
@@ -558,7 +558,7 @@
 								<div class="card-body p-a-0" data-toggle="match-height">
 									<ul class="list-group list-group-divided">
 										<li class="list-group-item">메뉴 
-											<button type="button" class="icon icon-ellipsis-v card-action m-r-md"></button>
+											<button type="button" class="icon icon-ellipsis-v card-action"></button>
 											<div class="layer-pop arrow-up arrow-outline-success border">
 												<ul>
 													<li>레이어팝업 메뉴1</li>
@@ -568,7 +568,7 @@
 											</div>
 										</li>
 										<li class="list-group-item">메뉴 
-											<button type="button" class="icon icon-ellipsis-v card-action m-r-md"></button>
+											<button type="button" class="icon icon-ellipsis-v card-action"></button>
 											<div class="layer-pop arrow-up arrow-outline-success border">
 												<ul>
 													<li>레이어팝업 메뉴1</li>
@@ -578,7 +578,7 @@
 											</div>
 										</li>
 										<li class="list-group-item">메뉴 
-											<button type="button" class="icon icon-ellipsis-v card-action m-r-md"></button>
+											<button type="button" class="icon icon-ellipsis-v card-action"></button>
 											<div class="layer-pop arrow-up arrow-outline-success border">
 												<ul>
 													<li>레이어팝업 메뉴1</li>
@@ -588,7 +588,7 @@
 											</div>
 										</li>
 										<li class="list-group-item">메뉴 
-											<button type="button" class="icon icon-ellipsis-v card-action m-r-md"></button>
+											<button type="button" class="icon icon-ellipsis-v card-action"></button>
 											<div class="layer-pop arrow-up arrow-outline-success border">
 												<ul>
 													<li>레이어팝업 메뉴1</li>
@@ -613,7 +613,7 @@
 									</div>
 									<div class="card-body">
 										<div class="table-responsive">
-											<table class="table type-1 big">
+											<table class="table type-1 table-left-td">
 												<tr>
 													<th>확장자 제한 <em class="icon icon-info-circle"></em></th>
 													<td>
@@ -774,25 +774,12 @@
 	<script src="../../js/vendor.js"></script>
 	<script src="../../js/elephant.js"></script>
 	<script src="../../js/application.js"></script>
-	<!-- <script src="../../js/demo.js"></script> -->
+	<script src="../../js/custom.js"></script>
 	<script>
-			$(document).ready(function(){
-				$('.list-group-item button').on('click' , function(e){
-					e.stopPropagation();
-					$(this).siblings('.layer-pop').fadeIn();
-				})
-				
-				$('html,body').on('click' , function(e){
-					if (!$('.layer-pop').is(e.target) && $('.layer-pop').has(e.target).length === 0){
-						$('.layer-pop').fadeOut();
-					}	
-				})
-
-				$('.layer-pop').on('click' , function(){
-					$(this).fadeOut();
-				})
-			})
-		</script>
+		$(document).ready(function(){
+			type22();
+		})
+	</script>
 </body>
 
 </html>

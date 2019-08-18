@@ -554,10 +554,10 @@
 										<button type="button" class="card-action card-reload" title="Reload"></button>
 									</div>
 								</div>
-								<div class="card-body max-height-sn" data-toggle="match-height">
+								<div class="card-body" data-toggle="match-height">
 									<ul class="list-group list-group-divided">
 										<li class="list-group-item">메뉴 
-											<button type="button" class="icon icon-ellipsis-v card-action m-r-md"></button>
+											<button type="button" class="icon icon-ellipsis-v card-action"></button>
 											<div class="layer-pop arrow-up arrow-outline-success border">
 												<ul>
 													<li>레이어팝업 메뉴1</li>
@@ -567,7 +567,7 @@
 											</div>
 										</li>
 										<li class="list-group-item">메뉴 
-											<button type="button" class="icon icon-ellipsis-v card-action m-r-md"></button>
+											<button type="button" class="icon icon-ellipsis-v card-action"></button>
 											<div class="layer-pop arrow-up arrow-outline-success border">
 												<ul>
 													<li>레이어팝업 메뉴1</li>
@@ -577,7 +577,7 @@
 											</div>
 										</li>
 										<li class="list-group-item">메뉴 
-											<button type="button" class="icon icon-ellipsis-v card-action m-r-md"></button>
+											<button type="button" class="icon icon-ellipsis-v card-action"></button>
 											<div class="layer-pop arrow-up arrow-outline-success border">
 												<ul>
 													<li>레이어팝업 메뉴1</li>
@@ -587,7 +587,7 @@
 											</div>
 										</li>
 										<li class="list-group-item">메뉴 
-											<button type="button" class="icon icon-ellipsis-v card-action m-r-md"></button>
+											<button type="button" class="icon icon-ellipsis-v card-action"></button>
 											<div class="layer-pop arrow-up arrow-outline-success border">
 												<ul>
 													<li>레이어팝업 메뉴1</li>
@@ -616,8 +616,9 @@
 									</div>
 									<div class="card-body">
 										<div class="table-responsive">
-											<table class="table table-striped checkbox-board">
+											<table id="demo-datatables-rowreorder-1" class="table table-striped checkbox-board dt-rowReorder">
 												<colgroup>
+													<col>
 													<col>
 													<col>
 													<col>
@@ -630,6 +631,7 @@
 												</colgroup>
 												<thead>
 													<tr>
+														<th>Seq.</th>
 														<th>상태</th>
 														<th>이름</th>
 														<th>로그기록</th>
@@ -642,6 +644,7 @@
 													</tr>
 												</thead>
 												<tr>
+													<td>1</td>
 													<td>-</td>
 													<td>-</td>
 													<td>-</td>
@@ -658,6 +661,7 @@
 													</td>
 												</tr>
 												<tr>
+													<td>2</td>
 													<td>-</td>
 													<td>-</td>
 													<td>-</td>
@@ -698,7 +702,7 @@
 		</div>
 
 		<!-- 팝업 -->
-		<div id="successModalAlert" class="modal modal-35" style="display: block;">
+		<div id="successModalAlert" class="modal modal-35" style="display: none;">
 			<div class="modal-dialog">
 				<div class="modal-content round-box">
 					<div class="modal-header bg-success">
@@ -929,28 +933,20 @@
 	<script src="../../js/vendor.js"></script>
 	<script src="../../js/elephant.js"></script>
 	<script src="../../js/application.js"></script>
-	<!-- <script src="../../js/demo.js"></script> -->
+	<script src="../../js/demo.js"></script>
+	<script src="../../js/custom.js"></script>
+	
 	<script>
 		$(document).ready(function(){
+			type22();
 			$('.modal .close , .modal .btn-cancel ').on('click' , function(e){
 				$('#successModalAlert').fadeOut();
 			});
 
-			$('.card-action .icon-plus').on('click' , function(){
+			$('.card-action .icon-plus , .right-position button').on('click' , function(){
 				$('#successModalAlert').fadeIn();
 			})
 
-
-			$('.list-group-item button').on('click' , function(e){
-				e.stopPropagation();
-				$(this).siblings('.layer-pop').fadeIn();
-			})
-			
-			$('html,body').on('click' , function(e){
-				if (!$('.layer-pop').is(e.target) && $('.layer-pop').has(e.target).length === 0){
-					$('.layer-pop').fadeOut();
-				}	
-			})
 		})
 	</script>
 </body>

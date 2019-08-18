@@ -42065,12 +42065,12 @@ module.exports = function(Chart) {
 			}
 	
 			// Add new column sorting
-			// for ( i=0, ien=sort.length ; i<ien ; i++ ) {
-			// 	colIdx = sort[i].src;
+			for ( i=0, ien=sort.length ; i<ien ; i++ ) {
+				colIdx = sort[i].src;
 	
-			// 	$( _pluck( settings.aoData, 'anCells', colIdx ) )
-			// 		.addClass( sortClass + (i<2 ? i+1 : 3) );
-			// }
+				$( _pluck( settings.aoData, 'anCells', colIdx ) )
+					.addClass( sortClass + (i<2 ? i+1 : 3) );
+			}
 		}
 	
 		settings.aLastSort = sort;
@@ -51132,9 +51132,9 @@ var DataTable = $.fn.dataTable;
 /* Set the defaults for DataTables initialisation */
 $.extend( true, DataTable.defaults, {
 	dom:
-		"<'row'<'col-xs-6'l><'col-xs-6'f>>" +
-		"<'row'<'col-xs-12'tr>>" +
-		"<'row'<'col-xs-5'i><'col-xs-7'p>>",
+		"<'row'<'col-sm-6'l><'col-sm-6'f>>" +
+		"<'row'<'col-sm-12'tr>>" +
+		"<'row'<'col-sm-5'i><'col-sm-7'p>>",
 	renderer: 'bootstrap'
 } );
 
@@ -60283,7 +60283,7 @@ $.extend( RowReorder.prototype, {
 		this.dom.clone = null;
 
 		this.dom.target.removeClass( 'dt-rowReorder-moving' );
-		this.dom.target = null;
+		//this.dom.target = null;
 
 		$(document).off( '.rowReorder' );
 		$(document.body).removeClass( 'dt-rowReorder-noOverflow' );
@@ -60336,7 +60336,7 @@ $.extend( RowReorder.prototype, {
 		var update = function () {
 			if ( that.c.update ) {
 				for ( i=0, ien=fullDiff.length ; i<ien ; i++ ) {
-					var row = dt.row( fullDiff[i+1].node );
+					var row = dt.row( fullDiff[i].node );
 					var rowData = row.data();
 
 					setDataFn( rowData, fullDiff[i].newData );

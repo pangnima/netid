@@ -555,10 +555,10 @@
 										<button type="button" class="card-action card-reload" title="Reload"></button>
 									</div>
 								</div>
-								<div class="card-body max-height-sn" data-toggle="match-height">
+								<div class="card-body" data-toggle="match-height">
 									<ul class="list-group list-group-divided">
 										<li class="list-group-item">메뉴 
-											<button type="button" class="icon icon-ellipsis-v card-action m-r-md"></button>
+											<button type="button" class="icon icon-ellipsis-v card-action"></button>
 											<div class="layer-pop arrow-up arrow-outline-success border">
 												<ul>
 													<li>레이어팝업 메뉴1</li>
@@ -568,7 +568,7 @@
 											</div>
 										</li>
 										<li class="list-group-item">메뉴 
-											<button type="button" class="icon icon-ellipsis-v card-action m-r-md"></button>
+											<button type="button" class="icon icon-ellipsis-v card-action"></button>
 											<div class="layer-pop arrow-up arrow-outline-success border">
 												<ul>
 													<li>레이어팝업 메뉴1</li>
@@ -578,7 +578,7 @@
 											</div>
 										</li>
 										<li class="list-group-item">메뉴 
-											<button type="button" class="icon icon-ellipsis-v card-action m-r-md"></button>
+											<button type="button" class="icon icon-ellipsis-v card-action"></button>
 											<div class="layer-pop arrow-up arrow-outline-success border">
 												<ul>
 													<li>레이어팝업 메뉴1</li>
@@ -588,7 +588,7 @@
 											</div>
 										</li>
 										<li class="list-group-item">메뉴 
-											<button type="button" class="icon icon-ellipsis-v card-action m-r-md"></button>
+											<button type="button" class="icon icon-ellipsis-v card-action"></button>
 											<div class="layer-pop arrow-up arrow-outline-success border">
 												<ul>
 													<li>레이어팝업 메뉴1</li>
@@ -609,7 +609,7 @@
 								<div class="card">
 									<div class="card-header no-title">
 										<div class="left-position">
-											<h3>선택된 IE 반출 예외 정책</h3>
+											<h3 class="m-b-0">선택된 IE 반출 예외 정책</h3>
 										</div>
 										<div class="right-position">
 											<button class="btn btn-sm btn-default btn-more" type="button">추가</button>
@@ -617,8 +617,9 @@
 									</div>
 									<div class="card-body">
 										<div class="table-responsive">
-											<table class="table table-striped table-left-td">
+											<table id="demo-datatables-rowreorder-1" class="table table-striped  dt-rowReorder table-left-td">
 												<colgroup>
+													<col>
 													<col>
 													<col>
 													<col>
@@ -630,6 +631,7 @@
 												</colgroup>
 												<thead>
 													<tr>
+														<th>Seq</th>
 														<th>웹 경로</th>
 														<th>허용 권한</th>
 														<th>첨부허용 여부:파일종류</th>
@@ -641,6 +643,7 @@
 													</tr>
 												</thead>
 												<tr>
+													<td>1</td>
 													<td>mro.dreammooffice.com</td>
 													<td>첨부,ActiveX설치</td>
 													<td>허용:모든파일</td>
@@ -656,6 +659,7 @@
 													</td>
 												</tr>
 												<tr>
+													<td>2</td>
 													<td>mro.dreammooffice.com</td>
 													<td>첨부,ActiveX설치</td>
 													<td>허용:모든파일</td>
@@ -820,29 +824,20 @@
 	<script src="../../js/elephant.js"></script>
 	<script src="../../js/application.js"></script>
 	<script src="../../js/demo.js"></script>
+	<script src="../../js/custom.js"></script>
 	<script>
 		$(document).ready(function(){
+			type22();
 			$('.modal .close , .modal .btn-cancel ').on('click' , function(e){
 				$('#successModalAlert').fadeOut();
 			});
-
+	
 			$('.btn-more').on('click' , function(){
 				$('#successModalAlert').fadeIn();
 			})
-
-
-			$('.list-group-item button').on('click' , function(e){
-				e.stopPropagation();
-				$(this).siblings('.layer-pop').fadeIn();
-			})
-			
-			$('html,body').on('click' , function(e){
-				if (!$('.layer-pop').is(e.target) && $('.layer-pop').has(e.target).length === 0){
-					$('.layer-pop').fadeOut();
-				}	
-			})
 		})
 	</script>
+
 </body>
 
 </html>

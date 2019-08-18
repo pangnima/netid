@@ -5,12 +5,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>NETID</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="manifest.json">
-	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#f1595d">
-	<meta name="theme-color" content="#ffffff">
 	
 	<link rel="stylesheet" href="../../css/vendor.min.css">
 	<link rel="stylesheet" href="../../css/elephant.css">
@@ -123,11 +117,9 @@
 					<div class="title-bar">
 						<ul class="title-bar-title">
 							<li><span class="icon icon-home"></span>HOME</li>
-							<li>Basic</li>
-							<li>공유·협업</li>
-							<li>협업게시판</li>
-							<li>부서협업게시판</li>
-							<li><strong>개설요청처리</strong></li>
+							<li>공통 작업</li>
+							<li>IP 대역 정책 설정</li>
+							<li><strong>정책 적용</strong></li>
 						</ul>
 					</div>
 				</nav>
@@ -353,101 +345,331 @@
 				</div>
 			</div>
 		</div>
+		<!-- 컨텐츠영역 -->
 		<div class="layout-content">
 			<div class="layout-content-body">
+				<!-- 타이틀 -->
 				<div class="row gutter">
 					<div class="page-title">
-						<h2>개설요청처리</h2>
-						<p></p>
+						<h2>정책 적용</h2>
+						<p>IP 대역 정책을 부서 또는 사용자에게 지정할 수 있습니다.</p>
 					</div>
 				</div>
+				<!-- // 타이틀 -->
 
 				<div class="row gutter">
-					<div class="col-xs-12">
-						<div class="card">
-							<div class="card-header no-title">
-								<div class="left-position"></div>
-								<div class="right-position">
-									<button class="btn btn-success" type="button">승인</button>
-									<button class="btn btn-default" type="button">반려</button>
+					<div class="col-xs-12 col-xs-toggle">
+						<!-- 왼쪽 -->
+						<div class="col-xs-9">
+							<div class="card">
+								<div class="card-header green">
+									<h3>조직도</h3>
 								</div>
-							</div>
-							<div class="card-body">
-								<div class="table-responsive">
-									<table class="table table-striped checkbox-board">
-										<thead>
-											<tr>
-												<th>
-													<label class="custom-control custom-control-success custom-checkbox">
-														<input class="custom-control-input" type="checkbox">
-														<span class="custom-control-indicator"></span>
-													</label>
-												</th>
-												<th>협업게시판이름</th>
-												<th>카테고리 이름</th>
-												<th>요청자</th>
-												<th>요청일</th>
-												<th>개설사유</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>
-													<label class="custom-control custom-control-success custom-checkbox">
-														<input class="custom-control-input" type="checkbox">
-														<span class="custom-control-indicator"></span>
-													</label>
-												</td>
-												<td>data1</td>
-												<td>data2</td>
-												<td>data3</td>
-												<td>data</td>
-												<td>data</td>
-											</tr>
-											<tr>
-												<td>
-													<label class="custom-control custom-control-success custom-checkbox">
-														<input class="custom-control-input" type="checkbox">
-														<span class="custom-control-indicator"></span>
-													</label>
-												</td>
-												<td>data1</td>
-												<td>data2</td>
-												<td>data3</td>
-												<td>data</td>
-												<td>data</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-
-								
-
-								<div class="m-t">
-									<div class="view-list">Show 
-										<select name="" id="" class="form-control d-ib">
-											<option value="">10</option>
-											<option value="">15</option>
-											<option value="">20</option>
-										</select> entires</div>
-									<div class="text-center">
-										<ul class="pagination">
-											<li class="previous"><a href="#" class="icon icon-angle-left"></a></li>
-											<li class="active"><span>1</span></li>
-											<li><a href="">2</a></li>
-											<li><a href="">3</a></li>
-											<li><a href="">4</a></li>
-											<li><a href="">5</a></li>
-											<li class="next"><a href="#" class="icon icon-angle-right"></a></li>
-										</ul>
+								<div class="card-body green">
+									<div class="table-responsive">
+										<div class="drag-table-box">
+											<div class="left-box">
+												<h4>부서사용자</h4>
+												<ul class="left-depth toggle-depth" depth="1" data-dep="1">
+													<li>
+														<!-- 1 뎁스 -->
+														<div class="top">
+															<span class="icon icon-plus-square"></span>
+															<i class="depth-department"><img src="../../img/depth.jpg" alt=""></i>SERVER
+														</div>
+														<!-- 2 뎁스 -->
+														<ul depth="2" data-dep="2">
+															<li>
+																<div>
+																	<span class="icon icon-plus-square-o"></span>
+																	<i class="depth-group"><img src="../../img/group.jpg" alt=""></i>
+																	<strong>개발팀2</strong>
+																</div>
+																<ul depth="3" data-dep="2-1">
+																	<li>
+																		<div>
+																			<span class="icon icon-plus-square-o"></span>
+																			<i class="depth-group"><img src="../../img/group.jpg" alt=""></i>
+																			<strong>개발팀3</strong>
+																		</div>
+																		<ul depth="4" data-dep="2-2">
+																			<li>
+																				<div>
+																					<span class="icon icon-plus-square-o"></span>
+																					<i class="depth-group"><img src="../../img/group.jpg" alt=""></i>
+																					<strong>개발팀4</strong>
+																				</div>
+																				<ul depth="5" data-dep="2-3">
+																					<li>
+																						<div>
+																							<span class="icon icon-plus-square-o"></span>
+																							<i class="depth-group"><img src="../../img/group.jpg" alt=""></i>
+																							<strong>개발팀5</strong>
+																						</div>
+																					</li>
+																				</ul>
+																			</li>
+																		</ul>
+																	</li>
+																</ul>
+															</li>
+														</ul>
+														<!-- 2 뎁스 -->
+														<ul depth="2" data-dep="2">
+															<li>
+																<div>
+																	<span class="icon icon-plus-square-o"></span>
+																	<i class="depth-group"><img src="../../img/group.jpg" alt=""></i>
+																	<strong>개발팀</strong>
+																</div>
+																<ul depth="3" data-dep="2-4">
+																	<li>
+																		<div>
+																			<span class="icon icon-plus-square-o"></span>
+																			<i class="depth-group"><img src="../../img/group.jpg" alt=""></i>
+																			<strong>개발팀</strong>
+																		</div>
+																		<ul depth="4" data-dep="2-5">
+																			<li>
+																				<div>
+																					<span class="icon icon-plus-square-o"></span>
+																					<i class="depth-group"><img src="../../img/group.jpg" alt=""></i>
+																					<strong>개발팀</strong>
+																				</div>
+																				<ul depth="5" data-dep="2-6">
+																					<li>
+																						<div>
+																							<span class="icon icon-plus-square-o"></span>
+																							<i class="depth-group"><img src="../../img/group.jpg" alt=""></i>
+																							<strong>개발팀</strong>
+																						</div>
+																					</li>
+																				</ul>
+																			</li>
+																		</ul>
+																	</li>
+																</ul>
+															</li>
+														</ul>
+														<!-- 2 뎁스 -->
+														<ul depth="2" data-dep="2">
+															<li>
+																<div>
+																	<span class="icon icon-plus-square-o"></span>
+																	<i class="depth-group"><img src="../../img/group.jpg" alt=""></i>
+																	<strong>개발팀</strong>
+																</div>
+																<ul depth="3" data-dep="2-7">
+																	<li>
+																		<div>
+																			<span class="icon icon-plus-square-o"></span>
+																			<i class="depth-group"><img src="../../img/group.jpg" alt=""></i>
+																			<strong>개발팀</strong>
+																		</div>
+																		<ul depth="4" data-dep="2-8">
+																			<li>
+																				<div>
+																					<span class="icon icon-plus-square-o"></span>
+																					<i class="depth-group"><img src="../../img/group.jpg" alt=""></i>
+																					<strong>개발팀</strong>
+																				</div>
+																				<ul depth="5" data-dep="2-9">
+																					<li>
+																						<div>
+																							<span class="icon icon-plus-square-o"></span>
+																							<i class="depth-group"><img src="../../img/group.jpg" alt=""></i>
+																							<strong>IP 대역 정책을 부서 또는 사용자에게 지정할 수 있습니다.</strong>
+																						</div>
+																					</li>
+																				</ul>
+																			</li>
+																		</ul>
+																	</li>
+																</ul>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+											<div class="right-box">
+												<h4>설정된 정책</h4>
+												<ul class="right-depth toggle-depth" depth="1" data-dep="1">
+													<li>
+														<div class="top"></div>
+														<ul depth="2" data-dep="2">
+															<li>
+																<div>
+																	<strong>로그인</strong>
+																	<em class="label label-success">1</em>
+																	<em class="label label-success active">2</em>
+																	<em class="label label-success">3</em>
+																</div>
+																<ul depth="3" data-dep="2-1">
+																	<li>
+																		<div>
+																			<strong>로그인</strong>
+																			<em class="label label-success">1</em>
+																			<em class="label label-success active">2</em>
+																			<em class="label label-success">3</em>
+																		</div>
+	
+																		<ul depth="4" data-dep="2-2">
+																			<li>
+																				<div>
+																					<strong>로그인</strong>
+																					<em class="label label-success">1</em>
+																					<em class="label label-success active">2</em>
+																					<em class="label label-success">3</em>
+																				</div>
+																				<ul depth="5" data-dep="2-3">
+																					<li>
+																						<div>
+																							<strong>로그인</strong>
+																							<em class="label label-success">1</em>
+																							<em class="label label-success active">2</em>
+																							<em class="label label-success">3</em>
+																						</div>
+																					</li>
+																				</ul>
+																			</li>
+																		</ul>
+																	</li>
+																</ul>
+															</li>
+														</ul>
+														<!-- 2 뎁스 -->
+														<ul depth="2" data-dep="2">
+															<li>
+																<div>
+																	<strong>로그인</strong>
+																	<em class="label label-success">1</em>
+																	<em class="label label-success active">2</em>
+																	<em class="label label-success">3</em>
+																</div>
+																<ul depth="3" data-dep="2-4">
+																	<li>
+																		<div>
+																			<strong>로그인</strong>
+																			<em class="label label-success">1</em>
+																			<em class="label label-success active">2</em>
+																			<em class="label label-success">3</em>
+																		</div>
+																		<ul depth="4" data-dep="2-5">
+																			<li>
+																				<div>
+																					<strong>로그인</strong>
+																					<em class="label label-success">1</em>
+																					<em class="label label-success active">2</em>
+																					<em class="label label-success">3</em>
+																				</div>
+																				<ul depth="4" data-dep="2-6">
+																					<li>
+																						<div>
+																							<strong>로그인</strong>
+																							<em class="label label-success">1</em>
+																							<em class="label label-success active">2</em>
+																							<em class="label label-success">3</em>
+																						</div>
+																					</li>
+																				</ul>
+																			</li>
+																		</ul>
+																	</li>
+																</ul>
+															</li>
+														</ul>
+														<!-- 2 뎁스 -->
+														<ul depth="2" data-dep="2">
+															<li>
+																<div>
+																	<strong>로그인</strong>
+																	<em class="label label-success">1</em>
+																	<em class="label label-success active">2</em>
+																	<em class="label label-success">3</em>
+																</div>
+																<ul depth="3" data-dep="2-7">
+																	<li>
+																		<div>
+																			<strong>로그인</strong>
+																			<em class="label label-success">1</em>
+																			<em class="label label-success active">2</em>
+																			<em class="label label-success">3</em>
+																		</div>
+	
+																		<ul depth="4" data-dep="2-8">
+																			<li>
+																				<div>
+																					<strong>로그인</strong>
+																					<em class="label label-success">1</em>
+																					<em class="label label-success active">2</em>
+																					<em class="label label-success">3</em>
+																				</div>
+																				<ul depth="5" data-dep="2-9">
+																					<li>
+																						<div>
+																							<strong>로그인</strong>
+																							<em class="label label-success">1</em>
+																							<em class="label label-success active">2</em>
+																							<em class="label label-success">3</em>
+																						</div>
+																					</li>
+																				</ul>
+																			</li>
+																		</ul>
+																	</li>
+																</ul>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+						<!-- // 왼쪽 -->
+
+						<!-- 오른쪽 -->
+						<div class="col-xs-3">
+							<div class="card">
+								<div class="card-header">
+									<h3 class="big">정책목록</h3>
+								</div>
+								<div class="card-body">
+									<div class="type-33-setting">
+										<div>
+											<ul class="radio-list">
+												<li>
+													<label class="custom-control custom-control-success custom-radio d-b m-b">
+														<input class="custom-control-input" name="success" type="radio" value="none">
+														<span class="custom-control-indicator"></span>
+														<span class="custom-control-label">지정하지 않음(정책제거,상속)</span>
+													</label>
+												</li>
+												<li>
+													<label class="custom-control custom-control-success custom-radio d-b m-l-0">
+														<input class="custom-control-input" name="success" type="radio" value="none" checked>
+														<span class="custom-control-indicator"></span>
+														<span class="custom-control-label">政策测试</span>
+													</label>
+												</li>
+											</ul>
+
+											<div class="text-center m-t-md">
+												<button class="btn btn-outline-success btn-basic" type="button">적 용</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- // 오른쪽 -->
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- //컨텐츠영역 -->
 		<div class="layout-footer">
 			<div class="layout-footer-body">
 				<small class="version">Version 1.4.0</small>
@@ -460,6 +682,17 @@
 	<script src="../../js/application.js"></script>
 	<!-- <script src="../../js/demo.js"></script> -->
 
+	<!-- <script src="../../js/colResizable-1.6.min.js"></script> -->
+
+	<!-- <script src="http://code.jquery.com/jquery-1.10.2.js"></script> -->
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+	<script src="../../js/custom.js"></script>
+	<script>
+		window.onload = function(){
+			treeTable2()
+		}
+	</script>
 </body>
 
 </html>
