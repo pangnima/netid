@@ -354,7 +354,7 @@
 					</div>
 				</div>
 
-				<div class="row gutter m-b-md">
+				<div class="row gutter m-b-lg">
 					<div class="col-xs-12">
 						<table class="table type-1">
 							<tr>
@@ -395,6 +395,13 @@
 								<th>상태</th>
 								<td>
 									<ul class="checkbox-list">
+										<li>
+											<label class="custom-control custom-control-success custom-checkbox">
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-label">전체</span>
+											</label>
+										</li>
 										<li>
 											<label class="custom-control custom-control-success custom-checkbox">
 												<input class="custom-control-input" type="checkbox">
@@ -464,29 +471,12 @@
 							<tr>
 								<th>검색 조건</th>
 								<td>
-									<ul class="checkbox-list">
-										<li>
-											<label class="custom-control custom-control-success custom-checkbox">
-												<input class="custom-control-input" type="checkbox">
-												<span class="custom-control-indicator"></span>
-												<span class="custom-control-label">사용자 아이디</span>
-											</label>
-										</li>
-										<li>
-											<label class="custom-control custom-control-success custom-checkbox">
-												<input class="custom-control-input" type="checkbox">
-												<span class="custom-control-indicator"></span>
-												<span class="custom-control-label">사용자 이름</span>
-											</label>
-										</li>
-										<li>
-											<label class="custom-control custom-control-success custom-checkbox">
-												<input class="custom-control-input" type="checkbox">
-												<span class="custom-control-indicator"></span>
-												<span class="custom-control-label">작업한 사용자아이디</span>
-											</label>
-										</li>
-									</ul>
+									<select name="" id="" class="form-control d-ib size-a">
+										<option value="">전체</option>
+										<option value="">사용자 아이디</option>
+										<option value="">사용자 이름</option>
+										<option value="">작업한 사용자 아이디</option>
+									</select>
 									<div class="search-input">
 										<div class="input-with-icon d-ib media-middle">
 											<input class="form-control" type="text" placeholder="입력하세요">

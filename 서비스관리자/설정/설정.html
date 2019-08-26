@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>NETID</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-	
+
 	<link rel="stylesheet" href="../../css/vendor.min.css">
 	<link rel="stylesheet" href="../../css/elephant.css">
 	<link rel="stylesheet" href="../../css/application.css">
@@ -22,7 +23,8 @@
 				<a class="navbar-brand navbar-brand-center" href="index.html">
 					<img class="navbar-brand-logo" src="../../img/logo.png" alt="NETID">
 				</a>
-				<button class="navbar-toggler visible-xs-block collapsed" type="button" data-toggle="collapse" data-target="#sidenav">
+				<button class="navbar-toggler visible-xs-block collapsed" type="button" data-toggle="collapse"
+					data-target="#sidenav">
 					<span class="sr-only">토글 네비게이션</span>
 					<span class="bars">
 						<span class="bar-line bar-line-1 out"></span>
@@ -118,8 +120,8 @@
 						<ul class="title-bar-title">
 							<li><span class="icon icon-home"></span>HOME</li>
 							<li>DiskLock</li>
-							<li>보안디스크 백업</li>
-							<li><strong>정책 적용</strong></li>
+							<li>DLLLock</li>
+							<li><strong>DLL 자동등록</strong></li>
 						</ul>
 					</div>
 				</nav>
@@ -324,7 +326,8 @@
 										<a href="#behavior">폴더 관리</a>
 										<ul class="sidenav level-2 collapse">
 											<li class="sidenav-item"><a href="#none">폴더 용량 제한 현황</a></li>
-											<li class="sidenav-item"><a href="#none">폴더 권한 현황(부서 또는 사용자로 권한 조회 필요)</a></li>
+											<li class="sidenav-item"><a href="#none">폴더 권한 현황(부서 또는 사용자로 권한 조회 필요)</a>
+											</li>
 											<li class="sidenav-item"><a href="#none">폴더 파일 현황</a></li>
 											<li class="sidenav-item"><a href="#none">폴더 용량 추가 요청 처리</a></li>
 											<li class="sidenav-item"><a href="#none">폴더 관리자 신청 처리</a></li>
@@ -345,350 +348,143 @@
 				</div>
 			</div>
 		</div>
-		<!-- 컨텐츠영역 -->
 		<div class="layout-content">
 			<div class="layout-content-body">
-				<!-- 타이틀 -->
 				<div class="row gutter">
 					<div class="page-title">
-						<h2>정책 적용</h2>
-						<p>보안디스크 백업 정책을 부서, 사용자에게 지정할 수 있습니다.</p>
+						<h2>회원정보설정</h2>
+						<p></p>
 					</div>
 				</div>
-				<!-- // 타이틀 -->
 
-				<div class="row gutter">
-					<div class="col-xs-12 col-xs-toggle fixed">
-						<!-- 왼쪽 -->
-						<div class="col-xs-9">
-							<div class="card">
-								<div class="card-header green">
-									<h3>조직도</h3>
-								</div>
-								<div class="card-body green">
-										<div class="table-responsive">
-											<div class="drag-table-box">
-												<div class="left-box">
-													<h4>부서사용자</h4>
-													<ul class="left-depth toggle-depth" depth="1" data-dep="1">
-														<li>
-															<!-- 1 뎁스 -->
-															<div class="top">
-																<span class="icon icon-plus-square"></span>
-																<i class="depth-department"><img src="../../img/depth.jpg" alt=""></i>SERVER
-															</div>
-															<!-- 2 뎁스 -->
-															<ul depth="2" data-dep="2">
-																<li>
-																	<div>
-																		<span class="icon icon-plus-square-o"></span>
-																		<i class="depth-group"><img src="../../img/group.jpg" alt=""></i>
-																		<strong>개발팀2</strong>
-																	</div>
-																	<ul depth="3" data-dep="2-1">
-																		<li>
-																			<div>
-																				<span class="icon icon-plus-square-o"></span>
-																				<i class="depth-group"><img src="../../img/group.jpg" alt=""></i>
-																				<strong>개발팀3</strong>
-																			</div>
-																			<ul depth="4" data-dep="2-2">
-																				<li>
-																					<div>
-																						<span class="icon icon-plus-square-o"></span>
-																						<i class="depth-group"><img src="../../img/group.jpg" alt=""></i>
-																						<strong>개발팀4</strong>
-																					</div>
-																					<ul depth="5" data-dep="2-3">
-																						<li>
-																							<div>
-																								<span class="icon icon-plus-square-o"></span>
-																								<i class="depth-group"><img src="../../img/group.jpg" alt=""></i>
-																								<strong>개발팀5</strong>
-																							</div>
-																						</li>
-																					</ul>
-																				</li>
-																			</ul>
-																		</li>
-																	</ul>
-																</li>
-															</ul>
-															<!-- 2 뎁스 -->
-															<ul depth="2" data-dep="2">
-																<li>
-																	<div>
-																		<span class="icon icon-plus-square-o"></span>
-																		<i class="depth-group"><img src="../../img/group.jpg" alt=""></i>
-																		<strong>개발팀</strong>
-																	</div>
-																	<ul depth="3" data-dep="2-4">
-																		<li>
-																			<div>
-																				<span class="icon icon-plus-square-o"></span>
-																				<i class="depth-group"><img src="../../img/group.jpg" alt=""></i>
-																				<strong>개발팀</strong>
-																			</div>
-																			<ul depth="4" data-dep="2-5">
-																				<li>
-																					<div>
-																						<span class="icon icon-plus-square-o"></span>
-																						<i class="depth-group"><img src="../../img/group.jpg" alt=""></i>
-																						<strong>개발팀</strong>
-																					</div>
-																					<ul depth="5" data-dep="2-6">
-																						<li>
-																							<div>
-																								<span class="icon icon-plus-square-o"></span>
-																								<i class="depth-group"><img src="../../img/group.jpg" alt=""></i>
-																								<strong>개발팀</strong>
-																							</div>
-																						</li>
-																					</ul>
-																				</li>
-																			</ul>
-																		</li>
-																	</ul>
-																</li>
-															</ul>
-															<!-- 2 뎁스 -->
-															<ul depth="2" data-dep="2">
-																<li>
-																	<div>
-																		<span class="icon icon-plus-square-o"></span>
-																		<i class="depth-group"><img src="../../img/group.jpg" alt=""></i>
-																		<strong>개발팀</strong>
-																	</div>
-																	<ul depth="3" data-dep="2-7">
-																		<li>
-																			<div>
-																				<span class="icon icon-plus-square-o"></span>
-																				<i class="depth-group"><img src="../../img/group.jpg" alt=""></i>
-																				<strong>개발팀</strong>
-																			</div>
-																			<ul depth="4" data-dep="2-8">
-																				<li>
-																					<div>
-																						<span class="icon icon-plus-square-o"></span>
-																						<i class="depth-group"><img src="../../img/group.jpg" alt=""></i>
-																						<strong>개발팀</strong>
-																					</div>
-																					<ul depth="5" data-dep="2-9">
-																						<li>
-																							<div>
-																								<span class="icon icon-plus-square-o"></span>
-																								<i class="depth-group"><img src="../../img/group.jpg" alt=""></i>
-																								<strong>IP 대역 정책을 부서 또는 사용자에게 지정할 수 있습니다.</strong>
-																							</div>
-																						</li>
-																					</ul>
-																				</li>
-																			</ul>
-																		</li>
-																	</ul>
-																</li>
-															</ul>
-														</li>
-													</ul>
-												</div>
-												<div class="right-box">
-													<h4>설정된 정책</h4>
-													<ul class="right-depth toggle-depth" depth="1" data-dep="1">
-														<li>
-															<div class="top"></div>
-															<ul depth="2" data-dep="2">
-																<li>
-																	<div>
-																		<strong>로그인</strong>
-																		<em class="label label-success">1</em>
-																		<em class="label label-success active">2</em>
-																		<em class="label label-success">3</em>
-																	</div>
-																	<ul depth="3" data-dep="2-1">
-																		<li>
-																			<div>
-																				<strong>로그인</strong>
-																				<em class="label label-success">1</em>
-																				<em class="label label-success active">2</em>
-																				<em class="label label-success">3</em>
-																			</div>
-		
-																			<ul depth="4" data-dep="2-2">
-																				<li>
-																					<div>
-																						<strong>로그인</strong>
-																						<em class="label label-success">1</em>
-																						<em class="label label-success active">2</em>
-																						<em class="label label-success">3</em>
-																					</div>
-																					<ul depth="5" data-dep="2-3">
-																						<li>
-																							<div>
-																								<strong>로그인</strong>
-																								<em class="label label-success">1</em>
-																								<em class="label label-success active">2</em>
-																								<em class="label label-success">3</em>
-																							</div>
-																						</li>
-																					</ul>
-																				</li>
-																			</ul>
-																		</li>
-																	</ul>
-																</li>
-															</ul>
-															<!-- 2 뎁스 -->
-															<ul depth="2" data-dep="2">
-																<li>
-																	<div>
-																		<strong>로그인</strong>
-																		<em class="label label-success">1</em>
-																		<em class="label label-success active">2</em>
-																		<em class="label label-success">3</em>
-																	</div>
-																	<ul depth="3" data-dep="2-4">
-																		<li>
-																			<div>
-																				<strong>로그인</strong>
-																				<em class="label label-success">1</em>
-																				<em class="label label-success active">2</em>
-																				<em class="label label-success">3</em>
-																			</div>
-																			<ul depth="4" data-dep="2-5">
-																				<li>
-																					<div>
-																						<strong>로그인</strong>
-																						<em class="label label-success">1</em>
-																						<em class="label label-success active">2</em>
-																						<em class="label label-success">3</em>
-																					</div>
-																					<ul depth="4" data-dep="2-6">
-																						<li>
-																							<div>
-																								<strong>로그인</strong>
-																								<em class="label label-success">1</em>
-																								<em class="label label-success active">2</em>
-																								<em class="label label-success">3</em>
-																							</div>
-																						</li>
-																					</ul>
-																				</li>
-																			</ul>
-																		</li>
-																	</ul>
-																</li>
-															</ul>
-															<!-- 2 뎁스 -->
-															<ul depth="2" data-dep="2">
-																<li>
-																	<div>
-																		<strong>로그인</strong>
-																		<em class="label label-success">1</em>
-																		<em class="label label-success active">2</em>
-																		<em class="label label-success">3</em>
-																	</div>
-																	<ul depth="3" data-dep="2-7">
-																		<li>
-																			<div>
-																				<strong>로그인</strong>
-																				<em class="label label-success">1</em>
-																				<em class="label label-success active">2</em>
-																				<em class="label label-success">3</em>
-																			</div>
-		
-																			<ul depth="4" data-dep="2-8">
-																				<li>
-																					<div>
-																						<strong>로그인</strong>
-																						<em class="label label-success">1</em>
-																						<em class="label label-success active">2</em>
-																						<em class="label label-success">3</em>
-																					</div>
-																					<ul depth="5" data-dep="2-9">
-																						<li>
-																							<div>
-																								<strong>로그인</strong>
-																								<em class="label label-success">1</em>
-																								<em class="label label-success active">2</em>
-																								<em class="label label-success">3</em>
-																							</div>
-																						</li>
-																					</ul>
-																				</li>
-																			</ul>
-																		</li>
-																	</ul>
-																</li>
-															</ul>
-														</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-							</div>
+				<!-- 컨텐츠 시작 -->
+				<div class="row gutter m-b-lg">
+					<div class="card">
+						<div class="card-header">
+							<h3 class="big">회원가입/회원정보 입력항목 설정</h3>
 						</div>
-						<!-- // 왼쪽 -->
-
-						<!-- 오른쪽 -->
-						<div class="col-xs-3">
-							<div class="card">
-								<div class="card-header">
-									<h3 class="big">정책목록</h3>
-								</div>
-								<div class="card-body">
-									<div class="type-33-setting">
-										<div>
-											<ul class="radio-list">
+						<div class="card-body">
+							<div class="table-responsive">
+								<table class="table type-1">
+									<tr>
+										<th>회원가입 페이지 사용 여부</th>
+										<td>
+											<label class="switch switch-success">
+												<input class="switch-input" type="checkbox" checked="checked">
+												<span class="switch-track"></span>
+												<span class="switch-thumb"></span>
+											</label>
+										</td>
+									</tr>
+									<tr>
+										<th>회원정보 입력항목 설정</th>
+										<td>
+											<ul class="checkbox-list">
 												<li>
-													<label class="custom-control custom-control-success custom-radio d-b m-b">
-														<input class="custom-control-input" name="success" type="radio" value="none">
+													<label class="custom-control custom-control-success custom-checkbox">
+														<input class="custom-control-input" type="checkbox">
 														<span class="custom-control-indicator"></span>
-														<span class="custom-control-label">지정하지 않음(정책제거,상속)</span>
+														<span class="custom-control-label">이메일</span>
 													</label>
 												</li>
 												<li>
-													<label class="custom-control custom-control-success custom-radio d-b m-l-0">
-														<input class="custom-control-input" name="success" type="radio" value="none" checked>
+													<label class="custom-control custom-control-success custom-checkbox">
+														<input class="custom-control-input" type="checkbox">
 														<span class="custom-control-indicator"></span>
-														<span class="custom-control-label">0000.기본정책</span>
+														<span class="custom-control-label">휴대전화번호</span>
+													</label>
+												</li>
+												<li>
+													<label class="custom-control custom-control-success custom-checkbox">
+														<input class="custom-control-input" type="checkbox">
+														<span class="custom-control-indicator"></span>
+														<span class="custom-control-label">사원번호</span>
+													</label>
+												</li>
+												<li>
+													<label class="custom-control custom-control-success custom-checkbox">
+														<input class="custom-control-input" type="checkbox">
+														<span class="custom-control-indicator"></span>
+														<span class="custom-control-label">생년월일</span>
+													</label>
+												</li>
+												<li>
+													<label class="custom-control custom-control-success custom-checkbox">
+														<input class="custom-control-input" type="checkbox">
+														<span class="custom-control-indicator"></span>
+														<span class="custom-control-label">성별</span>
+													</label>
+												</li>
+												<li>
+													<label class="custom-control custom-control-success custom-checkbox">
+														<input class="custom-control-input" type="checkbox">
+														<span class="custom-control-indicator"></span>
+														<span class="custom-control-label">자택전화번호</span>
+													</label>
+												</li>
+												<li>
+													<label class="custom-control custom-control-success custom-checkbox">
+														<input class="custom-control-input" type="checkbox">
+														<span class="custom-control-indicator"></span>
+														<span class="custom-control-label">사무실전화번호</span>
 													</label>
 												</li>
 											</ul>
-											<div class="text-center m-t-md">
-												<button class="btn btn-outline-success btn-basic" type="button">적 용</button>
+											<p class="dot m-y">이메일을 사용하지 않을 경우 [비밀번호찾기] 페이지는 사용할 수 없습니다.</p>
+											<div class="text-right">
+												<button class="btn btn-default btn-sm" type="button">설정</button>
 											</div>
-										</div>
-									</div>
-
-								</div>
+										</td>
+									</tr>
+								</table>
 							</div>
 						</div>
-						<!-- // 오른쪽 -->
 					</div>
 				</div>
+
+				<div class="row gutter m-b-lg">
+					<div class="card">
+						<div class="card-header">
+							<h3 class="big">회원가입 방식 설정</h3>
+						</div>
+						<div class="card-body">
+							<div class="table-responsive">
+								<table class="table type-1">
+									<tr>
+										<th>회원가입 방식 설정</th>
+										<td>
+											<div class="pull-left">
+												<select name="" id="" class="form-control d-ib size-a">
+													<option value="">가입신청 즉식 가입</option>
+													<option value="">관리자 승인 후 가입</option>
+												</select>
+											</div>
+											<button class="btn btn-default btn-sm pull-right" type="button">설정</button>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- // 컨텐츠 종료 -->
 			</div>
-		</div>
-		<!-- //컨텐츠영역 -->
-		<div class="layout-footer">
-			<div class="layout-footer-body">
-				<small class="version">Version 1.4.0</small>
-				<small class="copyright">2019 &copy; NETID <a href="#none">Made by NETID</a></small>
+			
+			<div class="layout-footer">
+				<div class="layout-footer-body">
+					<small class="version">Version 1.4.0</small>
+					<small class="copyright">2019 &copy; NETID <a href="#none">Made by NETID</a></small>
+				</div>
 			</div>
+			
 		</div>
+	</div>
 	</div>
 	<script src="../../js/vendor.js"></script>
 	<script src="../../js/elephant.js"></script>
 	<script src="../../js/application.js"></script>
 	<!-- <script src="../../js/demo.js"></script> -->
-	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
-	<script src="../../js/custom.js"></script>
-	<script>
-		window.onload = function(){
-			treeTable2()
-		}
-	</script>
 </body>
 
 </html>

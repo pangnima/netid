@@ -5217,6 +5217,7 @@ html[xmlns] .flexslider .slides {
   cursor: pointer;
   position: relative;
   white-space: nowrap;
+  pointer-events: none;
 }
 .table.dataTable .sorting:after,
 .table.dataTable .sorting_asc:after,
@@ -5234,8 +5235,9 @@ html[xmlns] .flexslider .slides {
 .table.dataTable .sorting_desc {
   border-bottom-color: #13b6bc;
   color: #13b6bc;
+  pointer-events: none;
 }
-.table.dataTable .sorting:after {
+/* .table.dataTable .sorting:after {
   color: #cbcbd2;
   content: "\f0dc";
 }
@@ -5246,7 +5248,7 @@ html[xmlns] .flexslider .slides {
 .table.dataTable .sorting_desc:after {
   color: #13b6bc;
   content: "\f0dd";
-}
+} */
 .dataTables_length {
   margin-bottom: 5px;
   margin-top: 5px;

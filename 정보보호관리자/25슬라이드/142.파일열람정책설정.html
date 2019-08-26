@@ -359,74 +359,84 @@
 				<div class="row gutter m-b-md">
 					<div class="col-xs-12">
 						<div class="card">
-							<div class="table-responsive">
-								<table class="table type-1 table-left-td">
-									<colgroup>
-										<col>
-										<col>
-										<col style="width:80px">
-									</colgroup>
-									<tr>
-										<th>DiskLock 정책 <em class="icon icon-info-circle"></em></th>
-										<td>
-											<input class="form-control d-ib " type="text" placeholder="입력하세요">
-											<button class="btn btn-default btn-sm" type="button">정책선택</button>
-											<button class="btn btn-default btn-sm" type="button">정책편집</button>
-										</td>
-										<td rowspan="2">
-											<button class="btn btn-default btn-sm" type="button">설정</button>
-										</td>
-									</tr>
-									<tr>
-										<th>기타 보안 정책 <em class="icon icon-info-circle"></em></th>
-										<td>
-											<ul class="checkbox-list">
-												<li>
-													<label class="custom-control custom-control-success custom-checkbox">
-														<input class="custom-control-input" type="checkbox">
-														<span class="custom-control-indicator"></span>
-														<span class="custom-control-label">전체</span>
-													</label>
-												</li>
-												<li>
-													<label class="custom-control custom-control-success custom-checkbox">
-														<input class="custom-control-input" type="checkbox">
-														<span class="custom-control-indicator"></span>
-														<span class="custom-control-label">저장금지</span>
-													</label>
-												</li>
-												<li>
-													<label class="custom-control custom-control-success custom-checkbox">
-														<input class="custom-control-input" type="checkbox">
-														<span class="custom-control-indicator"></span>
-														<span class="custom-control-label">인쇄 금지</span>
-													</label>
-												</li>
-												<li>
-													<label class="custom-control custom-control-success custom-checkbox">
-														<input class="custom-control-input" type="checkbox">
-														<span class="custom-control-indicator"></span>
-														<span class="custom-control-label">이동 복사 금지</span>
-													</label>
-												</li>
-												<li>
-													<label class="custom-control custom-control-success custom-checkbox">
-														<input class="custom-control-input" type="checkbox">
-														<span class="custom-control-indicator"></span>
-														<span class="custom-control-label">화면 캡쳐 금지</span>
-													</label>
-												</li>
-												<li>
-													<label class="custom-control custom-control-success custom-checkbox">
-														<input class="custom-control-input" type="checkbox">
-														<span class="custom-control-indicator"></span>
-														<span class="custom-control-label">클립보드 복사 금지</span>
-													</label>
-												</li>
-											</ul>
-										</td>
-									</tr>
-								</table>
+							<div class="card-header">
+								<div class="left-position">
+									<h3 class="big">협력사 사용자 파일열람 정책 설정</h3>
+								</div>
+							</div>
+							<div class="card-body">
+								<div class="table-responsive">
+									<table class="table type-1 table-left-td">
+										<colgroup>
+											<col>
+											<col>
+											<col style="width:80px">
+										</colgroup>
+										<tr>
+											<th>DiskLock 정책 <em class="icon icon-info-circle"></em></th>
+											<td>
+												<div class="input-with-icon d-ib media-middle">
+													<input class="form-control" type="text" placeholder="입력하세요">
+													<span class="icon icon-search input-icon"></span>
+												</div>
+												<button class="btn btn-default btn-sm" type="button">정책선택</button>
+												<button class="btn btn-default btn-sm" type="button">정책편집</button>
+											</td>
+											<td rowspan="2">
+												<button class="btn btn-default btn-sm" type="button">설정</button>
+											</td>
+										</tr>
+										<tr>
+											<th>기타 보안 정책 <em class="icon icon-info-circle"></em></th>
+											<td>
+												<ul class="checkbox-list">
+													<li>
+														<label class="custom-control custom-control-success custom-checkbox">
+															<input class="custom-control-input" type="checkbox">
+															<span class="custom-control-indicator"></span>
+															<span class="custom-control-label">전체</span>
+														</label>
+													</li>
+													<li>
+														<label class="custom-control custom-control-success custom-checkbox">
+															<input class="custom-control-input" type="checkbox">
+															<span class="custom-control-indicator"></span>
+															<span class="custom-control-label">저장금지</span>
+														</label>
+													</li>
+													<li>
+														<label class="custom-control custom-control-success custom-checkbox">
+															<input class="custom-control-input" type="checkbox">
+															<span class="custom-control-indicator"></span>
+															<span class="custom-control-label">인쇄 금지</span>
+														</label>
+													</li>
+													<li>
+														<label class="custom-control custom-control-success custom-checkbox">
+															<input class="custom-control-input" type="checkbox">
+															<span class="custom-control-indicator"></span>
+															<span class="custom-control-label">이동 복사 금지</span>
+														</label>
+													</li>
+													<li>
+														<label class="custom-control custom-control-success custom-checkbox">
+															<input class="custom-control-input" type="checkbox">
+															<span class="custom-control-indicator"></span>
+															<span class="custom-control-label">화면 캡쳐 금지</span>
+														</label>
+													</li>
+													<li>
+														<label class="custom-control custom-control-success custom-checkbox">
+															<input class="custom-control-input" type="checkbox">
+															<span class="custom-control-indicator"></span>
+															<span class="custom-control-label">클립보드 복사 금지</span>
+														</label>
+													</li>
+												</ul>
+											</td>
+										</tr>
+									</table>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -493,25 +503,6 @@
 											</tr>
 										</tbody>
 									</table>
-								</div>
-								<div class="m-t">
-									<div class="view-list">Show
-										<select name="" id="" class="form-control d-ib">
-											<option value="">10</option>
-											<option value="">15</option>
-											<option value="">20</option>
-										</select> entires</div>
-									<div class="text-center">
-										<ul class="pagination">
-											<li class="previous"><a href="#" class="icon icon-angle-left"></a></li>
-											<li class="active"><span>1</span></li>
-											<li><a href="">2</a></li>
-											<li><a href="">3</a></li>
-											<li><a href="">4</a></li>
-											<li><a href="">5</a></li>
-											<li class="next"><a href="#" class="icon icon-angle-right"></a></li>
-										</ul>
-									</div>
 								</div>
 							</div>
 						</div>

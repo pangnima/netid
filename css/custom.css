@@ -71,7 +71,7 @@ ul , li {list-style:none;}
 .table-left-td td:last-child {overflow:hidden; position:relative;}
 .table-left-td thead tr th {border-bottom:solid 2px #e7e7ec;}
 .table-left-td thead tr th span {display:block; line-height:1; font-size:12px; font-weight:normal;}
-.table-left-td td[rowspan="3"] {width:50px; text-align:center;}
+.table-left-td td[rowspan="3"] {width:50px; text-align:center; border-right:solid 1px #e7e7ec;}
 
 
 /* .table tr:last-child th {border-bottom:solid 1px #e7e7ec;} */
@@ -133,13 +133,14 @@ table.type-1.big tr th {font-size:15px;}
 
 .table.type-22 {background:#fff;}
 .type-22 thead tr th {width:auto; padding:10px 20px; font-size:14px !important;}
-.type-22 tbody tr td {padding:10px 20px; border:0;}
+.type-22 tbody tr td {padding:5px 10px 0 10px; border:0;}
 .type-22.line tr th , .type-22.line tr td {border:solid 1px #ddd;}
 .type-22.line tr th:first-child , .type-22.line tr td:first-child {border-left:0;}
 .type-22.line tr th {border-top:0;}
 
 
 .type-23 {background:#f9f9f9;}
+.type-23 th {background:#fff;}
 .type-23 td {border-top:0 !important;}
 .type-23 tbody tr.bg {background:#fff;}
 .type-23 tbody tr td .icon-arrow-circle-down , .type-23 tbody tr td .icon-arrow-circle-up {margin-left:4px; font-size:12px;}
@@ -170,16 +171,20 @@ table.type-1.big tr th {font-size:15px;}
 .drag-table-box::after {content:""; display:block; clear:both;}
 .drag-table-box:before {content:""; content:""; position:absolute; top:36px; background:#e7e7ec; width:100%; height:1px;}
 
+.drag-table-box {display: table;}
 .drag-table-box h4 {width: 100%; padding:0; }
 .drag-table-box .top {margin-bottom:5px;}
-.drag-table-box .left-box {float:left; width:50%; max-width:85%; padding:0 20px; box-sizing:border-box; min-width:150px; overflow-x: auto;}
+.drag-table-box .left-box {display:table-cell; width:50%; max-width:950px; padding:0 20px; box-sizing:border-box; min-width:150px; overflow-x: auto; position: relative;}
 .drag-table-box .left-box h4 {border-right: solid 1px #e7e7ec; padding-right:0;}
 .drag-table-box .left-box .left-depth {padding-top:10px; min-width:250px;}
 .drag-table-box .left-box ul {padding:0; padding-left:10px;}
 .drag-table-box .left-box ul strong {display:inline-block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; vertical-align:middle;}
-.drag-table-box .ui-resizable-e {right:20px;}
-.drag-table-box .right-box {float:left; min-width:15%; padding:0 20px; box-sizing:border-box;}
-.drag-table-box .right-box .right-depth {padding-top:10px;}
+.drag-table-box .ui-resizable-e {position:absolute; top:0; right:20px; bottom:0; width:5px; cursor:ew-resize;}
+
+.drag-table-box .right-box {display:table-cell; min-width:150px; padding:0 20px; box-sizing:border-box; overflow-x:auto; overflow-x:auto;}
+.drag-table-box .right-box .right-depth {min-width:200px; padding-top:10px; white-space:nowrap;}
+/* .drag-table-box .right-box .right-depth ul li div {overflow: auto; text-overflow: inherit; white-space: nowrap;} */
+
 .drag-table-box .right-box ul {padding:0;}
 
 .drag-table-box ul > li {display: block;}
@@ -190,6 +195,10 @@ table.type-1.big tr th {font-size:15px;}
 .drag-table-box i[class^=depth-] {width:24px; vertical-align:middle;}
 .drag-table-box i.depth-department {width:36px;}
 .drag-table-box i img {width:90%;}
+
+.type-32 th {background: #f9f9f9;}
+.type-32 tbody tr td:first-child{background: #f9f9f9 ;}
+.type-32 tbody tr td:last-child {border-left:solid 1px #e7e7ec;}
 
 .type-33 {width:100%; padding:0;}
 .type-33 thead th {border-right:solid 1px #e7e7ec; border-bottom:solid 1px #e7e7ec;}
@@ -224,9 +233,9 @@ table.type-1.big tr th {font-size:15px;}
 .type-33 tr.depth-9 th {padding-left:110px;}
 .type-33 tr.depth-10 th {padding-left:120px;}
 
-.type-33-setting {padding-top:20px; overflow-x:auto;}
+.type-33-setting {padding-top:20px;}
 .type-33-setting p {margin-bottom:20px; font-size:17px;}
-.type-33-setting > div {min-width:290px;}
+/* .type-33-setting > div {min-width:290px;} */
 .type-33-setting ul.radio-list {padding:0; list-style:none;}
 .type-33-setting ul.radio-list li {margin-bottom:15px;}
 
@@ -243,7 +252,8 @@ table.type-1.big tr th {font-size:15px;}
 .switch-table .custom-checkbox {display:none;}
 .switch-table .custom-checkbox.on {display:inline-block !important;}
 .switch-table tr:hover .custom-checkbox {display:inline-block;}
-.switch-table tr .custom-checkbox:checked {display:inline-block !important;}
+.switch-table tr.active td:first-child:before {content:""; display:inline-block; background:url(../img/check-red.svg) 0 0 no-repeat; background-size:14px; width:14px; height:14px;}
+
 
 
 /* 프린트용 */
@@ -309,7 +319,7 @@ table.type-1.big tr th {font-size:15px;}
 .card-body.green .icon {margin-right:4px;}
 .card-body.green em {cursor:pointer; font-style:normal;}
 .card-body.green em.active {background:#fff; border:solid 1px #000; color:#000;}
-.card-body.green .slide-nav {padding:0 20px;}
+.card-body.green .slide-nav {padding:0 20px 5px;}
 
 .card-header .left-position {float:left; min-height:20px;}
 .card-header .left-position h3 {margin:0; margin-bottom:10px; font-size:16px; font-weight:bold;}
@@ -328,7 +338,7 @@ table.type-1.big tr th {font-size:15px;}
 .card-header .right-position .icon.green {color:#13b6bc; font-size:20px;}
 .card-header .right-position .icon.icon-plus.green {margin-top:2px;}
 
-.card.style-none {background:none; margin:0; margin-bottom:5px; padding:0; border:0; border-bottom:1px solid #f1f1f1;}
+.card.style-none {background:none; margin:0; margin-bottom:5px; padding:0; border:0; border-bottom:0;}
 .card.style-none .card-header {border:0; color:#13b6bc;}
 .card.style-none .card-header label {color:#737373;}
 
@@ -347,13 +357,15 @@ table.type-1.big tr th {font-size:15px;}
 /* 트리구조 */
 .slide-nav ul {padding:0; cursor:pointer; list-style:none;}
 .slide-nav ul.depth > li {font-size:15px;}
-.slide-nav ul.depth > li i{}
 .slide-nav ul li {padding-top:10px; font-size:14px;}
 .slide-nav ul li i {font-style: normal;}
 .slide-nav ul li i img {width: 25px;}
 .slide-nav ul li span {margin-right:4px; vertical-align: middle;}
-.slide-nav ul ul {display:none; padding-left:10px;}
+.slide-nav ul ul {display:none; padding-left:30px;}
+.slide-nav .depth-1 {padding-left:20px;}
 .slide-nav .custom-control {vertical-align:-1px;}
+
+.slide-nav.depth-1-b .depth-1 {display: block;}
 
 
 /* 셀렉트 박스 크기 변경 */
@@ -451,7 +463,7 @@ table.type-1.big tr th {font-size:15px;}
 
 /* max-height */
 .card-body.max-height {max-height:200px; min-height:150px; padding:0 20px; border:0; overflow-y:auto;}
-.max-height {max-height:200px; padding-bottom:5px; border:solid 1px #e7e7ec; overflow-y:auto;}
+.max-height {max-height:200px; height:100px; padding-bottom:5px; border:solid 1px #e7e7ec; overflow-y:auto;}
 .max-height-sn {padding-bottom:5px; overflow-y:auto; max-height: 200px;}
 .max-height table tr:first-child td {border-top:0;}
 .max-height table tr:last-child td {border-bottom:0;}
@@ -481,20 +493,27 @@ table.type-1.big tr th {font-size:15px;}
 .col-xs-table > div[class^=col-xs] {display:table-cell; float:none; vertical-align:top;}
 .col-xs-table > div[class^=col-xs] .card {margin-bottom:0;}
 .col-xs-table .col-xs-3 .card {margin:0; padding:0; border:0;}
-.col-xs-table > div.col-xs-3 {height:80vh; max-height:80vh; padding:0; padding-bottom:10px; border:1px solid #f1f1f1; overflow-y:auto;}
+.col-xs-table > div.col-xs-3 {padding:0; border:1px solid #e7e7ec; height:750px;}
+.col-xs-table > div.col-xs-3 .card-body {max-height:750px; overflow-y:auto; height: 750px;}
 .col-xs-table > div:first-child {background:#fff;}
+
+.col-xs-table > div.col-xs-9.max {overflow-x: scroll; max-width:500px;}
 
 .col-xs-toggle .col-xs-9 {background:#fff; height:80vh; padding:0;}
 .col-xs-toggle .col-xs-9 .card {margin:0; padding:0; padding-bottom:25px; border:0;}
+
+.col-xs-toggle.fixed .col-xs-9 {/*min-width:1180px;*/ overflow-x: auto;}
+.col-xs-toggle.fixed .col-xs-9 .card {min-width:1100px; }
+.col-xs-toggle.fixed .col-xs-3 {min-width:200px;}
 
 /* position-box */
 .pos-box {position:absolute; top:50%; transform:translateY(-50%); -webkit-transform:translateY(-50%);}
 
 /* 레이어팝업 */
-.layer-pop {display:none; position:absolute; top:100%; right:0; padding:0; border:solid 1px #e7e7ec; z-index:10; box-shadow:0 0 5px rgba(000, 000, 0, 0.1); -webkit-box-shadow:0 0 5px rgba(000, 000, 0, 0.1);}
+.layer-pop {display:none; position:absolute; top:0; left:0; padding:0; border:solid 1px #e7e7ec; z-index:99999; box-shadow:0 0 5px rgba(000, 000, 0, 0.1); -webkit-box-shadow:0 0 5px rgba(000, 000, 0, 0.1);}
 /* .layer-pop.arrow-up:before {bottom:auto; top:-14px;} */
-.layer-pop ul {padding:0; list-style:none;}
-.layer-pop ul li {position:relative; padding:5px 10px; border:0 !important; color:#737373; z-index:100;}
+.layer-pop ul {padding:0; margin:0; list-style:none;}
+.layer-pop ul li {position:relative; padding:5px 10px; border:0 !important; color:#737373; z-index:100; font-size:13px;}
 .layer-pop ul li:hover {background:#13b6bc; border:0; color:#fff;}
 .arrow-up.arrow-outline-success:before {border-bottom-color:#e7e7ec;}
 .form-pop {padding:15px 10px 0;}
@@ -508,7 +527,7 @@ table.type-1.big tr th {font-size:15px;}
 
 
 .folder-drive {margin-bottom:20px;}
-.folder-drive h4 {margin:0; margin-bottom:10px; font-size:14px; font-weight:bold;}
+.folder-drive h4 {margin:0; margin-top:10px; font-size:15px; font-weight:bold;}
 .folder-drive h4:before {content:""; display:inline-block; background:#737373; width:5px; height:5px; margin-right:6px; border-radius:50%; vertical-align:2px;}
 
 
@@ -559,13 +578,14 @@ table.type-1.big tr th {font-size:15px;}
 
 
 .modal-35 .modal-dialog {top:50%; transform:translateY(-50%); -webkit-transform:translateY(-50%);}
-.modal-35 h3 {display:inline-block; margin:0; font-size:17px; vertical-align:middle;}
+.modal-35 h3 {display:inline-block; margin:0; font-size:15px; vertical-align:middle;}
 .modal-35 h4 {font-size:15px;}
 .modal-35 .switch {display:inline-block; margin-left:4px; vertical-align:middle;}
 .modal-35 table {width:100%;}
 .modal-35 table th {background:#f5f5f5; width:120px; padding:10px; padding:16px 20px; font-size:14px; font-weight:bold; word-break:break-word; vertical-align:top; vertical-align:middle; border:solid 1px #e7e7ec;}
 .modal-35 table td {padding:10px; border:solid 1px #e7e7ec;}
 .modal-35 table td p {color:#ccc; font-size:12px;}
+.modal-35 table td textarea.form-control.d-ib {width:calc(100% - 55px); vertical-align:top;}
 .modal-35 .detail {background-color:#f0f5f5; padding:15px 10px;}
 .modal-35 .detail h4 {margin:0; margin-bottom:10px;}
 .modal-35 .detail ul {margin:0; padding:0;}
@@ -578,21 +598,51 @@ table.type-1.big tr th {font-size:15px;}
 .modal-35 .checkbox-list.disk li:first-child {width:100%;}
 .modal-35 .checkbox-list.disk li {width:50%; margin-right:0;}
 
+
+.modal-36 .modal-dialog {top:50%; transform: translateY(-50%);}
+.modal-36 h3 {display:inline-block; margin:0; font-size:20px; vertical-align:middle;}
+.modal-36 h4 {font-size:17px;}
+.modal-36 .switch {display:inline-block; margin-left:4px; vertical-align:middle;}
+.modal-36 table {width:100%;}
+.modal-36 table th {padding:10px; vertical-align:top; width:100px;}
+.modal-36 table td {padding:10px;}
+.modal-36 table td p {color:#ccc;}
+.modal-36 .detail {background-color: #f0f5f5; padding:15px 10px;}
+.modal-36 .detail h4 {margin:0; margin-bottom:10px;}
+.modal-36 .detail ul {padding:0; margin:0;}
+.modal-36 .detail ul li{margin:5px 0;}
+.modal-36 .detail ul ul {padding-left:20px; padding-bottom:20px;}
+.modal-36 .detail ul ul li {display: table; width:100%; margin-bottom:5px;}
+.modal-36 .detail ul ul li > * {display: table-cell; vertical-align: middle;}
+.modal-36 .detail ul ul li label {width:120px;}
+.modal-36 .detail ul ul li p {position: absolute; word-break: keep-all;}
+.modal-36 .checkbox-list.disk li:first-child{width:100%;}
+.modal-36 .checkbox-list.disk li {width:50%; margin-right:0;}
+
 .modal-38 .modal-dialog {top:40%; transform:translateY(-50%); -webkit-transform:translateY(-50%);}
 .modal-38 .ip-box input {width:24%;}
+
+.modal-125 {position:fixed; top:0; left:0; display:none; opacity:1;}
+.modal-125 .macro-text ul {padding:10px; border:solid 1px #e7e7ec;}
+.modal-125 .macro-text ul li {cursor:pointer;}
+.modal-125 .macro-text ul li:hover {color:#7d7d8e;}
+.modal-125 .modal-dialog{ margin:100px auto 0;}
+
 @media screen and (max-width:1024px) {.btn-wrap {position:static; transform:translate(0); -webkit-transform:translate(0);}
 	.btn-wrap-icon {position:static; transform:translate(0); -webkit-transform:translate(0);}
 
 	.checkbox-list.w20 li {width:32%; margin-right:1%;}
 	.checkbox-list.fixed li {width:49%; margin-right:1%;}
 
-	table.type-1 tr td .search-input {position:static; margin-top:10px; transform:translate(0); -webkit-transform:translate(0);}
-	table.type-1 tr td .checkbox-list + .search-input {position:static; margin-top:10px; transform:translate(0); -webkit-transform:translate(0);}
+	table.type-1 tr td .search-input {position:static; transform:translate(0); -webkit-transform:translate(0);}
+	table.type-1 tr td .checkbox-list + .search-input {position:static; transform:translate(0); -webkit-transform:translate(0);}
 
 	.col-xs-table {display:block;}
 	.col-xs-table > div[class^=col-xs] {display:block; width:100%; margin-bottom:10px; padding:0;}
 	.col-xs-table > div.col-xs-3 {height:auto; max-height: 200px;}
-	
+	.col-xs-table > div.col-xs-3 .card-body {height:auto; max-height:150px;}
+	.col-xs-table > div.col-xs-9.max {max-width:100%; overflow-x: auto;}
+
 	.max-height-sn {max-height:200px; overflow-y:auto;}
 
 	.col-xs-toggle .col-xs-9 .card {margin-bottom:15px;}
@@ -617,7 +667,7 @@ table.type-1.big tr th {font-size:15px;}
 	.checkbox-list {display:block;}
 	.checkbox-list li {width:30%; margin-right:3%;}
 
-	table.type-1 tr td .search-input {position:static; margin-top:7px; transform:translate(0); -webkit-transform:translate(0);}
+	table.type-1 tr td .search-input {position:static; margin-top:7px; transform:translate(0); -webkit-transform:translate(0); margin:0;}
 	table.type-1 tr td .custom-control + input {display:inline-block !important; width:50% !important;}
 
 	.table-responsive {border:0;}
@@ -642,7 +692,9 @@ table.type-1.big tr th {font-size:15px;}
 	table.type-1 tr th {width:100px;}
 
 	.checkbox-list.w20 li {width:50%; margin-right:0;}
-	.checkbox-list.fixed li {width:100%; margin-right:0;}}
+	.checkbox-list.fixed li {width:100%; margin-right:0;}
+
+}
 
 @media screen and (max-width:500px) {.checkbox-list li {width:100%;}
 	.checkbox-list.w20 li {width:100%; margin-right:0;}}

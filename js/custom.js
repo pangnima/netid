@@ -19,8 +19,13 @@ function tableResize(){
 function type22(){
 	$('.list-group-item button').on('click' , function(e){
 		e.stopPropagation();
+		var posTop = $(this).offset().top + 45;
+		var posLeft = $(this).offset().left - 50;
 		$('.layer-pop').stop().fadeOut();
-		$(this).siblings('.layer-pop').stop().fadeIn();
+		$('.layer-pop').css({
+			top : posTop,
+			left: posLeft
+		}).stop().fadeIn();
 	})
 	
 	$('html,body').on('click' , function(e){

@@ -357,31 +357,38 @@
 				<div class="row gutter m-b-lg">
 					<div class="col-xs-12">
 						<div class="card">
-							<div class="table-responsive">
-								<table class="table type-1">
-									<colgroup>
-										<col style="width:400px">
-										<col>
-									</colgroup>
-									<tr>
-										<th>안전구역(중앙문서함,PC보안디스크) I/O 정책</th>
-										<td class="p-r-xxl">
-											목록보기/읽기
-											<div class="btn-wrap-right">
-												<button class="btn btn-default btn-sm" type="button">변경</button>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<th>비안전구역(로컬디스크,USB,네트워크디스크 등) I/O 정책</th>
-										<td class="p-r-xxl">
-											목록보기/읽기/쓰기/삭제
-											<div class="btn-wrap-right">
-												<button class="btn btn-default btn-sm" type="button">변경</button>
-											</div>
-										</td>
-									</tr>
-								</table>
+							<div class="card-header">
+								<div class="left-position">
+									<h3 class="big">I/O 정책</h3>
+								</div>
+							</div>
+							<div class="card-body">
+								<div class="table-responsive">
+									<table class="table type-1 table-left-td">
+										<colgroup>
+											<col style="width:400px">
+											<col>
+										</colgroup>
+										<tr>
+											<th>안전구역(중앙문서함,PC보안디스크) I/O 정책</th>
+											<td class="p-r-xxl">
+												목록보기/읽기
+												<div class="btn-wrap-right">
+													<button class="btn btn-default btn-sm" type="button">변경</button>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>비안전구역(로컬디스크,USB,네트워크디스크 등) I/O 정책</th>
+											<td class="p-r-xxl">
+												목록보기/읽기/쓰기/삭제
+												<div class="btn-wrap-right">
+													<button class="btn btn-default btn-sm" type="button">변경</button>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -434,14 +441,6 @@
 											</tr>
 										</tbody>
 									</table>
-								</div>
-								<div class="m-t">
-									<div class="view-list">Show 
-										<select name="" id="" class="form-control d-ib">
-											<option value="">10</option>
-											<option value="">15</option>
-											<option value="">20</option>
-										</select> entires</div>
 								</div>
 							</div>
 						</div>
@@ -697,6 +696,7 @@
 	<!-- <script src="../../js/demo.js"></script> -->
 	<script src="../../js/custom.js"></script>
 	<script>
+		
 		window.onload = function(){
 			slideFolder();
 			$('.modal .close ').on('click' , function(e){
@@ -717,6 +717,7 @@
 				$(this).parents('#successModalAlert').prev().fadeIn();
 			})
 		}
+
 	</script>
 </body>
 
