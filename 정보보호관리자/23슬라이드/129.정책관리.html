@@ -592,7 +592,7 @@
 										<div class="right-position">
 											<button class="btn btn-sm btn-default" type="button">일괄추가</button>
 											<button class="btn btn-sm btn-default btn-bar-border"
-												type="button">추가</button>
+											data-toggle="modal" data-target="#successModalAlert" type="button">추가</button>
 										</div>
 									</div>
 									<div class="card-body m-t">
@@ -764,9 +764,9 @@
 					</div>
 
 					<div class="btn-wrap">
-						<button class="btn btn-basic btn-default btn-prev" type="button"><span
+						<button class="btn btn-basic btn-default btn-prev" data-dismiss="modal" type="button"><span
 								class="icon icon-angle-left m-r-sm"></span>이전</button>
-						<button class="btn btn-basic btn-default btn-next" type="button">다음<span
+						<button class="btn btn-basic btn-default btn-next"  data-toggle="modal" data-target="#successModalAlert2" data-dismiss="modal" type="button">다음<span
 								class="icon icon-angle-right m-l-sm"></span></button>
 						<button class="btn btn-basic btn-outline-success btn-right" type="button">적용</button>
 					</div>
@@ -777,7 +777,7 @@
 	<!-- //팝업-->
 
 	<!-- 팝업 -->
-	<div id="successModalAlert" role="dialog" class="modal modal-34">
+	<div id="successModalAlert2" role="dialog" class="modal modal-34">
 		<div class="modal-dialog">
 			<div class="modal-content round-box">
 				<div class="modal-header bg-success">
@@ -927,9 +927,9 @@
 					</div>
 
 					<div class="btn-wrap">
-						<button class="btn btn-basic btn-default btn-prev" type="button"><span
+						<button class="btn btn-basic btn-default btn-prev" data-toggle="modal" data-target="#successModalAlert" data-dismiss="modal" type="button"><span
 								class="icon icon-angle-left m-r-sm"></span>이전</button>
-						<button class="btn btn-basic btn-default btn-next" type="button">다음<span
+						<button class="btn btn-basic btn-default btn-next" data-dismiss="modal" type="button">다음<span
 								class="icon icon-angle-right m-l-sm"></span></button>
 						<button class="btn btn-basic btn-outline-success btn-right" type="button">적용</button>
 					</div>
@@ -949,26 +949,11 @@
 	<script src="../../js/vendor.js"></script>
 	<script src="../../js/elephant.js"></script>
 	<script src="../../js/application.js"></script>
-	<!-- <script src="../../js/demo.js"></script> -->
+	<script src="../../js/demo.js"></script>
 	<script src="../../js/custom.js"></script>
 	<script>
 		$(document).ready(function () {
 			type23();
-
-			$('.modal .close ').on('click', function (e) {
-				$(this).parents('#successModalAlert').fadeOut();
-			});
-			$('.right-position .btn-bar-border').on('click', function () {
-				$('#successModalAlert').fadeIn();
-			})
-			$('.btn-next').on('click', function () {
-				$(this).parents('#successModalAlert').fadeOut();
-				$(this).parents('#successModalAlert').next().fadeIn();
-			})
-			$('.btn-prev').on('click', function () {
-				$(this).parents('#successModalAlert').fadeOut();
-				$(this).parents('#successModalAlert').prev().fadeIn();
-			})
 		})
 	</script>
 </body>

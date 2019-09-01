@@ -114,7 +114,7 @@
       $parent
         .one('bsTransitionEnd', removeElement)
         .emulateTransitionEnd(Alert.TRANSITION_DURATION) :
-      removeElement()
+	  removeElement()
   }
 
 
@@ -1031,7 +1031,8 @@
       this.$element
         .one('bsTransitionEnd', $.proxy(this.hideModal, this))
         .emulateTransitionEnd(Modal.TRANSITION_DURATION) :
-      this.hideModal()
+	  this.hideModal()
+
   }
 
   Modal.prototype.enforceFocus = function () {

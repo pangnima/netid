@@ -584,7 +584,7 @@
 											<h3 class="m-b-0">선택된 IE 반출 예외 정책</h3>
 										</div>
 										<div class="right-position">
-											<button class="btn btn-sm btn-default btn-more" type="button">추가</button>
+											<button class="btn btn-sm btn-default" data-toggle="modal" data-target="#successModalAlert" type="button">추가</button>
 										</div>
 									</div>
 									<div class="card-body">
@@ -669,7 +669,7 @@
 		</div>
 
 		<!-- 팝업 -->
-		<div id="successModalAlert" class="modal modal-36" style="display: none;">
+		<div id="successModalAlert" class="modal fade modal-36">
 			<div class="modal-dialog">
 				<div class="modal-content round-box">
 					<div class="modal-header bg-success">
@@ -784,8 +784,8 @@
 						</div>
 
 						<div class="text-center">
-							<button class="btn btn-outline-success btn-basic" type="button">확인</button>
-							<button class="btn btn-default btn-basic btn-cancel" type="button">취소</button>
+							<button class="btn btn-outline-success btn-basic"  data-dismiss="modal" type="button">확인</button>
+							<button class="btn btn-default btn-basic btn-cancel"  data-dismiss="modal" type="button">취소</button>
 						</div>
 					</div>
 				</div>
@@ -809,13 +809,6 @@
 	<script>
 		$(document).ready(function(){
 			type22();
-			$('.modal .close , .modal .btn-cancel ').on('click' , function(e){
-				$('#successModalAlert').fadeOut();
-			});
-	
-			$('.btn-more').on('click' , function(){
-				$('#successModalAlert').fadeIn();
-			})
 		})
 	</script>
 

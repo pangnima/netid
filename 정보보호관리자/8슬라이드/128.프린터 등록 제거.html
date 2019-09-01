@@ -559,7 +559,7 @@
 										<span class="icon icon-search input-icon"></span>
 									</div>
 									<button class="btn btn-default" type="button">검색</button>
-									<button class="btn btn-default btn-bar-border btn-register" type="button">등록</button>
+									<button class="btn btn-default btn-bar-border btn-register" data-toggle="modal" data-target="#successModalAlert" type="button">등록</button>
 								</div>
 							</div>
 							<div class="card-body">
@@ -641,7 +641,7 @@
 		</div>
 
 		<!-- 팝업-로그보관기간 변경 -->
-		<div id="successModalAlert" tabindex="-1" role="dialog" class="modal modal-38" style="display:none;">
+		<div id="successModalAlert" tabindex="-1" role="dialog" class="modal fade modal-38">
 			<div class="modal-dialog">
 				<div class="modal-content round-box">
 					<div class="modal-header bg-success">
@@ -670,8 +670,8 @@
 							</div>
 						</div>
 						<div class="text-center p-t-sm">
-							<button class="btn btn-outline-success btn-basic" type="button">확인</button>
-							<button class="btn btn-default btn-basic btn-cancel" type="button">취소</button>
+							<button class="btn btn-outline-success btn-basic" data-dismiss="modal" type="button">확인</button>
+							<button class="btn btn-default btn-basic btn-cancel" data-dismiss="modal" type="button">취소</button>
 						</div>
 					</div>
 				</div>
@@ -682,19 +682,7 @@
 	<script src="../../js/vendor.js"></script>
 	<script src="../../js/elephant.js"></script>
 	<script src="../../js/application.js"></script>
-	<!-- <script src="../../js/demo.js"></script> -->
-	<script>
-		$(document).ready(function(){
-			$('.modal .close , .modal .btn-cancel ').on('click' , function(e){
-				$('#successModalAlert').fadeOut();
-			});
-
-			$('.btn-register').on('click' , function(){
-				$('#successModalAlert').fadeIn();
-			})
-
-		})
-	</script>
+	<script src="../../js/demo.js"></script>
 </body>
 
 </html>

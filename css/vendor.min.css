@@ -6157,7 +6157,7 @@ div.fixed-table-scroll-outer {
   color: #fff;
 }
 .datepicker table tr td.active:hover {
-  background-color: #ed2a2f;
+  background-color: #13b6bc;
   color: #fff;
 }
 .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled:hover {

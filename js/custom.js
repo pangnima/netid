@@ -26,15 +26,24 @@ function type22(){
 			top : posTop,
 			left: posLeft
 		}).stop().fadeIn();
+
+		$('.card-body ').on('scroll touchmove mousewheel', function(e) { 
+			e.preventDefault();
+			e.stopPropagation();
+			return false; 
+		});
 	})
-	
+
+
 	$('html,body').on('click' , function(e){
 		if (!$('.layer-pop').is(e.target) && $('.layer-pop').has(e.target).length === 0){
 			$('.layer-pop').stop().fadeOut();
-		}	
+		}
+		$('.card-body ').off('scroll touchmove mousewheel');
 	})
 	$('.layer-pop').on('click' , function(){
 		$(this).stop().fadeOut();
+		$('.card-body ').off('scroll touchmove mousewheel');
 	})
 }
 
@@ -56,11 +65,82 @@ function type23(){
 }
 
 function tableResize2(){
-	$( ".drag-table-box .left-box" ).resizable({
-		minWidth: 100,    //최소 100px 까지 축소.
-		maxWidth: "100%",   //최대 600px 까지 확장.
-		handles: "e",    //리사이즈 되는 모서리는 오른쪽(east)으로 고정시켰다.
-	});
+	var minWidth = 60;
+
+	var MARGINS = 10;
+
+	var clicked = null;
+	var onRightEdge, onLeftEdge;
+
+	var b, x, y;
+	var redraw = false;
+	
+	var leftW , rightW;
+
+	var leftBox =$('.left-box');
+	leftW = $('.left-box').outerWidth();
+	rightW = $('.right-box').outerWidth();
+	$('.drag-table-box').width( leftW + rightW);
+
+	$('.left-box').on('mousedown' , onDown)
+	$(document).on('mousemove' , onMove)
+	$(document).on('mouseup' , onUp)
+	
+
+	function onDown(e) {
+		calc(e);
+		var isResizing = onRightEdge;
+		clicked = {
+			x: x,
+			y: y,
+			cx: e.clientX,
+			cy: e.clientY,
+			w: b.width,
+			isResizing: isResizing,
+			onLeftEdge: onLeftEdge,
+			onRightEdge: onRightEdge,
+		};
+	}
+
+	function onUp(e) {
+		calc(e);
+		clicked = null;
+	}
+
+	function calc(e) {
+		b = leftBox[0].getBoundingClientRect();
+		x = e.clientX - b.left;
+		y = e.clientY - b.top;
+		
+		onLeftEdge = x < MARGINS;
+		onRightEdge = x >= b.width - MARGINS;
+	}
+
+	function onMove(ee) {
+		calc(ee);
+		e = ee;
+		redraw = true;
+	}
+
+	function animate() {
+		requestAnimationFrame(animate);
+		if (!redraw) return;
+		redraw = false;
+		if (clicked && clicked.isResizing) {
+			if (clicked.onRightEdge){
+				leftBox.eq(0).css({
+					width : Math.max(x, minWidth) + 'px'
+				}) 
+				leftW = $('.left-box').outerWidth();
+				rightW = $('.right-box').outerWidth();
+				$('.drag-table-box').width( leftW + rightW);
+			}
+			return;
+		}
+
+		if( onRightEdge ) leftBox.css({cursor : 'ew-resize'})
+	}
+	animate();
 }
 function treeTable2() {
 	tableResize2()

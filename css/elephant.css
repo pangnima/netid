@@ -3406,7 +3406,7 @@ tbody.collapse.in {
 	list-style: none;
 	font-size: 13px;
 	text-align: left;
-	z-index: 9999 !important;
+	z-index: 10;
 	background-color: #fff;
 	border: 1px solid #e7e7ec;
 	border: 1px solid #e7e7ec;
@@ -6220,10 +6220,10 @@ button.close {
 }
 
 .modal {
-	background: rgba(0, 0, 0, 0.3);
+	/* background: rgba(0, 0, 0, 0.3); */
 	display: none;
 	overflow: hidden;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -6255,6 +6255,7 @@ button.close {
 .modal-open .modal {
 	overflow-x: hidden;
 	overflow-y: auto;
+	padding-left:0 !important;
 }
 
 .modal-dialog {

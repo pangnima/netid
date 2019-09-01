@@ -396,8 +396,14 @@
 							<tr>
 								<th>시작일</th>
 								<td>
-									<div class="input-with-icon size-a d-ib">
-										<input class="form-control" type="text">
+									<!-- <div id="demo-timepicker-6" class="row gutter del-timepicker">
+										<div class="input-with-icon">
+											<input class="form-control start" type="text" data-provide="datepicker" data-date-autoclose="true" data-date-format="yyyy-mm-dd">
+											<span class="icon icon-calendar input-icon"></span>
+										</div>
+									</div> -->
+									<div class="input-with-icon">
+										<input class="form-control" type="text" data-provide="datepicker">
 										<span class="icon icon-calendar input-icon"></span>
 									</div>
 								</td>
@@ -413,14 +419,18 @@
 										<input class="form-control border-reverse" type="text">
 										<span class="icon icon-calendar input-icon"></span>
 									</div>
+
 								</td>
 							</tr>
 						</table>
-
+						
 						<div class="text-center">
 							<button class="btn btn-success btn-basic" type="button">확인</button>
 							<button class="btn btn-default btn-basic" type="button">취소</button>
 						</div>
+
+
+						<button class="btn btn-outline-success" data-toggle="modal" data-target="#successModalAlert" type="button">팝업열기</button>
 					</div>
 				</div>
 				<!-- // 컨텐츠 종료 -->
@@ -432,86 +442,87 @@
 				<small class="copyright">2019 &copy; NETID <a href="#none">Made by NETID</a></small>
 			</div>
 		</div>
+	</div>
 
-			<!-- 팝업 -->
-	<div id="successModalAlert" tabindex="-1" role="dialog" class="modal modal-26 fade in" style="display:block;">
-			<div class="modal-dialog">
-				<div class="modal-content round-box">
-					<div class="modal-header bg-success">
-						<h4 class="pull-left m-a-0">IP 인증 생성</h4>
-						<button type="button" class="close" data-dismiss="modal">
-							<span aria-hidden="true" class="popup-close">×</span>
-							<span class="sr-only">Close</span>
-						</button>
+	<div id="successModalAlert" tabindex="-1" role="dialog" class="modal modal-26 fade">
+		<div class="modal-dialog">
+			<div class="modal-content round-box">
+				<div class="modal-header bg-success">
+					<h4 class="pull-left m-a-0">IP 인증 생성</h4>
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true" class="popup-close">×</span>
+						<span class="sr-only">Close</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<strong>도메인 선택</strong>
+						<div>
+							<select name="" id="" class="form-control d-ib">
+								<option value="">기본인증IP</option>
+								<option value="">추가인증IP</option>
+								<option value="">안전인증IP</option>
+							</select>
+							<input id="form-control" class="form-control d-ib" type="input" value="">
+							<button class="btn btn-default" type="button">찾아보기</button>
+						</div>
 					</div>
-					<div class="modal-body">
-						<div class="form-group">
-							<strong>도메인 선택</strong>
-							<div>
-								<select name="" id="" class="form-control d-ib">
-									<option value="">기본인증IP</option>
-									<option value="">추가인증IP</option>
-									<option value="">안전인증IP</option>
-								</select>
-								<input id="form-control" class="form-control d-ib" type="input" value="">
-								<button class="btn btn-default" type="button">찾아보기</button>
+					<div class="form-group">
+						<strong>시작 IP</strong>
+						<div class="ip-box">
+							<input class="form-control d-ib" type="text">.
+							<input class="form-control d-ib" type="text">.
+							<input class="form-control d-ib" type="text">.
+							<input class="form-control d-ib" type="text">
+						</div>
+					</div>
+					<div class="form-group">
+						<strong>끝 IP</strong>
+						<div class="ip-box">
+							<input class="form-control d-ib" type="text">.
+							<input class="form-control d-ib" type="text">.
+							<input class="form-control d-ib" type="text">.
+							<input class="form-control d-ib" type="text">
+						</div>
+					</div>
+					<div class="form-group">
+						<strong>시작일</strong>
+						<div class="d-ib media-middle">
+							<div class="input-with-icon">
+								<input class="form-control" type="text" data-provide="datepicker" data-date-format="yyyy-mm-dd">
+								<span class="icon icon-calendar input-icon"></span>
 							</div>
 						</div>
-						<div class="form-group">
-							<strong>시작 IP</strong>
-							<div class="ip-box">
-								<input class="form-control d-ib" type="text">.
-								<input class="form-control d-ib" type="text">.
-								<input class="form-control d-ib" type="text">.
-								<input class="form-control d-ib" type="text">
-							</div>
-						</div>
-						<div class="form-group">
-							<strong>끝 IP</strong>
-							<div class="ip-box">
-								<input class="form-control d-ib" type="text">.
-								<input class="form-control d-ib" type="text">.
-								<input class="form-control d-ib" type="text">.
-								<input class="form-control d-ib" type="text">
-							</div>
-						</div>
-						<div class="form-group">
-							<strong>시작일</strong>
-							<div>
-								<div class="input-with-icon size-a d-ib">
-									<input class="form-control" type="text">
+					</div>
+					<div class="form-group">
+						<strong>종료일</strong>
+						<div>
+							<select name="" id="" class="form-control d-ib">
+								<option value="">제한없음</option>
+								<option value="">직적입력</option>
+							</select>
+							<div class="d-ib media-middle">
+								<div class="input-with-icon">
+									<input class="form-control" type="text" data-provide="datepicker" data-date-format="yyyy-mm-dd">
 									<span class="icon icon-calendar input-icon"></span>
 								</div>
 							</div>
 						</div>
-						<div class="form-group">
-							<strong>종료일</strong>
-							<div>
-								<select name="" id="" class="form-control d-ib">
-									<option value="">제한없음</option>
-									<option value="">직적입력</option>
-								</select>
-								<div class="input-with-icon size-a d-ib media-middle">
-									<input class="form-control border-reverse" type="text">
-									<span class="icon icon-calendar input-icon"></span>
-								</div>
-							</div>
-						</div>
-						
-						<div class="text-center p-t-sm">
-							<button class="btn btn-basic btn-outline-success" type="button">확인</button>
-							<button class="btn btn-basic btn-default" type="button">취소</button>
-						</div>
+					</div>
+					
+					<div class="text-center p-t-sm">
+						<button class="btn btn-basic btn-outline-success" data-dismiss="modal" type="button">확인</button>
+						<button class="btn btn-basic btn-default" data-dismiss="modal" type="button">취소</button>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- //팝업-->
 	</div>
+
 	<script src="../../js/vendor.js"></script>
 	<script src="../../js/elephant.js"></script>
 	<script src="../../js/application.js"></script>
-	<!-- <script src="../../js/demo.js"></script> -->
+	<script src="../../js/demo.js"></script>
 
 </body>
 

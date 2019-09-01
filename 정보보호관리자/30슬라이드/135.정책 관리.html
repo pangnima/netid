@@ -580,10 +580,10 @@
 								<div class="card">
 									<div class="card-header no-title">
 										<div class="left-position">
-											<h3>PC로그 정책 아이템 및 우선순위 (상위정책부터 적용)</h3>
+											<h3 class="big">PC로그 정책 아이템 및 우선순위 (상위정책부터 적용)</h3>
 										</div>
 										<div class="right-position">
-											<button class="btn btn-sm btn-default" type="button">추가</button>
+											<button class="btn btn-sm btn-default" data-toggle="modal" data-target="#successModalAlert" type="button">추가</button>
 										</div>
 									</div>
 									<div class="card-body">
@@ -674,7 +674,7 @@
 		</div>
 
 		<!-- 팝업 -->
-		<div id="successModalAlert" class="modal modal-35" style="display: none;">
+		<div id="successModalAlert" class="modal fade modal-35">
 			<div class="modal-dialog">
 				<div class="modal-content round-box">
 					<div class="modal-header bg-success">
@@ -893,8 +893,8 @@
 						</div>
 
 						<div class="text-center">
-							<button class="btn btn-outline-success btn-basic" type="button">확인</button>
-							<button class="btn btn-default btn-basic btn-cancel" type="button">취소</button>
+							<button class="btn btn-outline-success btn-basic"  data-dismiss="modal" type="button">확인</button>
+							<button class="btn btn-default btn-basic btn-cancel"  data-dismiss="modal" type="button">취소</button>
 						</div>
 					</div>
 				</div>
@@ -919,14 +919,6 @@
 	<script>
 		$(document).ready(function(){
 			type22();
-			$('.modal .close , .modal .btn-cancel ').on('click' , function(e){
-				$('#successModalAlert').fadeOut();
-			});
-
-			$('.card-action .icon-plus , .right-position button').on('click' , function(){
-				$('#successModalAlert').fadeIn();
-			})
-
 		})
 	</script>
 </body>
